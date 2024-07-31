@@ -1,9 +1,23 @@
-.imgBannerContainer {
+.mathBannerContainer {
     background-color: white;
     height: 60vh;
     width: 100%;
     overflow-x: hidden;
     position: relative;
+    .title {
+        position: absolute;
+        right: 5rem;
+        top: -5rem;
+        font-size: 30rem;
+    }
+    .subTitle {
+        color: rgba(128, 128, 128, 0.734);
+        position: absolute;
+        right: 5rem;
+        top: 17rem;
+        font-size: 10rem;
+        line-height: -5rem;
+    }
     .spritesheet {
         width: 15.5rem;
         height: 27rem;
