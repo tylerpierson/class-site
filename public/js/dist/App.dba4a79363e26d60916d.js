@@ -141,77 +141,37 @@ function MathContainer() {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathCard
   }, /*#__PURE__*/React.createElement("h4", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathTitle
-  }, "Frontend"), /*#__PURE__*/React.createElement("ul", {
+  }, "This weeks TEKS"), /*#__PURE__*/React.createElement("ul", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathList
   }, /*#__PURE__*/React.createElement("li", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  }, "JavaScript"), /*#__PURE__*/React.createElement("li", {
-    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  }, "HTML/CSS"), /*#__PURE__*/React.createElement("li", {
-    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  }, "SCSS"), /*#__PURE__*/React.createElement("li", {
-    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  }, "TypeScript"), /*#__PURE__*/React.createElement("li", {
-    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  }, "React.js"))), /*#__PURE__*/React.createElement("div", {
+  }))), /*#__PURE__*/React.createElement("div", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathCard
   }, /*#__PURE__*/React.createElement("h4", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathTitle
-  }, "Backend"), /*#__PURE__*/React.createElement("ul", {
+  }, "Anchor Charts"), /*#__PURE__*/React.createElement("ul", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathList
   }, /*#__PURE__*/React.createElement("li", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  }, "Node.js"), /*#__PURE__*/React.createElement("li", {
-    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  }, "Express.js"), /*#__PURE__*/React.createElement("li", {
-    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  }, "Django"), /*#__PURE__*/React.createElement("li", {
-    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  }, "Nuxt.js"), /*#__PURE__*/React.createElement("li", {
-    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  }, "MongoDB"), /*#__PURE__*/React.createElement("li", {
-    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  }, "MySQL"), /*#__PURE__*/React.createElement("li", {
-    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  }, "Supabase"), /*#__PURE__*/React.createElement("li", {
-    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  }, "Python")))), /*#__PURE__*/React.createElement("div", {
+  })))), /*#__PURE__*/React.createElement("div", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathContainerRight
   }, /*#__PURE__*/React.createElement("div", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathCard
   }, /*#__PURE__*/React.createElement("h4", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathTitle
-  }, "Deployment Tools"), /*#__PURE__*/React.createElement("ul", {
+  }, "I can..."), /*#__PURE__*/React.createElement("ul", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathList
   }, /*#__PURE__*/React.createElement("li", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  }, "AWS"), /*#__PURE__*/React.createElement("li", {
-    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  }, "Cloudfront"), /*#__PURE__*/React.createElement("li", {
-    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  }, "EC2"), /*#__PURE__*/React.createElement("li", {
-    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  }, "S3"), /*#__PURE__*/React.createElement("li", {
-    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  }, "DigitalOcean"))), /*#__PURE__*/React.createElement("div", {
+  }))), /*#__PURE__*/React.createElement("div", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathCard
   }, /*#__PURE__*/React.createElement("h4", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathTitle
-  }, "Collaboration Tools"), /*#__PURE__*/React.createElement("ul", {
+  }, "Extra Resources"), /*#__PURE__*/React.createElement("ul", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathList
   }, /*#__PURE__*/React.createElement("li", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  }, "Slack"), /*#__PURE__*/React.createElement("li", {
-    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  }, "Discord"), /*#__PURE__*/React.createElement("li", {
-    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  }, "JIRA"), /*#__PURE__*/React.createElement("li", {
-    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  }, "Trello"), /*#__PURE__*/React.createElement("li", {
-    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  }, "GitHub"), /*#__PURE__*/React.createElement("li", {
-    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  }, "PUSH Project Management")))));
+  })))));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MathContainer);
 
@@ -371,77 +331,37 @@ function ScienceContainer() {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceCard
   }, /*#__PURE__*/React.createElement("h4", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceTitle
-  }, "Frontend"), /*#__PURE__*/React.createElement("ul", {
+  }, "This weeks TEKS"), /*#__PURE__*/React.createElement("ul", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceList
   }, /*#__PURE__*/React.createElement("li", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
-  }, "JavaScript"), /*#__PURE__*/React.createElement("li", {
-    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
-  }, "HTML/CSS"), /*#__PURE__*/React.createElement("li", {
-    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
-  }, "SCSS"), /*#__PURE__*/React.createElement("li", {
-    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
-  }, "TypeScript"), /*#__PURE__*/React.createElement("li", {
-    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
-  }, "React.js"))), /*#__PURE__*/React.createElement("div", {
+  }))), /*#__PURE__*/React.createElement("div", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceCard
   }, /*#__PURE__*/React.createElement("h4", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceTitle
-  }, "Backend"), /*#__PURE__*/React.createElement("ul", {
+  }, "Anchor Charts"), /*#__PURE__*/React.createElement("ul", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceList
   }, /*#__PURE__*/React.createElement("li", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
-  }, "Node.js"), /*#__PURE__*/React.createElement("li", {
-    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
-  }, "Express.js"), /*#__PURE__*/React.createElement("li", {
-    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
-  }, "Django"), /*#__PURE__*/React.createElement("li", {
-    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
-  }, "Nuxt.js"), /*#__PURE__*/React.createElement("li", {
-    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
-  }, "MongoDB"), /*#__PURE__*/React.createElement("li", {
-    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
-  }, "MySQL"), /*#__PURE__*/React.createElement("li", {
-    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
-  }, "Supabase"), /*#__PURE__*/React.createElement("li", {
-    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
-  }, "Python")))), /*#__PURE__*/React.createElement("div", {
+  })))), /*#__PURE__*/React.createElement("div", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceContainerRight
   }, /*#__PURE__*/React.createElement("div", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceCard
   }, /*#__PURE__*/React.createElement("h4", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceTitle
-  }, "Deployment Tools"), /*#__PURE__*/React.createElement("ul", {
+  }, "I can..."), /*#__PURE__*/React.createElement("ul", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceList
   }, /*#__PURE__*/React.createElement("li", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
-  }, "AWS"), /*#__PURE__*/React.createElement("li", {
-    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
-  }, "Cloudfront"), /*#__PURE__*/React.createElement("li", {
-    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
-  }, "EC2"), /*#__PURE__*/React.createElement("li", {
-    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
-  }, "S3"), /*#__PURE__*/React.createElement("li", {
-    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
-  }, "DigitalOcean"))), /*#__PURE__*/React.createElement("div", {
+  }))), /*#__PURE__*/React.createElement("div", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceCard
   }, /*#__PURE__*/React.createElement("h4", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceTitle
-  }, "Collaboration Tools"), /*#__PURE__*/React.createElement("ul", {
+  }, "Extra Resources"), /*#__PURE__*/React.createElement("ul", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceList
   }, /*#__PURE__*/React.createElement("li", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
-  }, "Slack"), /*#__PURE__*/React.createElement("li", {
-    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
-  }, "Discord"), /*#__PURE__*/React.createElement("li", {
-    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
-  }, "JIRA"), /*#__PURE__*/React.createElement("li", {
-    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
-  }, "Trello"), /*#__PURE__*/React.createElement("li", {
-    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
-  }, "GitHub"), /*#__PURE__*/React.createElement("li", {
-    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
-  }, "PUSH Project Management")))));
+  })))));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ScienceContainer);
 
@@ -523,7 +443,7 @@ function AboutPage() {
     className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].bio
   }, "Welcome to ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].highlight
-  }, "4th Grade!"), " This year I will be teaching math and science. I am beyond thrilled to be a Champion and I cannot wait to work with your child. It is going to be a great year!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+  }, "4th Grade!"), " This year I will be teaching math and science. I am beyond thrilled to be a Champion and I cannot wait to work with your child. It is going to be a great year!", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "I grew up in the DFW area along with my four siblings. My family consists of my wife, Jennifer, my son, Dean, and our dog, Ringo. In my spare time I enjoy reading comics, developing web applications, playing instruments, spending time with family and friends, and watching movies at home.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "Prior to beginning my college education, I spent five years as a Marine Corps infantryman stationed in Oahu, Hawaii. I later graduated from the University of North Texas with a Bachelor of Science degree in Interdisciplinary Studies and from Texas A&M University with a Master's degree in Education Administration and Human Development. More recently, I graduated as Valedictorian from General Assembly, where I completed a software engineering course. I have always had a love for learning and hope to pass that passion on to my students.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), "I am dedicated to creating a classroom community that allows us to communicate, explore, and grow together.  I strongly believe in the power of relationships, the power of YET, and meeting each individual child where they are.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
     className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].image,
     src: "/img/headshot.png"
   })));
@@ -2110,7 +2030,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.lkSfnDUQxn7c_fywXKpE {
   margin: 12vh 2rem 0;
   height: 88vh;
   width: 100%;
-  overflow: hidden;
 }
 .lkSfnDUQxn7c_fywXKpE .w0ja4CsHvALVP85RyPJj {
   width: 50%;
@@ -2154,7 +2073,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.lkSfnDUQxn7c_fywXKpE {
     transform: rotate(0);
     width: 50%;
   }
-}`, "",{"version":3,"sources":["webpack://./src/pages/AboutPage/AboutPage.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,WAAA;EACA,gBAAA;AACJ;AAAI;EACI,UAAA;AAER;AADQ;EACI,sBAAA;EACA,4CAAA;EACA,aAAA;EACA,mBAAA;AAGZ;AADQ;EACI,iBAAA;EACA,2BAAA;EACA,kCAAA;AAGZ;AADQ;EACI,UAAA;EACA,iBAAA;EACA,iBAAA;EACA,cAAA;AAGZ;AAAI;EACI,wBAAA;AAER;;AAEA,oEAAA;AACA;EACI;IACI,sBAAA;IACA,mBAAA;IACA,YAAA;IACA,iBAAA;IACA,oBAAA;IACA,eAAA;EACN;EAAM;IACI,WAAA;EAEV;EAAM;IACI,aAAA;IACA,oBAAA;IACA,UAAA;EAEV;AACF","sourcesContent":[".AboutPage {\n    display: flex;\n    justify-content: center;\n    margin: 12vh 2rem 0;\n    height: 88vh;\n    width: 100%;\n    overflow: hidden;\n    .textContainer {\n        width: 50%;\n        .bio {\n            color: rgb(75, 75, 75);\n            background-color: rgba(100, 237, 207, 0.075);\n            padding: 5rem;\n            border-radius: 1rem;\n        }\n        .highlight {\n            font-weight: bold;\n            color: var(--heading-color);\n            text-shadow: .5px .5px 1px black;\n        }\n        .bio, .highlight {\n            width: 90%;\n            line-height: 3rem;\n            font-size: 1.3rem;\n            margin: 3rem 0;\n        }\n    }\n    .image {\n        transform: rotate(10deg);\n    }\n}\n\n/* Small devices (portrait tablets and large phones, 600px and up) */\n@media only screen and (max-width: 1000px) {\n    .AboutPage {\n        flex-direction: column;\n        align-items: center;\n        height: 100%;\n        overflow: visible;\n        padding-bottom: 3rem;\n        margin-top: 5vh;\n        .textContainer {\n            width: 100%;\n        }\n        .image {\n            display: none;\n            transform: rotate(0);\n            width: 50%;\n        }\n    }\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/AboutPage/AboutPage.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,WAAA;AACJ;AAAI;EACI,UAAA;AAER;AADQ;EACI,sBAAA;EACA,4CAAA;EACA,aAAA;EACA,mBAAA;AAGZ;AADQ;EACI,iBAAA;EACA,2BAAA;EACA,kCAAA;AAGZ;AADQ;EACI,UAAA;EACA,iBAAA;EACA,iBAAA;EACA,cAAA;AAGZ;AAAI;EACI,wBAAA;AAER;;AAEA,oEAAA;AACA;EACI;IACI,sBAAA;IACA,mBAAA;IACA,YAAA;IACA,iBAAA;IACA,oBAAA;IACA,eAAA;EACN;EAAM;IACI,WAAA;EAEV;EAAM;IACI,aAAA;IACA,oBAAA;IACA,UAAA;EAEV;AACF","sourcesContent":[".AboutPage {\n    display: flex;\n    justify-content: center;\n    margin: 12vh 2rem 0;\n    height: 88vh;\n    width: 100%;\n    .textContainer {\n        width: 50%;\n        .bio {\n            color: rgb(75, 75, 75);\n            background-color: rgba(100, 237, 207, 0.075);\n            padding: 5rem;\n            border-radius: 1rem;\n        }\n        .highlight {\n            font-weight: bold;\n            color: var(--heading-color);\n            text-shadow: .5px .5px 1px black;\n        }\n        .bio, .highlight {\n            width: 90%;\n            line-height: 3rem;\n            font-size: 1.3rem;\n            margin: 3rem 0;\n        }\n    }\n    .image {\n        transform: rotate(10deg);\n    }\n}\n\n/* Small devices (portrait tablets and large phones, 600px and up) */\n@media only screen and (max-width: 1000px) {\n    .AboutPage {\n        flex-direction: column;\n        align-items: center;\n        height: 100%;\n        overflow: visible;\n        padding-bottom: 3rem;\n        margin-top: 5vh;\n        .textContainer {\n            width: 100%;\n        }\n        .image {\n            display: none;\n            transform: rotate(0);\n            width: 50%;\n        }\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"AboutPage": `lkSfnDUQxn7c_fywXKpE`,
@@ -3168,4 +3087,4 @@ module.exports = __webpack_require__.p + "8fccd3022acd7762640b.png";
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.d0175f94f72c6441c214a9028c92a3f4.js.map
+//# sourceMappingURL=App.1eba071d18a7058413a105dfa62b4783.js.map
