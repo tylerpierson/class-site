@@ -8,10 +8,15 @@
     .textContainer {
         width: 50%;
         .bio {
-            color: white;
+            color: rgb(75, 75, 75);
+            background-color: rgba(100, 237, 207, 0.075);
+            padding: 5rem;
+            border-radius: 1rem;
         }
         .highlight {
+            font-weight: bold;
             color: var(--heading-color);
+            text-shadow: .5px .5px 1px black;
         }
         .bio, .highlight {
             width: 90%;
