@@ -2,11 +2,11 @@ import styles from './HomePage.module.scss'
 import NavBar from '../../components/NavBar/NavBar'
 import NavMobile from '../../components/NavMobile/NavMobile'
 import IntroContainer from '../../components/IntroContainer/IntroContainer'
-import Bio from '../../components/Bio/Bio'
+import FourthBanner from '../../components/FourthBanner/FourthBanner'
 import MathBanner from '../../components/MathBanner/MathBanner'
 import MathContainer from '../../components/MathContainer/MathContainer'
-import ProjectBanner from '../../components/ProjectBanner/ProjectBanner'
-import Projects from '../../components/Projects/Projects'
+import ScienceBanner from '../../components/ScienceBanner/ScienceBanner'
+import ScienceContainer from '../../components/ScienceContainer/ScienceContainer'
 import SpriteAnimation from '../../components/SpriteAnimation/SpriteAnimation'
 
 export default function HomePage(){
@@ -18,11 +18,11 @@ export default function HomePage(){
             <div className={styles.HomePage}>
                 <SpriteAnimation />
                 <IntroContainer />
-                <Bio />
+                <FourthBanner />
                 <MathBanner />
                 <MathContainer />
-                <ProjectBanner />
-                <Projects />
+                <ScienceBanner />
+                <ScienceContainer />
             </div>
         </>
     )

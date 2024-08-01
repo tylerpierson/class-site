@@ -1,9 +1,9 @@
-.projectBannerContainer {
+.scienceBannerContainer {
     background-color: black;
     width: 100%;
     padding: 5rem 0;
     overflow: hidden; /* Ensure the banner stays within its container */
-    .projectBanner {
+    .scienceBanner {
         font-size: 20rem;
         font-weight: 800;
         animation: slideAcross 10s linear infinite; /* Adjust the duration and timing function as needed */
@@ -22,10 +22,10 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 1000px) {
-    .projectBannerContainer {
+    .scienceBannerContainer {
         height: 15vh;
         padding: 0;
-        .projectBanner {
+        .scienceBanner {
             font-size: 14vw;
             margin: auto 0;
             height: 100%;

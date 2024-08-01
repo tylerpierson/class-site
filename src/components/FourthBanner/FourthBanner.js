@@ -1,8 +1,8 @@
-import styles from './Bio.module.scss'
+import styles from './FourthBanner.module.scss'
 
-function Bio() {
+function FourthBanner() {
   return (
-    <div className={styles.Bio}>
+    <div className={styles.FourthBanner}>
         <div className={styles.contentContainer}>
             <h1 className={styles.title}>Fourth<br/>Grade</h1>
         </div>
@@ -11,4 +11,4 @@ function Bio() {
   )
 }
 
-export default Bio
+export default FourthBanner

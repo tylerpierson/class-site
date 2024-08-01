@@ -1,0 +1,94 @@
+.scienceContainerMain {
+    width: 75%;
+    margin: 0 auto;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .scienceHeader {
+        font-size: 8.5rem;
+        font-weight: 600;
+        color: var(--btn-color);
+    }
+    .scienceContainerLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        .headingSMContainer {
+            width: 90%;
+            .headingSM {
+                text-align: left;
+            }
+        }
+    }
+    .scienceContainerRight {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+    .scienceCard {
+        width: 90%;
+        height: 35vh;
+        background-color: #303030;
+        padding: 1.5rem;
+        margin-bottom: 3rem;
+        border-radius: .5rem;
+        transition: .4s ease;
+        .scienceTitle {
+            margin: 1rem;
+            font-size: 2rem;
+            color: white;
+        }
+        .scienceList {
+            .scienceListItem {
+                list-style-type: none;
+                font-size: 1.3rem;
+                color: rgb(183, 183, 183);
+                margin: 0 2rem;
+                line-height: 2rem;
+            }
+        }
+        .scienceDescription {
+            font-size: 1vw;
+            margin: 1rem;
+            color: darkgrey;
+        }
+        &:hover .scienceTitle {
+            transform: scale(1.05);
+            color: var(--heading-color);
+            transition: .4s ease;
+        }
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 1000px) {
+    .scienceContainerMain {
+        display: none;
+        .scienceContainerLeft {
+            display: none;
+            .scienceCard {
+                display: none;
+                .scienceTitle {
+                    display: none;
+                }
+                .scienceDescription {
+                    display: none;
+                }
+            }
+            .headingSMContainer {
+                display: none;
+            }
+        }
+        .scienceContainerRight {
+            display: none;
+            .scienceHeader {
+                display: none;
+            }
+        }
+    }
+}

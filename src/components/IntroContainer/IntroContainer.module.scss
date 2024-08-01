@@ -2,8 +2,13 @@
     height: 90vh;
     width: 100%;
     position: relative;
+    text-transform: uppercase;
     .headingSM {
-        margin: 8rem 0;
+        margin: 8rem 1rem;
+        padding: .5rem;
+    }
+    .heading, .subHeading {
+        margin: 0 0 0 10rem;
     }
     .heading {
         color: white;
@@ -21,7 +26,8 @@
         }
     }
     
-    .paragraph {
+    .subHeading {
+        font-size: 3rem;
         color: grey;
         margin-top: 5rem;
         width: 50vw;

@@ -19,9 +19,9 @@
         line-height: -5rem;
     }
     .spritesheet {
-        width: 15.5rem;
+        width: 25rem;
         height: 27rem;
-        background-image: url('/Users/tylerpierson/portfolio/public/img/walking-spritesheet.png');
+        background-image: url('/Users/tylerpierson/software_projects/class-website/public/img/cap-walking-spritesheet.png');
         background-repeat: no-repeat;
         background-size: 80rem 80rem;
         animation: play 1s steps(1) infinite, slide 10s linear infinite;
@@ -31,11 +31,11 @@
     }
      
     @keyframes play {
-        0% { background-position: -12rem -5rem; }
-        25% { background-position: -52rem -5rem; }
-        50% { background-position: -12rem -45rem; }
-        75% { background-position: -52rem -5rem; }
-        100% { background-position: -12rem -5rem; }
+        0% { background-position: -5rem -5rem; }
+        25% { background-position: -45rem -5rem; }
+        50% { background-position: -5rem -45rem; }
+        75% { background-position: -45rem -5rem; }
+        100% { background-position: -5rem -5rem; }
     }
 
     @keyframes slide {
