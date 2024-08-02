@@ -18,7 +18,14 @@ function NewsLetter() {
                 </div>
                 <div className={styles.reminders}>
                     <h2 className={styles.title}>Reminders</h2>
-                    <p className={styles.reminder}>Don't forget to bring your school supplies!</p>
+                    <p className={styles.welcome}>Welcome Back!</p>
+                    <p className={styles.header}>Some important things to do to prepare for a successful school year....</p>
+                    <p className={styles.reminder}>1. Complete the room parent interest form</p>
+                    <p className={styles.reminder}>2. Complete the transportation form </p>
+                    <p className={styles.reminder}>3. Purchase and organize student school
+                    supplies</p>
+                    <p className={styles.reminder}>4. Ensure you are receiving Mr. Pierson’s
+                    emails (tpierson@dentonisd.org)</p>
                 </div>
             </div>
           </div>
