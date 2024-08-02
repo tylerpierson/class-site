@@ -254,7 +254,18 @@ function NavBar() {
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].navItemBottom
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].listItem
-  }, "Contact")))));
+  }, "Contact"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].listItemContainer,
+    href: "#newsletter"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].navItemTop
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].listItem
+  }, "Newsletter")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].navItemBottom
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+    className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].listItem
+  }, "Newsletter")))));
 }
 
 /***/ }),
@@ -316,6 +327,62 @@ function NavMobile() {
   }, "Contact")))));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (NavMobile);
+
+/***/ }),
+
+/***/ "./src/components/NewsLetter/NewsLetter.js":
+/*!*************************************************!*\
+  !*** ./src/components/NewsLetter/NewsLetter.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NewsLetter.module.scss */ "./src/components/NewsLetter/NewsLetter.module.scss");
+
+
+function NewsLetter() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    id: "newsletter",
+    className: _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].NewsLetterContainer
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].mainContent
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+    className: _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].heading
+  }, "News ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].spanText
+  }, "Letter")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
+    className: _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].subHeading
+  }, "What's happening on the Ranch?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].news
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].upcomingEvents
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].title
+  }, "Upcoming Events"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].event
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].date
+  }, "August 5th:"), " Meet the Teacher Night"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].event
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].date
+  }, "August 7th:"), " First Day of School"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].event
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].date
+  }, "August 30th:"), " First Half Day, dismissal at 12 pm")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].reminders
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].title
+  }, "Reminders"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].reminder
+  }, "Don't forget to bring your school supplies!"))))));
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (NewsLetter);
 
 /***/ }),
 
@@ -598,7 +665,7 @@ function ContactPage() {
 /* harmony import */ var _components_MathContainer_MathContainer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/MathContainer/MathContainer */ "./src/components/MathContainer/MathContainer.js");
 /* harmony import */ var _components_ScienceBanner_ScienceBanner__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/ScienceBanner/ScienceBanner */ "./src/components/ScienceBanner/ScienceBanner.js");
 /* harmony import */ var _components_ScienceContainer_ScienceContainer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/ScienceContainer/ScienceContainer */ "./src/components/ScienceContainer/ScienceContainer.js");
-/* harmony import */ var _components_SpriteAnimation_SpriteAnimation__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/SpriteAnimation/SpriteAnimation */ "./src/components/SpriteAnimation/SpriteAnimation.js");
+/* harmony import */ var _components_NewsLetter_NewsLetter__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/NewsLetter/NewsLetter */ "./src/components/NewsLetter/NewsLetter.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 
@@ -614,7 +681,7 @@ function HomePage() {
   const projectId = "project-section";
   return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/React.createElement(_components_NavMobile_NavMobile__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/React.createElement("div", {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].HomePage
-  }, /*#__PURE__*/React.createElement(_components_IntroContainer_IntroContainer__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/React.createElement(_components_FourthBanner_FourthBanner__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/React.createElement(_components_MathBanner_MathBanner__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/React.createElement(_components_MathContainer_MathContainer__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/React.createElement(_components_ScienceBanner_ScienceBanner__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/React.createElement(_components_ScienceContainer_ScienceContainer__WEBPACK_IMPORTED_MODULE_8__["default"], null)));
+  }, /*#__PURE__*/React.createElement(_components_IntroContainer_IntroContainer__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/React.createElement(_components_FourthBanner_FourthBanner__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/React.createElement(_components_MathBanner_MathBanner__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/React.createElement(_components_MathContainer_MathContainer__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/React.createElement(_components_ScienceBanner_ScienceBanner__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/React.createElement(_components_ScienceContainer_ScienceContainer__WEBPACK_IMPORTED_MODULE_8__["default"], null), /*#__PURE__*/React.createElement(_components_NewsLetter_NewsLetter__WEBPACK_IMPORTED_MODULE_9__["default"], null)));
 }
 
 /***/ }),
@@ -1587,6 +1654,269 @@ ___CSS_LOADER_EXPORT___.locals = {
 	"Link": `vWBFW9dgoy2HsuBJ62zC`,
 	"li": `c6nVZZUwtb5ZjSC5zOF4`,
 	"collapseContainer": `okLjs1ihh9Oby_1MzKDZ`
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/NewsLetter/NewsLetter.module.scss":
+/*!*************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/NewsLetter/NewsLetter.module.scss ***!
+  \*************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.sjnG7tFoUzZblhB5JSTE {
+  height: 60vh;
+  width: 100%;
+  position: relative;
+  text-transform: uppercase;
+  background-color: rgba(100, 237, 207, 0.075);
+  margin-top: 5rem;
+}
+.sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY, .sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .QPtT2wL6WLaqU6Aw_ozQ {
+  margin: 0 0 0 10rem;
+}
+.sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY {
+  color: white;
+  font-size: 11rem;
+}
+.sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VqfdyD8AvH6h_hXJYMhW, .sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VFfg427ZH0HoaShyv2eu {
+  font-size: 11rem;
+}
+.sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VqfdyD8AvH6h_hXJYMhW {
+  font-weight: 100;
+  color: var(--heading-color);
+}
+.sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VFfg427ZH0HoaShyv2eu {
+  color: black;
+  font-size: 13rem;
+}
+.sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .h7Gxd1Ohl39Qr_s1TjUQ {
+  margin: 8rem 1rem;
+  padding: 0.5rem;
+}
+.sjnG7tFoUzZblhB5JSTE .QPtT2wL6WLaqU6Aw_ozQ {
+  font-size: 3rem;
+  color: grey;
+  margin-top: 5rem;
+  width: 50vw;
+}
+.sjnG7tFoUzZblhB5JSTE .Il3u8pW4KpUWlUSGkVpM {
+  background-color: black;
+  width: 30vw;
+  position: absolute;
+  top: 4rem;
+  right: 10rem;
+  z-index: -1;
+  transform: rotate(7deg);
+}
+.sjnG7tFoUzZblhB5JSTE .OLbsfs05fb0CWvcS4vUV {
+  display: flex;
+  width: 100%;
+}
+.sjnG7tFoUzZblhB5JSTE .OLbsfs05fb0CWvcS4vUV .ItNxmalBSzvQKQeidGDE {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  min-height: 20rem;
+  padding: 2rem;
+  margin: 5rem 2rem;
+  background-color: white;
+  border-radius: 3rem;
+}
+.sjnG7tFoUzZblhB5JSTE .OLbsfs05fb0CWvcS4vUV .ItNxmalBSzvQKQeidGDE .Sp9JJs_qr75rnwhA8j4E {
+  font-size: 3rem;
+  color: var(--heading-color);
+  margin-bottom: 2rem;
+}
+.sjnG7tFoUzZblhB5JSTE .OLbsfs05fb0CWvcS4vUV .ItNxmalBSzvQKQeidGDE .mk44oMyYbY5PUxafTGfG {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.sjnG7tFoUzZblhB5JSTE .OLbsfs05fb0CWvcS4vUV .ItNxmalBSzvQKQeidGDE .mk44oMyYbY5PUxafTGfG .wpRQZVZdg36WiB6Vn3Tz {
+  font-size: 1.5rem;
+  color: grey;
+}
+.sjnG7tFoUzZblhB5JSTE .OLbsfs05fb0CWvcS4vUV .ItNxmalBSzvQKQeidGDE .mk44oMyYbY5PUxafTGfG .rz4tdH_k3MzjqSCKVBeK {
+  font-size: 1.5rem;
+  color: var(--heading-color);
+}
+.sjnG7tFoUzZblhB5JSTE .OLbsfs05fb0CWvcS4vUV .xzLWBRGAM6wcLIikYH2J {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  min-height: 20rem;
+  padding: 2rem;
+  margin: 5rem 2rem;
+  background-color: white;
+  border-radius: 3rem;
+}
+.sjnG7tFoUzZblhB5JSTE .OLbsfs05fb0CWvcS4vUV .xzLWBRGAM6wcLIikYH2J .Sp9JJs_qr75rnwhA8j4E {
+  font-size: 3rem;
+  color: var(--heading-color);
+  margin-bottom: 2rem;
+}
+.sjnG7tFoUzZblhB5JSTE .OLbsfs05fb0CWvcS4vUV .xzLWBRGAM6wcLIikYH2J .iQX_LoEJAWE1nLfSu4zx {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.sjnG7tFoUzZblhB5JSTE .OLbsfs05fb0CWvcS4vUV .xzLWBRGAM6wcLIikYH2J .iQX_LoEJAWE1nLfSu4zx .wpRQZVZdg36WiB6Vn3Tz {
+  font-size: 1.5rem;
+  color: grey;
+}
+.sjnG7tFoUzZblhB5JSTE .OLbsfs05fb0CWvcS4vUV .xzLWBRGAM6wcLIikYH2J .iQX_LoEJAWE1nLfSu4zx .Q_QB2RMTCujYwWNxhK0N {
+  font-size: 1.5rem;
+  color: var(--heading-color);
+}
+
+/* Medium devices (landscape tablets, 800px and up) */
+@media only screen and (max-width: 1220px) {
+  .SjYNzdUntHgjDinE1jeR {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY {
+    width: 100%;
+    height: 100%;
+  }
+  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY, .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .QPtT2wL6WLaqU6Aw_ozQ {
+    margin: 0 0 0 5rem;
+  }
+  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY {
+    font-size: 9rem;
+  }
+  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VqfdyD8AvH6h_hXJYMhW, .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VFfg427ZH0HoaShyv2eu {
+    font-size: 9rem;
+  }
+  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VFfg427ZH0HoaShyv2eu {
+    font-size: 9rem;
+  }
+  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .h7Gxd1Ohl39Qr_s1TjUQ {
+    margin: 2rem 1rem;
+  }
+  .SjYNzdUntHgjDinE1jeR .QPtT2wL6WLaqU6Aw_ozQ {
+    font-size: 2rem;
+    width: 60vw;
+  }
+  .SjYNzdUntHgjDinE1jeR .Il3u8pW4KpUWlUSGkVpM {
+    width: 35vw;
+    top: 4rem;
+    right: 5rem;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 800px) {
+  .SjYNzdUntHgjDinE1jeR {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY {
+    margin-bottom: -15rem;
+  }
+  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .h7Gxd1Ohl39Qr_s1TjUQ {
+    margin: 4rem 1rem;
+  }
+  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY, .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .QPtT2wL6WLaqU6Aw_ozQ {
+    margin: 0 0 0 2rem;
+  }
+  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY {
+    font-size: 8rem;
+  }
+  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VqfdyD8AvH6h_hXJYMhW, .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VFfg427ZH0HoaShyv2eu {
+    font-size: 8rem;
+  }
+  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VFfg427ZH0HoaShyv2eu {
+    font-size: 8rem;
+  }
+  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .QPtT2wL6WLaqU6Aw_ozQ {
+    font-size: 1.5rem;
+    width: 70vw;
+  }
+  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .Il3u8pW4KpUWlUSGkVpM {
+    width: 40vw;
+    top: 2rem;
+    right: 2rem;
+  }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 500px) {
+  .SjYNzdUntHgjDinE1jeR {
+    height: 100vh;
+  }
+  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY {
+    margin-bottom: -25rem;
+  }
+  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .h7Gxd1Ohl39Qr_s1TjUQ {
+    margin: 2rem 1rem;
+  }
+  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY, .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .QPtT2wL6WLaqU6Aw_ozQ {
+    margin: 0 0 0 1rem;
+  }
+  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY {
+    font-size: 6rem;
+  }
+  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VqfdyD8AvH6h_hXJYMhW, .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VFfg427ZH0HoaShyv2eu {
+    font-size: 6rem;
+  }
+  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VFfg427ZH0HoaShyv2eu {
+    font-size: 6rem;
+  }
+  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .QPtT2wL6WLaqU6Aw_ozQ {
+    font-size: 1rem;
+    width: 80vw;
+  }
+  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .Il3u8pW4KpUWlUSGkVpM {
+    width: 50vw;
+    top: 1rem;
+    right: 1rem;
+  }
+}`, "",{"version":3,"sources":["webpack://./src/components/NewsLetter/NewsLetter.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,WAAA;EACA,kBAAA;EACA,yBAAA;EACA,4CAAA;EACA,gBAAA;AACJ;AACQ;EACI,mBAAA;AACZ;AACQ;EACI,YAAA;EACA,gBAAA;AACZ;AAAY;EACI,gBAAA;AAEhB;AAAY;EACI,gBAAA;EACA,2BAAA;AAEhB;AAAY;EACI,YAAA;EACA,gBAAA;AAEhB;AACI;EACI,iBAAA;EACA,eAAA;AACR;AAGI;EACI,eAAA;EACA,WAAA;EACA,gBAAA;EACA,WAAA;AADR;AAII;EACI,uBAAA;EACA,WAAA;EACA,kBAAA;EACA,SAAA;EACA,YAAA;EACA,WAAA;EACA,uBAAA;AAFR;AAII;EACI,aAAA;EACA,WAAA;AAFR;AAGQ;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,UAAA;EACA,iBAAA;EACA,aAAA;EACA,iBAAA;EACA,uBAAA;EACA,mBAAA;AADZ;AAEY;EACI,eAAA;EACA,2BAAA;EACA,mBAAA;AAAhB;AAEY;EACI,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,WAAA;EACA,mBAAA;AAAhB;AACgB;EACI,iBAAA;EACA,WAAA;AACpB;AACgB;EACI,iBAAA;EACA,2BAAA;AACpB;AAGQ;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,UAAA;EACA,iBAAA;EACA,aAAA;EACA,iBAAA;EACA,uBAAA;EACA,mBAAA;AADZ;AAEY;EACI,eAAA;EACA,2BAAA;EACA,mBAAA;AAAhB;AAEY;EACI,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,WAAA;EACA,mBAAA;AAAhB;AACgB;EACI,iBAAA;EACA,WAAA;AACpB;AACgB;EACI,iBAAA;EACA,2BAAA;AACpB;;AAMA,qDAAA;AACA;EACI;IACI,YAAA;IACA,aAAA;IACA,uBAAA;IACA,mBAAA;EAHN;EAIM;IACI,WAAA;IACA,YAAA;EAFV;EAGU;IACI,kBAAA;EADd;EAGU;IACI,eAAA;EADd;EAEc;IACI,eAAA;EAAlB;EAEc;IACI,eAAA;EAAlB;EAGU;IACI,iBAAA;EADd;EAIM;IACI,eAAA;IACA,WAAA;EAFV;EAIM;IACI,WAAA;IACA,SAAA;IACA,WAAA;EAFV;AACF;AAMA,oEAAA;AACA;EACI;IACI,aAAA;IACA,sBAAA;IACA,aAAA;EAJN;EAKM;IACI,qBAAA;EAHV;EAIU;IACI,iBAAA;EAFd;EAIU;IACI,kBAAA;EAFd;EAIU;IACI,eAAA;EAFd;EAGc;IACI,eAAA;EADlB;EAGc;IACI,eAAA;EADlB;EAIU;IACI,iBAAA;IACA,WAAA;EAFd;EAIU;IACI,WAAA;IACA,SAAA;IACA,WAAA;EAFd;AACF;AAOA,iDAAA;AACA;EACI;IACI,aAAA;EALN;EAMM;IACI,qBAAA;EAJV;EAKU;IACI,iBAAA;EAHd;EAKU;IACI,kBAAA;EAHd;EAKU;IACI,eAAA;EAHd;EAIc;IACI,eAAA;EAFlB;EAIc;IACI,eAAA;EAFlB;EAKU;IACI,eAAA;IACA,WAAA;EAHd;EAKU;IACI,WAAA;IACA,SAAA;IACA,WAAA;EAHd;AACF","sourcesContent":[".NewsLetterContainer {\n    height: 60vh;\n    width: 100%;\n    position: relative;\n    text-transform: uppercase;\n    background-color: rgba(100, 237, 207, 0.075);\n    margin-top: 5rem;\n    .mainContent {\n        .heading, .subHeading {\n            margin: 0 0 0 10rem;\n        }\n        .heading {\n            color: white;\n            font-size: 11rem;\n            .spanText, .spanPlus {\n                font-size: 11rem;\n            }\n            .spanText {\n                font-weight: 100;\n                color: var(--heading-color);\n            }\n            .spanPlus {\n                color: black;\n                font-size: 13rem;\n            }\n    }\n    .headingSM {\n        margin: 8rem 1rem;\n        padding: .5rem;\n    }\n    }\n    \n    .subHeading {\n        font-size: 3rem;\n        color: grey;\n        margin-top: 5rem;\n        width: 50vw;\n    }\n    \n    .image {\n        background-color: black;\n        width: 30vw;\n        position: absolute;\n        top: 4rem;\n        right: 10rem;\n        z-index: -1;\n        transform: rotate(7deg);\n    }\n    .news {\n        display: flex;\n        width: 100%;\n        .upcomingEvents {\n            display: flex;\n            flex-direction: column;\n            justify-content: center;\n            align-items: center;\n            width: 60%;\n            min-height: 20rem;\n            padding: 2rem;\n            margin: 5rem 2rem;\n            background-color: white;\n            border-radius: 3rem;\n            .title {\n                font-size: 3rem;\n                color: var(--heading-color);\n                margin-bottom: 2rem;\n            }\n            .event {\n                display: flex;\n                justify-content: space-between;\n                align-items: center;\n                width: 100%;\n                margin-bottom: 1rem;\n                .date {\n                    font-size: 1.5rem;\n                    color: grey;\n                }\n                .eventTitle {\n                    font-size: 1.5rem;\n                    color: var(--heading-color);\n                }\n            }\n        }\n        .reminders {\n            display: flex;\n            flex-direction: column;\n            justify-content: center;\n            align-items: center;\n            width: 60%;\n            min-height: 20rem;\n            padding: 2rem;\n            margin: 5rem 2rem;\n            background-color: white;\n            border-radius: 3rem;\n            .title {\n                font-size: 3rem;\n                color: var(--heading-color);\n                margin-bottom: 2rem;\n            }\n            .reminder {\n                display: flex;\n                justify-content: space-between;\n                align-items: center;\n                width: 100%;\n                margin-bottom: 1rem;\n                .date {\n                    font-size: 1.5rem;\n                    color: grey;\n                }\n                .reminderTitle {\n                    font-size: 1.5rem;\n                    color: var(--heading-color);\n                }\n            }\n        }\n    }\n}\n\n/* Medium devices (landscape tablets, 800px and up) */\n@media only screen and (max-width: 1220px) {\n    .IntroContainer {\n        height: 70vh;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        .mainContent {\n            width: 100%;\n            height: 100%;\n            .heading, .subHeading {\n                margin: 0 0 0 5rem;\n            }\n            .heading {\n                font-size: 9rem;\n                .spanText, .spanPlus {\n                    font-size: 9rem;\n                }\n                .spanPlus {\n                    font-size: 9rem;\n                }\n            }\n            .headingSM {\n                margin: 2rem 1rem;\n            }\n        }\n        .subHeading {\n            font-size: 2rem;\n            width: 60vw;\n        }\n        .image {\n            width: 35vw;\n            top: 4rem;\n            right: 5rem;\n        }\n    }\n}\n\n/* Small devices (portrait tablets and large phones, 600px and up) */\n@media only screen and (max-width: 800px) {\n    .IntroContainer {\n        display: flex;\n        flex-direction: column;\n        height: 100vh;\n        .mainContent {\n            margin-bottom: -15rem;\n            .headingSM {\n                margin: 4rem 1rem;\n            }\n            .heading, .subHeading {\n                margin: 0 0 0 2rem;\n            }\n            .heading {\n                font-size: 8rem;\n                .spanText, .spanPlus {\n                    font-size: 8rem;\n                }\n                .spanPlus {\n                    font-size: 8rem;\n                }\n            }\n            .subHeading {\n                font-size: 1.5rem;\n                width: 70vw;\n            }\n            .image {\n                width: 40vw;\n                top: 2rem;\n                right: 2rem;\n            }\n        }\n    }\n}\n\n/* Extra small devices (phones, 600px and down) */\n@media only screen and (max-width: 500px) {\n    .IntroContainer {\n        height: 100vh;\n        .mainContent {\n            margin-bottom: -25rem;\n            .headingSM {\n                margin: 2rem 1rem;\n            }\n            .heading, .subHeading {\n                margin: 0 0 0 1rem;\n            }\n            .heading {\n                font-size: 6rem;\n                .spanText, .spanPlus {\n                    font-size: 6rem;\n                }\n                .spanPlus {\n                    font-size: 6rem;\n                }\n            }\n            .subHeading {\n                font-size: 1rem;\n                width: 80vw;\n            }\n            .image {\n                width: 50vw;\n                top: 1rem;\n                right: 1rem;\n            }\n        }\n    }\n}\n"],"sourceRoot":""}]);
+// Exports
+___CSS_LOADER_EXPORT___.locals = {
+	"NewsLetterContainer": `sjnG7tFoUzZblhB5JSTE`,
+	"mainContent": `nfF08vOKSM2yctoHbkqY`,
+	"heading": `dG2iF17CbUyQp6bhgkVY`,
+	"subHeading": `QPtT2wL6WLaqU6Aw_ozQ`,
+	"spanText": `VqfdyD8AvH6h_hXJYMhW`,
+	"spanPlus": `VFfg427ZH0HoaShyv2eu`,
+	"headingSM": `h7Gxd1Ohl39Qr_s1TjUQ`,
+	"image": `Il3u8pW4KpUWlUSGkVpM`,
+	"news": `OLbsfs05fb0CWvcS4vUV`,
+	"upcomingEvents": `ItNxmalBSzvQKQeidGDE`,
+	"title": `Sp9JJs_qr75rnwhA8j4E`,
+	"event": `mk44oMyYbY5PUxafTGfG`,
+	"date": `wpRQZVZdg36WiB6Vn3Tz`,
+	"eventTitle": `rz4tdH_k3MzjqSCKVBeK`,
+	"reminders": `xzLWBRGAM6wcLIikYH2J`,
+	"reminder": `iQX_LoEJAWE1nLfSu4zx`,
+	"reminderTitle": `Q_QB2RMTCujYwWNxhK0N`,
+	"IntroContainer": `SjYNzdUntHgjDinE1jeR`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -3739,6 +4069,59 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
+/***/ "./src/components/NewsLetter/NewsLetter.module.scss":
+/*!**********************************************************!*\
+  !*** ./src/components/NewsLetter/NewsLetter.module.scss ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../../node_modules/sass-loader/dist/cjs.js!../../../node_modules/postcss-loader/dist/cjs.js!./NewsLetter.module.scss */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/NewsLetter/NewsLetter.module.scss");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
 /***/ "./src/components/ScienceBanner/ScienceBanner.module.scss":
 /*!****************************************************************!*\
   !*** ./src/components/ScienceBanner/ScienceBanner.module.scss ***!
@@ -4510,4 +4893,4 @@ module.exports = __webpack_require__.p + "4031c99fef0abdcd87ad.png";
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.05e1221f9dcabd5c1fbad3e351cca579.js.map
+//# sourceMappingURL=App.eeeb50881132a6aaf1c8605b1351e393.js.map

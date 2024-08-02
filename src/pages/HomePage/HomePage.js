@@ -7,7 +7,7 @@ import MathBanner from '../../components/MathBanner/MathBanner'
 import MathContainer from '../../components/MathContainer/MathContainer'
 import ScienceBanner from '../../components/ScienceBanner/ScienceBanner'
 import ScienceContainer from '../../components/ScienceContainer/ScienceContainer'
-import SpriteAnimation from '../../components/SpriteAnimation/SpriteAnimation'
+import NewsLetter from '../../components/NewsLetter/NewsLetter'
 
 export default function HomePage(){
     const projectId = "project-section";
@@ -22,6 +22,7 @@ export default function HomePage(){
                 <MathContainer />
                 <ScienceBanner />
                 <ScienceContainer />
+                <NewsLetter />
             </div>
         </>
     )
