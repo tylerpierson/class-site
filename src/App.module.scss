@@ -48,3 +48,9 @@ button {
 button:hover {
     cursor: pointer;
 }
+
+@media (max-width: 500px) {
+    .App {
+        overflow-x: hidden;
+    }
+}
