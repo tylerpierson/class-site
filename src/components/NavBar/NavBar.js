@@ -15,10 +15,10 @@ export default function NavBar(){
                     <div className={styles.navItemTop}><li className={styles.listItem}>About Me</li></div>
                     <div className={styles.navItemBottom}><li className={styles.listItem}>About Me</li></div>
                 </Link>
-                {/* <Link className={styles.listItemContainer} to='/contact'>
+                <Link className={styles.listItemContainer} to='/contact'>
                     <div className={styles.navItemTop}><li className={styles.listItem}>Contact</li></div>
                     <div className={styles.navItemBottom}><li className={styles.listItem}>Contact</li></div>
-                </Link> */}
+                </Link>
             </ul>
         </nav>
     )

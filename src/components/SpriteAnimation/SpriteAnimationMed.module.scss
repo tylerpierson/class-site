@@ -142,3 +142,10 @@
     99.75% { background-position: -384rem -480rem; }
     100% { background-position: -432rem -480rem; }
  }
+
+ @media (max-width: 800px) {
+    .spritesheet {
+        top: 0;
+        margin-bottom: 1rem;
+    }
+ }

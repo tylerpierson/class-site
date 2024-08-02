@@ -66,29 +66,22 @@
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
     .mathContainerMain {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         .mathContainerLeft {
-            display: none;
-            .mathCard {
-                display: none;
-                .mathTitle {
-                    display: none;
-                }
-                .mathDescription {
-                    display: none;
-                }
-            }
+            width: 100%;
             .headingSMContainer {
-                display: none;
+                width: 90%;
+                .headingSM {
+                    text-align: left;
+                }
             }
         }
         .mathContainerRight {
-            display: none;
-            .mathHeader {
-                display: none;
-            }
+            width: 100%;
         }
     }
 }

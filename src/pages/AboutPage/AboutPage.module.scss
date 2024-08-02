@@ -40,11 +40,16 @@
         margin-top: 5vh;
         .textContainer {
             width: 100%;
+            z-index: 1;
         }
         .image {
-            display: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 80%;
+            opacity: .4;
             transform: rotate(0);
-            width: 50%;
+            border-bottom-left-radius: 50%;
         }
     }
 }

@@ -45,13 +45,21 @@
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 1000px) {
-    .imgBannerContainer {
-        background-color: transparent;
-        width: 100%;
-        height: 35vh;
+@media only screen and (max-width: 500px) {
+    .mathBannerContainer {
+        height: 30vh;
+        .title {
+            right: 2rem;
+            top: -2rem;
+            font-size: 15rem;
+        }
+        .subTitle {
+            right: 2rem;
+            top: 9rem;
+            font-size: 5rem;
+        }
         .spritesheet {
-            width: 100%;
+            top: 52%;
         }
     }
 }

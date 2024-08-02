@@ -2,7 +2,7 @@
 .FourthBanner {
     height: 60vh;
     width: 100%;
-    margin: 0rem auto;
+    margin: 0rem;
     padding: 3rem 0 10rem;
     display: flex;
     background-color: var(--heading-color);
@@ -15,7 +15,7 @@
         justify-content: flex-end;
         align-items: flex-start;
         .title {
-            font-size: 8.5vw;
+            font-size: 12rem;
             font-weight: 600;
             color: white;
             text-transform: uppercase;
@@ -24,12 +24,11 @@
     .titleDescription {
         color: grey;
         padding-left: 3rem;
-        height: 60vh;
-        font-size: 3vw;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-        align-items: flex-start;
+        font-size: 4rem;
         transition: 1s ease;
         &:hover {
             color: var(--bg-color);
@@ -38,26 +37,33 @@
     }
 }
 
-@media only screen and (max-width: 1000px) {
-    .Bio {
-        padding: 0 2rem;
-        width: 100vw;
-        height: 15rem;
-        background-color: rgb(100, 237, 207);
+@media (max-width: 800px) {
+    .FourthBanner {
+        height: 40vh;
+        padding: 0 0 1rem 0;
+        flex-direction: column;
         .contentContainer {
-            display: flex;
-            justify-content: center;
             height: 100%;
-            width: 30%;
-            .headingSM {
-                font-size: 1.5rem;
-            }
             .title {
-                font-size: 2rem;
+                font-size: 10rem;
             }
         }
         .titleDescription {
-            display: none;
+            font-size: 3rem;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .FourthBanner {
+        height: 30vh;
+        .contentContainer {
+            .title {
+                font-size: 8rem;
+            }
+        }
+        .titleDescription {
+            font-size: 2rem;
         }
     }
 }
