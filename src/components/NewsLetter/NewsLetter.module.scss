@@ -203,6 +203,7 @@
     .NewsLetterContainer {
         height: 100%;
         padding: 0;
+        overflow-x: hidden;
         .mainContent {
             .headingSM {
                 margin: 2rem 1rem;
