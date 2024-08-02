@@ -1814,36 +1814,37 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.sjnG7tFoUzZblhB5JSTE {
 
 /* Medium devices (landscape tablets, 800px and up) */
 @media only screen and (max-width: 1220px) {
-  .SjYNzdUntHgjDinE1jeR {
+  .sjnG7tFoUzZblhB5JSTE {
     height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
-  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY {
+  .sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY {
     width: 100%;
     height: 100%;
   }
-  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY, .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .QPtT2wL6WLaqU6Aw_ozQ {
+  .sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY, .sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .QPtT2wL6WLaqU6Aw_ozQ {
     margin: 0 0 0 5rem;
   }
-  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY {
+  .sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY {
     font-size: 9rem;
   }
-  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VqfdyD8AvH6h_hXJYMhW, .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VFfg427ZH0HoaShyv2eu {
+  .sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VqfdyD8AvH6h_hXJYMhW, .sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VFfg427ZH0HoaShyv2eu {
     font-size: 9rem;
   }
-  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VFfg427ZH0HoaShyv2eu {
+  .sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VFfg427ZH0HoaShyv2eu {
     font-size: 9rem;
   }
-  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .h7Gxd1Ohl39Qr_s1TjUQ {
+  .sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .h7Gxd1Ohl39Qr_s1TjUQ {
     margin: 2rem 1rem;
   }
-  .SjYNzdUntHgjDinE1jeR .QPtT2wL6WLaqU6Aw_ozQ {
+  .sjnG7tFoUzZblhB5JSTE .QPtT2wL6WLaqU6Aw_ozQ {
     font-size: 2rem;
     width: 60vw;
   }
-  .SjYNzdUntHgjDinE1jeR .Il3u8pW4KpUWlUSGkVpM {
+  .sjnG7tFoUzZblhB5JSTE .Il3u8pW4KpUWlUSGkVpM {
     width: 35vw;
     top: 4rem;
     right: 5rem;
@@ -1851,34 +1852,31 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.sjnG7tFoUzZblhB5JSTE {
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 800px) {
-  .SjYNzdUntHgjDinE1jeR {
+  .sjnG7tFoUzZblhB5JSTE {
     display: flex;
     flex-direction: column;
     height: 100vh;
   }
-  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY {
+  .sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY {
     margin-bottom: -15rem;
   }
-  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .h7Gxd1Ohl39Qr_s1TjUQ {
-    margin: 4rem 1rem;
+  .sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY, .sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .QPtT2wL6WLaqU6Aw_ozQ {
+    margin: 0;
   }
-  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY, .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .QPtT2wL6WLaqU6Aw_ozQ {
-    margin: 0 0 0 2rem;
+  .sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY {
+    font-size: 6rem;
   }
-  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY {
-    font-size: 8rem;
+  .sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VqfdyD8AvH6h_hXJYMhW, .sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VFfg427ZH0HoaShyv2eu {
+    font-size: 6rem;
   }
-  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VqfdyD8AvH6h_hXJYMhW, .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VFfg427ZH0HoaShyv2eu {
-    font-size: 8rem;
+  .sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VFfg427ZH0HoaShyv2eu {
+    font-size: 6rem;
   }
-  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VFfg427ZH0HoaShyv2eu {
-    font-size: 8rem;
-  }
-  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .QPtT2wL6WLaqU6Aw_ozQ {
+  .sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .QPtT2wL6WLaqU6Aw_ozQ {
     font-size: 1.5rem;
     width: 70vw;
   }
-  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .Il3u8pW4KpUWlUSGkVpM {
+  .sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .Il3u8pW4KpUWlUSGkVpM {
     width: 40vw;
     top: 2rem;
     right: 2rem;
@@ -1886,37 +1884,47 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.sjnG7tFoUzZblhB5JSTE {
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 500px) {
-  .SjYNzdUntHgjDinE1jeR {
-    height: 100vh;
+  .sjnG7tFoUzZblhB5JSTE {
+    height: 100%;
+    padding: 0;
   }
-  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY {
-    margin-bottom: -25rem;
-  }
-  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .h7Gxd1Ohl39Qr_s1TjUQ {
+  .sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .h7Gxd1Ohl39Qr_s1TjUQ {
     margin: 2rem 1rem;
   }
-  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY, .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .QPtT2wL6WLaqU6Aw_ozQ {
+  .sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY, .sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .QPtT2wL6WLaqU6Aw_ozQ {
     margin: 0 0 0 1rem;
   }
-  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY {
-    font-size: 6rem;
+  .sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY {
+    font-size: 4rem;
   }
-  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VqfdyD8AvH6h_hXJYMhW, .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VFfg427ZH0HoaShyv2eu {
-    font-size: 6rem;
+  .sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VqfdyD8AvH6h_hXJYMhW, .sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VFfg427ZH0HoaShyv2eu {
+    font-size: 4rem;
   }
-  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VFfg427ZH0HoaShyv2eu {
-    font-size: 6rem;
+  .sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .dG2iF17CbUyQp6bhgkVY .VFfg427ZH0HoaShyv2eu {
+    font-size: 4rem;
   }
-  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .QPtT2wL6WLaqU6Aw_ozQ {
+  .sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .QPtT2wL6WLaqU6Aw_ozQ {
     font-size: 1rem;
     width: 80vw;
   }
-  .SjYNzdUntHgjDinE1jeR .nfF08vOKSM2yctoHbkqY .Il3u8pW4KpUWlUSGkVpM {
+  .sjnG7tFoUzZblhB5JSTE .nfF08vOKSM2yctoHbkqY .Il3u8pW4KpUWlUSGkVpM {
     width: 50vw;
     top: 1rem;
     right: 1rem;
   }
-}`, "",{"version":3,"sources":["webpack://./src/components/NewsLetter/NewsLetter.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,WAAA;EACA,kBAAA;EACA,yBAAA;EACA,4CAAA;EACA,gBAAA;AACJ;AACQ;EACI,mBAAA;AACZ;AACQ;EACI,YAAA;EACA,gBAAA;AACZ;AAAY;EACI,gBAAA;AAEhB;AAAY;EACI,gBAAA;EACA,2BAAA;AAEhB;AAAY;EACI,YAAA;EACA,gBAAA;AAEhB;AACI;EACI,iBAAA;EACA,eAAA;AACR;AAGI;EACI,eAAA;EACA,WAAA;EACA,gBAAA;EACA,WAAA;AADR;AAII;EACI,uBAAA;EACA,WAAA;EACA,kBAAA;EACA,SAAA;EACA,YAAA;EACA,WAAA;EACA,uBAAA;AAFR;AAII;EACI,aAAA;EACA,WAAA;AAFR;AAGQ;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,UAAA;EACA,iBAAA;EACA,aAAA;EACA,iBAAA;EACA,uBAAA;EACA,mBAAA;AADZ;AAEY;EACI,eAAA;EACA,2BAAA;EACA,mBAAA;AAAhB;AAEY;EACI,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,WAAA;EACA,mBAAA;AAAhB;AACgB;EACI,iBAAA;EACA,WAAA;AACpB;AACgB;EACI,iBAAA;EACA,2BAAA;AACpB;AAGQ;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,UAAA;EACA,iBAAA;EACA,aAAA;EACA,iBAAA;EACA,uBAAA;EACA,mBAAA;AADZ;AAEY;EACI,eAAA;EACA,2BAAA;EACA,mBAAA;AAAhB;AAEY;EACI,eAAA;EACA,WAAA;EACA,mBAAA;AAAhB;AAEY;EACI,iBAAA;EACA,2BAAA;EACA,mBAAA;AAAhB;AAEY;EACI,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,WAAA;EACA,mBAAA;AAAhB;AACgB;EACI,iBAAA;EACA,WAAA;AACpB;AACgB;EACI,iBAAA;EACA,2BAAA;AACpB;;AAMA,qDAAA;AACA;EACI;IACI,YAAA;IACA,aAAA;IACA,uBAAA;IACA,mBAAA;EAHN;EAIM;IACI,WAAA;IACA,YAAA;EAFV;EAGU;IACI,kBAAA;EADd;EAGU;IACI,eAAA;EADd;EAEc;IACI,eAAA;EAAlB;EAEc;IACI,eAAA;EAAlB;EAGU;IACI,iBAAA;EADd;EAIM;IACI,eAAA;IACA,WAAA;EAFV;EAIM;IACI,WAAA;IACA,SAAA;IACA,WAAA;EAFV;AACF;AAMA,oEAAA;AACA;EACI;IACI,aAAA;IACA,sBAAA;IACA,aAAA;EAJN;EAKM;IACI,qBAAA;EAHV;EAIU;IACI,iBAAA;EAFd;EAIU;IACI,kBAAA;EAFd;EAIU;IACI,eAAA;EAFd;EAGc;IACI,eAAA;EADlB;EAGc;IACI,eAAA;EADlB;EAIU;IACI,iBAAA;IACA,WAAA;EAFd;EAIU;IACI,WAAA;IACA,SAAA;IACA,WAAA;EAFd;AACF;AAOA,iDAAA;AACA;EACI;IACI,aAAA;EALN;EAMM;IACI,qBAAA;EAJV;EAKU;IACI,iBAAA;EAHd;EAKU;IACI,kBAAA;EAHd;EAKU;IACI,eAAA;EAHd;EAIc;IACI,eAAA;EAFlB;EAIc;IACI,eAAA;EAFlB;EAKU;IACI,eAAA;IACA,WAAA;EAHd;EAKU;IACI,WAAA;IACA,SAAA;IACA,WAAA;EAHd;AACF","sourcesContent":[".NewsLetterContainer {\n    height: 60vh;\n    width: 100%;\n    position: relative;\n    text-transform: uppercase;\n    background-color: rgba(100, 237, 207, 0.075);\n    margin-top: 5rem;\n    .mainContent {\n        .heading, .subHeading {\n            margin: 0 0 0 10rem;\n        }\n        .heading {\n            color: white;\n            font-size: 11rem;\n            .spanText, .spanPlus {\n                font-size: 11rem;\n            }\n            .spanText {\n                font-weight: 100;\n                color: var(--heading-color);\n            }\n            .spanPlus {\n                color: black;\n                font-size: 13rem;\n            }\n    }\n    .headingSM {\n        margin: 8rem 1rem;\n        padding: .5rem;\n    }\n    }\n    \n    .subHeading {\n        font-size: 3rem;\n        color: grey;\n        margin-top: 5rem;\n        width: 50vw;\n    }\n    \n    .image {\n        background-color: black;\n        width: 30vw;\n        position: absolute;\n        top: 4rem;\n        right: 10rem;\n        z-index: -1;\n        transform: rotate(7deg);\n    }\n    .news {\n        display: flex;\n        width: 100%;\n        .upcomingEvents {\n            display: flex;\n            flex-direction: column;\n            justify-content: center;\n            align-items: center;\n            width: 60%;\n            min-height: 20rem;\n            padding: 2rem;\n            margin: 5rem 2rem;\n            background-color: white;\n            border-radius: 3rem;\n            .title {\n                font-size: 3rem;\n                color: var(--heading-color);\n                margin-bottom: 2rem;\n            }\n            .event {\n                display: flex;\n                justify-content: space-between;\n                align-items: center;\n                width: 100%;\n                margin-bottom: 1rem;\n                .date {\n                    font-size: 1.5rem;\n                    color: grey;\n                }\n                .eventTitle {\n                    font-size: 1.5rem;\n                    color: var(--heading-color);\n                }\n            }\n        }\n        .reminders {\n            display: flex;\n            flex-direction: column;\n            justify-content: center;\n            align-items: center;\n            width: 60%;\n            min-height: 20rem;\n            padding: 2rem;\n            margin: 5rem 2rem;\n            background-color: white;\n            border-radius: 3rem;\n            .title {\n                font-size: 3rem;\n                color: var(--heading-color);\n                margin-bottom: 2rem;\n            }\n            .welcome {\n                font-size: 2rem;\n                color: grey;\n                margin-bottom: 1rem;\n            }\n            .header {\n                font-size: 1.5rem;\n                color: var(--heading-color);\n                margin-bottom: 1rem;\n            }\n            .reminder {\n                display: flex;\n                justify-content: space-between;\n                align-items: center;\n                width: 100%;\n                margin-bottom: 1rem;\n                .date {\n                    font-size: 1.5rem;\n                    color: grey;\n                }\n                .reminderTitle {\n                    font-size: 1.5rem;\n                    color: var(--heading-color);\n                }\n            }\n        }\n    }\n}\n\n/* Medium devices (landscape tablets, 800px and up) */\n@media only screen and (max-width: 1220px) {\n    .IntroContainer {\n        height: 70vh;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        .mainContent {\n            width: 100%;\n            height: 100%;\n            .heading, .subHeading {\n                margin: 0 0 0 5rem;\n            }\n            .heading {\n                font-size: 9rem;\n                .spanText, .spanPlus {\n                    font-size: 9rem;\n                }\n                .spanPlus {\n                    font-size: 9rem;\n                }\n            }\n            .headingSM {\n                margin: 2rem 1rem;\n            }\n        }\n        .subHeading {\n            font-size: 2rem;\n            width: 60vw;\n        }\n        .image {\n            width: 35vw;\n            top: 4rem;\n            right: 5rem;\n        }\n    }\n}\n\n/* Small devices (portrait tablets and large phones, 600px and up) */\n@media only screen and (max-width: 800px) {\n    .IntroContainer {\n        display: flex;\n        flex-direction: column;\n        height: 100vh;\n        .mainContent {\n            margin-bottom: -15rem;\n            .headingSM {\n                margin: 4rem 1rem;\n            }\n            .heading, .subHeading {\n                margin: 0 0 0 2rem;\n            }\n            .heading {\n                font-size: 8rem;\n                .spanText, .spanPlus {\n                    font-size: 8rem;\n                }\n                .spanPlus {\n                    font-size: 8rem;\n                }\n            }\n            .subHeading {\n                font-size: 1.5rem;\n                width: 70vw;\n            }\n            .image {\n                width: 40vw;\n                top: 2rem;\n                right: 2rem;\n            }\n        }\n    }\n}\n\n/* Extra small devices (phones, 600px and down) */\n@media only screen and (max-width: 500px) {\n    .IntroContainer {\n        height: 100vh;\n        .mainContent {\n            margin-bottom: -25rem;\n            .headingSM {\n                margin: 2rem 1rem;\n            }\n            .heading, .subHeading {\n                margin: 0 0 0 1rem;\n            }\n            .heading {\n                font-size: 6rem;\n                .spanText, .spanPlus {\n                    font-size: 6rem;\n                }\n                .spanPlus {\n                    font-size: 6rem;\n                }\n            }\n            .subHeading {\n                font-size: 1rem;\n                width: 80vw;\n            }\n            .image {\n                width: 50vw;\n                top: 1rem;\n                right: 1rem;\n            }\n        }\n    }\n}\n"],"sourceRoot":""}]);
+  .OLbsfs05fb0CWvcS4vUV {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+  }
+  .OLbsfs05fb0CWvcS4vUV .ItNxmalBSzvQKQeidGDE, .OLbsfs05fb0CWvcS4vUV .xzLWBRGAM6wcLIikYH2J {
+    width: 100%;
+    margin: 0;
+    margin-top: 2rem;
+  }
+}`, "",{"version":3,"sources":["webpack://./src/components/NewsLetter/NewsLetter.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,WAAA;EACA,kBAAA;EACA,yBAAA;EACA,4CAAA;EACA,gBAAA;AACJ;AACQ;EACI,mBAAA;AACZ;AACQ;EACI,YAAA;EACA,gBAAA;AACZ;AAAY;EACI,gBAAA;AAEhB;AAAY;EACI,gBAAA;EACA,2BAAA;AAEhB;AAAY;EACI,YAAA;EACA,gBAAA;AAEhB;AACI;EACI,iBAAA;EACA,eAAA;AACR;AAGI;EACI,eAAA;EACA,WAAA;EACA,gBAAA;EACA,WAAA;AADR;AAII;EACI,uBAAA;EACA,WAAA;EACA,kBAAA;EACA,SAAA;EACA,YAAA;EACA,WAAA;EACA,uBAAA;AAFR;AAII;EACI,aAAA;EACA,WAAA;AAFR;AAGQ;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,UAAA;EACA,iBAAA;EACA,aAAA;EACA,iBAAA;EACA,uBAAA;EACA,mBAAA;AADZ;AAEY;EACI,eAAA;EACA,2BAAA;EACA,mBAAA;AAAhB;AAEY;EACI,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,WAAA;EACA,mBAAA;AAAhB;AACgB;EACI,iBAAA;EACA,WAAA;AACpB;AACgB;EACI,iBAAA;EACA,2BAAA;AACpB;AAGQ;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,UAAA;EACA,iBAAA;EACA,aAAA;EACA,iBAAA;EACA,uBAAA;EACA,mBAAA;AADZ;AAEY;EACI,eAAA;EACA,2BAAA;EACA,mBAAA;AAAhB;AAEY;EACI,eAAA;EACA,WAAA;EACA,mBAAA;AAAhB;AAEY;EACI,iBAAA;EACA,2BAAA;EACA,mBAAA;AAAhB;AAEY;EACI,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,WAAA;EACA,mBAAA;AAAhB;AACgB;EACI,iBAAA;EACA,WAAA;AACpB;AACgB;EACI,iBAAA;EACA,2BAAA;AACpB;;AAMA,qDAAA;AACA;EACI;IACI,YAAA;IACA,aAAA;IACA,uBAAA;IACA,mBAAA;IACA,sBAAA;EAHN;EAIM;IACI,WAAA;IACA,YAAA;EAFV;EAGU;IACI,kBAAA;EADd;EAGU;IACI,eAAA;EADd;EAEc;IACI,eAAA;EAAlB;EAEc;IACI,eAAA;EAAlB;EAGU;IACI,iBAAA;EADd;EAIM;IACI,eAAA;IACA,WAAA;EAFV;EAIM;IACI,WAAA;IACA,SAAA;IACA,WAAA;EAFV;AACF;AAMA,oEAAA;AACA;EACI;IACI,aAAA;IACA,sBAAA;IACA,aAAA;EAJN;EAKM;IACI,qBAAA;EAHV;EAIU;IACI,SAAA;EAFd;EAIU;IACI,eAAA;EAFd;EAGc;IACI,eAAA;EADlB;EAGc;IACI,eAAA;EADlB;EAIU;IACI,iBAAA;IACA,WAAA;EAFd;EAIU;IACI,WAAA;IACA,SAAA;IACA,WAAA;EAFd;AACF;AAOA,iDAAA;AACA;EACI;IACI,YAAA;IACA,UAAA;EALN;EAOU;IACI,iBAAA;EALd;EAOU;IACI,kBAAA;EALd;EAOU;IACI,eAAA;EALd;EAMc;IACI,eAAA;EAJlB;EAMc;IACI,eAAA;EAJlB;EAOU;IACI,eAAA;IACA,WAAA;EALd;EAOU;IACI,WAAA;IACA,SAAA;IACA,WAAA;EALd;EASE;IACI,aAAA;IACA,sBAAA;IACA,mBAAA;IACA,UAAA;IACA,WAAA;EAPN;EAQM;IACI,WAAA;IACA,SAAA;IACA,gBAAA;EANV;AACF","sourcesContent":[".NewsLetterContainer {\n    height: 60vh;\n    width: 100%;\n    position: relative;\n    text-transform: uppercase;\n    background-color: rgba(100, 237, 207, 0.075);\n    margin-top: 5rem;\n    .mainContent {\n        .heading, .subHeading {\n            margin: 0 0 0 10rem;\n        }\n        .heading {\n            color: white;\n            font-size: 11rem;\n            .spanText, .spanPlus {\n                font-size: 11rem;\n            }\n            .spanText {\n                font-weight: 100;\n                color: var(--heading-color);\n            }\n            .spanPlus {\n                color: black;\n                font-size: 13rem;\n            }\n    }\n    .headingSM {\n        margin: 8rem 1rem;\n        padding: .5rem;\n    }\n    }\n    \n    .subHeading {\n        font-size: 3rem;\n        color: grey;\n        margin-top: 5rem;\n        width: 50vw;\n    }\n    \n    .image {\n        background-color: black;\n        width: 30vw;\n        position: absolute;\n        top: 4rem;\n        right: 10rem;\n        z-index: -1;\n        transform: rotate(7deg);\n    }\n    .news {\n        display: flex;\n        width: 100%;\n        .upcomingEvents {\n            display: flex;\n            flex-direction: column;\n            justify-content: center;\n            align-items: center;\n            width: 60%;\n            min-height: 20rem;\n            padding: 2rem;\n            margin: 5rem 2rem;\n            background-color: white;\n            border-radius: 3rem;\n            .title {\n                font-size: 3rem;\n                color: var(--heading-color);\n                margin-bottom: 2rem;\n            }\n            .event {\n                display: flex;\n                justify-content: space-between;\n                align-items: center;\n                width: 100%;\n                margin-bottom: 1rem;\n                .date {\n                    font-size: 1.5rem;\n                    color: grey;\n                }\n                .eventTitle {\n                    font-size: 1.5rem;\n                    color: var(--heading-color);\n                }\n            }\n        }\n        .reminders {\n            display: flex;\n            flex-direction: column;\n            justify-content: center;\n            align-items: center;\n            width: 60%;\n            min-height: 20rem;\n            padding: 2rem;\n            margin: 5rem 2rem;\n            background-color: white;\n            border-radius: 3rem;\n            .title {\n                font-size: 3rem;\n                color: var(--heading-color);\n                margin-bottom: 2rem;\n            }\n            .welcome {\n                font-size: 2rem;\n                color: grey;\n                margin-bottom: 1rem;\n            }\n            .header {\n                font-size: 1.5rem;\n                color: var(--heading-color);\n                margin-bottom: 1rem;\n            }\n            .reminder {\n                display: flex;\n                justify-content: space-between;\n                align-items: center;\n                width: 100%;\n                margin-bottom: 1rem;\n                .date {\n                    font-size: 1.5rem;\n                    color: grey;\n                }\n                .reminderTitle {\n                    font-size: 1.5rem;\n                    color: var(--heading-color);\n                }\n            }\n        }\n    }\n}\n\n/* Medium devices (landscape tablets, 800px and up) */\n@media only screen and (max-width: 1220px) {\n    .NewsLetterContainer {\n        height: 70vh;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        flex-direction: column;\n        .mainContent {\n            width: 100%;\n            height: 100%;\n            .heading, .subHeading {\n                margin: 0 0 0 5rem;\n            }\n            .heading {\n                font-size: 9rem;\n                .spanText, .spanPlus {\n                    font-size: 9rem;\n                }\n                .spanPlus {\n                    font-size: 9rem;\n                }\n            }\n            .headingSM {\n                margin: 2rem 1rem;\n            }\n        }\n        .subHeading {\n            font-size: 2rem;\n            width: 60vw;\n        }\n        .image {\n            width: 35vw;\n            top: 4rem;\n            right: 5rem;\n        }\n    }\n}\n\n/* Small devices (portrait tablets and large phones, 600px and up) */\n@media only screen and (max-width: 800px) {\n    .NewsLetterContainer {\n        display: flex;\n        flex-direction: column;\n        height: 100vh;\n        .mainContent {\n            margin-bottom: -15rem;\n            .heading, .subHeading {\n                margin: 0;\n            }\n            .heading {\n                font-size: 6rem;\n                .spanText, .spanPlus {\n                    font-size: 6rem;\n                }\n                .spanPlus {\n                    font-size: 6rem;\n                }\n            }\n            .subHeading {\n                font-size: 1.5rem;\n                width: 70vw;\n            }\n            .image {\n                width: 40vw;\n                top: 2rem;\n                right: 2rem;\n            }\n        }\n    }\n}\n\n/* Extra small devices (phones, 600px and down) */\n@media only screen and (max-width: 500px) {\n    .NewsLetterContainer {\n        height: 100%;\n        padding: 0;\n        .mainContent {\n            .headingSM {\n                margin: 2rem 1rem;\n            }\n            .heading, .subHeading {\n                margin: 0 0 0 1rem;\n            }\n            .heading {\n                font-size: 4rem;\n                .spanText, .spanPlus {\n                    font-size: 4rem;\n                }\n                .spanPlus {\n                    font-size: 4rem;\n                }\n            }\n            .subHeading {\n                font-size: 1rem;\n                width: 80vw;\n            }\n            .image {\n                width: 50vw;\n                top: 1rem;\n                right: 1rem;\n            }\n        }\n    }\n    .news {\n        display: flex;\n        flex-direction: column;\n        align-items: center;\n        padding: 0;\n        width: 100%;\n        .upcomingEvents, .reminders {\n            width: 100%;\n            margin: 0;\n            margin-top: 2rem;\n        }\n    }\n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"NewsLetterContainer": `sjnG7tFoUzZblhB5JSTE`,
@@ -1937,8 +1945,7 @@ ___CSS_LOADER_EXPORT___.locals = {
 	"welcome": `WZZkhuCgpyMbsMJoFx3D`,
 	"header": `JcQxwYFoUUY2pF4dvd8J`,
 	"reminder": `iQX_LoEJAWE1nLfSu4zx`,
-	"reminderTitle": `Q_QB2RMTCujYwWNxhK0N`,
-	"IntroContainer": `SjYNzdUntHgjDinE1jeR`
+	"reminderTitle": `Q_QB2RMTCujYwWNxhK0N`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -4915,4 +4922,4 @@ module.exports = __webpack_require__.p + "4031c99fef0abdcd87ad.png";
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.5b78a12e2b9d7eb4d866e379b1c83ec2.js.map
+//# sourceMappingURL=App.74bbd52d6ccc3afb8146dbed558941e8.js.map
