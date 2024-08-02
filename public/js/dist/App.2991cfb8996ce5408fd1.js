@@ -81,7 +81,9 @@ function FourthBanner() {
 /* harmony import */ var _IntroContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./IntroContainer.module.scss */ "./src/components/IntroContainer/IntroContainer.module.scss");
 /* harmony import */ var _SpriteAnimation_SpriteAnimation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../SpriteAnimation/SpriteAnimation */ "./src/components/SpriteAnimation/SpriteAnimation.js");
 /* harmony import */ var _SpriteAnimation_SpriteAnimationMed__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../SpriteAnimation/SpriteAnimationMed */ "./src/components/SpriteAnimation/SpriteAnimationMed.js");
+/* harmony import */ var _SpriteAnimation_SpriteAnimationSm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../SpriteAnimation/SpriteAnimationSm */ "./src/components/SpriteAnimation/SpriteAnimationSm.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
 
 
 
@@ -104,7 +106,9 @@ function IntroContainer() {
     className: _IntroContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].SpriteAnimation
   }, /*#__PURE__*/React.createElement(_SpriteAnimation_SpriteAnimation__WEBPACK_IMPORTED_MODULE_1__["default"], null)), /*#__PURE__*/React.createElement("div", {
     className: _IntroContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].SpriteAnimationMed
-  }, /*#__PURE__*/React.createElement(_SpriteAnimation_SpriteAnimationMed__WEBPACK_IMPORTED_MODULE_2__["default"], null)))));
+  }, /*#__PURE__*/React.createElement(_SpriteAnimation_SpriteAnimationMed__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/React.createElement("div", {
+    className: _IntroContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].SpriteAnimationSm
+  }, /*#__PURE__*/React.createElement(_SpriteAnimation_SpriteAnimationSm__WEBPACK_IMPORTED_MODULE_3__["default"], null)))));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IntroContainer);
 
@@ -438,6 +442,29 @@ function SpriteAnimationMed() {
   });
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SpriteAnimationMed);
+
+/***/ }),
+
+/***/ "./src/components/SpriteAnimation/SpriteAnimationSm.js":
+/*!*************************************************************!*\
+  !*** ./src/components/SpriteAnimation/SpriteAnimationSm.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _SpriteAnimationSm_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SpriteAnimationSm.module.scss */ "./src/components/SpriteAnimation/SpriteAnimationSm.module.scss");
+
+
+function SpriteAnimationSm() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: _SpriteAnimationSm_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].spritesheet
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SpriteAnimationSm);
 
 /***/ }),
 
@@ -831,6 +858,9 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.WXIspfxBzGyfPOvOt6Wd {
 .lr2oKtT4bainQOVQRfG5 ._R8T8mKkc72Vbeqn1GmU {
   display: none;
 }
+.lr2oKtT4bainQOVQRfG5 .w6CsT__JoJ2HavmmRZqW {
+  display: none;
+}
 
 /* Medium devices (landscape tablets, 800px and up) */
 @media only screen and (max-width: 1220px) {
@@ -877,6 +907,9 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.WXIspfxBzGyfPOvOt6Wd {
   }
   .lr2oKtT4bainQOVQRfG5 ._R8T8mKkc72Vbeqn1GmU {
     display: block;
+  }
+  .lr2oKtT4bainQOVQRfG5 .w6CsT__JoJ2HavmmRZqW {
+    display: none;
   }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -946,7 +979,20 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.WXIspfxBzGyfPOvOt6Wd {
     top: 1rem;
     right: 1rem;
   }
-}`, "",{"version":3,"sources":["webpack://./src/components/IntroContainer/IntroContainer.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,WAAA;EACA,kBAAA;EACA,yBAAA;EACA,aAAA;EACA,8BAAA;AACJ;AAAI;EACI,UAAA;AAER;AADQ;EACI,mBAAA;AAGZ;AADQ;EACI,YAAA;EACA,gBAAA;AAGZ;AAFY;EACI,gBAAA;AAIhB;AAFY;EACI,gBAAA;EACA,2BAAA;AAIhB;AAFY;EACI,YAAA;EACA,gBAAA;AAIhB;AADI;EACI,iBAAA;EACA,eAAA;AAGR;AACI;EACI,eAAA;EACA,WAAA;EACA,gBAAA;EACA,WAAA;AACR;AAEI;EACI,uBAAA;EACA,WAAA;EACA,kBAAA;EACA,SAAA;EACA,YAAA;EACA,WAAA;EACA,uBAAA;AAAR;;AAGA;EACI,kBAAA;AAAJ;AAEI;EACI,aAAA;AAAR;;AAIA,qDAAA;AACA;EACI;IACI,YAAA;IACA,aAAA;IACA,uBAAA;IACA,mBAAA;EADN;EAEM;IACI,WAAA;IACA,YAAA;EAAV;EACU;IACI,kBAAA;EACd;EACU;IACI,eAAA;EACd;EAAc;IACI,eAAA;EAElB;EAAc;IACI,eAAA;EAElB;EACU;IACI,iBAAA;EACd;EAEM;IACI,eAAA;IACA,WAAA;EAAV;EAEM;IACI,WAAA;IACA,SAAA;IACA,WAAA;EAAV;EAGE;IACI,WAAA;IACA,YAAA;EADN;EAEM;IACI,aAAA;EAAV;EAEM;IACI,cAAA;EAAV;AACF;AAIA,oEAAA;AACA;EACI;IACI,aAAA;IACA,sBAAA;IACA,aAAA;EAFN;EAGM;IACI,qBAAA;EADV;EAEU;IACI,iBAAA;EAAd;EAEU;IACI,kBAAA;EAAd;EAEU;IACI,eAAA;EAAd;EACc;IACI,eAAA;EAClB;EACc;IACI,eAAA;EAClB;EAEU;IACI,iBAAA;IACA,WAAA;EAAd;EAEU;IACI,WAAA;IACA,SAAA;IACA,WAAA;EAAd;AACF;AAKA,iDAAA;AACA;EACI;IACI,YAAA;EAHN;EAIM;IACI,qBAAA;EAFV;EAGU;IACI,iBAAA;EADd;EAGU;IACI,kBAAA;EADd;EAGU;IACI,eAAA;EADd;EAEc;IACI,eAAA;EAAlB;EAEc;IACI,eAAA;EAAlB;EAGU;IACI,eAAA;IACA,WAAA;EADd;EAGU;IACI,WAAA;IACA,SAAA;IACA,WAAA;EADd;AACF","sourcesContent":[".IntroContainer {\n    height: 100vh;\n    width: 100%;\n    position: relative;\n    text-transform: uppercase;\n    display: flex;\n    justify-content: space-between;\n    .mainContent {\n        width: 55%;\n        .heading, .subHeading {\n            margin: 0 0 0 10rem;\n        }\n        .heading {\n            color: white;\n            font-size: 11rem;\n            .spanText, .spanPlus {\n                font-size: 11rem;\n            }\n            .spanText {\n                font-weight: 100;\n                color: var(--heading-color);\n            }\n            .spanPlus {\n                color: black;\n                font-size: 13rem;\n            }\n    }\n    .headingSM {\n        margin: 8rem 1rem;\n        padding: .5rem;\n    }\n    }\n    \n    .subHeading {\n        font-size: 3rem;\n        color: grey;\n        margin-top: 5rem;\n        width: 50vw;\n    }\n    \n    .image {\n        background-color: black;\n        width: 30vw;\n        position: absolute;\n        top: 4rem;\n        right: 10rem;\n        z-index: -1;\n        transform: rotate(7deg);\n    }\n}\n.SpriteContainer {\n    position: relative;\n    \n    .SpriteAnimationMed {\n        display: none;\n    }\n}\n\n/* Medium devices (landscape tablets, 800px and up) */\n@media only screen and (max-width: 1220px) {\n    .IntroContainer {\n        height: 70vh;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        .mainContent {\n            width: 100%;\n            height: 100%;\n            .heading, .subHeading {\n                margin: 0 0 0 5rem;\n            }\n            .heading {\n                font-size: 9rem;\n                .spanText, .spanPlus {\n                    font-size: 9rem;\n                }\n                .spanPlus {\n                    font-size: 9rem;\n                }\n            }\n            .headingSM {\n                margin: 2rem 1rem;\n            }\n        }\n        .subHeading {\n            font-size: 2rem;\n            width: 60vw;\n        }\n        .image {\n            width: 35vw;\n            top: 4rem;\n            right: 5rem;\n        }\n    }\n    .SpriteContainer {\n        width: 100%;\n        height: 100%;\n        .SpriteAnimation {\n            display: none;\n        }\n        .SpriteAnimationMed {\n            display: block;\n        }\n    }\n}\n\n/* Small devices (portrait tablets and large phones, 600px and up) */\n@media only screen and (max-width: 800px) {\n    .IntroContainer {\n        display: flex;\n        flex-direction: column;\n        height: 100vh;\n        .mainContent {\n            margin-bottom: -15rem;\n            .headingSM {\n                margin: 4rem 1rem;\n            }\n            .heading, .subHeading {\n                margin: 0 0 0 2rem;\n            }\n            .heading {\n                font-size: 8rem;\n                .spanText, .spanPlus {\n                    font-size: 8rem;\n                }\n                .spanPlus {\n                    font-size: 8rem;\n                }\n            }\n            .subHeading {\n                font-size: 1.5rem;\n                width: 70vw;\n            }\n            .image {\n                width: 40vw;\n                top: 2rem;\n                right: 2rem;\n            }\n        }\n    }\n}\n\n/* Extra small devices (phones, 600px and down) */\n@media only screen and (max-width: 500px) {\n    .IntroContainer {\n        height: 75vh;\n        .mainContent {\n            margin-bottom: -25rem;\n            .headingSM {\n                margin: 2rem 1rem;\n            }\n            .heading, .subHeading {\n                margin: 0 0 0 1rem;\n            }\n            .heading {\n                font-size: 6rem;\n                .spanText, .spanPlus {\n                    font-size: 6rem;\n                }\n                .spanPlus {\n                    font-size: 6rem;\n                }\n            }\n            .subHeading {\n                font-size: 1rem;\n                width: 80vw;\n            }\n            .image {\n                width: 50vw;\n                top: 1rem;\n                right: 1rem;\n            }\n        }\n    }\n}\n"],"sourceRoot":""}]);
+  .lr2oKtT4bainQOVQRfG5 {
+    width: 100%;
+    height: 100%;
+  }
+  .lr2oKtT4bainQOVQRfG5 .E7mE3HIiQ6hdtDlotDkx {
+    display: none;
+  }
+  .lr2oKtT4bainQOVQRfG5 ._R8T8mKkc72Vbeqn1GmU {
+    display: none;
+  }
+  .lr2oKtT4bainQOVQRfG5 .w6CsT__JoJ2HavmmRZqW {
+    display: block;
+  }
+}`, "",{"version":3,"sources":["webpack://./src/components/IntroContainer/IntroContainer.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,WAAA;EACA,kBAAA;EACA,yBAAA;EACA,aAAA;EACA,8BAAA;AACJ;AAAI;EACI,UAAA;AAER;AADQ;EACI,mBAAA;AAGZ;AADQ;EACI,YAAA;EACA,gBAAA;AAGZ;AAFY;EACI,gBAAA;AAIhB;AAFY;EACI,gBAAA;EACA,2BAAA;AAIhB;AAFY;EACI,YAAA;EACA,gBAAA;AAIhB;AADI;EACI,iBAAA;EACA,eAAA;AAGR;AACI;EACI,eAAA;EACA,WAAA;EACA,gBAAA;EACA,WAAA;AACR;AAEI;EACI,uBAAA;EACA,WAAA;EACA,kBAAA;EACA,SAAA;EACA,YAAA;EACA,WAAA;EACA,uBAAA;AAAR;;AAGA;EACI,kBAAA;AAAJ;AAEI;EACI,aAAA;AAAR;AAEI;EACI,aAAA;AAAR;;AAIA,qDAAA;AACA;EACI;IACI,YAAA;IACA,aAAA;IACA,uBAAA;IACA,mBAAA;EADN;EAEM;IACI,WAAA;IACA,YAAA;EAAV;EACU;IACI,kBAAA;EACd;EACU;IACI,eAAA;EACd;EAAc;IACI,eAAA;EAElB;EAAc;IACI,eAAA;EAElB;EACU;IACI,iBAAA;EACd;EAEM;IACI,eAAA;IACA,WAAA;EAAV;EAEM;IACI,WAAA;IACA,SAAA;IACA,WAAA;EAAV;EAGE;IACI,WAAA;IACA,YAAA;EADN;EAEM;IACI,aAAA;EAAV;EAEM;IACI,cAAA;EAAV;EAEM;IACI,aAAA;EAAV;AACF;AAIA,oEAAA;AACA;EACI;IACI,aAAA;IACA,sBAAA;IACA,aAAA;EAFN;EAGM;IACI,qBAAA;EADV;EAEU;IACI,iBAAA;EAAd;EAEU;IACI,kBAAA;EAAd;EAEU;IACI,eAAA;EAAd;EACc;IACI,eAAA;EAClB;EACc;IACI,eAAA;EAClB;EAEU;IACI,iBAAA;IACA,WAAA;EAAd;EAEU;IACI,WAAA;IACA,SAAA;IACA,WAAA;EAAd;AACF;AAKA,iDAAA;AACA;EACI;IACI,YAAA;EAHN;EAIM;IACI,qBAAA;EAFV;EAGU;IACI,iBAAA;EADd;EAGU;IACI,kBAAA;EADd;EAGU;IACI,eAAA;EADd;EAEc;IACI,eAAA;EAAlB;EAEc;IACI,eAAA;EAAlB;EAGU;IACI,eAAA;IACA,WAAA;EADd;EAGU;IACI,WAAA;IACA,SAAA;IACA,WAAA;EADd;EAKE;IACI,WAAA;IACA,YAAA;EAHN;EAIM;IACI,aAAA;EAFV;EAIM;IACI,aAAA;EAFV;EAIM;IACI,cAAA;EAFV;AACF","sourcesContent":[".IntroContainer {\n    height: 100vh;\n    width: 100%;\n    position: relative;\n    text-transform: uppercase;\n    display: flex;\n    justify-content: space-between;\n    .mainContent {\n        width: 55%;\n        .heading, .subHeading {\n            margin: 0 0 0 10rem;\n        }\n        .heading {\n            color: white;\n            font-size: 11rem;\n            .spanText, .spanPlus {\n                font-size: 11rem;\n            }\n            .spanText {\n                font-weight: 100;\n                color: var(--heading-color);\n            }\n            .spanPlus {\n                color: black;\n                font-size: 13rem;\n            }\n    }\n    .headingSM {\n        margin: 8rem 1rem;\n        padding: .5rem;\n    }\n    }\n    \n    .subHeading {\n        font-size: 3rem;\n        color: grey;\n        margin-top: 5rem;\n        width: 50vw;\n    }\n    \n    .image {\n        background-color: black;\n        width: 30vw;\n        position: absolute;\n        top: 4rem;\n        right: 10rem;\n        z-index: -1;\n        transform: rotate(7deg);\n    }\n}\n.SpriteContainer {\n    position: relative;\n    \n    .SpriteAnimationMed {\n        display: none;\n    }\n    .SpriteAnimationSm {\n        display: none;\n    }  \n}\n\n/* Medium devices (landscape tablets, 800px and up) */\n@media only screen and (max-width: 1220px) {\n    .IntroContainer {\n        height: 70vh;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        .mainContent {\n            width: 100%;\n            height: 100%;\n            .heading, .subHeading {\n                margin: 0 0 0 5rem;\n            }\n            .heading {\n                font-size: 9rem;\n                .spanText, .spanPlus {\n                    font-size: 9rem;\n                }\n                .spanPlus {\n                    font-size: 9rem;\n                }\n            }\n            .headingSM {\n                margin: 2rem 1rem;\n            }\n        }\n        .subHeading {\n            font-size: 2rem;\n            width: 60vw;\n        }\n        .image {\n            width: 35vw;\n            top: 4rem;\n            right: 5rem;\n        }\n    }\n    .SpriteContainer {\n        width: 100%;\n        height: 100%;\n        .SpriteAnimation {\n            display: none;\n        }\n        .SpriteAnimationMed {\n            display: block;\n        }\n        .SpriteAnimationSm {\n            display: none;\n        }\n    }\n}\n\n/* Small devices (portrait tablets and large phones, 600px and up) */\n@media only screen and (max-width: 800px) {\n    .IntroContainer {\n        display: flex;\n        flex-direction: column;\n        height: 100vh;\n        .mainContent {\n            margin-bottom: -15rem;\n            .headingSM {\n                margin: 4rem 1rem;\n            }\n            .heading, .subHeading {\n                margin: 0 0 0 2rem;\n            }\n            .heading {\n                font-size: 8rem;\n                .spanText, .spanPlus {\n                    font-size: 8rem;\n                }\n                .spanPlus {\n                    font-size: 8rem;\n                }\n            }\n            .subHeading {\n                font-size: 1.5rem;\n                width: 70vw;\n            }\n            .image {\n                width: 40vw;\n                top: 2rem;\n                right: 2rem;\n            }\n        }\n    }\n}\n\n/* Extra small devices (phones, 600px and down) */\n@media only screen and (max-width: 500px) {\n    .IntroContainer {\n        height: 75vh;\n        .mainContent {\n            margin-bottom: -25rem;\n            .headingSM {\n                margin: 2rem 1rem;\n            }\n            .heading, .subHeading {\n                margin: 0 0 0 1rem;\n            }\n            .heading {\n                font-size: 6rem;\n                .spanText, .spanPlus {\n                    font-size: 6rem;\n                }\n                .spanPlus {\n                    font-size: 6rem;\n                }\n            }\n            .subHeading {\n                font-size: 1rem;\n                width: 80vw;\n            }\n            .image {\n                width: 50vw;\n                top: 1rem;\n                right: 1rem;\n            }\n        }\n    }\n    .SpriteContainer {\n        width: 100%;\n        height: 100%;\n        .SpriteAnimation {\n            display: none;\n        }\n        .SpriteAnimationMed {\n            display: none;\n        }\n        .SpriteAnimationSm {\n            display: block;\n        }\n    }\n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"IntroContainer": `WXIspfxBzGyfPOvOt6Wd`,
@@ -959,6 +1005,7 @@ ___CSS_LOADER_EXPORT___.locals = {
 	"image": `BI0GYOC1YbWy9DGIlJZK`,
 	"SpriteContainer": `lr2oKtT4bainQOVQRfG5`,
 	"SpriteAnimationMed": `_R8T8mKkc72Vbeqn1GmU`,
+	"SpriteAnimationSm": `w6CsT__JoJ2HavmmRZqW`,
 	"SpriteAnimation": `E7mE3HIiQ6hdtDlotDkx`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
@@ -2581,6 +2628,451 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/SpriteAnimation/SpriteAnimationSm.module.scss":
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/SpriteAnimation/SpriteAnimationSm.module.scss ***!
+  \*************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
+// Imports
+
+
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./public/img/tyler-spritesheet-sm.png */ "./public/img/tyler-spritesheet-sm.png"), __webpack_require__.b);
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.WJowwgIyV0h_yR6wpxdL {
+  position: absolute;
+  z-index: 1;
+  transform: translate(100%, 100%);
+  width: 9.6rem;
+  height: 9.6rem;
+  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
+  background-repeat: no-repeat;
+  animation: rNgdABCo2UqaV5BSoxXW 8s steps(1) infinite;
+}
+
+@keyframes rNgdABCo2UqaV5BSoxXW {
+  0% {
+    background-position: 0rem 0rem;
+  }
+  0.75% {
+    background-position: -9.6rem 0rem;
+  }
+  1.5% {
+    background-position: -19.2rem 0rem;
+  }
+  2.25% {
+    background-position: -28.8rem 0rem;
+  }
+  3% {
+    background-position: -38.4rem 0rem;
+  }
+  3.75% {
+    background-position: -48rem 0rem;
+  }
+  4.5% {
+    background-position: -57.6rem 0rem;
+  }
+  5.25% {
+    background-position: -67.2rem 0rem;
+  }
+  6% {
+    background-position: -76.8rem 0rem;
+  }
+  6.75% {
+    background-position: -86.4rem 0rem;
+  }
+  7.5% {
+    background-position: -96rem 0rem;
+  }
+  8.25% {
+    background-position: -105.6rem 0rem;
+  }
+  9.75% {
+    background-position: 0rem -9.6rem;
+  }
+  10.5% {
+    background-position: -9.6rem -9.6rem;
+  }
+  11.25% {
+    background-position: -19.2rem -9.6rem;
+  }
+  12% {
+    background-position: -28.8rem -9.6rem;
+  }
+  12.75% {
+    background-position: -38.4rem -9.6rem;
+  }
+  13.5% {
+    background-position: -48rem -9.6rem;
+  }
+  14.25% {
+    background-position: -57.6rem -9.6rem;
+  }
+  15% {
+    background-position: -67.2rem -9.6rem;
+  }
+  15.75% {
+    background-position: -76.8rem -9.6rem;
+  }
+  16.5% {
+    background-position: -86.4rem -9.6rem;
+  }
+  17.25% {
+    background-position: -96rem -9.6rem;
+  }
+  18% {
+    background-position: -105.6rem -9.6rem;
+  }
+  19.5% {
+    background-position: 0rem -19.2rem;
+  }
+  20.25% {
+    background-position: -9.6rem -19.2rem;
+  }
+  21% {
+    background-position: -19.2rem -19.2rem;
+  }
+  21.75% {
+    background-position: -28.8rem -19.2rem;
+  }
+  22.5% {
+    background-position: -38.4rem -19.2rem;
+  }
+  23.25% {
+    background-position: -48rem -19.2rem;
+  }
+  24% {
+    background-position: -57.6rem -19.2rem;
+  }
+  24.75% {
+    background-position: -67.2rem -19.2rem;
+  }
+  25.5% {
+    background-position: -76.8rem -19.2rem;
+  }
+  26.25% {
+    background-position: -86.4rem -19.2rem;
+  }
+  27% {
+    background-position: -96rem -19.2rem;
+  }
+  27.75% {
+    background-position: -105.6rem -19.2rem;
+  }
+  29.25% {
+    background-position: 0rem -28.8rem;
+  }
+  30% {
+    background-position: -9.6rem -28.8rem;
+  }
+  30.75% {
+    background-position: -19.2rem -28.8rem;
+  }
+  31.5% {
+    background-position: -28.8rem -28.8rem;
+  }
+  32.25% {
+    background-position: -38.4rem -28.8rem;
+  }
+  33% {
+    background-position: -48rem -28.8rem;
+  }
+  33.75% {
+    background-position: -57.6rem -28.8rem;
+  }
+  34.5% {
+    background-position: -67.2rem -28.8rem;
+  }
+  35.25% {
+    background-position: -76.8rem -28.8rem;
+  }
+  36% {
+    background-position: -86.4rem -28.8rem;
+  }
+  36.75% {
+    background-position: -96rem -28.8rem;
+  }
+  37.5% {
+    background-position: -105.6rem -28.8rem;
+  }
+  39% {
+    background-position: 0rem -38.4rem;
+  }
+  39.75% {
+    background-position: -9.6rem -38.4rem;
+  }
+  40.5% {
+    background-position: -19.2rem -38.4rem;
+  }
+  41.25% {
+    background-position: -28.8rem -38.4rem;
+  }
+  42% {
+    background-position: -38.4rem -38.4rem;
+  }
+  42.75% {
+    background-position: -48rem -38.4rem;
+  }
+  43.5% {
+    background-position: -57.6rem -38.4rem;
+  }
+  44.25% {
+    background-position: -67.2rem -38.4rem;
+  }
+  45% {
+    background-position: -76.8rem -38.4rem;
+  }
+  45.75% {
+    background-position: -86.4rem -38.4rem;
+  }
+  46.5% {
+    background-position: -96rem -38.4rem;
+  }
+  47.25% {
+    background-position: -105.6rem -38.4rem;
+  }
+  48% {
+    background-position: 0rem -48;
+  }
+  48.75% {
+    background-position: -9.6rem -48rem;
+  }
+  49.5% {
+    background-position: -19.2rem -48rem;
+  }
+  50.25% {
+    background-position: -28.8rem -48rem;
+  }
+  51% {
+    background-position: -38.4rem -48rem;
+  }
+  51.75% {
+    background-position: -48rem -48rem;
+  }
+  52.5% {
+    background-position: -57.6rem -48rem;
+  }
+  53.25% {
+    background-position: -67.2rem -48rem;
+  }
+  54% {
+    background-position: -76.8rem -48rem;
+  }
+  54.75% {
+    background-position: -86.4rem -48rem;
+  }
+  55.5% {
+    background-position: -96rem -48rem;
+  }
+  56.25% {
+    background-position: -105.6rem -48rem;
+  }
+  57% {
+    background-position: 0rem -57.6rem;
+  }
+  57.75% {
+    background-position: -9.6rem -57.6rem;
+  }
+  58.5% {
+    background-position: -19.2rem -57.6rem;
+  }
+  59.25% {
+    background-position: -28.8rem -57.6rem;
+  }
+  59.75% {
+    background-position: -38.4rem -57.6rem;
+  }
+  60.75% {
+    background-position: -48rem -57.6rem;
+  }
+  61.5% {
+    background-position: -57.6rem -57.6rem;
+  }
+  62.25% {
+    background-position: -67.2rem -57.6rem;
+  }
+  63% {
+    background-position: -76.8rem -57.6rem;
+  }
+  63.75% {
+    background-position: -86.4rem -57.6rem;
+  }
+  64.5% {
+    background-position: -96rem -57.6rem;
+  }
+  65.25% {
+    background-position: -105.6rem -57.6rem;
+  }
+  66% {
+    background-position: 0rem -67.2rem;
+  }
+  66.75% {
+    background-position: -9.6rem -67.2rem;
+  }
+  67.5% {
+    background-position: -19.2rem -67.2rem;
+  }
+  68.25% {
+    background-position: -28.8rem -67.2rem;
+  }
+  69% {
+    background-position: -38.4rem -67.2rem;
+  }
+  69.75% {
+    background-position: -48rem -67.2rem;
+  }
+  70.5% {
+    background-position: -57.6rem -67.2rem;
+  }
+  71.25% {
+    background-position: -67.2rem -67.2rem;
+  }
+  72% {
+    background-position: -76.8rem -67.2rem;
+  }
+  72.75% {
+    background-position: -86.4rem -67.2rem;
+  }
+  73.5% {
+    background-position: -96rem -67.2rem;
+  }
+  74.25% {
+    background-position: -105.6rem -67.2rem;
+  }
+  75% {
+    background-position: 0rem -76.8rem;
+  }
+  75.75% {
+    background-position: -9.6rem -76.8rem;
+  }
+  76.5% {
+    background-position: -19.2rem -76.8rem;
+  }
+  77.25% {
+    background-position: -28.8rem -76.8rem;
+  }
+  78% {
+    background-position: -38.4rem -76.8rem;
+  }
+  78.75% {
+    background-position: -48rem -76.8rem;
+  }
+  79.5% {
+    background-position: -57.6rem -76.8rem;
+  }
+  80.25% {
+    background-position: -67.2rem -76.8rem;
+  }
+  81% {
+    background-position: -76.8rem -76.8rem;
+  }
+  81.75% {
+    background-position: -86.4rem -76.8rem;
+  }
+  82.5% {
+    background-position: -96rem -76.8rem;
+  }
+  83.25% {
+    background-position: -105.6rem -76.8rem;
+  }
+  84% {
+    background-position: 0rem -86.4rem;
+  }
+  84.75% {
+    background-position: -9.6rem -86.4rem;
+  }
+  85.5% {
+    background-position: -19.2rem -86.4rem;
+  }
+  86.25% {
+    background-position: -28.8rem -86.4rem;
+  }
+  87% {
+    background-position: -38.4rem -86.4rem;
+  }
+  87.75% {
+    background-position: -48rem -86.4rem;
+  }
+  88.5% {
+    background-position: -57.6rem -86.4rem;
+  }
+  89.25% {
+    background-position: -67.2rem -86.4rem;
+  }
+  90% {
+    background-position: -76.8rem -86.4rem;
+  }
+  90.75% {
+    background-position: -86.4rem -86.4rem;
+  }
+  91.5% {
+    background-position: -96rem -86.4rem;
+  }
+  92.25% {
+    background-position: -105.6rem -86.4rem;
+  }
+  93% {
+    background-position: 0rem -96rem;
+  }
+  93.75% {
+    background-position: -9.6rem -96rem;
+  }
+  94.5% {
+    background-position: -19.2rem -96rem;
+  }
+  95.25% {
+    background-position: -28.8rem -96rem;
+  }
+  96% {
+    background-position: -38.4rem -96rem;
+  }
+  96.75% {
+    background-position: -48rem -96rem;
+  }
+  97.5% {
+    background-position: -57.6rem -96rem;
+  }
+  98.25% {
+    background-position: -67.2rem -96rem;
+  }
+  99% {
+    background-position: -76.8rem -96rem;
+  }
+  99.75% {
+    background-position: -86.4rem -96rem;
+  }
+  100% {
+    background-position: -96rem -96rem;
+  }
+}
+@media (max-width: 800px) {
+  .WJowwgIyV0h_yR6wpxdL {
+    top: 0;
+    margin-bottom: 1rem;
+  }
+}`, "",{"version":3,"sources":["webpack://./src/components/SpriteAnimation/SpriteAnimationSm.module.scss"],"names":[],"mappings":"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","sourcesContent":[".spritesheet {\n    position: absolute; \n    z-index: 1;\n    transform: translate(100%, 100%);\n    width: 9.6rem;\n    height: 9.6rem;\n    background-image: url('/Users/tylerpierson/software_projects/class-website/public/img/tyler-spritesheet-sm.png');\n    background-repeat: no-repeat;\n    animation: play 8s steps(1) infinite;\n }\n \n @keyframes play {\n    0% { background-position: 0rem 0rem; }\n    0.75% { background-position: -9.6rem 0rem; }\n    1.5% { background-position: -19.2rem 0rem; }\n    2.25% { background-position: -28.8rem 0rem; }\n    3% { background-position: -38.4rem 0rem; }\n    3.75% { background-position: -48rem 0rem; }\n    4.5% { background-position: -57.6rem 0rem; }\n    5.25% { background-position: -67.2rem 0rem; }\n    6% { background-position: -76.8rem 0rem; }\n    6.75% { background-position: -86.4rem 0rem; }\n    7.5% { background-position: -96rem 0rem; }\n    8.25% { background-position: -105.6rem 0rem; }\n    9.75% { background-position: 0rem -9.6rem; }\n    10.5% { background-position: -9.6rem -9.6rem; }\n    11.25% { background-position: -19.2rem -9.6rem; }\n    12% { background-position: -28.8rem -9.6rem; }\n    12.75% { background-position: -38.4rem -9.6rem; }\n    13.5% { background-position: -48rem -9.6rem; }\n    14.25% { background-position: -57.6rem -9.6rem; }\n    15% { background-position: -67.2rem -9.6rem; }\n    15.75% { background-position: -76.8rem -9.6rem; }\n    16.5% { background-position: -86.4rem -9.6rem; }\n    17.25% { background-position: -96rem -9.6rem; }\n    18% { background-position: -105.6rem -9.6rem; }\n    19.5% { background-position: 0rem -19.2rem; }\n    20.25% { background-position: -9.6rem -19.2rem; }\n    21% { background-position: -19.2rem -19.2rem; } \n    21.75% { background-position: -28.8rem -19.2rem; }\n    22.5% { background-position: -38.4rem -19.2rem; }\n    23.25% { background-position: -48rem -19.2rem; }\n    24% { background-position: -57.6rem -19.2rem; }\n    24.75% { background-position: -67.2rem -19.2rem; }\n    25.5% { background-position: -76.8rem -19.2rem; }\n    26.25% { background-position: -86.4rem -19.2rem; }\n    27% { background-position: -96rem -19.2rem; }\n    27.75% { background-position: -105.6rem -19.2rem; }\n    29.25% { background-position: 0rem -28.8rem; }\n    30% { background-position: -9.6rem -28.8rem; }\n    30.75% { background-position: -19.2rem -28.8rem; }\n    31.5% { background-position: -28.8rem -28.8rem; }\n    32.25% { background-position: -38.4rem -28.8rem; }\n    33% { background-position: -48rem -28.8rem; }\n    33.75% { background-position: -57.6rem -28.8rem; }\n    34.5% { background-position: -67.2rem -28.8rem; }\n    35.25% { background-position: -76.8rem -28.8rem; }\n    36% { background-position: -86.4rem -28.8rem; }\n    36.75% { background-position: -96rem -28.8rem; }\n    37.5% { background-position: -105.6rem -28.8rem; }\n    39% { background-position: 0rem -38.4rem; }\n    39.75% { background-position: -9.6rem -38.4rem; }\n    40.5% { background-position: -19.2rem -38.4rem; }\n    41.25% { background-position: -28.8rem -38.4rem; }\n    42% { background-position: -38.4rem -38.4rem; }\n    42.75% { background-position: -48rem -38.4rem; }\n    43.5% { background-position: -57.6rem -38.4rem; }\n    44.25% { background-position: -67.2rem -38.4rem; }\n    45% { background-position: -76.8rem -38.4rem; }\n    45.75% { background-position: -86.4rem -38.4rem; }\n    46.5% { background-position: -96rem -38.4rem; }\n    47.25% { background-position: -105.6rem -38.4rem; }\n    48% { background-position: 0rem -48; }\n    48.75% { background-position: -9.6rem -48rem; }\n    49.5% { background-position: -19.2rem -48rem; }\n    50.25% { background-position: -28.8rem -48rem; }\n    51% { background-position: -38.4rem -48rem; }\n    51.75% { background-position: -48rem -48rem; }\n    52.5% { background-position: -57.6rem -48rem; }\n    53.25% { background-position: -67.2rem -48rem; }\n    54% { background-position: -76.8rem -48rem; }\n    54.75% { background-position: -86.4rem -48rem; }\n    55.5% { background-position: -96rem -48rem; }\n    56.25% { background-position: -105.6rem -48rem; }\n    57% { background-position: 0rem -57.6rem; }\n    57.75% { background-position: -9.6rem -57.6rem; }\n    58.5% { background-position: -19.2rem -57.6rem; }\n    59.25% { background-position: -28.8rem -57.6rem; }\n    59.75% { background-position: -38.4rem -57.6rem; }\n    60.75% { background-position: -48rem -57.6rem; }\n    61.5% { background-position: -57.6rem -57.6rem; }\n    62.25% { background-position: -67.2rem -57.6rem; }\n    63% { background-position: -76.8rem -57.6rem; }\n    63.75% { background-position: -86.4rem -57.6rem; }\n    64.5% { background-position: -96rem -57.6rem; }\n    65.25% { background-position: -105.6rem -57.6rem; }\n    66% { background-position: 0rem -67.2rem; }\n    66.75% { background-position: -9.6rem -67.2rem; }\n    67.5% { background-position: -19.2rem -67.2rem; }\n    68.25% { background-position: -28.8rem -67.2rem; }\n    69% { background-position: -38.4rem -67.2rem; }\n    69.75% { background-position: -48rem -67.2rem; }\n    70.5% { background-position: -57.6rem -67.2rem; }\n    71.25% { background-position: -67.2rem -67.2rem; }\n    72% { background-position: -76.8rem -67.2rem; }\n    72.75% { background-position: -86.4rem -67.2rem; }\n    73.5% { background-position: -96rem -67.2rem; }\n    74.25% { background-position: -105.6rem -67.2rem; }\n    75% { background-position: 0rem -76.8rem; }\n    75.75% { background-position: -9.6rem -76.8rem; }\n    76.5% { background-position: -19.2rem -76.8rem; }\n    77.25% { background-position: -28.8rem -76.8rem; }\n    78% { background-position: -38.4rem -76.8rem; }\n    78.75% { background-position: -48rem -76.8rem; }\n    79.5% { background-position: -57.6rem -76.8rem; }\n    80.25% { background-position: -67.2rem -76.8rem; }\n    81% { background-position: -76.8rem -76.8rem; }\n    81.75% { background-position: -86.4rem -76.8rem; }\n    82.5% { background-position: -96rem -76.8rem; }\n    83.25% { background-position: -105.6rem -76.8rem; }\n    84% { background-position: 0rem -86.4rem; }\n    84.75% { background-position: -9.6rem -86.4rem; }\n    85.5% { background-position: -19.2rem -86.4rem; }\n    86.25% { background-position: -28.8rem -86.4rem; }\n    87% { background-position: -38.4rem -86.4rem; }\n    87.75% { background-position: -48rem -86.4rem; }\n    88.5% { background-position: -57.6rem -86.4rem; }\n    89.25% { background-position: -67.2rem -86.4rem; }\n    90% { background-position: -76.8rem -86.4rem; }\n    90.75% { background-position: -86.4rem -86.4rem; }\n    91.5% { background-position: -96rem -86.4rem; }\n    92.25% { background-position: -105.6rem -86.4rem; }\n    93% { background-position: 0rem -96rem; }\n    93.75% { background-position: -9.6rem -96rem; }\n    94.5% { background-position: -19.2rem -96rem; }\n    95.25% { background-position: -28.8rem -96rem; }\n    96% { background-position: -38.4rem -96rem; }\n    96.75% { background-position: -48rem -96rem; }\n    97.5% { background-position: -57.6rem -96rem; }\n    98.25% { background-position: -67.2rem -96rem; }    \n    99% { background-position: -76.8rem -96rem; }\n    99.75% { background-position: -86.4rem -96rem; }\n    100% { background-position: -96rem -96rem; }\n }\n\n @media (max-width: 800px) {\n    .spritesheet {\n        top: 0;\n        margin-bottom: 1rem;\n    }\n }"],"sourceRoot":""}]);
+// Exports
+___CSS_LOADER_EXPORT___.locals = {
+	"spritesheet": `WJowwgIyV0h_yR6wpxdL`,
+	"play": `rNgdABCo2UqaV5BSoxXW`
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/index.module.scss":
 /*!**********************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/index.module.scss ***!
@@ -3424,6 +3916,59 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
+/***/ "./src/components/SpriteAnimation/SpriteAnimationSm.module.scss":
+/*!**********************************************************************!*\
+  !*** ./src/components/SpriteAnimation/SpriteAnimationSm.module.scss ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_SpriteAnimationSm_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../../node_modules/sass-loader/dist/cjs.js!../../../node_modules/postcss-loader/dist/cjs.js!./SpriteAnimationSm.module.scss */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/SpriteAnimation/SpriteAnimationSm.module.scss");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_SpriteAnimationSm_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_SpriteAnimationSm_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_SpriteAnimationSm_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_SpriteAnimationSm_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
 /***/ "./src/index.module.scss":
 /*!*******************************!*\
   !*** ./src/index.module.scss ***!
@@ -3660,6 +4205,16 @@ module.exports = __webpack_require__.p + "8fccd3022acd7762640b.png";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "b3f712b5144ec7c58965.png";
+
+/***/ }),
+
+/***/ "./public/img/tyler-spritesheet-sm.png":
+/*!*********************************************!*\
+  !*** ./public/img/tyler-spritesheet-sm.png ***!
+  \*********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "4031c99fef0abdcd87ad.png";
 
 /***/ })
 
@@ -3910,4 +4465,4 @@ module.exports = __webpack_require__.p + "b3f712b5144ec7c58965.png";
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.62717b66cfbb28f84fc064d22eee3876.js.map
+//# sourceMappingURL=App.b8476ce6680905aad6b14d464afe9700.js.map

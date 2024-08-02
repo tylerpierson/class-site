@@ -1,6 +1,7 @@
 import styles from './IntroContainer.module.scss'
 import SpriteAnimation from '../SpriteAnimation/SpriteAnimation'
 import SpriteAnimationMed from '../SpriteAnimation/SpriteAnimationMed'
+import SpriteAnimationSm from '../SpriteAnimation/SpriteAnimationSm'
 
 function IntroContainer() {
   return (
@@ -17,6 +18,9 @@ function IntroContainer() {
           </div>
           <div className={styles.SpriteAnimationMed}>
             <SpriteAnimationMed />
+          </div>
+          <div className={styles.SpriteAnimationSm}>
+            <SpriteAnimationSm />
           </div>
         </div>
       </div>

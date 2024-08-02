@@ -54,6 +54,9 @@
     .SpriteAnimationMed {
         display: none;
     }
+    .SpriteAnimationSm {
+        display: none;
+    }  
 }
 
 /* Medium devices (landscape tablets, 800px and up) */
@@ -100,6 +103,9 @@
         }
         .SpriteAnimationMed {
             display: block;
+        }
+        .SpriteAnimationSm {
+            display: none;
         }
     }
 }
@@ -170,6 +176,19 @@
                 top: 1rem;
                 right: 1rem;
             }
+        }
+    }
+    .SpriteContainer {
+        width: 100%;
+        height: 100%;
+        .SpriteAnimation {
+            display: none;
+        }
+        .SpriteAnimationMed {
+            display: none;
+        }
+        .SpriteAnimationSm {
+            display: block;
         }
     }
 }
