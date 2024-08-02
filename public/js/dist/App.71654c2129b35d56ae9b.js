@@ -74,11 +74,17 @@ function FourthBanner() {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _IntroContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./IntroContainer.module.scss */ "./src/components/IntroContainer/IntroContainer.module.scss");
+/* harmony import */ var _SpriteAnimation_SpriteAnimation__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../SpriteAnimation/SpriteAnimation */ "./src/components/SpriteAnimation/SpriteAnimation.js");
+/* harmony import */ var _SpriteAnimation_SpriteAnimationMed__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../SpriteAnimation/SpriteAnimationMed */ "./src/components/SpriteAnimation/SpriteAnimationMed.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+
 
 function IntroContainer() {
   return /*#__PURE__*/React.createElement("div", {
     className: _IntroContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].IntroContainer
+  }, /*#__PURE__*/React.createElement("div", {
+    className: _IntroContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mainContent
   }, /*#__PURE__*/React.createElement("h4", {
     className: _IntroContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].headingSM
   }, "Sandbrock Ranch Elementary"), /*#__PURE__*/React.createElement("h1", {
@@ -87,7 +93,7 @@ function IntroContainer() {
     className: _IntroContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].spanText
   }, "I'm"), /*#__PURE__*/React.createElement("br", null), "Mr. Pierson "), /*#__PURE__*/React.createElement("h3", {
     className: _IntroContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].subHeading
-  }, "4th Grade Math & Science"));
+  }, "4th Grade Math & Science")), /*#__PURE__*/React.createElement(_SpriteAnimation_SpriteAnimationMed__WEBPACK_IMPORTED_MODULE_2__["default"], null));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IntroContainer);
 
@@ -371,11 +377,8 @@ function ScienceContainer() {
 /*!***********************************************************!*\
   !*** ./src/components/SpriteAnimation/SpriteAnimation.js ***!
   \***********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _SpriteAnimation_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SpriteAnimation.module.scss */ "./src/components/SpriteAnimation/SpriteAnimation.module.scss");
@@ -386,7 +389,30 @@ function SpriteAnimation() {
     className: _SpriteAnimation_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].spritesheet
   });
 }
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SpriteAnimation);
+/* unused harmony default export */ var __WEBPACK_DEFAULT_EXPORT__ = (SpriteAnimation);
+
+/***/ }),
+
+/***/ "./src/components/SpriteAnimation/SpriteAnimationMed.js":
+/*!**************************************************************!*\
+  !*** ./src/components/SpriteAnimation/SpriteAnimationMed.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _SpriteAnimationMed_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SpriteAnimationMed.module.scss */ "./src/components/SpriteAnimation/SpriteAnimationMed.module.scss");
+
+
+function SpriteAnimationMed() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: _SpriteAnimationMed_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].spritesheet
+  });
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SpriteAnimationMed);
 
 /***/ }),
 
@@ -486,7 +512,7 @@ function HomePage() {
   const projectId = "project-section";
   return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/React.createElement(_components_NavMobile_NavMobile__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/React.createElement("div", {
     className: _HomePage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].HomePage
-  }, /*#__PURE__*/React.createElement(_components_SpriteAnimation_SpriteAnimation__WEBPACK_IMPORTED_MODULE_9__["default"], null), /*#__PURE__*/React.createElement(_components_IntroContainer_IntroContainer__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/React.createElement(_components_FourthBanner_FourthBanner__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/React.createElement(_components_MathBanner_MathBanner__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/React.createElement(_components_MathContainer_MathContainer__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/React.createElement(_components_ScienceBanner_ScienceBanner__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/React.createElement(_components_ScienceContainer_ScienceContainer__WEBPACK_IMPORTED_MODULE_8__["default"], null)));
+  }, /*#__PURE__*/React.createElement(_components_IntroContainer_IntroContainer__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/React.createElement(_components_FourthBanner_FourthBanner__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/React.createElement(_components_MathBanner_MathBanner__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/React.createElement(_components_MathContainer_MathContainer__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/React.createElement(_components_ScienceBanner_ScienceBanner__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/React.createElement(_components_ScienceContainer_ScienceContainer__WEBPACK_IMPORTED_MODULE_8__["default"], null)));
 }
 
 /***/ }),
@@ -590,7 +616,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Small devices (portrait tablets and
 .i7owkABs_rcVHy60TVUA {
   height: 60vh;
   width: 100%;
-  margin: -2rem auto;
+  margin: 0rem auto;
   padding: 3rem 0 10rem;
   display: flex;
   background-color: var(--heading-color);
@@ -648,7 +674,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Small devices (portrait tablets and
   .UJctI4dqs4vmqeYU53Hv .KQO1VkseAfNEa9QbImOE {
     display: none;
   }
-}`, "",{"version":3,"sources":["webpack://./src/components/FourthBanner/FourthBanner.module.scss"],"names":[],"mappings":"AAAA,oEAAA;AACA;EACI,YAAA;EACA,WAAA;EACA,kBAAA;EACA,qBAAA;EACA,aAAA;EACA,sCAAA;EACA,uBAAA;EACA,mBAAA;AACJ;AAAI;EACI,YAAA;EACA,aAAA;EACA,sBAAA;EACA,yBAAA;EACA,uBAAA;AAER;AADQ;EACI,gBAAA;EACA,gBAAA;EACA,YAAA;EACA,yBAAA;AAGZ;AAAI;EACI,WAAA;EACA,kBAAA;EACA,YAAA;EACA,cAAA;EACA,aAAA;EACA,sBAAA;EACA,yBAAA;EACA,uBAAA;EACA,mBAAA;AAER;AADQ;EACI,sBAAA;EACA,mBAAA;AAGZ;;AAEA;EACI;IACI,eAAA;IACA,YAAA;IACA,aAAA;IACA,oCAAA;EACN;EAAM;IACI,aAAA;IACA,uBAAA;IACA,YAAA;IACA,UAAA;EAEV;EADU;IACI,iBAAA;EAGd;EADU;IACI,eAAA;EAGd;EAAM;IACI,aAAA;EAEV;AACF","sourcesContent":["/* Small devices (portrait tablets and large phones, 600px and up) */\n.FourthBanner {\n    height: 60vh;\n    width: 100%;\n    margin: -2rem auto;\n    padding: 3rem 0 10rem;\n    display: flex;\n    background-color: var(--heading-color);\n    justify-content: center;\n    align-items: center;\n    .contentContainer {\n        height: 60vh;\n        display: flex;\n        flex-direction: column;\n        justify-content: flex-end;\n        align-items: flex-start;\n        .title {\n            font-size: 8.5vw;\n            font-weight: 600;\n            color: white;\n            text-transform: uppercase;\n        }\n    }\n    .titleDescription {\n        color: grey;\n        padding-left: 3rem;\n        height: 60vh;\n        font-size: 3vw;\n        display: flex;\n        flex-direction: column;\n        justify-content: flex-end;\n        align-items: flex-start;\n        transition: 1s ease;\n        &:hover {\n            color: var(--bg-color);\n            transition: 1s ease;\n        }\n    }\n}\n\n@media only screen and (max-width: 1000px) {\n    .Bio {\n        padding: 0 2rem;\n        width: 100vw;\n        height: 15rem;\n        background-color: rgb(100, 237, 207);\n        .contentContainer {\n            display: flex;\n            justify-content: center;\n            height: 100%;\n            width: 30%;\n            .headingSM {\n                font-size: 1.5rem;\n            }\n            .title {\n                font-size: 2rem;\n            }\n        }\n        .titleDescription {\n            display: none;\n        }\n    }\n}\n\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/FourthBanner/FourthBanner.module.scss"],"names":[],"mappings":"AAAA,oEAAA;AACA;EACI,YAAA;EACA,WAAA;EACA,iBAAA;EACA,qBAAA;EACA,aAAA;EACA,sCAAA;EACA,uBAAA;EACA,mBAAA;AACJ;AAAI;EACI,YAAA;EACA,aAAA;EACA,sBAAA;EACA,yBAAA;EACA,uBAAA;AAER;AADQ;EACI,gBAAA;EACA,gBAAA;EACA,YAAA;EACA,yBAAA;AAGZ;AAAI;EACI,WAAA;EACA,kBAAA;EACA,YAAA;EACA,cAAA;EACA,aAAA;EACA,sBAAA;EACA,yBAAA;EACA,uBAAA;EACA,mBAAA;AAER;AADQ;EACI,sBAAA;EACA,mBAAA;AAGZ;;AAEA;EACI;IACI,eAAA;IACA,YAAA;IACA,aAAA;IACA,oCAAA;EACN;EAAM;IACI,aAAA;IACA,uBAAA;IACA,YAAA;IACA,UAAA;EAEV;EADU;IACI,iBAAA;EAGd;EADU;IACI,eAAA;EAGd;EAAM;IACI,aAAA;EAEV;AACF","sourcesContent":["/* Small devices (portrait tablets and large phones, 600px and up) */\n.FourthBanner {\n    height: 60vh;\n    width: 100%;\n    margin: 0rem auto;\n    padding: 3rem 0 10rem;\n    display: flex;\n    background-color: var(--heading-color);\n    justify-content: center;\n    align-items: center;\n    .contentContainer {\n        height: 60vh;\n        display: flex;\n        flex-direction: column;\n        justify-content: flex-end;\n        align-items: flex-start;\n        .title {\n            font-size: 8.5vw;\n            font-weight: 600;\n            color: white;\n            text-transform: uppercase;\n        }\n    }\n    .titleDescription {\n        color: grey;\n        padding-left: 3rem;\n        height: 60vh;\n        font-size: 3vw;\n        display: flex;\n        flex-direction: column;\n        justify-content: flex-end;\n        align-items: flex-start;\n        transition: 1s ease;\n        &:hover {\n            color: var(--bg-color);\n            transition: 1s ease;\n        }\n    }\n}\n\n@media only screen and (max-width: 1000px) {\n    .Bio {\n        padding: 0 2rem;\n        width: 100vw;\n        height: 15rem;\n        background-color: rgb(100, 237, 207);\n        .contentContainer {\n            display: flex;\n            justify-content: center;\n            height: 100%;\n            width: 30%;\n            .headingSM {\n                font-size: 1.5rem;\n            }\n            .title {\n                font-size: 2rem;\n            }\n        }\n        .titleDescription {\n            display: none;\n        }\n    }\n}\n\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"FourthBanner": `i7owkABs_rcVHy60TVUA`,
@@ -682,32 +708,37 @@ ___CSS_LOADER_EXPORT___.locals = {
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.WXIspfxBzGyfPOvOt6Wd {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   position: relative;
   text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
 }
-.WXIspfxBzGyfPOvOt6Wd .RVzjtWAadvbxIwf_Vy5a {
-  margin: 8rem 1rem;
-  padding: 0.5rem;
+.WXIspfxBzGyfPOvOt6Wd .n4NBksae5XNvymP02uRo {
+  width: 55%;
 }
-.WXIspfxBzGyfPOvOt6Wd .gSKaLjsbfnd93wd98bJk, .WXIspfxBzGyfPOvOt6Wd .kx5nScP14AcQB9rbiQQq {
+.WXIspfxBzGyfPOvOt6Wd .n4NBksae5XNvymP02uRo .gSKaLjsbfnd93wd98bJk, .WXIspfxBzGyfPOvOt6Wd .n4NBksae5XNvymP02uRo .kx5nScP14AcQB9rbiQQq {
   margin: 0 0 0 10rem;
 }
-.WXIspfxBzGyfPOvOt6Wd .gSKaLjsbfnd93wd98bJk {
+.WXIspfxBzGyfPOvOt6Wd .n4NBksae5XNvymP02uRo .gSKaLjsbfnd93wd98bJk {
   color: white;
   font-size: 11rem;
 }
-.WXIspfxBzGyfPOvOt6Wd .gSKaLjsbfnd93wd98bJk .OVONZ52MMoJ8r5yLzNJa, .WXIspfxBzGyfPOvOt6Wd .gSKaLjsbfnd93wd98bJk .SkHD1m3e3CuLGPPqZYxV {
+.WXIspfxBzGyfPOvOt6Wd .n4NBksae5XNvymP02uRo .gSKaLjsbfnd93wd98bJk .OVONZ52MMoJ8r5yLzNJa, .WXIspfxBzGyfPOvOt6Wd .n4NBksae5XNvymP02uRo .gSKaLjsbfnd93wd98bJk .SkHD1m3e3CuLGPPqZYxV {
   font-size: 11rem;
 }
-.WXIspfxBzGyfPOvOt6Wd .gSKaLjsbfnd93wd98bJk .OVONZ52MMoJ8r5yLzNJa {
+.WXIspfxBzGyfPOvOt6Wd .n4NBksae5XNvymP02uRo .gSKaLjsbfnd93wd98bJk .OVONZ52MMoJ8r5yLzNJa {
   font-weight: 100;
   color: var(--heading-color);
 }
-.WXIspfxBzGyfPOvOt6Wd .gSKaLjsbfnd93wd98bJk .SkHD1m3e3CuLGPPqZYxV {
+.WXIspfxBzGyfPOvOt6Wd .n4NBksae5XNvymP02uRo .gSKaLjsbfnd93wd98bJk .SkHD1m3e3CuLGPPqZYxV {
   color: black;
   font-size: 13rem;
+}
+.WXIspfxBzGyfPOvOt6Wd .n4NBksae5XNvymP02uRo .RVzjtWAadvbxIwf_Vy5a {
+  margin: 8rem 1rem;
+  padding: 0.5rem;
 }
 .WXIspfxBzGyfPOvOt6Wd .kx5nScP14AcQB9rbiQQq {
   font-size: 3rem;
@@ -725,49 +756,102 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.WXIspfxBzGyfPOvOt6Wd {
   transform: rotate(7deg);
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 1000px) {
+/* Medium devices (landscape tablets, 800px and up) */
+@media only screen and (max-width: 1220px) {
   .WXIspfxBzGyfPOvOt6Wd {
-    height: 50vh;
-    width: 100%;
-    padding: 0 2rem;
-    margin: 3rem 0;
+    height: 70vh;
+    display: flex;
+    justify-content: space-between;
   }
-  .WXIspfxBzGyfPOvOt6Wd .RVzjtWAadvbxIwf_Vy5a {
-    font-size: 1.4rem;
-    color: white;
-    margin: 2rem 0;
+  .WXIspfxBzGyfPOvOt6Wd .n4NBksae5XNvymP02uRo .gSKaLjsbfnd93wd98bJk, .WXIspfxBzGyfPOvOt6Wd .n4NBksae5XNvymP02uRo .kx5nScP14AcQB9rbiQQq {
+    margin: 0 0 0 5rem;
   }
-  .WXIspfxBzGyfPOvOt6Wd .gSKaLjsbfnd93wd98bJk {
-    width: 100%;
-    font-size: 9.5vw;
+  .WXIspfxBzGyfPOvOt6Wd .n4NBksae5XNvymP02uRo .gSKaLjsbfnd93wd98bJk {
+    font-size: 9rem;
   }
-  .WXIspfxBzGyfPOvOt6Wd .gSKaLjsbfnd93wd98bJk .OVONZ52MMoJ8r5yLzNJa {
-    font-size: 9.5vw;
+  .WXIspfxBzGyfPOvOt6Wd .n4NBksae5XNvymP02uRo .gSKaLjsbfnd93wd98bJk .OVONZ52MMoJ8r5yLzNJa, .WXIspfxBzGyfPOvOt6Wd .n4NBksae5XNvymP02uRo .gSKaLjsbfnd93wd98bJk .SkHD1m3e3CuLGPPqZYxV {
+    font-size: 9rem;
   }
-  .WXIspfxBzGyfPOvOt6Wd .gSKaLjsbfnd93wd98bJk .SkHD1m3e3CuLGPPqZYxV {
-    font-size: 9.5vw;
+  .WXIspfxBzGyfPOvOt6Wd .n4NBksae5XNvymP02uRo .gSKaLjsbfnd93wd98bJk .SkHD1m3e3CuLGPPqZYxV {
+    font-size: 9rem;
   }
-  .WXIspfxBzGyfPOvOt6Wd .aqMToluDVC_OVBdOM4nw {
-    display: none;
+  .WXIspfxBzGyfPOvOt6Wd .kx5nScP14AcQB9rbiQQq {
+    font-size: 2rem;
+    width: 60vw;
   }
   .WXIspfxBzGyfPOvOt6Wd .BI0GYOC1YbWy9DGIlJZK {
-    top: 0;
-    right: 0;
-    transform: rotate(0);
-    width: 25rem;
+    width: 35vw;
+    top: 4rem;
+    right: 5rem;
   }
-}`, "",{"version":3,"sources":["webpack://./src/components/IntroContainer/IntroContainer.module.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,WAAA;EACA,kBAAA;EACA,yBAAA;AACJ;AAAI;EACI,iBAAA;EACA,eAAA;AAER;AAAI;EACI,mBAAA;AAER;AAAI;EACI,YAAA;EACA,gBAAA;AAER;AADQ;EACI,gBAAA;AAGZ;AADQ;EACI,gBAAA;EACA,2BAAA;AAGZ;AADQ;EACI,YAAA;EACA,gBAAA;AAGZ;AACI;EACI,eAAA;EACA,WAAA;EACA,gBAAA;EACA,WAAA;AACR;AAEI;EACI,uBAAA;EACA,WAAA;EACA,kBAAA;EACA,SAAA;EACA,YAAA;EACA,WAAA;EACA,uBAAA;AAAR;;AAIA,oEAAA;AACA;EACI;IACI,YAAA;IACA,WAAA;IACA,eAAA;IACA,cAAA;EADN;EAEM;IACI,iBAAA;IACA,YAAA;IACA,cAAA;EAAV;EAEM;IACI,WAAA;IACA,gBAAA;EAAV;EACU;IACI,gBAAA;EACd;EACU;IACI,gBAAA;EACd;EAEM;IACI,aAAA;EAAV;EAEM;IACI,MAAA;IACA,QAAA;IACA,oBAAA;IACA,YAAA;EAAV;AACF","sourcesContent":[".IntroContainer {\n    height: 90vh;\n    width: 100%;\n    position: relative;\n    text-transform: uppercase;\n    .headingSM {\n        margin: 8rem 1rem;\n        padding: .5rem;\n    }\n    .heading, .subHeading {\n        margin: 0 0 0 10rem;\n    }\n    .heading {\n        color: white;\n        font-size: 11rem;\n        .spanText, .spanPlus {\n            font-size: 11rem;\n        }\n        .spanText {\n            font-weight: 100;\n            color: var(--heading-color);\n        }\n        .spanPlus {\n            color: black;\n            font-size: 13rem;\n        }\n    }\n    \n    .subHeading {\n        font-size: 3rem;\n        color: grey;\n        margin-top: 5rem;\n        width: 50vw;\n    }\n    \n    .image {\n        background-color: black;\n        width: 30vw;\n        position: absolute;\n        top: 4rem;\n        right: 10rem;\n        z-index: -1;\n        transform: rotate(7deg);\n    }\n}\n\n/* Small devices (portrait tablets and large phones, 600px and up) */\n@media only screen and (max-width: 1000px) {\n    .IntroContainer {\n        height: 50vh;\n        width: 100%;\n        padding: 0 2rem;\n        margin: 3rem 0; \n        .headingSM {\n            font-size: 1.4rem;\n            color: white;\n            margin: 2rem 0;\n        }\n        .heading {\n            width: 100%;\n            font-size: 9.5vw;\n            .spanText {\n                font-size: 9.5vw;\n            }\n            .spanPlus {\n                font-size: 9.5vw;\n            }\n        }\n        .paragraph {\n            display: none;\n        }\n        .image {\n            top: 0;\n            right: 0;\n            transform: rotate(0);\n            width: 25rem;\n        }\n    }\n}"],"sourceRoot":""}]);
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 1000px) {
+  .WXIspfxBzGyfPOvOt6Wd .RVzjtWAadvbxIwf_Vy5a {
+    margin: 4rem 1rem;
+  }
+  .WXIspfxBzGyfPOvOt6Wd .gSKaLjsbfnd93wd98bJk, .WXIspfxBzGyfPOvOt6Wd .kx5nScP14AcQB9rbiQQq {
+    margin: 0 0 0 2rem;
+  }
+  .WXIspfxBzGyfPOvOt6Wd .gSKaLjsbfnd93wd98bJk {
+    font-size: 4rem;
+  }
+  .WXIspfxBzGyfPOvOt6Wd .gSKaLjsbfnd93wd98bJk .OVONZ52MMoJ8r5yLzNJa, .WXIspfxBzGyfPOvOt6Wd .gSKaLjsbfnd93wd98bJk .SkHD1m3e3CuLGPPqZYxV {
+    font-size: 4rem;
+  }
+  .WXIspfxBzGyfPOvOt6Wd .gSKaLjsbfnd93wd98bJk .SkHD1m3e3CuLGPPqZYxV {
+    font-size: 4rem;
+  }
+  .WXIspfxBzGyfPOvOt6Wd .kx5nScP14AcQB9rbiQQq {
+    font-size: 1.5rem;
+    width: 70vw;
+  }
+  .WXIspfxBzGyfPOvOt6Wd .BI0GYOC1YbWy9DGIlJZK {
+    width: 40vw;
+    top: 2rem;
+    right: 2rem;
+  }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .WXIspfxBzGyfPOvOt6Wd {
+    height: auto;
+  }
+  .WXIspfxBzGyfPOvOt6Wd .RVzjtWAadvbxIwf_Vy5a {
+    margin: 2rem 1rem;
+  }
+  .WXIspfxBzGyfPOvOt6Wd .gSKaLjsbfnd93wd98bJk, .WXIspfxBzGyfPOvOt6Wd .kx5nScP14AcQB9rbiQQq {
+    margin: 0 0 0 1rem;
+  }
+  .WXIspfxBzGyfPOvOt6Wd .gSKaLjsbfnd93wd98bJk {
+    font-size: 2rem;
+  }
+  .WXIspfxBzGyfPOvOt6Wd .gSKaLjsbfnd93wd98bJk .OVONZ52MMoJ8r5yLzNJa, .WXIspfxBzGyfPOvOt6Wd .gSKaLjsbfnd93wd98bJk .SkHD1m3e3CuLGPPqZYxV {
+    font-size: 2rem;
+  }
+  .WXIspfxBzGyfPOvOt6Wd .gSKaLjsbfnd93wd98bJk .SkHD1m3e3CuLGPPqZYxV {
+    font-size: 2rem;
+  }
+  .WXIspfxBzGyfPOvOt6Wd .kx5nScP14AcQB9rbiQQq {
+    font-size: 1rem;
+    width: 80vw;
+  }
+  .WXIspfxBzGyfPOvOt6Wd .BI0GYOC1YbWy9DGIlJZK {
+    width: 50vw;
+    top: 1rem;
+    right: 1rem;
+  }
+}`, "",{"version":3,"sources":["webpack://./src/components/IntroContainer/IntroContainer.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,WAAA;EACA,kBAAA;EACA,yBAAA;EACA,aAAA;EACA,8BAAA;AACJ;AAAI;EACI,UAAA;AAER;AADQ;EACI,mBAAA;AAGZ;AADQ;EACI,YAAA;EACA,gBAAA;AAGZ;AAFY;EACI,gBAAA;AAIhB;AAFY;EACI,gBAAA;EACA,2BAAA;AAIhB;AAFY;EACI,YAAA;EACA,gBAAA;AAIhB;AADI;EACI,iBAAA;EACA,eAAA;AAGR;AACI;EACI,eAAA;EACA,WAAA;EACA,gBAAA;EACA,WAAA;AACR;AAEI;EACI,uBAAA;EACA,WAAA;EACA,kBAAA;EACA,SAAA;EACA,YAAA;EACA,WAAA;EACA,uBAAA;AAAR;;AAIA,qDAAA;AACA;EACI;IACI,YAAA;IACA,aAAA;IACA,8BAAA;EADN;EAGU;IACI,kBAAA;EADd;EAGU;IACI,eAAA;EADd;EAEc;IACI,eAAA;EAAlB;EAEc;IACI,eAAA;EAAlB;EAIM;IACI,eAAA;IACA,WAAA;EAFV;EAIM;IACI,WAAA;IACA,SAAA;IACA,WAAA;EAFV;AACF;AAMA,oEAAA;AACA;EAEQ;IACI,iBAAA;EALV;EAOM;IACI,kBAAA;EALV;EAOM;IACI,eAAA;EALV;EAMU;IACI,eAAA;EAJd;EAMU;IACI,eAAA;EAJd;EAOM;IACI,iBAAA;IACA,WAAA;EALV;EAOM;IACI,WAAA;IACA,SAAA;IACA,WAAA;EALV;AACF;AASA,iDAAA;AACA;EACI;IACI,YAAA;EAPN;EAQM;IACI,iBAAA;EANV;EAQM;IACI,kBAAA;EANV;EAQM;IACI,eAAA;EANV;EAOU;IACI,eAAA;EALd;EAOU;IACI,eAAA;EALd;EAQM;IACI,eAAA;IACA,WAAA;EANV;EAQM;IACI,WAAA;IACA,SAAA;IACA,WAAA;EANV;AACF","sourcesContent":[".IntroContainer {\n    height: 100vh;\n    width: 100%;\n    position: relative;\n    text-transform: uppercase;\n    display: flex;\n    justify-content: space-between;\n    .mainContent {\n        width: 55%;\n        .heading, .subHeading {\n            margin: 0 0 0 10rem;\n        }\n        .heading {\n            color: white;\n            font-size: 11rem;\n            .spanText, .spanPlus {\n                font-size: 11rem;\n            }\n            .spanText {\n                font-weight: 100;\n                color: var(--heading-color);\n            }\n            .spanPlus {\n                color: black;\n                font-size: 13rem;\n            }\n    }\n    .headingSM {\n        margin: 8rem 1rem;\n        padding: .5rem;\n    }\n    }\n    \n    .subHeading {\n        font-size: 3rem;\n        color: grey;\n        margin-top: 5rem;\n        width: 50vw;\n    }\n    \n    .image {\n        background-color: black;\n        width: 30vw;\n        position: absolute;\n        top: 4rem;\n        right: 10rem;\n        z-index: -1;\n        transform: rotate(7deg);\n    }\n}\n\n/* Medium devices (landscape tablets, 800px and up) */\n@media only screen and (max-width: 1220px) {\n    .IntroContainer {\n        height: 70vh;\n        display: flex;\n        justify-content: space-between;\n        .mainContent {\n            .heading, .subHeading {\n                margin: 0 0 0 5rem;\n            }\n            .heading {\n                font-size: 9rem;\n                .spanText, .spanPlus {\n                    font-size: 9rem;\n                }\n                .spanPlus {\n                    font-size: 9rem;\n                }\n            }\n        }\n        .subHeading {\n            font-size: 2rem;\n            width: 60vw;\n        }\n        .image {\n            width: 35vw;\n            top: 4rem;\n            right: 5rem;\n        }\n    }\n}\n\n/* Small devices (portrait tablets and large phones, 600px and up) */\n@media only screen and (max-width: 1000px) {\n    .IntroContainer {\n        .headingSM {\n            margin: 4rem 1rem;\n        }\n        .heading, .subHeading {\n            margin: 0 0 0 2rem;\n        }\n        .heading {\n            font-size: 4rem;\n            .spanText, .spanPlus {\n                font-size: 4rem;\n            }\n            .spanPlus {\n                font-size: 4rem;\n            }\n        }\n        .subHeading {\n            font-size: 1.5rem;\n            width: 70vw;\n        }\n        .image {\n            width: 40vw;\n            top: 2rem;\n            right: 2rem;\n        }\n    }\n}\n\n/* Extra small devices (phones, 600px and down) */\n@media only screen and (max-width: 600px) {\n    .IntroContainer {\n        height: auto;\n        .headingSM {\n            margin: 2rem 1rem;\n        }\n        .heading, .subHeading {\n            margin: 0 0 0 1rem;\n        }\n        .heading {\n            font-size: 2rem;\n            .spanText, .spanPlus {\n                font-size: 2rem;\n            }\n            .spanPlus {\n                font-size: 2rem;\n            }\n        }\n        .subHeading {\n            font-size: 1rem;\n            width: 80vw;\n        }\n        .image {\n            width: 50vw;\n            top: 1rem;\n            right: 1rem;\n        }\n    }\n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"IntroContainer": `WXIspfxBzGyfPOvOt6Wd`,
-	"headingSM": `RVzjtWAadvbxIwf_Vy5a`,
+	"mainContent": `n4NBksae5XNvymP02uRo`,
 	"heading": `gSKaLjsbfnd93wd98bJk`,
 	"subHeading": `kx5nScP14AcQB9rbiQQq`,
 	"spanText": `OVONZ52MMoJ8r5yLzNJa`,
 	"spanPlus": `SkHD1m3e3CuLGPPqZYxV`,
-	"image": `BI0GYOC1YbWy9DGIlJZK`,
-	"paragraph": `aqMToluDVC_OVBdOM4nw`
+	"headingSM": `RVzjtWAadvbxIwf_Vy5a`,
+	"image": `BI0GYOC1YbWy9DGIlJZK`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1566,7 +1650,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.BYTea12oqUEziEWvzniO {
   z-index: 1;
   right: 0rem;
   width: 65rem;
-  height: 70rem;
+  height: 80rem;
   background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
   background-repeat: no-repeat;
   animation: uw8ss7Iscm1Hn8eZU0qa 8s steps(1) infinite;
@@ -1574,385 +1658,822 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.BYTea12oqUEziEWvzniO {
 
 @keyframes uw8ss7Iscm1Hn8eZU0qa {
   0% {
-    background-position: -15rem 0rem;
+    background-position: -15rem 10rem;
   }
-  0.75% {
-    background-position: -95rem 0rem;
+  10.75% {
+    background-position: -95rem 10rem;
   }
   1.5% {
-    background-position: -175rem 0rem;
+    background-position: -175rem 10rem;
   }
   2.25% {
-    background-position: -255rem 0rem;
+    background-position: -255rem 10rem;
   }
   3% {
-    background-position: -335rem 0rem;
+    background-position: -335rem 10rem;
   }
   3.75% {
-    background-position: -415rem 0rem;
+    background-position: -415rem 10rem;
   }
   4.5% {
-    background-position: -495rem 0rem;
+    background-position: -495rem 10rem;
   }
   5.25% {
-    background-position: -575rem 0rem;
+    background-position: -575rem 10rem;
   }
   6% {
-    background-position: -655rem 0rem;
+    background-position: -655rem 10rem;
   }
   6.75% {
-    background-position: -735rem 0rem;
+    background-position: -735rem 10rem;
   }
   7.5% {
-    background-position: -815rem 0rem;
+    background-position: -815rem 10rem;
   }
   8.25% {
-    background-position: -895rem 0rem;
+    background-position: -895rem 10rem;
   }
   9.75% {
-    background-position: -15rem -80rem;
+    background-position: -15rem -70rem;
   }
   10.5% {
-    background-position: -95rem -80rem;
+    background-position: -95rem -70rem;
   }
   11.25% {
-    background-position: -175rem -80rem;
+    background-position: -175rem -70rem;
   }
   12% {
-    background-position: -255rem -80rem;
+    background-position: -255rem -70rem;
   }
   12.75% {
-    background-position: -335rem -80rem;
+    background-position: -335rem -70rem;
   }
   13.5% {
-    background-position: -415rem -80rem;
+    background-position: -415rem -70rem;
   }
   14.25% {
-    background-position: -495rem -80rem;
+    background-position: -495rem -70rem;
   }
   15% {
-    background-position: -575rem -80rem;
+    background-position: -575rem -70rem;
   }
   15.75% {
-    background-position: -655rem -80rem;
+    background-position: -655rem -70rem;
   }
   16.5% {
-    background-position: -735rem -80rem;
+    background-position: -735rem -70rem;
   }
   17.25% {
-    background-position: -815rem -80rem;
+    background-position: -815rem -70rem;
   }
   18% {
-    background-position: -895rem -80rem;
+    background-position: -895rem -70rem;
   }
   19.5% {
-    background-position: -15rem -160rem;
+    background-position: -15rem -150rem;
   }
   20.25% {
-    background-position: -95rem -160rem;
+    background-position: -95rem -150rem;
   }
   21% {
-    background-position: -175rem -160rem;
+    background-position: -175rem -150rem;
   }
   21.75% {
-    background-position: -255rem -160rem;
+    background-position: -255rem -150rem;
   }
   22.5% {
-    background-position: -335rem -160rem;
+    background-position: -335rem -150rem;
   }
   23.25% {
-    background-position: -415rem -160rem;
+    background-position: -415rem -150rem;
   }
   24% {
-    background-position: -495rem -160rem;
+    background-position: -495rem -150rem;
   }
   24.75% {
-    background-position: -575rem -160rem;
+    background-position: -575rem -150rem;
   }
   25.5% {
-    background-position: -655rem -160rem;
+    background-position: -655rem -150rem;
   }
   26.25% {
-    background-position: -735rem -160rem;
+    background-position: -735rem -150rem;
   }
   27% {
-    background-position: -815rem -160rem;
+    background-position: -815rem -150rem;
   }
   27.75% {
-    background-position: -895rem -160rem;
+    background-position: -895rem -150rem;
   }
   29.25% {
-    background-position: -15rem -240rem;
+    background-position: -15rem -230rem;
   }
   30% {
-    background-position: -95rem -240rem;
+    background-position: -95rem -230rem;
   }
   30.75% {
-    background-position: -175rem -240rem;
+    background-position: -175rem -230rem;
   }
   31.5% {
-    background-position: -255rem -240rem;
+    background-position: -255rem -230rem;
   }
   32.25% {
-    background-position: -335rem -240rem;
+    background-position: -335rem -230rem;
   }
   33% {
-    background-position: -415rem -240rem;
+    background-position: -415rem -230rem;
   }
   33.75% {
-    background-position: -495rem -240rem;
+    background-position: -495rem -230rem;
   }
   34.5% {
-    background-position: -575rem -240rem;
+    background-position: -575rem -230rem;
   }
   35.25% {
-    background-position: -655rem -240rem;
+    background-position: -655rem -230rem;
   }
   36% {
-    background-position: -735rem -240rem;
+    background-position: -735rem -230rem;
   }
   36.75% {
-    background-position: -815rem -240rem;
+    background-position: -815rem -230rem;
   }
   37.5% {
-    background-position: -895rem -240rem;
+    background-position: -895rem -230rem;
   }
   39% {
-    background-position: -15rem -320rem;
+    background-position: -15rem -310rem;
   }
   39.75% {
-    background-position: -95rem -320rem;
+    background-position: -95rem -310rem;
   }
   40.5% {
-    background-position: -175rem -320rem;
+    background-position: -175rem -310rem;
   }
   41.25% {
-    background-position: -255rem -320rem;
+    background-position: -255rem -310rem;
   }
   42% {
-    background-position: -335rem -320rem;
+    background-position: -335rem -310rem;
   }
   42.75% {
-    background-position: -415rem -320rem;
+    background-position: -415rem -310rem;
   }
   43.5% {
-    background-position: -495rem -320rem;
+    background-position: -495rem -310rem;
   }
   44.25% {
-    background-position: -575rem -320rem;
+    background-position: -575rem -310rem;
   }
   45% {
-    background-position: -655rem -320rem;
+    background-position: -655rem -310rem;
   }
   45.75% {
-    background-position: -735rem -320rem;
+    background-position: -735rem -310rem;
   }
   46.5% {
-    background-position: -815rem -320rem;
+    background-position: -815rem -310rem;
   }
   47.25% {
-    background-position: -895rem -320rem;
+    background-position: -895rem -310rem;
   }
   48.75% {
-    background-position: -15rem -400rem;
+    background-position: -15rem -390rem;
   }
   49.5% {
-    background-position: -95rem -400rem;
+    background-position: -95rem -390rem;
   }
   50.25% {
-    background-position: -175rem -400rem;
+    background-position: -175rem -390rem;
   }
   51% {
-    background-position: -255rem -400rem;
+    background-position: -255rem -390rem;
   }
   51.75% {
-    background-position: -335rem -400rem;
+    background-position: -335rem -390rem;
   }
   52.5% {
-    background-position: -415rem -400rem;
+    background-position: -415rem -390rem;
   }
   53.25% {
-    background-position: -495rem -400rem;
+    background-position: -495rem -390rem;
   }
   54% {
-    background-position: -575rem -400rem;
+    background-position: -575rem -390rem;
   }
   54.75% {
-    background-position: -655rem -400rem;
+    background-position: -655rem -390rem;
   }
   55.5% {
-    background-position: -735rem -400rem;
+    background-position: -735rem -390rem;
   }
   56.25% {
-    background-position: -815rem -400rem;
+    background-position: -815rem -390rem;
   }
   57% {
-    background-position: -895rem -400rem;
+    background-position: -895rem -390rem;
   }
   58.5% {
-    background-position: -15rem -480rem;
+    background-position: -15rem -470rem;
   }
   59.25% {
-    background-position: -95rem -480rem;
+    background-position: -95rem -470rem;
   }
   60% {
-    background-position: -175rem -480rem;
+    background-position: -175rem -470rem;
   }
   60.75% {
-    background-position: -255rem -480rem;
+    background-position: -255rem -470rem;
   }
   61.5% {
-    background-position: -335rem -480rem;
+    background-position: -335rem -470rem;
   }
   62.25% {
-    background-position: -415rem -480rem;
+    background-position: -415rem -470rem;
   }
   63% {
-    background-position: -495rem -480rem;
+    background-position: -495rem -470rem;
   }
   63.75% {
-    background-position: -575rem -480rem;
+    background-position: -575rem -470rem;
   }
   64.5% {
-    background-position: -655rem -480rem;
+    background-position: -655rem -470rem;
   }
   65.25% {
-    background-position: -735rem -480rem;
+    background-position: -735rem -470rem;
   }
   66% {
-    background-position: -815rem -480rem;
+    background-position: -815rem -470rem;
   }
   66.75% {
-    background-position: -895rem -480rem;
+    background-position: -895rem -470rem;
   }
   68.25% {
-    background-position: -15rem -560rem;
+    background-position: -15rem -550rem;
   }
   69% {
-    background-position: -95rem -560rem;
+    background-position: -95rem -550rem;
   }
   69.75% {
-    background-position: -175rem -560rem;
+    background-position: -175rem -550rem;
   }
   70.5% {
-    background-position: -255rem -560rem;
+    background-position: -255rem -550rem;
   }
   71.25% {
-    background-position: -335rem -560rem;
+    background-position: -335rem -550rem;
   }
   72% {
-    background-position: -415rem -560rem;
+    background-position: -415rem -550rem;
   }
   72.75% {
-    background-position: -495rem -560rem;
+    background-position: -495rem -550rem;
   }
   73.5% {
-    background-position: -575rem -560rem;
+    background-position: -575rem -550rem;
   }
   74.25% {
-    background-position: -655rem -560rem;
+    background-position: -655rem -550rem;
   }
   75% {
-    background-position: -735rem -560rem;
+    background-position: -735rem -550rem;
   }
   75.75% {
-    background-position: -815rem -560rem;
+    background-position: -815rem -550rem;
   }
   76.5% {
-    background-position: -895rem -560rem;
+    background-position: -895rem -550rem;
   }
   78% {
-    background-position: -15rem -640rem;
+    background-position: -15rem -630rem;
   }
   78.75% {
-    background-position: -95rem -640rem;
+    background-position: -95rem -630rem;
   }
   79.5% {
-    background-position: -175rem -640rem;
+    background-position: -175rem -630rem;
   }
   80.25% {
-    background-position: -255rem -640rem;
+    background-position: -255rem -630rem;
   }
   81% {
-    background-position: -335rem -640rem;
+    background-position: -335rem -630rem;
   }
   81.75% {
-    background-position: -415rem -640rem;
+    background-position: -415rem -630rem;
   }
   82.5% {
-    background-position: -495rem -640rem;
+    background-position: -495rem -630rem;
   }
   83.25% {
-    background-position: -575rem -640rem;
+    background-position: -575rem -630rem;
   }
   84% {
-    background-position: -655rem -640rem;
+    background-position: -655rem -630rem;
   }
   84.75% {
-    background-position: -735rem -640rem;
+    background-position: -735rem -630rem;
   }
   85.5% {
-    background-position: -815rem -640rem;
+    background-position: -815rem -630rem;
   }
   86.25% {
-    background-position: -895rem -640rem;
+    background-position: -895rem -630rem;
   }
   87.75% {
-    background-position: -15rem -720rem;
+    background-position: -15rem -710rem;
   }
   88.5% {
-    background-position: -95rem -720rem;
+    background-position: -95rem -710rem;
   }
   89.25% {
-    background-position: -175rem -720rem;
+    background-position: -175rem -710rem;
   }
   90% {
-    background-position: -255rem -720rem;
+    background-position: -255rem -710rem;
   }
   90.75% {
-    background-position: -335rem -720rem;
+    background-position: -335rem -710rem;
   }
   91.5% {
-    background-position: -415rem -720rem;
+    background-position: -415rem -710rem;
   }
   92.25% {
-    background-position: -495rem -720rem;
+    background-position: -495rem -710rem;
   }
   93% {
-    background-position: -575rem -720rem;
+    background-position: -575rem -710rem;
   }
   93.75% {
-    background-position: -655rem -720rem;
+    background-position: -655rem -710rem;
   }
   94.5% {
-    background-position: -735rem -720rem;
+    background-position: -735rem -710rem;
   }
   95.25% {
-    background-position: -815rem -720rem;
+    background-position: -815rem -710rem;
   }
   96% {
-    background-position: -895rem -720rem;
+    background-position: -895rem -710rem;
   }
   97.5% {
-    background-position: -15rem -800rem;
+    background-position: -15rem -790rem;
   }
   98.25% {
-    background-position: -95rem -800rem;
+    background-position: -95rem -790rem;
   }
   99% {
-    background-position: -175rem -800rem;
+    background-position: -175rem -790rem;
   }
   99.75% {
-    background-position: -255rem -800rem;
+    background-position: -255rem -790rem;
   }
   100% {
-    background-position: -335rem -800rem;
+    background-position: -335rem -790rem;
   }
-}`, "",{"version":3,"sources":["webpack://./src/components/SpriteAnimation/SpriteAnimation.module.scss"],"names":[],"mappings":"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","sourcesContent":[".spritesheet {\n    position: absolute; \n    z-index: 1;\n    right: 0rem;\n    width: 65rem;\n    height: 70rem;\n    background-image: url('/Users/tylerpierson/portfolio/public/img/tyler-spritesheet.png');\n    background-repeat: no-repeat;\n    animation: play 8s steps(1) infinite;\n }\n \n @keyframes play {\n    0% { background-position: -15rem 0rem; }\n    0.75% { background-position: -95rem 0rem; }\n    1.5% { background-position: -175rem 0rem; }\n    2.25% { background-position: -255rem 0rem; }\n    3% { background-position: -335rem 0rem; }\n    3.75% { background-position: -415rem 0rem; }\n    4.5% { background-position: -495rem 0rem; }\n    5.25% { background-position: -575rem 0rem; }\n    6% { background-position: -655rem 0rem; }\n    6.75% { background-position: -735rem 0rem; }\n    7.5% { background-position: -815rem 0rem; }\n    8.25% { background-position: -895rem 0rem; }\n    9.75% { background-position: -15rem -80rem; }\n    10.5% { background-position: -95rem -80rem; }\n    11.25% { background-position: -175rem -80rem; }\n    12% { background-position: -255rem -80rem; }\n    12.75% { background-position: -335rem -80rem; }\n    13.5% { background-position: -415rem -80rem; }\n    14.25% { background-position: -495rem -80rem; }\n    15% { background-position: -575rem -80rem; }\n    15.75% { background-position: -655rem -80rem; }\n    16.5% { background-position: -735rem -80rem; }\n    17.25% { background-position: -815rem -80rem; }\n    18% { background-position: -895rem -80rem; }\n    19.5% { background-position: -15rem -160rem; }\n    20.25% { background-position: -95rem -160rem; }\n    21% { background-position: -175rem -160rem; }\n    21.75% { background-position: -255rem -160rem; }\n    22.5% { background-position: -335rem -160rem; }\n    23.25% { background-position: -415rem -160rem; }\n    24% { background-position: -495rem -160rem; }\n    24.75% { background-position: -575rem -160rem; }\n    25.5% { background-position: -655rem -160rem; }\n    26.25% { background-position: -735rem -160rem; }\n    27% { background-position: -815rem -160rem; }\n    27.75% { background-position: -895rem -160rem; }\n    29.25% { background-position: -15rem -240rem; }\n    30% { background-position: -95rem -240rem; }\n    30.75% { background-position: -175rem -240rem; }\n    31.5% { background-position: -255rem -240rem; }\n    32.25% { background-position: -335rem -240rem; }\n    33% { background-position: -415rem -240rem; }\n    33.75% { background-position: -495rem -240rem; }\n    34.5% { background-position: -575rem -240rem; }\n    35.25% { background-position: -655rem -240rem; }\n    36% { background-position: -735rem -240rem; }\n    36.75% { background-position: -815rem -240rem; }\n    37.5% { background-position: -895rem -240rem; }\n    39% { background-position: -15rem -320rem; }\n    39.75% { background-position: -95rem -320rem; }\n    40.5% { background-position: -175rem -320rem; }\n    41.25% { background-position: -255rem -320rem; }\n    42% { background-position: -335rem -320rem; }\n    42.75% { background-position: -415rem -320rem; }\n    43.5% { background-position: -495rem -320rem; }\n    44.25% { background-position: -575rem -320rem; }\n    45% { background-position: -655rem -320rem; }\n    45.75% { background-position: -735rem -320rem; }\n    46.5% { background-position: -815rem -320rem; }\n    47.25% { background-position: -895rem -320rem; }\n    48.75% { background-position: -15rem -400rem; }\n    49.5% { background-position: -95rem -400rem; }\n    50.25% { background-position: -175rem -400rem; }\n    51% { background-position: -255rem -400rem; }\n    51.75% { background-position: -335rem -400rem; }\n    52.5% { background-position: -415rem -400rem; }\n    53.25% { background-position: -495rem -400rem; }\n    54% { background-position: -575rem -400rem; }\n    54.75% { background-position: -655rem -400rem; }\n    55.5% { background-position: -735rem -400rem; }\n    56.25% { background-position: -815rem -400rem; }\n    57% { background-position: -895rem -400rem; }\n    58.5% { background-position: -15rem -480rem; }\n    59.25% { background-position: -95rem -480rem; }\n    60% { background-position: -175rem -480rem; }\n    60.75% { background-position: -255rem -480rem; }\n    61.5% { background-position: -335rem -480rem; }\n    62.25% { background-position: -415rem -480rem; }\n    63% { background-position: -495rem -480rem; }\n    63.75% { background-position: -575rem -480rem; }\n    64.5% { background-position: -655rem -480rem; }\n    65.25% { background-position: -735rem -480rem; }\n    66% { background-position: -815rem -480rem; }\n    66.75% { background-position: -895rem -480rem; }\n    68.25% { background-position: -15rem -560rem; }\n    69% { background-position: -95rem -560rem; }\n    69.75% { background-position: -175rem -560rem; }\n    70.5% { background-position: -255rem -560rem; }\n    71.25% { background-position: -335rem -560rem; }\n    72% { background-position: -415rem -560rem; }\n    72.75% { background-position: -495rem -560rem; }\n    73.5% { background-position: -575rem -560rem; }\n    74.25% { background-position: -655rem -560rem; }\n    75% { background-position: -735rem -560rem; }\n    75.75% { background-position: -815rem -560rem; }\n    76.5% { background-position: -895rem -560rem; }\n    78% { background-position: -15rem -640rem; }\n    78.75% { background-position: -95rem -640rem; }\n    79.5% { background-position: -175rem -640rem; }\n    80.25% { background-position: -255rem -640rem; }\n    81% { background-position: -335rem -640rem; }\n    81.75% { background-position: -415rem -640rem; }\n    82.5% { background-position: -495rem -640rem; }\n    83.25% { background-position: -575rem -640rem; }\n    84% { background-position: -655rem -640rem; }\n    84.75% { background-position: -735rem -640rem; }\n    85.5% { background-position: -815rem -640rem; }\n    86.25% { background-position: -895rem -640rem; }\n    87.75% { background-position: -15rem -720rem; }\n    88.5% { background-position: -95rem -720rem; }\n    89.25% { background-position: -175rem -720rem; }\n    90% { background-position: -255rem -720rem; }\n    90.75% { background-position: -335rem -720rem; }\n    91.5% { background-position: -415rem -720rem; }\n    92.25% { background-position: -495rem -720rem; }\n    93% { background-position: -575rem -720rem; }\n    93.75% { background-position: -655rem -720rem; }\n    94.5% { background-position: -735rem -720rem; }\n    95.25% { background-position: -815rem -720rem; }\n    96% { background-position: -895rem -720rem; }\n    97.5% { background-position: -15rem -800rem; }\n    98.25% { background-position: -95rem -800rem; }\n    99% { background-position: -175rem -800rem; }\n    99.75% { background-position: -255rem -800rem; }\n    100% { background-position: -335rem -800rem; }\n }"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/SpriteAnimation/SpriteAnimation.module.scss"],"names":[],"mappings":"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","sourcesContent":[".spritesheet {\n   position: absolute; \n   z-index: 1;\n   right: 0rem;\n   width: 65rem;\n   height: 80rem;\n   background-image: url('/Users/tylerpierson/portfolio/public/img/tyler-spritesheet.png');\n   background-repeat: no-repeat;\n   animation: play 8s steps(1) infinite;\n}\n\n@keyframes play {\n   0% { background-position: -15rem 10rem; }\n   10.75% { background-position: -95rem 10rem; }\n   1.5% { background-position: -175rem 10rem; }\n   2.25% { background-position: -255rem 10rem; }\n   3% { background-position: -335rem 10rem; }\n   3.75% { background-position: -415rem 10rem; }\n   4.5% { background-position: -495rem 10rem; }\n   5.25% { background-position: -575rem 10rem; }\n   6% { background-position: -655rem 10rem; }\n   6.75% { background-position: -735rem 10rem; }\n   7.5% { background-position: -815rem 10rem; }\n   8.25% { background-position: -895rem 10rem; }\n   9.75% { background-position: -15rem -70rem; }\n   10.5% { background-position: -95rem -70rem; }\n   11.25% { background-position: -175rem -70rem; }\n   12% { background-position: -255rem -70rem; }\n   12.75% { background-position: -335rem -70rem; }\n   13.5% { background-position: -415rem -70rem; }\n   14.25% { background-position: -495rem -70rem; }\n   15% { background-position: -575rem -70rem; }\n   15.75% { background-position: -655rem -70rem; }\n   16.5% { background-position: -735rem -70rem; }\n   17.25% { background-position: -815rem -70rem; }\n   18% { background-position: -895rem -70rem; }\n   19.5% { background-position: -15rem -150rem; }\n   20.25% { background-position: -95rem -150rem; }\n   21% { background-position: -175rem -150rem; }\n   21.75% { background-position: -255rem -150rem; }\n   22.5% { background-position: -335rem -150rem; }\n   23.25% { background-position: -415rem -150rem; }\n   24% { background-position: -495rem -150rem; }\n   24.75% { background-position: -575rem -150rem; }\n   25.5% { background-position: -655rem -150rem; }\n   26.25% { background-position: -735rem -150rem; }\n   27% { background-position: -815rem -150rem; }\n   27.75% { background-position: -895rem -150rem; }\n   29.25% { background-position: -15rem -230rem; }\n   30% { background-position: -95rem -230rem; }\n   30.75% { background-position: -175rem -230rem; }\n   31.5% { background-position: -255rem -230rem; }\n   32.25% { background-position: -335rem -230rem; }\n   33% { background-position: -415rem -230rem; }\n   33.75% { background-position: -495rem -230rem; }\n   34.5% { background-position: -575rem -230rem; }\n   35.25% { background-position: -655rem -230rem; }\n   36% { background-position: -735rem -230rem; }\n   36.75% { background-position: -815rem -230rem; }\n   37.5% { background-position: -895rem -230rem; }\n   39% { background-position: -15rem -310rem; }\n   39.75% { background-position: -95rem -310rem; }\n   40.5% { background-position: -175rem -310rem; }\n   41.25% { background-position: -255rem -310rem; }\n   42% { background-position: -335rem -310rem; }\n   42.75% { background-position: -415rem -310rem; }\n   43.5% { background-position: -495rem -310rem; }\n   44.25% { background-position: -575rem -310rem; }\n   45% { background-position: -655rem -310rem; }\n   45.75% { background-position: -735rem -310rem; }\n   46.5% { background-position: -815rem -310rem; }\n   47.25% { background-position: -895rem -310rem; }\n   48.75% { background-position: -15rem -390rem; }\n   49.5% { background-position: -95rem -390rem; }\n   50.25% { background-position: -175rem -390rem; }\n   51% { background-position: -255rem -390rem; }\n   51.75% { background-position: -335rem -390rem; }\n   52.5% { background-position: -415rem -390rem; }\n   53.25% { background-position: -495rem -390rem; }\n   54% { background-position: -575rem -390rem; }\n   54.75% { background-position: -655rem -390rem; }\n   55.5% { background-position: -735rem -390rem; }\n   56.25% { background-position: -815rem -390rem; }\n   57% { background-position: -895rem -390rem; }\n   58.5% { background-position: -15rem -470rem; }\n   59.25% { background-position: -95rem -470rem; }\n   60% { background-position: -175rem -470rem; }\n   60.75% { background-position: -255rem -470rem; }\n   61.5% { background-position: -335rem -470rem; }\n   62.25% { background-position: -415rem -470rem; }\n   63% { background-position: -495rem -470rem; }\n   63.75% { background-position: -575rem -470rem; }\n   64.5% { background-position: -655rem -470rem; }\n   65.25% { background-position: -735rem -470rem; }\n   66% { background-position: -815rem -470rem; }\n   66.75% { background-position: -895rem -470rem; }\n   68.25% { background-position: -15rem -550rem; }\n   69% { background-position: -95rem -550rem; }\n   69.75% { background-position: -175rem -550rem; }\n   70.5% { background-position: -255rem -550rem; }\n   71.25% { background-position: -335rem -550rem; }\n   72% { background-position: -415rem -550rem; }\n   72.75% { background-position: -495rem -550rem; }\n   73.5% { background-position: -575rem -550rem; }\n   74.25% { background-position: -655rem -550rem; }\n   75% { background-position: -735rem -550rem; }\n   75.75% { background-position: -815rem -550rem; }\n   76.5% { background-position: -895rem -550rem; }\n   78% { background-position: -15rem -630rem; }\n   78.75% { background-position: -95rem -630rem; }\n   79.5% { background-position: -175rem -630rem; }\n   80.25% { background-position: -255rem -630rem; }\n   81% { background-position: -335rem -630rem; }\n   81.75% { background-position: -415rem -630rem; }\n   82.5% { background-position: -495rem -630rem; }\n   83.25% { background-position: -575rem -630rem; }\n   84% { background-position: -655rem -630rem; }\n   84.75% { background-position: -735rem -630rem; }\n   85.5% { background-position: -815rem -630rem; }\n   86.25% { background-position: -895rem -630rem; }\n   87.75% { background-position: -15rem -710rem; }\n   88.5% { background-position: -95rem -710rem; }\n   89.25% { background-position: -175rem -710rem; }\n   90% { background-position: -255rem -710rem; }\n   90.75% { background-position: -335rem -710rem; }\n   91.5% { background-position: -415rem -710rem; }\n   92.25% { background-position: -495rem -710rem; }\n   93% { background-position: -575rem -710rem; }\n   93.75% { background-position: -655rem -710rem; }\n   94.5% { background-position: -735rem -710rem; }\n   95.25% { background-position: -815rem -710rem; }\n   96% { background-position: -895rem -710rem; }\n   97.5% { background-position: -15rem -790rem; }\n   98.25% { background-position: -95rem -790rem; }\n   99% { background-position: -175rem -790rem; }\n   99.75% { background-position: -255rem -790rem; }\n   100% { background-position: -335rem -790rem; }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"spritesheet": `BYTea12oqUEziEWvzniO`,
 	"play": `uw8ss7Iscm1Hn8eZU0qa`
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/SpriteAnimation/SpriteAnimationMed.module.scss":
+/*!**************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/SpriteAnimation/SpriteAnimationMed.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
+// Imports
+
+
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./public/img/tyler-spritesheet-med.png */ "./public/img/tyler-spritesheet-med.png"), __webpack_require__.b);
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.l116pAhUGRvidbja3Snr {
+  position: absolute;
+  z-index: 1;
+  top: 10vh;
+  right: 0rem;
+  width: 48rem;
+  height: 48rem;
+  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
+  background-repeat: no-repeat;
+  animation: DrKRsjH298rmCC_mdiMo 8s steps(1) infinite;
+}
+
+@keyframes DrKRsjH298rmCC_mdiMo {
+  0% {
+    background-position: 0rem 0rem;
+  }
+  10.75% {
+    background-position: -48rem 0rem;
+  }
+  1.5% {
+    background-position: -96rem 0rem;
+  }
+  2.25% {
+    background-position: -144rem 0rem;
+  }
+  3% {
+    background-position: -192rem 0rem;
+  }
+  3.75% {
+    background-position: -240rem 0rem;
+  }
+  4.5% {
+    background-position: -288rem 0rem;
+  }
+  5.25% {
+    background-position: -336rem 0rem;
+  }
+  6% {
+    background-position: -384rem 0rem;
+  }
+  6.75% {
+    background-position: -432rem 0rem;
+  }
+  7.5% {
+    background-position: -480rem 0rem;
+  }
+  8.25% {
+    background-position: -528rem 0rem;
+  }
+  9.75% {
+    background-position: 0rem -48rem;
+  }
+  10.5% {
+    background-position: -48rem -48rem;
+  }
+  11.25% {
+    background-position: -96rem -48rem;
+  }
+  12% {
+    background-position: -144rem -48rem;
+  }
+  12.75% {
+    background-position: -192rem -48rem;
+  }
+  13.5% {
+    background-position: -240rem -48rem;
+  }
+  14.25% {
+    background-position: -288rem -48rem;
+  }
+  15% {
+    background-position: -336rem -48rem;
+  }
+  15.75% {
+    background-position: -384rem -48rem;
+  }
+  16.5% {
+    background-position: -432rem -48rem;
+  }
+  17.25% {
+    background-position: -480rem -48rem;
+  }
+  18% {
+    background-position: -528rem -48rem;
+  }
+  19.5% {
+    background-position: 0rem -96rem;
+  }
+  20.25% {
+    background-position: -48rem -96rem;
+  }
+  21% {
+    background-position: -96rem -96rem;
+  }
+  21.75% {
+    background-position: -144rem -96rem;
+  }
+  22.5% {
+    background-position: -192rem -96rem;
+  }
+  23.25% {
+    background-position: -240rem -96rem;
+  }
+  24% {
+    background-position: -288rem -96rem;
+  }
+  24.75% {
+    background-position: -336rem -96rem;
+  }
+  25.5% {
+    background-position: -384rem -96rem;
+  }
+  26.25% {
+    background-position: -432rem -96rem;
+  }
+  27% {
+    background-position: -480rem -96rem;
+  }
+  27.75% {
+    background-position: -528rem -96rem;
+  }
+  29.25% {
+    background-position: 0rem -144rem;
+  }
+  30% {
+    background-position: -48rem -144rem;
+  }
+  30.75% {
+    background-position: -96rem -144rem;
+  }
+  31.5% {
+    background-position: -144rem -144rem;
+  }
+  32.25% {
+    background-position: -192rem -144rem;
+  }
+  33% {
+    background-position: -240rem -144rem;
+  }
+  33.75% {
+    background-position: -288rem -144rem;
+  }
+  34.5% {
+    background-position: -336rem -144rem;
+  }
+  35.25% {
+    background-position: -384rem -144rem;
+  }
+  36% {
+    background-position: -432rem -144rem;
+  }
+  36.75% {
+    background-position: -480rem -144rem;
+  }
+  37.5% {
+    background-position: -528rem -144rem;
+  }
+  39% {
+    background-position: 0rem -192rem;
+  }
+  39.75% {
+    background-position: -48rem -192rem;
+  }
+  40.5% {
+    background-position: -96rem -192rem;
+  }
+  41.25% {
+    background-position: -144rem -192rem;
+  }
+  42% {
+    background-position: -192rem -192rem;
+  }
+  42.75% {
+    background-position: -240rem -192rem;
+  }
+  43.5% {
+    background-position: -288rem -192rem;
+  }
+  44.25% {
+    background-position: -336rem -192rem;
+  }
+  45% {
+    background-position: -384rem -192rem;
+  }
+  45.75% {
+    background-position: -432rem -192rem;
+  }
+  46.5% {
+    background-position: -480rem -192rem;
+  }
+  47.25% {
+    background-position: -528rem -192rem;
+  }
+  48.75% {
+    background-position: 0rem -240rem;
+  }
+  49.5% {
+    background-position: -48rem -240rem;
+  }
+  50.25% {
+    background-position: -96rem -240rem;
+  }
+  51% {
+    background-position: -144rem -240rem;
+  }
+  51.75% {
+    background-position: -192rem -240rem;
+  }
+  52.5% {
+    background-position: -240rem -240rem;
+  }
+  53.25% {
+    background-position: -288rem -240rem;
+  }
+  54% {
+    background-position: -336rem -240rem;
+  }
+  55.5% {
+    background-position: -384rem -240rem;
+  }
+  54.75% {
+    background-position: -432rem -240rem;
+  }
+  55.5% {
+    background-position: -480rem -240rem;
+  }
+  56.25% {
+    background-position: -528rem -240rem;
+  }
+  57% {
+    background-position: 0rem -288rem;
+  }
+  57.75% {
+    background-position: -48rem -288rem;
+  }
+  58.5% {
+    background-position: -96rem -288rem;
+  }
+  59.25% {
+    background-position: -144rem -288rem;
+  }
+  60% {
+    background-position: -192rem -288rem;
+  }
+  60.75% {
+    background-position: -240rem -288rem;
+  }
+  61.5% {
+    background-position: -288rem -288rem;
+  }
+  62.25% {
+    background-position: -336rem -288rem;
+  }
+  63% {
+    background-position: -384rem -288rem;
+  }
+  63.75% {
+    background-position: -432rem -288rem;
+  }
+  64.5% {
+    background-position: -480rem -288rem;
+  }
+  65.25% {
+    background-position: -528rem -288rem;
+  }
+  66% {
+    background-position: 0rem -336rem;
+  }
+  66.75% {
+    background-position: -48rem -336rem;
+  }
+  67.5% {
+    background-position: -96rem -336rem;
+  }
+  68.25% {
+    background-position: -144rem -336rem;
+  }
+  69% {
+    background-position: -192rem -336rem;
+  }
+  69.75% {
+    background-position: -240rem -336rem;
+  }
+  70.5% {
+    background-position: -288rem -336rem;
+  }
+  71.25% {
+    background-position: -336rem -336rem;
+  }
+  72% {
+    background-position: -384rem -336rem;
+  }
+  72.75% {
+    background-position: -432rem -336rem;
+  }
+  73.5% {
+    background-position: -480rem -336rem;
+  }
+  74.25% {
+    background-position: -528rem -336rem;
+  }
+  75% {
+    background-position: 0rem -384rem;
+  }
+  75.75% {
+    background-position: -48rem -384rem;
+  }
+  76.5% {
+    background-position: -96rem -384rem;
+  }
+  77.25% {
+    background-position: -144rem -384rem;
+  }
+  78% {
+    background-position: -192rem -384rem;
+  }
+  78.75% {
+    background-position: -240rem -384rem;
+  }
+  79.5% {
+    background-position: -288rem -384rem;
+  }
+  80.25% {
+    background-position: -336rem -384rem;
+  }
+  81% {
+    background-position: -384rem -384rem;
+  }
+  81.75% {
+    background-position: -432rem -384rem;
+  }
+  82.5% {
+    background-position: -480rem -384rem;
+  }
+  83.25% {
+    background-position: -528rem -384rem;
+  }
+  84% {
+    background-position: 0rem -432rem;
+  }
+  84.75% {
+    background-position: -48rem -432rem;
+  }
+  85.5% {
+    background-position: -96rem -432rem;
+  }
+  86.25% {
+    background-position: -144rem -432rem;
+  }
+  87% {
+    background-position: -192rem -432rem;
+  }
+  87.75% {
+    background-position: -240rem -432rem;
+  }
+  88.5% {
+    background-position: -288rem -432rem;
+  }
+  89.25% {
+    background-position: -336rem -432rem;
+  }
+  90% {
+    background-position: -384rem -432rem;
+  }
+  90.75% {
+    background-position: -432rem -432rem;
+  }
+  91.5% {
+    background-position: -480rem -432rem;
+  }
+  92.25% {
+    background-position: -528rem -432rem;
+  }
+  93.75% {
+    background-position: 0rem -480rem;
+  }
+  94.5% {
+    background-position: -48rem -480rem;
+  }
+  95.25% {
+    background-position: -96rem -480rem;
+  }
+  96% {
+    background-position: -144rem -480rem;
+  }
+  96.75% {
+    background-position: -192rem -480rem;
+  }
+  97.5% {
+    background-position: -240rem -480rem;
+  }
+  98.25% {
+    background-position: -288rem -480rem;
+  }
+  99% {
+    background-position: -336rem -480rem;
+  }
+  99.75% {
+    background-position: -384rem -480rem;
+  }
+  100% {
+    background-position: -432rem -480rem;
+  }
+}`, "",{"version":3,"sources":["webpack://./src/components/SpriteAnimation/SpriteAnimationMed.module.scss"],"names":[],"mappings":"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","sourcesContent":[".spritesheet {\n    position: absolute; \n    z-index: 1;\n    top: 10vh;\n    right: 0rem;\n    width: 48rem;\n    height: 48rem;\n    background-image: url('/Users/tylerpierson/software_projects/class-website/public/img/tyler-spritesheet-med.png');\n    background-repeat: no-repeat;\n    animation: play 8s steps(1) infinite;\n }\n \n @keyframes play {\n    0% { background-position: 0rem 0rem; }\n    10.75% { background-position: -48rem 0rem; }\n    1.5% { background-position: -96rem 0rem; }\n    2.25% { background-position: -144rem 0rem; }\n    3% { background-position: -192rem 0rem; }\n    3.75% { background-position: -240rem 0rem; }\n    4.5% { background-position: -288rem 0rem; }\n    5.25% { background-position: -336rem 0rem; }\n    6% { background-position: -384rem 0rem; }\n    6.75% { background-position: -432rem 0rem; }\n    7.5% { background-position: -480rem 0rem; }\n    8.25% { background-position: -528rem 0rem; }\n    9.75% { background-position: 0rem -48rem; }\n    10.5% { background-position: -48rem -48rem; }\n    11.25% { background-position: -96rem -48rem; }\n    12% { background-position: -144rem -48rem; }\n    12.75% { background-position: -192rem -48rem; }\n    13.5% { background-position: -240rem -48rem; }\n    14.25% { background-position: -288rem -48rem; }\n    15% { background-position: -336rem -48rem; }\n    15.75% { background-position: -384rem -48rem; }\n    16.5% { background-position: -432rem -48rem; }\n    17.25% { background-position: -480rem -48rem; }\n    18% { background-position: -528rem -48rem; }\n    19.5% { background-position: 0rem -96rem; }\n    20.25% { background-position: -48rem -96rem; }\n    21% { background-position: -96rem -96rem; }\n    21.75% { background-position: -144rem -96rem; }\n    22.5% { background-position: -192rem -96rem; }\n    23.25% { background-position: -240rem -96rem; }\n    24% { background-position: -288rem -96rem; }\n    24.75% { background-position: -336rem -96rem; }\n    25.5% { background-position: -384rem -96rem; }\n    26.25% { background-position: -432rem -96rem; }\n    27% { background-position: -480rem -96rem; }\n    27.75% { background-position: -528rem -96rem; }\n    29.25% { background-position: 0rem -144rem; }\n    30% { background-position: -48rem -144rem; }\n    30.75% { background-position: -96rem -144rem; }\n    31.5% { background-position: -144rem -144rem; }\n    32.25% { background-position: -192rem -144rem; }\n    33% { background-position: -240rem -144rem; }\n    33.75% { background-position: -288rem -144rem; }\n    34.5% { background-position: -336rem -144rem; }\n    35.25% { background-position: -384rem -144rem; }\n    36% { background-position: -432rem -144rem; }\n    36.75% { background-position: -480rem -144rem; }\n    37.5% { background-position: -528rem -144rem; }\n    39% { background-position: 0rem -192rem; }\n    39.75% { background-position: -48rem -192rem; }\n    40.5% { background-position: -96rem -192rem; }\n    41.25% { background-position: -144rem -192rem; }\n    42% { background-position: -192rem -192rem; }\n    42.75% { background-position: -240rem -192rem; }\n    43.5% { background-position: -288rem -192rem; }\n    44.25% { background-position: -336rem -192rem; }\n    45% { background-position: -384rem -192rem; }\n    45.75% { background-position: -432rem -192rem; }\n    46.5% { background-position: -480rem -192rem; }\n    47.25% { background-position: -528rem -192rem; }\n    48.75% { background-position: 0rem -240rem; }\n    49.5% { background-position: -48rem -240rem; }\n    50.25% { background-position: -96rem -240rem; }\n    51% { background-position: -144rem -240rem; }\n    51.75% { background-position: -192rem -240rem; }\n    52.5% { background-position: -240rem -240rem; }\n    53.25% { background-position: -288rem -240rem; }\n    54% { background-position: -336rem -240rem; }\n    55.5% { background-position: -384rem -240rem; }\n    54.75% { background-position: -432rem -240rem; }\n    55.5% { background-position: -480rem -240rem; }\n    56.25% { background-position: -528rem -240rem; }\n    57% { background-position: 0rem -288rem; }\n    57.75% { background-position: -48rem -288rem; }\n    58.5% { background-position: -96rem -288rem; }\n    59.25% { background-position: -144rem -288rem; }\n    60% { background-position: -192rem -288rem; }\n    60.75% { background-position: -240rem -288rem; }\n    61.5% { background-position: -288rem -288rem; }\n    62.25% { background-position: -336rem -288rem; }\n    63% { background-position: -384rem -288rem; }\n    63.75% { background-position: -432rem -288rem; }\n    64.5% { background-position: -480rem -288rem; }\n    65.25% { background-position: -528rem -288rem; }\n    66% { background-position: 0rem -336rem; }\n    66.75% { background-position: -48rem -336rem; }\n    67.5% { background-position: -96rem -336rem; }\n    68.25% { background-position: -144rem -336rem; }\n    69% { background-position: -192rem -336rem; }\n    69.75% { background-position: -240rem -336rem; }\n    70.5% { background-position: -288rem -336rem; }\n    71.25% { background-position: -336rem -336rem; }\n    72% { background-position: -384rem -336rem; }\n    72.75% { background-position: -432rem -336rem; }\n    73.5% { background-position: -480rem -336rem; }\n    74.25% { background-position: -528rem -336rem; }\n    75% { background-position: 0rem -384rem; }\n    75.75% { background-position: -48rem -384rem; }\n    76.5% { background-position: -96rem -384rem; }\n    77.25% { background-position: -144rem -384rem; }\n    78% { background-position: -192rem -384rem; }\n    78.75% { background-position: -240rem -384rem; }\n    79.5% { background-position: -288rem -384rem; }\n    80.25% { background-position: -336rem -384rem; }\n    81% { background-position: -384rem -384rem; }\n    81.75% { background-position: -432rem -384rem; }\n    82.5% { background-position: -480rem -384rem; }\n    83.25% { background-position: -528rem -384rem; }\n    84% { background-position: 0rem -432rem; }\n    84.75% { background-position: -48rem -432rem; }\n    85.5% { background-position: -96rem -432rem; }\n    86.25% { background-position: -144rem -432rem; }\n    87% { background-position: -192rem -432rem; }\n    87.75% { background-position: -240rem -432rem; }\n    88.5% { background-position: -288rem -432rem; }\n    89.25% { background-position: -336rem -432rem; }\n    90% { background-position: -384rem -432rem; }\n    90.75% { background-position: -432rem -432rem; }\n    91.5% { background-position: -480rem -432rem; }\n    92.25% { background-position: -528rem -432rem; }\n    93.75% { background-position: 0rem -480rem; }\n    94.5% { background-position: -48rem -480rem; }\n    95.25% { background-position: -96rem -480rem; }\n    96% { background-position: -144rem -480rem; }\n    96.75% { background-position: -192rem -480rem; }\n    97.5% { background-position: -240rem -480rem; }\n    98.25% { background-position: -288rem -480rem; }\n    99% { background-position: -336rem -480rem; }\n    99.75% { background-position: -384rem -480rem; }\n    100% { background-position: -432rem -480rem; }\n }"],"sourceRoot":""}]);
+// Exports
+___CSS_LOADER_EXPORT___.locals = {
+	"spritesheet": `l116pAhUGRvidbja3Snr`,
+	"play": `DrKRsjH298rmCC_mdiMo`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -2664,6 +3185,59 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
+/***/ "./src/components/SpriteAnimation/SpriteAnimationMed.module.scss":
+/*!***********************************************************************!*\
+  !*** ./src/components/SpriteAnimation/SpriteAnimationMed.module.scss ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_SpriteAnimationMed_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../../node_modules/sass-loader/dist/cjs.js!../../../node_modules/postcss-loader/dist/cjs.js!./SpriteAnimationMed.module.scss */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/components/SpriteAnimation/SpriteAnimationMed.module.scss");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_SpriteAnimationMed_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_SpriteAnimationMed_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_SpriteAnimationMed_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_SpriteAnimationMed_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
 /***/ "./src/index.module.scss":
 /*!*******************************!*\
   !*** ./src/index.module.scss ***!
@@ -2837,6 +3411,16 @@ module.exports = __webpack_require__.p + "baff80dbdc01beba1387.png";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "8fccd3022acd7762640b.png";
+
+/***/ }),
+
+/***/ "./public/img/tyler-spritesheet-med.png":
+/*!**********************************************!*\
+  !*** ./public/img/tyler-spritesheet-med.png ***!
+  \**********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "b3f712b5144ec7c58965.png";
 
 /***/ })
 
@@ -3087,4 +3671,4 @@ module.exports = __webpack_require__.p + "8fccd3022acd7762640b.png";
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.1eba071d18a7058413a105dfa62b4783.js.map
+//# sourceMappingURL=App.8a7c234d453123ac220a68b3c98c9f70.js.map

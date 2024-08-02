@@ -1,0 +1,144 @@
+.spritesheet {
+    position: absolute; 
+    z-index: 1;
+    top: 10vh;
+    right: 0rem;
+    width: 48rem;
+    height: 48rem;
+    background-image: url('/Users/tylerpierson/software_projects/class-website/public/img/tyler-spritesheet-med.png');
+    background-repeat: no-repeat;
+    animation: play 8s steps(1) infinite;
+ }
+ 
+ @keyframes play {
+    0% { background-position: 0rem 0rem; }
+    10.75% { background-position: -48rem 0rem; }
+    1.5% { background-position: -96rem 0rem; }
+    2.25% { background-position: -144rem 0rem; }
+    3% { background-position: -192rem 0rem; }
+    3.75% { background-position: -240rem 0rem; }
+    4.5% { background-position: -288rem 0rem; }
+    5.25% { background-position: -336rem 0rem; }
+    6% { background-position: -384rem 0rem; }
+    6.75% { background-position: -432rem 0rem; }
+    7.5% { background-position: -480rem 0rem; }
+    8.25% { background-position: -528rem 0rem; }
+    9.75% { background-position: 0rem -48rem; }
+    10.5% { background-position: -48rem -48rem; }
+    11.25% { background-position: -96rem -48rem; }
+    12% { background-position: -144rem -48rem; }
+    12.75% { background-position: -192rem -48rem; }
+    13.5% { background-position: -240rem -48rem; }
+    14.25% { background-position: -288rem -48rem; }
+    15% { background-position: -336rem -48rem; }
+    15.75% { background-position: -384rem -48rem; }
+    16.5% { background-position: -432rem -48rem; }
+    17.25% { background-position: -480rem -48rem; }
+    18% { background-position: -528rem -48rem; }
+    19.5% { background-position: 0rem -96rem; }
+    20.25% { background-position: -48rem -96rem; }
+    21% { background-position: -96rem -96rem; }
+    21.75% { background-position: -144rem -96rem; }
+    22.5% { background-position: -192rem -96rem; }
+    23.25% { background-position: -240rem -96rem; }
+    24% { background-position: -288rem -96rem; }
+    24.75% { background-position: -336rem -96rem; }
+    25.5% { background-position: -384rem -96rem; }
+    26.25% { background-position: -432rem -96rem; }
+    27% { background-position: -480rem -96rem; }
+    27.75% { background-position: -528rem -96rem; }
+    29.25% { background-position: 0rem -144rem; }
+    30% { background-position: -48rem -144rem; }
+    30.75% { background-position: -96rem -144rem; }
+    31.5% { background-position: -144rem -144rem; }
+    32.25% { background-position: -192rem -144rem; }
+    33% { background-position: -240rem -144rem; }
+    33.75% { background-position: -288rem -144rem; }
+    34.5% { background-position: -336rem -144rem; }
+    35.25% { background-position: -384rem -144rem; }
+    36% { background-position: -432rem -144rem; }
+    36.75% { background-position: -480rem -144rem; }
+    37.5% { background-position: -528rem -144rem; }
+    39% { background-position: 0rem -192rem; }
+    39.75% { background-position: -48rem -192rem; }
+    40.5% { background-position: -96rem -192rem; }
+    41.25% { background-position: -144rem -192rem; }
+    42% { background-position: -192rem -192rem; }
+    42.75% { background-position: -240rem -192rem; }
+    43.5% { background-position: -288rem -192rem; }
+    44.25% { background-position: -336rem -192rem; }
+    45% { background-position: -384rem -192rem; }
+    45.75% { background-position: -432rem -192rem; }
+    46.5% { background-position: -480rem -192rem; }
+    47.25% { background-position: -528rem -192rem; }
+    48.75% { background-position: 0rem -240rem; }
+    49.5% { background-position: -48rem -240rem; }
+    50.25% { background-position: -96rem -240rem; }
+    51% { background-position: -144rem -240rem; }
+    51.75% { background-position: -192rem -240rem; }
+    52.5% { background-position: -240rem -240rem; }
+    53.25% { background-position: -288rem -240rem; }
+    54% { background-position: -336rem -240rem; }
+    55.5% { background-position: -384rem -240rem; }
+    54.75% { background-position: -432rem -240rem; }
+    55.5% { background-position: -480rem -240rem; }
+    56.25% { background-position: -528rem -240rem; }
+    57% { background-position: 0rem -288rem; }
+    57.75% { background-position: -48rem -288rem; }
+    58.5% { background-position: -96rem -288rem; }
+    59.25% { background-position: -144rem -288rem; }
+    60% { background-position: -192rem -288rem; }
+    60.75% { background-position: -240rem -288rem; }
+    61.5% { background-position: -288rem -288rem; }
+    62.25% { background-position: -336rem -288rem; }
+    63% { background-position: -384rem -288rem; }
+    63.75% { background-position: -432rem -288rem; }
+    64.5% { background-position: -480rem -288rem; }
+    65.25% { background-position: -528rem -288rem; }
+    66% { background-position: 0rem -336rem; }
+    66.75% { background-position: -48rem -336rem; }
+    67.5% { background-position: -96rem -336rem; }
+    68.25% { background-position: -144rem -336rem; }
+    69% { background-position: -192rem -336rem; }
+    69.75% { background-position: -240rem -336rem; }
+    70.5% { background-position: -288rem -336rem; }
+    71.25% { background-position: -336rem -336rem; }
+    72% { background-position: -384rem -336rem; }
+    72.75% { background-position: -432rem -336rem; }
+    73.5% { background-position: -480rem -336rem; }
+    74.25% { background-position: -528rem -336rem; }
+    75% { background-position: 0rem -384rem; }
+    75.75% { background-position: -48rem -384rem; }
+    76.5% { background-position: -96rem -384rem; }
+    77.25% { background-position: -144rem -384rem; }
+    78% { background-position: -192rem -384rem; }
+    78.75% { background-position: -240rem -384rem; }
+    79.5% { background-position: -288rem -384rem; }
+    80.25% { background-position: -336rem -384rem; }
+    81% { background-position: -384rem -384rem; }
+    81.75% { background-position: -432rem -384rem; }
+    82.5% { background-position: -480rem -384rem; }
+    83.25% { background-position: -528rem -384rem; }
+    84% { background-position: 0rem -432rem; }
+    84.75% { background-position: -48rem -432rem; }
+    85.5% { background-position: -96rem -432rem; }
+    86.25% { background-position: -144rem -432rem; }
+    87% { background-position: -192rem -432rem; }
+    87.75% { background-position: -240rem -432rem; }
+    88.5% { background-position: -288rem -432rem; }
+    89.25% { background-position: -336rem -432rem; }
+    90% { background-position: -384rem -432rem; }
+    90.75% { background-position: -432rem -432rem; }
+    91.5% { background-position: -480rem -432rem; }
+    92.25% { background-position: -528rem -432rem; }
+    93.75% { background-position: 0rem -480rem; }
+    94.5% { background-position: -48rem -480rem; }
+    95.25% { background-position: -96rem -480rem; }
+    96% { background-position: -144rem -480rem; }
+    96.75% { background-position: -192rem -480rem; }
+    97.5% { background-position: -240rem -480rem; }
+    98.25% { background-position: -288rem -480rem; }
+    99% { background-position: -336rem -480rem; }
+    99.75% { background-position: -384rem -480rem; }
+    100% { background-position: -432rem -480rem; }
+ }
