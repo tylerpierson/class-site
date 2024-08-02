@@ -23,6 +23,7 @@ export default function ContactPage() {
                             <li className={styles.li}>Your child's first and last name</li>
                         </ul>
                     </div>
+                    <p className={styles.contactInfo}>If you're feeling wild and would like to contribute to the class to make it a more welcoming environment, please visit my <a className={styles.link} href="https://www.amazon.com/hz/wishlist/ls/1SEOMBBTU8MM9?ref_=wl_share">Amazon Wishlist</a></p>
                 </div>
             </div>
         </>

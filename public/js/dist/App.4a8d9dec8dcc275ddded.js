@@ -355,7 +355,7 @@ function ScienceBanner() {
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 function ScienceContainer() {
-  return /*#__PURE__*/React.createElement("div", {
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceContainerMain
   }, /*#__PURE__*/React.createElement("div", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceContainerLeft
@@ -393,7 +393,9 @@ function ScienceContainer() {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceList
   }, /*#__PURE__*/React.createElement("li", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
-  })))));
+  })))), /*#__PURE__*/React.createElement("div", {
+    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].spritesheet
+  })));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ScienceContainer);
 
@@ -568,7 +570,12 @@ function ContactPage() {
     className: _ContactPage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].li
   }, "Your first and last name"), /*#__PURE__*/React.createElement("li", {
     className: _ContactPage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].li
-  }, "Your child's first and last name"))))));
+  }, "Your child's first and last name"))), /*#__PURE__*/React.createElement("p", {
+    className: _ContactPage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].contactInfo
+  }, "If you're feeling wild and would like to contribute to the class to make it a more welcoming environment, please visit my ", /*#__PURE__*/React.createElement("a", {
+    className: _ContactPage_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].link,
+    href: "https://www.amazon.com/hz/wishlist/ls/1SEOMBBTU8MM9?ref_=wl_share"
+  }, "Amazon Wishlist")))));
 }
 
 /***/ }),
@@ -1097,7 +1104,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.C9iTKzBkfQ_XoOfM2AYv {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 500px) {
   .C9iTKzBkfQ_XoOfM2AYv {
-    height: 50vh;
+    height: 35vh;
   }
   .C9iTKzBkfQ_XoOfM2AYv .J71UrRJzJj8OHGdEfkuW {
     right: 2rem;
@@ -1112,7 +1119,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.C9iTKzBkfQ_XoOfM2AYv {
   .C9iTKzBkfQ_XoOfM2AYv .b6rBmUpI6aqwO63vjPQA {
     top: 52%;
   }
-}`, "",{"version":3,"sources":["webpack://./src/components/MathBanner/MathBanner.module.scss"],"names":[],"mappings":"AAAA;EACI,uBAAA;EACA,YAAA;EACA,WAAA;EACA,kBAAA;EACA,kBAAA;AACJ;AAAI;EACI,kBAAA;EACA,WAAA;EACA,UAAA;EACA,gBAAA;AAER;AAAI;EACI,iCAAA;EACA,kBAAA;EACA,WAAA;EACA,UAAA;EACA,gBAAA;EACA,kBAAA;AAER;AAAI;EACI,YAAA;EACA,aAAA;EACA,yDAAA;EACA,4BAAA;EACA,4BAAA;EACA,8FAAA;EACA,kBAAA;EACA,QAAA;EACA,2BAAA;AAER;AACI;EACI;IAAK,gCAAA;EAEX;EADM;IAAM,iCAAA;EAIZ;EAHM;IAAM,iCAAA;EAMZ;EALM;IAAM,iCAAA;EAQZ;EAPM;IAAO,gCAAA;EAUb;AACF;AARI;EACI;IAAK,UAAA;EAWX;EAVM;IAAO,UAAA;EAab;AACF;;AAVA,oEAAA;AACA;EACI;IACI,YAAA;EAaN;EAZM;IACI,WAAA;IACA,UAAA;IACA,gBAAA;EAcV;EAZM;IACI,WAAA;IACA,SAAA;IACA,eAAA;EAcV;EAZM;IACI,QAAA;EAcV;AACF","sourcesContent":[".mathBannerContainer {\n    background-color: white;\n    height: 60vh;\n    width: 100%;\n    overflow-x: hidden;\n    position: relative;\n    .title {\n        position: absolute;\n        right: 5rem;\n        top: -5rem;\n        font-size: 30rem;\n    }\n    .subTitle {\n        color: rgba(128, 128, 128, 0.734);\n        position: absolute;\n        right: 5rem;\n        top: 17rem;\n        font-size: 10rem;\n        line-height: -5rem;\n    }\n    .spritesheet {\n        width: 25rem;\n        height: 27rem;\n        background-image: url('/Users/tylerpierson/software_projects/class-website/public/img/cap-walking-spritesheet.png');\n        background-repeat: no-repeat;\n        background-size: 80rem 80rem;\n        animation: play 1s steps(1) infinite, slide 10s linear infinite;\n        position: absolute;\n        top: 72%;\n        transform: translateY(-50%);\n    }\n     \n    @keyframes play {\n        0% { background-position: -5rem -5rem; }\n        25% { background-position: -45rem -5rem; }\n        50% { background-position: -5rem -45rem; }\n        75% { background-position: -45rem -5rem; }\n        100% { background-position: -5rem -5rem; }\n    }\n\n    @keyframes slide {\n        0% { left: -20%; }\n        100% { left: 100%; }\n    }\n}\n\n/* Small devices (portrait tablets and large phones, 600px and up) */\n@media only screen and (max-width: 500px) {\n    .mathBannerContainer {\n        height: 50vh;\n        .title {\n            right: 2rem;\n            top: -2rem;\n            font-size: 15rem;\n        }\n        .subTitle {\n            right: 2rem;\n            top: 9rem;\n            font-size: 5rem;\n        }\n        .spritesheet {\n            top: 52%;\n        }\n    }\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/MathBanner/MathBanner.module.scss"],"names":[],"mappings":"AAAA;EACI,uBAAA;EACA,YAAA;EACA,WAAA;EACA,kBAAA;EACA,kBAAA;AACJ;AAAI;EACI,kBAAA;EACA,WAAA;EACA,UAAA;EACA,gBAAA;AAER;AAAI;EACI,iCAAA;EACA,kBAAA;EACA,WAAA;EACA,UAAA;EACA,gBAAA;EACA,kBAAA;AAER;AAAI;EACI,YAAA;EACA,aAAA;EACA,yDAAA;EACA,4BAAA;EACA,4BAAA;EACA,8FAAA;EACA,kBAAA;EACA,QAAA;EACA,2BAAA;AAER;AACI;EACI;IAAK,gCAAA;EAEX;EADM;IAAM,iCAAA;EAIZ;EAHM;IAAM,iCAAA;EAMZ;EALM;IAAM,iCAAA;EAQZ;EAPM;IAAO,gCAAA;EAUb;AACF;AARI;EACI;IAAK,UAAA;EAWX;EAVM;IAAO,UAAA;EAab;AACF;;AAVA,oEAAA;AACA;EACI;IACI,YAAA;EAaN;EAZM;IACI,WAAA;IACA,UAAA;IACA,gBAAA;EAcV;EAZM;IACI,WAAA;IACA,SAAA;IACA,eAAA;EAcV;EAZM;IACI,QAAA;EAcV;AACF","sourcesContent":[".mathBannerContainer {\n    background-color: white;\n    height: 60vh;\n    width: 100%;\n    overflow-x: hidden;\n    position: relative;\n    .title {\n        position: absolute;\n        right: 5rem;\n        top: -5rem;\n        font-size: 30rem;\n    }\n    .subTitle {\n        color: rgba(128, 128, 128, 0.734);\n        position: absolute;\n        right: 5rem;\n        top: 17rem;\n        font-size: 10rem;\n        line-height: -5rem;\n    }\n    .spritesheet {\n        width: 25rem;\n        height: 27rem;\n        background-image: url('/Users/tylerpierson/software_projects/class-website/public/img/cap-walking-spritesheet.png');\n        background-repeat: no-repeat;\n        background-size: 80rem 80rem;\n        animation: play 1s steps(1) infinite, slide 10s linear infinite;\n        position: absolute;\n        top: 72%;\n        transform: translateY(-50%);\n    }\n     \n    @keyframes play {\n        0% { background-position: -5rem -5rem; }\n        25% { background-position: -45rem -5rem; }\n        50% { background-position: -5rem -45rem; }\n        75% { background-position: -45rem -5rem; }\n        100% { background-position: -5rem -5rem; }\n    }\n\n    @keyframes slide {\n        0% { left: -20%; }\n        100% { left: 100%; }\n    }\n}\n\n/* Small devices (portrait tablets and large phones, 600px and up) */\n@media only screen and (max-width: 500px) {\n    .mathBannerContainer {\n        height: 35vh;\n        .title {\n            right: 2rem;\n            top: -2rem;\n            font-size: 15rem;\n        }\n        .subTitle {\n            right: 2rem;\n            top: 9rem;\n            font-size: 5rem;\n        }\n        .spritesheet {\n            top: 52%;\n        }\n    }\n}\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"mathBannerContainer": `C9iTKzBkfQ_XoOfM2AYv`,
@@ -1661,10 +1668,15 @@ ___CSS_LOADER_EXPORT___.locals = {
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./public/img/hulk-sprite.png */ "./public/img/hulk-sprite.png"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `.tKObkiTgSKCKKjhAGKfH {
   width: 75%;
@@ -1673,6 +1685,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.tKObkiTgSKCKKjhAGKfH {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .tKObkiTgSKCKKjhAGKfH .h9qrpUvhHCrx1DfHP_dZ {
   font-size: 8.5rem;
@@ -1730,6 +1743,26 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.tKObkiTgSKCKKjhAGKfH {
   color: var(--heading-color);
   transition: 0.4s ease;
 }
+.tKObkiTgSKCKKjhAGKfH .XSyHvQcTq4xBaukXvBtq {
+  width: 35.2rem;
+  height: 35.2rem;
+  background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
+  background-repeat: no-repeat;
+  background-size: 28160px 352px;
+  background-position: 0rem 0rem;
+  position: absolute;
+  bottom: -5rem;
+  right: -15rem;
+  animation: vY0NuqM1DcCxLWhd0Ewk 15s steps(80) infinite;
+}
+@keyframes vY0NuqM1DcCxLWhd0Ewk {
+  0% {
+    background-position: 0rem 0rem;
+  }
+  100% {
+    background-position: -2816rem 0rem;
+  }
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 1000px) {
@@ -1744,7 +1777,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.tKObkiTgSKCKKjhAGKfH {
   .tKObkiTgSKCKKjhAGKfH .EAP9c7la0NDmy6u5mXl8 {
     width: 100%;
   }
-}`, "",{"version":3,"sources":["webpack://./src/components/ScienceContainer/ScienceContainer.module.scss"],"names":[],"mappings":"AAAA;EACI,UAAA;EACA,cAAA;EACA,eAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;AACJ;AAAI;EACI,iBAAA;EACA,gBAAA;EACA,uBAAA;AAER;AAAI;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,UAAA;AAER;AADQ;EACI,UAAA;AAGZ;AAFY;EACI,gBAAA;AAIhB;AAAI;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,UAAA;AAER;AAAI;EACI,UAAA;EACA,YAAA;EACA,yBAAA;EACA,eAAA;EACA,mBAAA;EACA,qBAAA;EACA,qBAAA;AAER;AADQ;EACI,YAAA;EACA,eAAA;EACA,YAAA;AAGZ;AAAY;EACI,qBAAA;EACA,iBAAA;EACA,yBAAA;EACA,cAAA;EACA,iBAAA;AAEhB;AACQ;EACI,cAAA;EACA,YAAA;EACA,eAAA;AACZ;AACQ;EACI,sBAAA;EACA,2BAAA;EACA,qBAAA;AACZ;;AAIA,oEAAA;AACA;EACI;IACI,aAAA;IACA,sBAAA;IACA,uBAAA;EADN;EAEM;IACI,WAAA;EAAV;EAEM;IACI,WAAA;EAAV;AACF","sourcesContent":[".scienceContainerMain {\n    width: 75%;\n    margin: 0 auto;\n    padding: 5rem 0;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    .scienceHeader {\n        font-size: 8.5rem;\n        font-weight: 600;\n        color: var(--btn-color);\n    }\n    .scienceContainerLeft {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: center;\n        width: 50%;\n        .headingSMContainer {\n            width: 90%;\n            .headingSM {\n                text-align: left;\n            }\n        }\n    }\n    .scienceContainerRight {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: center;\n        width: 50%;\n    }\n    .scienceCard {\n        width: 90%;\n        height: 35vh;\n        background-color: #303030;\n        padding: 1.5rem;\n        margin-bottom: 3rem;\n        border-radius: .5rem;\n        transition: .4s ease;\n        .scienceTitle {\n            margin: 1rem;\n            font-size: 2rem;\n            color: white;\n        }\n        .scienceList {\n            .scienceListItem {\n                list-style-type: none;\n                font-size: 1.3rem;\n                color: rgb(183, 183, 183);\n                margin: 0 2rem;\n                line-height: 2rem;\n            }\n        }\n        .scienceDescription {\n            font-size: 1vw;\n            margin: 1rem;\n            color: darkgrey;\n        }\n        &:hover .scienceTitle {\n            transform: scale(1.05);\n            color: var(--heading-color);\n            transition: .4s ease;\n        }\n    }\n}\n\n/* Small devices (portrait tablets and large phones, 600px and up) */\n@media only screen and (max-width: 1000px) {\n    .scienceContainerMain {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        .scienceContainerLeft {\n            width: 100%;\n        }\n        .scienceContainerRight {\n            width: 100%;\n        }\n    }\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/ScienceContainer/ScienceContainer.module.scss"],"names":[],"mappings":"AAAA;EACI,UAAA;EACA,cAAA;EACA,eAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,kBAAA;AACJ;AAAI;EACI,iBAAA;EACA,gBAAA;EACA,uBAAA;AAER;AAAI;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,UAAA;AAER;AADQ;EACI,UAAA;AAGZ;AAFY;EACI,gBAAA;AAIhB;AAAI;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,UAAA;AAER;AAAI;EACI,UAAA;EACA,YAAA;EACA,yBAAA;EACA,eAAA;EACA,mBAAA;EACA,qBAAA;EACA,qBAAA;AAER;AADQ;EACI,YAAA;EACA,eAAA;EACA,YAAA;AAGZ;AAAY;EACI,qBAAA;EACA,iBAAA;EACA,yBAAA;EACA,cAAA;EACA,iBAAA;AAEhB;AACQ;EACI,cAAA;EACA,YAAA;EACA,eAAA;AACZ;AACQ;EACI,sBAAA;EACA,2BAAA;EACA,qBAAA;AACZ;AAEI;EACI,cAAA;EACA,eAAA;EACA,yDAAA;EACA,4BAAA;EACA,8BAAA;EACA,8BAAA;EACA,kBAAA;EACA,aAAA;EACA,aAAA;EACA,sDAAA;AAAR;AAGI;EACI;IAAK,8BAAA;EAAX;EACM;IAAO,kCAAA;EAEb;AACF;;AACA,oEAAA;AACA;EACI;IACI,aAAA;IACA,sBAAA;IACA,uBAAA;EAEN;EADM;IACI,WAAA;EAGV;EADM;IACI,WAAA;EAGV;AACF","sourcesContent":[".scienceContainerMain {\n    width: 75%;\n    margin: 0 auto;\n    padding: 5rem 0;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    position: relative;\n    .scienceHeader {\n        font-size: 8.5rem;\n        font-weight: 600;\n        color: var(--btn-color);\n    }\n    .scienceContainerLeft {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: center;\n        width: 50%;\n        .headingSMContainer {\n            width: 90%;\n            .headingSM {\n                text-align: left;\n            }\n        }\n    }\n    .scienceContainerRight {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: center;\n        width: 50%;\n    }\n    .scienceCard {\n        width: 90%;\n        height: 35vh;\n        background-color: #303030;\n        padding: 1.5rem;\n        margin-bottom: 3rem;\n        border-radius: .5rem;\n        transition: .4s ease;\n        .scienceTitle {\n            margin: 1rem;\n            font-size: 2rem;\n            color: white;\n        }\n        .scienceList {\n            .scienceListItem {\n                list-style-type: none;\n                font-size: 1.3rem;\n                color: rgb(183, 183, 183);\n                margin: 0 2rem;\n                line-height: 2rem;\n            }\n        }\n        .scienceDescription {\n            font-size: 1vw;\n            margin: 1rem;\n            color: darkgrey;\n        }\n        &:hover .scienceTitle {\n            transform: scale(1.05);\n            color: var(--heading-color);\n            transition: .4s ease;\n        }\n    }\n    .spritesheet {\n        width: 35.2rem;\n        height: 35.2rem;\n        background-image: url('/Users/tylerpierson/software_projects/class-website/public/img/hulk-sprite.png');\n        background-repeat: no-repeat;\n        background-size: 28160px 352px;\n        background-position: 0rem 0rem;\n        position: absolute;\n        bottom: -5rem;\n        right: -15rem;\n        animation: play 15s steps(80) infinite;\n    }\n     \n    @keyframes play {\n        0% { background-position: 0rem 0rem; }\n        100% { background-position: -2816rem 0rem; }\n    }\n}\n\n/* Small devices (portrait tablets and large phones, 600px and up) */\n@media only screen and (max-width: 1000px) {\n    .scienceContainerMain {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        .scienceContainerLeft {\n            width: 100%;\n        }\n        .scienceContainerRight {\n            width: 100%;\n        }\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"scienceContainerMain": `tKObkiTgSKCKKjhAGKfH`,
@@ -1757,7 +1790,9 @@ ___CSS_LOADER_EXPORT___.locals = {
 	"scienceTitle": `LdjfqCXWIurbURbWKVft`,
 	"scienceList": `Vj0Fq8qKs9n3QsTyO5ft`,
 	"scienceListItem": `xGzsxtCFdpthEQuQa9rw`,
-	"scienceDescription": `Jz5Zmq3bIFEah3vygdg4`
+	"scienceDescription": `Jz5Zmq3bIFEah3vygdg4`,
+	"spritesheet": `XSyHvQcTq4xBaukXvBtq`,
+	"play": `vY0NuqM1DcCxLWhd0Ewk`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -4198,6 +4233,16 @@ module.exports = __webpack_require__.p + "8fccd3022acd7762640b.png";
 
 /***/ }),
 
+/***/ "./public/img/hulk-sprite.png":
+/*!************************************!*\
+  !*** ./public/img/hulk-sprite.png ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "68f8113d10e82d8582a5.png";
+
+/***/ }),
+
 /***/ "./public/img/tyler-spritesheet-med.png":
 /*!**********************************************!*\
   !*** ./public/img/tyler-spritesheet-med.png ***!
@@ -4465,4 +4510,4 @@ module.exports = __webpack_require__.p + "4031c99fef0abdcd87ad.png";
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.faf98fbe6265757b83fae2cbf88517b6.js.map
+//# sourceMappingURL=App.05e1221f9dcabd5c1fbad3e351cca579.js.map
