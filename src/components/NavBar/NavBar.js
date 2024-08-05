@@ -1,11 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './NavBar.module.scss';
 import { Link } from 'react-router-dom';
 
 export default function NavBar() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className={styles.Nav}>
-      <h2 className={styles.title}>Mr. Pierson</h2>
+    <nav className={`${styles.Nav} ${isScrolled ? styles.hidden : ''}`}>
+      <img className={styles.image} src="/img/mr_pierson_logo.png" alt="Logo"/>
       <ul className={styles.ul}>
         <Link className={styles.listItemContainer} to='/'>
           <div className={styles.navItemTop}><li className={styles.listItem}>Home</li></div>
@@ -27,4 +45,3 @@ export default function NavBar() {
     </nav>
   );
 }
-
