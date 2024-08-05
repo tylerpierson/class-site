@@ -1,4 +1,5 @@
 .AboutPage {
+    position: relative;
     display: flex;
     justify-content: center;
     margin: 12vh 2rem 0;
@@ -26,6 +27,10 @@
     }
     .image {
         transform: rotate(10deg);
+    }
+    .qr {
+        position: absolute;
+        width: 15rem;
     }
 }
 

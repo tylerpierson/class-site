@@ -26,6 +26,7 @@ function AboutPage() {
           </p>
         </div>
         <img className={styles.image} src="/img/headshot.png" />
+        <img className={styles.qr} src="/img/qr-code.png" />  
       </div>
     </>
   )
