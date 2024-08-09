@@ -44,12 +44,29 @@
             color: white;
         }
         .mathList {
+            padding: auto;
+            .span {
+                font-size: 1.3rem;
+                color: white;
+                font-weight: bold;
+            }
             .mathListItem {
                 list-style-type: none;
                 font-size: 1.3rem;
                 color: rgb(183, 183, 183);
                 margin: 0 2rem;
                 line-height: 2rem;
+            }
+            .link {
+                text-decoration: none;
+                color: var(--btn-color);
+                font-size: 1.3rem;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            .img {
+                width: 30%;
             }
         }
         .mathDescription {

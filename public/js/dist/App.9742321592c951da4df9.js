@@ -166,7 +166,13 @@ function MathContainer() {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathList
   }, /*#__PURE__*/React.createElement("li", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  }))), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("span", {
+    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].span
+  }, "4.2A"), " Interpret the value of each place-value position as 10 times the position to the right and as one-tenth of the value of the place to its left."), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("li", {
+    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
+  }, /*#__PURE__*/React.createElement("span", {
+    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].span
+  }, "4.2B"), " Represent the value of the digit in whole numbers through 1,000,000,000 and decimals to the hundredths using expanded notation and numerals."))), /*#__PURE__*/React.createElement("div", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathCard
   }, /*#__PURE__*/React.createElement("h4", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathTitle
@@ -174,7 +180,12 @@ function MathContainer() {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathList
   }, /*#__PURE__*/React.createElement("li", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  })))), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("a", {
+    href: "https://classful.com/wp-content/uploads/2023/01/63cd4636454c2_6.jpg"
+  }, /*#__PURE__*/React.createElement("img", {
+    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].img,
+    src: "img/place-value.jpeg"
+  })))))), /*#__PURE__*/React.createElement("div", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathContainerRight
   }, /*#__PURE__*/React.createElement("div", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathCard
@@ -184,7 +195,13 @@ function MathContainer() {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathList
   }, /*#__PURE__*/React.createElement("li", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  }))), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("span", {
+    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].span
+  }, "I can "), "understand that each digit in a number is 10 times bigger than the digit to its right and one-tenth of the value of the digit to its left."), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("li", {
+    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
+  }, /*#__PURE__*/React.createElement("span", {
+    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].span
+  }, "I can "), "show the value of each digit in numbers up to 1,000,000,000 and decimals to the hundredths by using expanded notation and regular numbers."))), /*#__PURE__*/React.createElement("div", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathCard
   }, /*#__PURE__*/React.createElement("h4", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathTitle
@@ -192,7 +209,25 @@ function MathContainer() {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathList
   }, /*#__PURE__*/React.createElement("li", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  })))));
+  }, /*#__PURE__*/React.createElement("a", {
+    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].link,
+    href: "https://www.khanacademy.org/math/arithmetic/arith-place-value/arith-review-place-value-intro/v/place-value-1"
+  }, "Khan Academy - Place Value and Decimal System")), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("li", {
+    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
+  }, /*#__PURE__*/React.createElement("a", {
+    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].link,
+    href: "https://www.mathsisfun.com/place-value.html"
+  }, "Math is Fun - Place Value")), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("li", {
+    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
+  }, /*#__PURE__*/React.createElement("a", {
+    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].link,
+    href: "https://www.khanacademy.org/math/cc-third-grade-math/imp-place-value-and-rounding-3/expanded-form/v/expanded-form"
+  }, "Khan Academy - Expanded Form")), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("li", {
+    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
+  }, /*#__PURE__*/React.createElement("a", {
+    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].link,
+    href: "https://learnzillion.com/lesson_plans/8215-use-expanded-notation-to-represent-decimals"
+  }, "LearnZillion - Expanded Notation"))))));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MathContainer);
 
@@ -460,7 +495,13 @@ function ScienceContainer() {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceList
   }, /*#__PURE__*/React.createElement("li", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
-  }))), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("span", {
+    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].span
+  }), " "), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("li", {
+    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
+  }, /*#__PURE__*/React.createElement("span", {
+    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].span
+  }), " "))), /*#__PURE__*/React.createElement("div", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceCard
   }, /*#__PURE__*/React.createElement("h4", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceTitle
@@ -468,7 +509,12 @@ function ScienceContainer() {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceList
   }, /*#__PURE__*/React.createElement("li", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
-  })))), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("a", {
+    href: "https://i.pinimg.com/474x/a4/11/2a/a4112a9d78d823f810345a3ea09bff1b.jpg"
+  }, /*#__PURE__*/React.createElement("img", {
+    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].img,
+    src: "https://i.pinimg.com/474x/a4/11/2a/a4112a9d78d823f810345a3ea09bff1b.jpg"
+  })))))), /*#__PURE__*/React.createElement("div", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceContainerRight
   }, /*#__PURE__*/React.createElement("div", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceCard
@@ -478,7 +524,9 @@ function ScienceContainer() {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceList
   }, /*#__PURE__*/React.createElement("li", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
-  }))), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("span", {
+    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].span
+  }, "I can "), "explain and demonstrate how to stay safe and respectful while conducting experiments in the science classroom."))), /*#__PURE__*/React.createElement("div", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceCard
   }, /*#__PURE__*/React.createElement("h4", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceTitle
@@ -486,7 +534,30 @@ function ScienceContainer() {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceList
   }, /*#__PURE__*/React.createElement("li", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
-  })))), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("a", {
+    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].link,
+    href: "https://climatekids.nasa.gov/safe-scientist/"
+  }, "NASA's Climate Kids - Be a Safe Scientist")), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("li", {
+    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
+  }, /*#__PURE__*/React.createElement("a", {
+    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].link,
+    href: "https://www.brainpop.com/science/scientificinquiry/sciencesafety/"
+  }, "BrainPOP - Science Safety")), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("li", {
+    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
+  }, /*#__PURE__*/React.createElement("a", {
+    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].link,
+    href: "https://www.scholastic.com/teachers/articles/teaching-content/science-lab-safety-rules/"
+  }, "Scholastic - Science Lab Safety Rules")), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("li", {
+    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
+  }, /*#__PURE__*/React.createElement("a", {
+    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].link,
+    href: "https://www.sciencebuddies.org/science-fair-projects/science-safety"
+  }, "Science Buddies - Science Safety Guide")), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("li", {
+    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
+  }, /*#__PURE__*/React.createElement("a", {
+    className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].link,
+    href: "https://www.acs.org/content/acs/en/education/resources/k-8/science-safety.html"
+  }, "American Chemical Society - Safety in the Elementary Science Classroom"))))), /*#__PURE__*/React.createElement("div", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].spritesheet
   })));
 }
@@ -1302,12 +1373,31 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.Mj60_QpFSZNphixQDlWN {
   font-size: 2rem;
   color: white;
 }
+.Mj60_QpFSZNphixQDlWN .mBIozkOVZk7oXIFS5D2j .gJxTIDoM5wFilA2ZKggV {
+  padding: auto;
+}
+.Mj60_QpFSZNphixQDlWN .mBIozkOVZk7oXIFS5D2j .gJxTIDoM5wFilA2ZKggV .dRXFVF7iXYDbEbPRZNkJ {
+  font-size: 1.3rem;
+  color: white;
+  font-weight: bold;
+}
 .Mj60_QpFSZNphixQDlWN .mBIozkOVZk7oXIFS5D2j .gJxTIDoM5wFilA2ZKggV .aQkCXG61jvhhfIxx78ch {
   list-style-type: none;
   font-size: 1.3rem;
   color: rgb(183, 183, 183);
   margin: 0 2rem;
   line-height: 2rem;
+}
+.Mj60_QpFSZNphixQDlWN .mBIozkOVZk7oXIFS5D2j .gJxTIDoM5wFilA2ZKggV .i_NDLX4xBusc1REEkBY3 {
+  text-decoration: none;
+  color: var(--btn-color);
+  font-size: 1.3rem;
+}
+.Mj60_QpFSZNphixQDlWN .mBIozkOVZk7oXIFS5D2j .gJxTIDoM5wFilA2ZKggV .i_NDLX4xBusc1REEkBY3:hover {
+  text-decoration: underline;
+}
+.Mj60_QpFSZNphixQDlWN .mBIozkOVZk7oXIFS5D2j .gJxTIDoM5wFilA2ZKggV .CPwzmOfE8Y7FRdZCNT0A {
+  width: 30%;
 }
 .Mj60_QpFSZNphixQDlWN .mBIozkOVZk7oXIFS5D2j .vX4BjDRMtZqe_NsK1DRw {
   font-size: 1vw;
@@ -1339,7 +1429,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.Mj60_QpFSZNphixQDlWN {
   .Mj60_QpFSZNphixQDlWN .PJrojtPFSh5A9FSsfIz2 {
     width: 100%;
   }
-}`, "",{"version":3,"sources":["webpack://./src/components/MathContainer/MathContainer.module.scss"],"names":[],"mappings":"AAAA;EACI,UAAA;EACA,cAAA;EACA,eAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;AACJ;AAAI;EACI,iBAAA;EACA,gBAAA;EACA,uBAAA;AAER;AAAI;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,UAAA;AAER;AADQ;EACI,UAAA;AAGZ;AAFY;EACI,gBAAA;AAIhB;AAAI;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,UAAA;AAER;AAAI;EACI,UAAA;EACA,YAAA;EACA,yBAAA;EACA,eAAA;EACA,mBAAA;EACA,qBAAA;EACA,qBAAA;AAER;AADQ;EACI,YAAA;EACA,eAAA;EACA,YAAA;AAGZ;AAAY;EACI,qBAAA;EACA,iBAAA;EACA,yBAAA;EACA,cAAA;EACA,iBAAA;AAEhB;AACQ;EACI,cAAA;EACA,YAAA;EACA,eAAA;AACZ;AACQ;EACI,sBAAA;EACA,2BAAA;EACA,qBAAA;AACZ;;AAIA,oEAAA;AACA;EACI;IACI,aAAA;IACA,sBAAA;IACA,uBAAA;EADN;EAEM;IACI,WAAA;EAAV;EACU;IACI,UAAA;EACd;EAAc;IACI,gBAAA;EAElB;EAEM;IACI,WAAA;EAAV;AACF","sourcesContent":[".mathContainerMain {\n    width: 75%;\n    margin: 0 auto;\n    padding: 5rem 0;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    .mathHeader {\n        font-size: 8.5rem;\n        font-weight: 600;\n        color: var(--btn-color);\n    }\n    .mathContainerLeft {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: center;\n        width: 50%;\n        .headingSMContainer {\n            width: 90%;\n            .headingSM {\n                text-align: left;\n            }\n        }\n    }\n    .mathContainerRight {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: center;\n        width: 50%;\n    }\n    .mathCard {\n        width: 90%;\n        height: 35vh;\n        background-color: #303030;\n        padding: 1.5rem;\n        margin-bottom: 3rem;\n        border-radius: .5rem;\n        transition: .4s ease;\n        .mathTitle {\n            margin: 1rem;\n            font-size: 2rem;\n            color: white;\n        }\n        .mathList {\n            .mathListItem {\n                list-style-type: none;\n                font-size: 1.3rem;\n                color: rgb(183, 183, 183);\n                margin: 0 2rem;\n                line-height: 2rem;\n            }\n        }\n        .mathDescription {\n            font-size: 1vw;\n            margin: 1rem;\n            color: darkgrey;\n        }\n        &:hover .mathTitle {\n            transform: scale(1.05);\n            color: var(--heading-color);\n            transition: .4s ease;\n        }\n    }\n}\n\n/* Small devices (portrait tablets and large phones, 600px and up) */\n@media only screen and (max-width: 800px) {\n    .mathContainerMain {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        .mathContainerLeft {\n            width: 100%;\n            .headingSMContainer {\n                width: 90%;\n                .headingSM {\n                    text-align: left;\n                }\n            }\n        }\n        .mathContainerRight {\n            width: 100%;\n        }\n    }\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/MathContainer/MathContainer.module.scss"],"names":[],"mappings":"AAAA;EACI,UAAA;EACA,cAAA;EACA,eAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;AACJ;AAAI;EACI,iBAAA;EACA,gBAAA;EACA,uBAAA;AAER;AAAI;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,UAAA;AAER;AADQ;EACI,UAAA;AAGZ;AAFY;EACI,gBAAA;AAIhB;AAAI;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,UAAA;AAER;AAAI;EACI,UAAA;EACA,YAAA;EACA,yBAAA;EACA,eAAA;EACA,mBAAA;EACA,qBAAA;EACA,qBAAA;AAER;AADQ;EACI,YAAA;EACA,eAAA;EACA,YAAA;AAGZ;AADQ;EACI,aAAA;AAGZ;AAFY;EACI,iBAAA;EACA,YAAA;EACA,iBAAA;AAIhB;AAFY;EACI,qBAAA;EACA,iBAAA;EACA,yBAAA;EACA,cAAA;EACA,iBAAA;AAIhB;AAFY;EACI,qBAAA;EACA,uBAAA;EACA,iBAAA;AAIhB;AAHgB;EACI,0BAAA;AAKpB;AAFY;EACI,UAAA;AAIhB;AADQ;EACI,cAAA;EACA,YAAA;EACA,eAAA;AAGZ;AADQ;EACI,sBAAA;EACA,2BAAA;EACA,qBAAA;AAGZ;;AAEA,oEAAA;AACA;EACI;IACI,aAAA;IACA,sBAAA;IACA,uBAAA;EACN;EAAM;IACI,WAAA;EAEV;EADU;IACI,UAAA;EAGd;EAFc;IACI,gBAAA;EAIlB;EAAM;IACI,WAAA;EAEV;AACF","sourcesContent":[".mathContainerMain {\n    width: 75%;\n    margin: 0 auto;\n    padding: 5rem 0;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    .mathHeader {\n        font-size: 8.5rem;\n        font-weight: 600;\n        color: var(--btn-color);\n    }\n    .mathContainerLeft {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: center;\n        width: 50%;\n        .headingSMContainer {\n            width: 90%;\n            .headingSM {\n                text-align: left;\n            }\n        }\n    }\n    .mathContainerRight {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: center;\n        width: 50%;\n    }\n    .mathCard {\n        width: 90%;\n        height: 35vh;\n        background-color: #303030;\n        padding: 1.5rem;\n        margin-bottom: 3rem;\n        border-radius: .5rem;\n        transition: .4s ease;\n        .mathTitle {\n            margin: 1rem;\n            font-size: 2rem;\n            color: white;\n        }\n        .mathList {\n            padding: auto;\n            .span {\n                font-size: 1.3rem;\n                color: white;\n                font-weight: bold;\n            }\n            .mathListItem {\n                list-style-type: none;\n                font-size: 1.3rem;\n                color: rgb(183, 183, 183);\n                margin: 0 2rem;\n                line-height: 2rem;\n            }\n            .link {\n                text-decoration: none;\n                color: var(--btn-color);\n                font-size: 1.3rem;\n                &:hover {\n                    text-decoration: underline;\n                }\n            }\n            .img {\n                width: 30%;\n            }\n        }\n        .mathDescription {\n            font-size: 1vw;\n            margin: 1rem;\n            color: darkgrey;\n        }\n        &:hover .mathTitle {\n            transform: scale(1.05);\n            color: var(--heading-color);\n            transition: .4s ease;\n        }\n    }\n}\n\n/* Small devices (portrait tablets and large phones, 600px and up) */\n@media only screen and (max-width: 800px) {\n    .mathContainerMain {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        .mathContainerLeft {\n            width: 100%;\n            .headingSMContainer {\n                width: 90%;\n                .headingSM {\n                    text-align: left;\n                }\n            }\n        }\n        .mathContainerRight {\n            width: 100%;\n        }\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"mathContainerMain": `Mj60_QpFSZNphixQDlWN`,
@@ -1351,7 +1441,10 @@ ___CSS_LOADER_EXPORT___.locals = {
 	"mathCard": `mBIozkOVZk7oXIFS5D2j`,
 	"mathTitle": `oyE_k0Sfle8nXUf4makM`,
 	"mathList": `gJxTIDoM5wFilA2ZKggV`,
+	"span": `dRXFVF7iXYDbEbPRZNkJ`,
 	"mathListItem": `aQkCXG61jvhhfIxx78ch`,
+	"link": `i_NDLX4xBusc1REEkBY3`,
+	"img": `CPwzmOfE8Y7FRdZCNT0A`,
 	"mathDescription": `vX4BjDRMtZqe_NsK1DRw`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
@@ -2115,12 +2208,28 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.tKObkiTgSKCKKjhAGKfH {
   font-size: 2rem;
   color: white;
 }
+.tKObkiTgSKCKKjhAGKfH ._xR8cfBG_ULH7Ka9xQlj .Vj0Fq8qKs9n3QsTyO5ft .lHZErXLeh8SSbePfp5g_ {
+  font-size: 1.3rem;
+  color: white;
+  font-weight: bold;
+}
 .tKObkiTgSKCKKjhAGKfH ._xR8cfBG_ULH7Ka9xQlj .Vj0Fq8qKs9n3QsTyO5ft .xGzsxtCFdpthEQuQa9rw {
   list-style-type: none;
   font-size: 1.3rem;
   color: rgb(183, 183, 183);
   margin: 0 2rem;
   line-height: 2rem;
+}
+.tKObkiTgSKCKKjhAGKfH ._xR8cfBG_ULH7Ka9xQlj .Vj0Fq8qKs9n3QsTyO5ft .krMQUA7qMbxxx23loWQM {
+  text-decoration: none;
+  color: var(--btn-color);
+  font-size: 1.3rem;
+}
+.tKObkiTgSKCKKjhAGKfH ._xR8cfBG_ULH7Ka9xQlj .Vj0Fq8qKs9n3QsTyO5ft .krMQUA7qMbxxx23loWQM:hover {
+  text-decoration: underline;
+}
+.tKObkiTgSKCKKjhAGKfH ._xR8cfBG_ULH7Ka9xQlj .Vj0Fq8qKs9n3QsTyO5ft .dsM7YKeLFQ3Jt2HbGdAy {
+  width: 30%;
 }
 .tKObkiTgSKCKKjhAGKfH ._xR8cfBG_ULH7Ka9xQlj .Jz5Zmq3bIFEah3vygdg4 {
   font-size: 1vw;
@@ -2166,7 +2275,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.tKObkiTgSKCKKjhAGKfH {
   .tKObkiTgSKCKKjhAGKfH .EAP9c7la0NDmy6u5mXl8 {
     width: 100%;
   }
-}`, "",{"version":3,"sources":["webpack://./src/components/ScienceContainer/ScienceContainer.module.scss"],"names":[],"mappings":"AAAA;EACI,UAAA;EACA,cAAA;EACA,eAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,kBAAA;AACJ;AAAI;EACI,iBAAA;EACA,gBAAA;EACA,uBAAA;AAER;AAAI;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,UAAA;AAER;AADQ;EACI,UAAA;AAGZ;AAFY;EACI,gBAAA;AAIhB;AAAI;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,UAAA;AAER;AAAI;EACI,UAAA;EACA,YAAA;EACA,yBAAA;EACA,eAAA;EACA,mBAAA;EACA,qBAAA;EACA,qBAAA;AAER;AADQ;EACI,YAAA;EACA,eAAA;EACA,YAAA;AAGZ;AAAY;EACI,qBAAA;EACA,iBAAA;EACA,yBAAA;EACA,cAAA;EACA,iBAAA;AAEhB;AACQ;EACI,cAAA;EACA,YAAA;EACA,eAAA;AACZ;AACQ;EACI,sBAAA;EACA,2BAAA;EACA,qBAAA;AACZ;AAEI;EACI,cAAA;EACA,eAAA;EACA,yDAAA;EACA,4BAAA;EACA,8BAAA;EACA,8BAAA;EACA,kBAAA;EACA,aAAA;EACA,aAAA;EACA,sDAAA;AAAR;AAGI;EACI;IAAK,8BAAA;EAAX;EACM;IAAO,kCAAA;EAEb;AACF;;AACA,oEAAA;AACA;EACI;IACI,aAAA;IACA,sBAAA;IACA,uBAAA;EAEN;EADM;IACI,WAAA;EAGV;EADM;IACI,WAAA;EAGV;AACF","sourcesContent":[".scienceContainerMain {\n    width: 75%;\n    margin: 0 auto;\n    padding: 5rem 0;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    position: relative;\n    .scienceHeader {\n        font-size: 8.5rem;\n        font-weight: 600;\n        color: var(--btn-color);\n    }\n    .scienceContainerLeft {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: center;\n        width: 50%;\n        .headingSMContainer {\n            width: 90%;\n            .headingSM {\n                text-align: left;\n            }\n        }\n    }\n    .scienceContainerRight {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: center;\n        width: 50%;\n    }\n    .scienceCard {\n        width: 90%;\n        height: 35vh;\n        background-color: #303030;\n        padding: 1.5rem;\n        margin-bottom: 3rem;\n        border-radius: .5rem;\n        transition: .4s ease;\n        .scienceTitle {\n            margin: 1rem;\n            font-size: 2rem;\n            color: white;\n        }\n        .scienceList {\n            .scienceListItem {\n                list-style-type: none;\n                font-size: 1.3rem;\n                color: rgb(183, 183, 183);\n                margin: 0 2rem;\n                line-height: 2rem;\n            }\n        }\n        .scienceDescription {\n            font-size: 1vw;\n            margin: 1rem;\n            color: darkgrey;\n        }\n        &:hover .scienceTitle {\n            transform: scale(1.05);\n            color: var(--heading-color);\n            transition: .4s ease;\n        }\n    }\n    .spritesheet {\n        width: 35.2rem;\n        height: 35.2rem;\n        background-image: url('/Users/tylerpierson/software_projects/class-website/public/img/hulk-sprite.png');\n        background-repeat: no-repeat;\n        background-size: 28160px 352px;\n        background-position: 0rem 0rem;\n        position: absolute;\n        bottom: -5rem;\n        right: -15rem;\n        animation: play 15s steps(80) infinite;\n    }\n     \n    @keyframes play {\n        0% { background-position: 0rem 0rem; }\n        100% { background-position: -2816rem 0rem; }\n    }\n}\n\n/* Small devices (portrait tablets and large phones, 600px and up) */\n@media only screen and (max-width: 1000px) {\n    .scienceContainerMain {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        .scienceContainerLeft {\n            width: 100%;\n        }\n        .scienceContainerRight {\n            width: 100%;\n        }\n    }\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/ScienceContainer/ScienceContainer.module.scss"],"names":[],"mappings":"AAAA;EACI,UAAA;EACA,cAAA;EACA,eAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,kBAAA;AACJ;AAAI;EACI,iBAAA;EACA,gBAAA;EACA,uBAAA;AAER;AAAI;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,UAAA;AAER;AADQ;EACI,UAAA;AAGZ;AAFY;EACI,gBAAA;AAIhB;AAAI;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,UAAA;AAER;AAAI;EACI,UAAA;EACA,YAAA;EACA,yBAAA;EACA,eAAA;EACA,mBAAA;EACA,qBAAA;EACA,qBAAA;AAER;AADQ;EACI,YAAA;EACA,eAAA;EACA,YAAA;AAGZ;AAAY;EACI,iBAAA;EACA,YAAA;EACA,iBAAA;AAEhB;AAAY;EACI,qBAAA;EACA,iBAAA;EACA,yBAAA;EACA,cAAA;EACA,iBAAA;AAEhB;AAAY;EACI,qBAAA;EACA,uBAAA;EACA,iBAAA;AAEhB;AADgB;EACI,0BAAA;AAGpB;AAAY;EACI,UAAA;AAEhB;AACQ;EACI,cAAA;EACA,YAAA;EACA,eAAA;AACZ;AACQ;EACI,sBAAA;EACA,2BAAA;EACA,qBAAA;AACZ;AAEI;EACI,cAAA;EACA,eAAA;EACA,yDAAA;EACA,4BAAA;EACA,8BAAA;EACA,8BAAA;EACA,kBAAA;EACA,aAAA;EACA,aAAA;EACA,sDAAA;AAAR;AAGI;EACI;IAAK,8BAAA;EAAX;EACM;IAAO,kCAAA;EAEb;AACF;;AACA,oEAAA;AACA;EACI;IACI,aAAA;IACA,sBAAA;IACA,uBAAA;EAEN;EADM;IACI,WAAA;EAGV;EADM;IACI,WAAA;EAGV;AACF","sourcesContent":[".scienceContainerMain {\n    width: 75%;\n    margin: 0 auto;\n    padding: 5rem 0;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    position: relative;\n    .scienceHeader {\n        font-size: 8.5rem;\n        font-weight: 600;\n        color: var(--btn-color);\n    }\n    .scienceContainerLeft {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: center;\n        width: 50%;\n        .headingSMContainer {\n            width: 90%;\n            .headingSM {\n                text-align: left;\n            }\n        }\n    }\n    .scienceContainerRight {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: center;\n        width: 50%;\n    }\n    .scienceCard {\n        width: 90%;\n        height: 35vh;\n        background-color: #303030;\n        padding: 1.5rem;\n        margin-bottom: 3rem;\n        border-radius: .5rem;\n        transition: .4s ease;\n        .scienceTitle {\n            margin: 1rem;\n            font-size: 2rem;\n            color: white;\n        }\n        .scienceList {\n            .span {\n                font-size: 1.3rem;\n                color: white;\n                font-weight: bold;\n            }\n            .scienceListItem {\n                list-style-type: none;\n                font-size: 1.3rem;\n                color: rgb(183, 183, 183);\n                margin: 0 2rem;\n                line-height: 2rem;\n            }\n            .link {\n                text-decoration: none;\n                color: var(--btn-color);\n                font-size: 1.3rem;\n                &:hover {\n                    text-decoration: underline;\n                }\n            }\n            .img {\n                width: 30%;\n            }\n        }\n        .scienceDescription {\n            font-size: 1vw;\n            margin: 1rem;\n            color: darkgrey;\n        }\n        &:hover .scienceTitle {\n            transform: scale(1.05);\n            color: var(--heading-color);\n            transition: .4s ease;\n        }\n    }\n    .spritesheet {\n        width: 35.2rem;\n        height: 35.2rem;\n        background-image: url('/Users/tylerpierson/software_projects/class-website/public/img/hulk-sprite.png');\n        background-repeat: no-repeat;\n        background-size: 28160px 352px;\n        background-position: 0rem 0rem;\n        position: absolute;\n        bottom: -5rem;\n        right: -15rem;\n        animation: play 15s steps(80) infinite;\n    }\n     \n    @keyframes play {\n        0% { background-position: 0rem 0rem; }\n        100% { background-position: -2816rem 0rem; }\n    }\n}\n\n/* Small devices (portrait tablets and large phones, 600px and up) */\n@media only screen and (max-width: 1000px) {\n    .scienceContainerMain {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        .scienceContainerLeft {\n            width: 100%;\n        }\n        .scienceContainerRight {\n            width: 100%;\n        }\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"scienceContainerMain": `tKObkiTgSKCKKjhAGKfH`,
@@ -2178,7 +2287,10 @@ ___CSS_LOADER_EXPORT___.locals = {
 	"scienceCard": `_xR8cfBG_ULH7Ka9xQlj`,
 	"scienceTitle": `LdjfqCXWIurbURbWKVft`,
 	"scienceList": `Vj0Fq8qKs9n3QsTyO5ft`,
+	"span": `lHZErXLeh8SSbePfp5g_`,
 	"scienceListItem": `xGzsxtCFdpthEQuQa9rw`,
+	"link": `krMQUA7qMbxxx23loWQM`,
+	"img": `dsM7YKeLFQ3Jt2HbGdAy`,
 	"scienceDescription": `Jz5Zmq3bIFEah3vygdg4`,
 	"spritesheet": `XSyHvQcTq4xBaukXvBtq`,
 	"play": `vY0NuqM1DcCxLWhd0Ewk`
@@ -4963,4 +5075,4 @@ module.exports = __webpack_require__.p + "4031c99fef0abdcd87ad.png";
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.7af07dd15f90f3196eb13d595d2fd62d.js.map
+//# sourceMappingURL=App.cfd980a83ddaa886b788c8fa81162f20.js.map
