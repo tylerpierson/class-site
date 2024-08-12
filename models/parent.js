@@ -18,6 +18,7 @@ const parentSchema = new Schema ({
     guardTwoPhone: { type: String },
     roomParent: { type: Boolean, default: false },
     transportation: {type: String},
+    carTagNumber: {type: String},
 }, {
     timestamps: true
 })

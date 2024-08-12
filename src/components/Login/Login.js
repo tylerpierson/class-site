@@ -78,56 +78,58 @@ const Login = ({ toggleLoginForm, setUser, user }) => {
     };
     
     return (
-        <>
-            {success ? (
-                <section className={styles.section}>
-                    <h1>You are logged in!</h1>
-                    <br />
-                    <p>
-                        <a className={styles.a} href="#">Go to Home</a>
-                    </p>
-                </section>
-            ) : (
-                <section className={styles.section}>
-                    <p ref={errRef} className={errMsg ? styles.errmsg : styles.offscreen} aria-live="assertive">
-                        {errMsg}
-                    </p>
-                    <h1>Sign In</h1>
-                    <form className={styles.form} onSubmit={handleSubmit}>
-                        <label className={styles.label} htmlFor="email">Email:</label>
-                        <input
-                            type="email"
-                            id="email"
-                            ref={emailRef}
-                            autoComplete="off"
-                            onChange={(e) => setEmail(e.target.value)}
-                            value={email}
-                            required
-                            className={styles.input}
-                        />
-                        <label className={styles.label} htmlFor="password">Password:</label>
-                        <input
-                            type="password"
-                            id="password"
-                            ref={passwordRef}
-                            autoComplete="off"
-                            onChange={(e) => setPassword(e.target.value)}
-                            value={password}
-                            required
-                            className={styles.input}
-                        />
-                        <button className={styles.button}>Sign In</button>
-                    </form>
-                    <p className={styles.togglePara}>
-                        Need an Account?<br />
-                        <span className={styles.line} onClick={toggleLoginForm}>
-                            {/*put router link here*/}
-                            <a className={styles.a} href="#">Sign Up</a>
-                        </span>
-                    </p>
-                </section>
-            )}
-        </>
+        <div className={styles.Login}>
+            <>
+                {success ? (
+                    <section className={styles.section}>
+                        <h1>You are logged in!</h1>
+                        <br />
+                        <p>
+                            <a className={styles.a} href="#">Go to Home</a>
+                        </p>
+                    </section>
+                ) : (
+                    <section className={styles.section}>
+                        <p ref={errRef} className={errMsg ? styles.errmsg : styles.offscreen} aria-live="assertive">
+                            {errMsg}
+                        </p>
+                        <h1>Sign In</h1>
+                        <form className={styles.form} onSubmit={handleSubmit}>
+                            <label className={styles.label} htmlFor="email">Email:</label>
+                            <input
+                                type="email"
+                                id="email"
+                                ref={emailRef}
+                                autoComplete="off"
+                                onChange={(e) => setEmail(e.target.value)}
+                                value={email}
+                                required
+                                className={styles.input}
+                            />
+                            <label className={styles.label} htmlFor="password">Password:</label>
+                            <input
+                                type="password"
+                                id="password"
+                                ref={passwordRef}
+                                autoComplete="off"
+                                onChange={(e) => setPassword(e.target.value)}
+                                value={password}
+                                required
+                                className={styles.input}
+                            />
+                            <button className={styles.button}>Sign In</button>
+                        </form>
+                        <p className={styles.togglePara}>
+                            Need an Account?<br />
+                            <span className={styles.line} onClick={toggleLoginForm}>
+                                {/*put router link here*/}
+                                <a className={styles.a} href="#">Sign Up</a>
+                            </span>
+                        </p>
+                    </section>
+                )}
+            </>
+        </div>
     );
 };
 

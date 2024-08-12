@@ -44,6 +44,7 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
     const [guardTwoPhone, setGuardTwoPhone] = useState('');
     const [roomParent, setRoomParent] = useState(false);
     const [transportation, setTransportation] = useState('Car');
+    const [carTagNumber, setCarTagNumber] = useState('');
 
     const [validFirstName, setValidFirstName] = useState(false);
     const [validLastName, setValidLastName] = useState(false);
@@ -62,6 +63,7 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
     const [validGuardTwoLastName, setValidGuardTwoLastName] = useState(true);
     const [validGuardTwoEmail, setValidGuardTwoEmail] = useState(true);
     const [validGuardTwoPhone, setValidGuardTwoPhone] = useState(true);
+    const [validCarTagNumber, setValidCarTagNumber] = useState(true);
 
     const [firstNameFocus, setFirstNameFocus] = useState(false);
     const [lastNameFocus, setLastNameFocus] = useState(false);
@@ -82,6 +84,7 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
     const [guardTwoLastNameFocus, setGuardTwoLastNameFocus] = useState(false);
     const [guardTwoEmailFocus, setGuardTwoEmailFocus] = useState(false);
     const [guardTwoPhoneFocus, setGuardTwoPhoneFocus] = useState(false);
+    const [carTagNumberFocus, setCarTagNumberFocus] = useState(false);
 
     const [errMsg, setErrMsg] = useState('');
     const [success, setSuccess] = useState(false);
@@ -156,8 +159,12 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
     }, [guardTwoPhone]);
 
     useEffect(() => {
+        setValidCarTagNumber(carTagNumber.trim() !== '');
+    }, [carTagNumber]);
+
+    useEffect(() => {
         setErrMsg('');
-    }, [firstName, lastName, email, password, confirmPassword, role, studentIds, studentFirstName, studentLastName, guardOneFirstName, guardOneLastName, guardOneEmail, guardOnePhone, guardTwoFirstName, guardTwoLastName, guardTwoEmail, guardTwoPhone]);
+    }, [firstName, lastName, email, password, confirmPassword, role, studentIds, studentFirstName, studentLastName, guardOneFirstName, guardOneLastName, guardOneEmail, guardOnePhone, guardTwoFirstName, guardTwoLastName, guardTwoEmail, guardTwoPhone, carTagNumber]);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -201,6 +208,7 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
                 guardTwoPhone,
                 roomParent,
                 transportation,
+                carTagNumber
               };
     
         try {
@@ -248,6 +256,7 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
     };    
 
     return (
+        <div className={styles.Register}>
         <>
             {success ? (
                 <section className={styles.section}>
@@ -287,7 +296,7 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
 
                         {/* Student ID */}
                         {role === 'parent' && (
-                            <div className={styles.studentIdsContainer}>
+                            <div className={styles.studentIdContainer}>
                                 <label htmlFor="studentId" className={styles.label}>
                                     Student ID:
                                 </label>
@@ -308,7 +317,7 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
                                 </p>
                             </div>
                         )}
-
+                        
                         {/* First Name */}
                         <div className={styles.nameContainer}>
                             <div className={styles.fName}>
@@ -329,7 +338,7 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
                                     className={styles.input}
                                     onFocus={() => setFirstNameFocus(true)}
                                     onBlur={() => setFirstNameFocus(false)}
-                                    disabled={role === 'parent'} // Disable if role is 'parent'
+                                    disabled={role === 'parent'}
                                 />
                             </div>
                             <div className={styles.lName}>
@@ -355,6 +364,7 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
                                 />
                             </div>
                         </div>
+
                         <div>
                             <p id="firstNameNote" className={firstNameFocus && !validFirstName ? styles.instructions : styles.offscreen}>
                                 <FontAwesomeIcon icon={faInfoCircle} />
@@ -366,6 +376,7 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
                             </p>
                         </div>
 
+                        {role === 'teacher' && (
                         <div className={styles.emailContainer}>
                             {/* Email */}
                             <label htmlFor="email" className={styles.label}>
@@ -392,6 +403,7 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
                                 Please enter a valid email address.
                             </p>
                         </div>
+                        )}
 
                         {/* Student IDs */}
                         {role === 'teacher' && (
@@ -419,153 +431,188 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
 
                         {role === 'parent' && (    
                             <>
+                            <div className={styles.nameContainer}>
+                                <label htmlFor="studentFirstName" className={styles.label}>
+                                    Student First Name:
+                                    <input
+                                        type="text"
+                                        id="studentFirstName"
+                                        className={styles.input}
+                                        onChange={(e) => setStudentFirstName(e.target.value)}
+                                        onFocus={() => setStudentFirstNameFocus(true)}
+                                        onBlur={() => setStudentFirstNameFocus(false)}
+                                        value={studentFirstName}
+                                    />
+                                    {studentFirstNameFocus && !validStudentFirstName && <FontAwesomeIcon icon={faInfoCircle} />}
+                                </label>
 
-                            <label htmlFor="studentFirstName">
-                                Student First Name:
-                                <input
-                                    type="text"
-                                    id="studentFirstName"
-                                    onChange={(e) => setStudentFirstName(e.target.value)}
-                                    onFocus={() => setStudentFirstNameFocus(true)}
-                                    onBlur={() => setStudentFirstNameFocus(false)}
-                                    value={studentFirstName}
-                                />
-                                {studentFirstNameFocus && !validStudentFirstName && <FontAwesomeIcon icon={faInfoCircle} />}
-                            </label>
+                                <label htmlFor="studentLastName" className={styles.label}>
+                                    Student Last Name:
+                                    <input
+                                        type="text"
+                                        id="studentLastName"
+                                        className={styles.input}
+                                        onChange={(e) => setStudentLastName(e.target.value)}
+                                        onFocus={() => setStudentLastNameFocus(true)}
+                                        onBlur={() => setStudentLastNameFocus(false)}
+                                        value={studentLastName}
+                                    />
+                                    {studentLastNameFocus && !validStudentLastName && <FontAwesomeIcon icon={faInfoCircle} />}
+                                </label>
+                            </div>
 
-                            <label htmlFor="studentLastName">
-                                Student Last Name:
-                                <input
-                                    type="text"
-                                    id="studentLastName"
-                                    onChange={(e) => setStudentLastName(e.target.value)}
-                                    onFocus={() => setStudentLastNameFocus(true)}
-                                    onBlur={() => setStudentLastNameFocus(false)}
-                                    value={studentLastName}
-                                />
-                                {studentLastNameFocus && !validStudentLastName && <FontAwesomeIcon icon={faInfoCircle} />}
-                            </label>
+                            <div className={styles.nameContainer}>
+                                <label htmlFor="guardOneFirstName" className={styles.label}>
+                                    Guardian One First Name:
+                                    <input
+                                        type="text"
+                                        id="guardOneFirstName"
+                                        className={styles.input}
+                                        onChange={(e) => setGuardOneFirstName(e.target.value)}
+                                        onFocus={() => setGuardOneFirstNameFocus(true)}
+                                        onBlur={() => setGuardOneFirstNameFocus(false)}
+                                        value={guardOneFirstName}
+                                    />
+                                    {guardOneFirstNameFocus && !validGuardOneFirstName && <FontAwesomeIcon icon={faInfoCircle} />}
+                                </label>
 
-                            <label htmlFor="guardOneFirstName">
-                                Guardian One First Name:
-                                <input
-                                    type="text"
-                                    id="guardOneFirstName"
-                                    onChange={(e) => setGuardOneFirstName(e.target.value)}
-                                    onFocus={() => setGuardOneFirstNameFocus(true)}
-                                    onBlur={() => setGuardOneFirstNameFocus(false)}
-                                    value={guardOneFirstName}
-                                />
-                                {guardOneFirstNameFocus && !validGuardOneFirstName && <FontAwesomeIcon icon={faInfoCircle} />}
-                            </label>
+                                <label htmlFor="guardOneLastName" className={styles.label}>
+                                    Guardian One Last Name:
+                                    <input
+                                        type="text"
+                                        id="guardOneLastName"
+                                        className={styles.input}
+                                        onChange={(e) => setGuardOneLastName(e.target.value)}
+                                        onFocus={() => setGuardOneLastNameFocus(true)}
+                                        onBlur={() => setGuardOneLastNameFocus(false)}
+                                        value={guardOneLastName}
+                                    />
+                                    {guardOneLastNameFocus && !validGuardOneLastName && <FontAwesomeIcon icon={faInfoCircle} />}
+                                </label>
+                            </div>
 
-                        <label htmlFor="guardOneLastName">
-                            Guardian One Last Name:
-                            <input
-                                type="text"
-                                id="guardOneLastName"
-                                onChange={(e) => setGuardOneLastName(e.target.value)}
-                                onFocus={() => setGuardOneLastNameFocus(true)}
-                                onBlur={() => setGuardOneLastNameFocus(false)}
-                                value={guardOneLastName}
-                            />
-                            {guardOneLastNameFocus && !validGuardOneLastName && <FontAwesomeIcon icon={faInfoCircle} />}
-                        </label>
+                            <div className={styles.nameContainer}>
+                                <label htmlFor="guardOneEmail" className={styles.label}>
+                                    Guardian One Email:
+                                    <input
+                                        type="email"
+                                        id="guardOneEmail"
+                                        className={styles.input}
+                                        onChange={(e) => setGuardOneEmail(e.target.value)}
+                                        onFocus={() => setGuardOneEmailFocus(true)}
+                                        onBlur={() => setGuardOneEmailFocus(false)}
+                                        value={guardOneEmail}
+                                    />
+                                    {guardOneEmailFocus && !validGuardOneEmail && <FontAwesomeIcon icon={faInfoCircle} />}
+                                </label>
 
-                        <label htmlFor="guardOneEmail">
-                            Guardian One Email:
-                            <input
-                                type="email"
-                                id="guardOneEmail"
-                                onChange={(e) => setGuardOneEmail(e.target.value)}
-                                onFocus={() => setGuardOneEmailFocus(true)}
-                                onBlur={() => setGuardOneEmailFocus(false)}
-                                value={guardOneEmail}
-                            />
-                            {guardOneEmailFocus && !validGuardOneEmail && <FontAwesomeIcon icon={faInfoCircle} />}
-                        </label>
+                                <label htmlFor="guardOnePhone" className={styles.label}>
+                                    Guardian One Phone:
+                                    <input
+                                        type="text"
+                                        id="guardOnePhone"
+                                        className={styles.input}
+                                        onChange={(e) => setGuardOnePhone(e.target.value)}
+                                        onFocus={() => setGuardOnePhoneFocus(true)}
+                                        onBlur={() => setGuardOnePhoneFocus(false)}
+                                        value={guardOnePhone}
+                                    />
+                                    {guardOnePhoneFocus && !validGuardOnePhone && <FontAwesomeIcon icon={faInfoCircle} />}
+                                </label>
+                            </div>
 
-                        <label htmlFor="guardOnePhone">
-                            Guardian One Phone:
-                            <input
-                                type="text"
-                                id="guardOnePhone"
-                                onChange={(e) => setGuardOnePhone(e.target.value)}
-                                onFocus={() => setGuardOnePhoneFocus(true)}
-                                onBlur={() => setGuardOnePhoneFocus(false)}
-                                value={guardOnePhone}
-                            />
-                            {guardOnePhoneFocus && !validGuardOnePhone && <FontAwesomeIcon icon={faInfoCircle} />}
-                        </label>
+                            <div className={styles.nameContainer}>
+                                <label htmlFor="guardTwoFirstName" className={styles.label}>
+                                    Guardian Two First Name (optional):
+                                    <input
+                                        type="text"
+                                        id="guardTwoFirstName"
+                                        className={styles.input}
+                                        onChange={(e) => setGuardTwoFirstName(e.target.value)}
+                                        onFocus={() => setGuardTwoFirstNameFocus(true)}
+                                        onBlur={() => setGuardTwoFirstNameFocus(false)}
+                                        value={guardTwoFirstName}
+                                    />
+                                    {guardTwoFirstNameFocus && !validGuardTwoFirstName && <FontAwesomeIcon icon={faInfoCircle} />}
+                                </label>
 
-                        <label htmlFor="guardTwoFirstName">
-                            Guardian Two First Name (optional):
-                            <input
-                                type="text"
-                                id="guardTwoFirstName"
-                                onChange={(e) => setGuardTwoFirstName(e.target.value)}
-                                onFocus={() => setGuardTwoFirstNameFocus(true)}
-                                onBlur={() => setGuardTwoFirstNameFocus(false)}
-                                value={guardTwoFirstName}
-                            />
-                            {guardTwoFirstNameFocus && !validGuardTwoFirstName && <FontAwesomeIcon icon={faInfoCircle} />}
-                        </label>
+                                <label htmlFor="guardTwoLastName" className={styles.label}>
+                                    Guardian Two Last Name (optional):
+                                    <input
+                                        type="text"
+                                        id="guardTwoLastName"
+                                        className={styles.input}
+                                        onChange={(e) => setGuardTwoLastName(e.target.value)}
+                                        onFocus={() => setGuardTwoLastNameFocus(true)}
+                                        onBlur={() => setGuardTwoLastNameFocus(false)}
+                                        value={guardTwoLastName}
+                                    />
+                                    {guardTwoLastNameFocus && !validGuardTwoLastName && <FontAwesomeIcon icon={faInfoCircle} />}
+                                </label>
+                            </div>
 
-                        <label htmlFor="guardTwoLastName">
-                            Guardian Two Last Name (optional):
-                            <input
-                                type="text"
-                                id="guardTwoLastName"
-                                onChange={(e) => setGuardTwoLastName(e.target.value)}
-                                onFocus={() => setGuardTwoLastNameFocus(true)}
-                                onBlur={() => setGuardTwoLastNameFocus(false)}
-                                value={guardTwoLastName}
-                            />
-                            {guardTwoLastNameFocus && !validGuardTwoLastName && <FontAwesomeIcon icon={faInfoCircle} />}
-                        </label>
+                            <div className={styles.nameContainer}>
+                                <label htmlFor="guardTwoEmail" className={styles.label}>
+                                    Guardian Two Email (optional):
+                                    <input
+                                        type="email"
+                                        id="guardTwoEmail"
+                                        className={styles.input}
+                                        onChange={(e) => setGuardTwoEmail(e.target.value)}
+                                        onFocus={() => setGuardTwoEmailFocus(true)}
+                                        onBlur={() => setGuardTwoEmailFocus(false)}
+                                        value={guardTwoEmail}
+                                    />
+                                    {guardTwoEmailFocus && !validGuardTwoEmail && <FontAwesomeIcon icon={faInfoCircle} />}
+                                </label>
 
-                        <label htmlFor="guardTwoEmail">
-                            Guardian Two Email (optional):
-                            <input
-                                type="email"
-                                id="guardTwoEmail"
-                                onChange={(e) => setGuardTwoEmail(e.target.value)}
-                                onFocus={() => setGuardTwoEmailFocus(true)}
-                                onBlur={() => setGuardTwoEmailFocus(false)}
-                                value={guardTwoEmail}
-                            />
-                            {guardTwoEmailFocus && !validGuardTwoEmail && <FontAwesomeIcon icon={faInfoCircle} />}
-                        </label>
+                                <label htmlFor="guardTwoPhone" className={styles.label}>
+                                    Guardian Two Phone (optional):
+                                    <input
+                                        type="text"
+                                        id="guardTwoPhone"
+                                        className={styles.input}
+                                        onChange={(e) => setGuardTwoPhone(e.target.value)}
+                                        onFocus={() => setGuardTwoPhoneFocus(true)}
+                                        onBlur={() => setGuardTwoPhoneFocus(false)}
+                                        value={guardTwoPhone}
+                                    />
+                                    {guardTwoPhoneFocus && !validGuardTwoPhone && <FontAwesomeIcon icon={faInfoCircle} />}
+                                </label>
+                            </div>
 
-                        <label htmlFor="guardTwoPhone">
-                            Guardian Two Phone (optional):
-                            <input
-                                type="text"
-                                id="guardTwoPhone"
-                                onChange={(e) => setGuardTwoPhone(e.target.value)}
-                                onFocus={() => setGuardTwoPhoneFocus(true)}
-                                onBlur={() => setGuardTwoPhoneFocus(false)}
-                                value={guardTwoPhone}
-                            />
-                            {guardTwoPhoneFocus && !validGuardTwoPhone && <FontAwesomeIcon icon={faInfoCircle} />}
-                        </label>
+                            <div className={styles.nameContainer}>
+                                <label htmlFor="transportation" className={styles.label}>
+                                    Transportation:
+                                    <select
+                                        id="transportation"
+                                        className={styles.input}
+                                        onChange={(e) => setTransportation(e.target.value)}
+                                        value={transportation}
+                                    >
+                                        <option value="car">Car</option>
+                                        <option value="bus">Bus</option>
+                                        <option value="walker home">Walker Home</option>
+                                        <option value="walker go">Walker Go</option>
+                                        <option value="right at school">Right At School</option>
+                                    </select>
+                                </label>
 
-                        <label htmlFor="transportation">
-                            Transportation:
-                            <select
-                                id="transportation"
-                                onChange={(e) => setTransportation(e.target.value)}
-                                value={transportation}
-                            >
-                                <option value="car">Car</option>
-                                <option value="bus">Bus</option>
-                                <option value="walker home">Walker Home</option>
-                                <option value="walker go">Walker Go</option>
-                                <option value="right at school">Right At School</option>
-                            </select>
-                        </label>
-
-                        <label htmlFor="roomParent">
+                                <label htmlFor="carTagNumber" className={styles.label}>
+                                    Car Tag Number (N/A if Unknown):
+                                    <input
+                                        type="text"
+                                        id="carTagNumber"
+                                        className={styles.input}
+                                        onChange={(e) => setCarTagNumber(e.target.value)}
+                                        onFocus={() => setCarTagNumberFocus(true)}
+                                        onBlur={() => setCarTagNumberFocus(false)}
+                                        value={carTagNumber}
+                                    />
+                                    {carTagNumberFocus && !validCarTagNumber && <FontAwesomeIcon icon={faInfoCircle} />}
+                                </label>
+                            </div>
+                        <label htmlFor="roomParent" className={styles.label}>
                             Room Parent:
                             <input
                                 type="checkbox"
@@ -600,7 +647,6 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
                                 Password must be 8-24 characters long and include uppercase, lowercase, a number, and a special character.
                             </p>
                         </div>
-
                         <div className={styles.confirmPasswordContainer}>
                             {/* Confirm Password */}
                             <label htmlFor="confirmPassword" className={styles.label}>
@@ -625,13 +671,12 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
                                 Passwords must match.
                             </p>
                         </div>
-
                         {/* Submit Button */}
                         <button
                             type="submit"
                             className={styles.submitButton}
                             disabled={role === 'parent' 
-                                ? !validStudentId || !validPassword || !validConfirmPassword 
+                                ? !validStudentId || !validPassword || !validConfirmPassword || !validStudentFirstName || !validStudentLastName || !validGuardOneFirstName || !validGuardOneLastName || !validGuardOneEmail || !validGuardOnePhone || !validCarTagNumber
                                 : !validFirstName || !validLastName || !validEmail || !validPassword || !validConfirmPassword}
                         >
                             Register
@@ -647,6 +692,7 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
                 </section>
             )}
         </>
+        </div>
     );
 };
 
