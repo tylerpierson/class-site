@@ -1,0 +1,139 @@
+.section {
+    width: 100%;
+    min-height: 400px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 3rem;
+    border: .3rem solid var(--text-dark);
+    background-color: var(--text-light);
+}
+
+.nameContainer, .emailAndCampusContainer, .passwordContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    .fName, .lName, .email, .campusNum, .pwd, .confirm, .studentIds {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 .5rem;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding-bottom: 1rem;
+}
+
+.a, .a:visited {
+    color: navy;
+}
+
+.input,
+.button, .disabledButton, .select {
+  font-size: 22px;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+}
+
+.label,
+.button, .disabledButton {
+  margin-top: 1rem;
+  margin: 0;
+}
+
+.button,
+.disabledButton {
+  font-size: 22px;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  margin: 0;
+}
+
+.button {
+  border: none;
+  background-color: var(--btn-color);
+  color: white;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  padding: 0.7rem;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+.disabledButton {
+  background-color: grey;
+  color: darkgrey;
+  cursor: not-allowed;
+  &:hover {
+    background-color: grey;
+    color: darkgrey;
+    cursor: not-allowed;
+  }
+}
+
+
+.togglePara {
+    text-align: center;
+}
+
+.select:focus {
+    outline: none;
+    box-shadow: 0 0 1rem var(--btn-color);
+}
+
+.instructions {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: #000;
+    color: #fff;
+    padding: 0.25rem;
+    position: relative;
+    bottom: -10px;
+}
+
+.instructions > svg {
+    margin-right: 0.25rem;
+}
+
+.offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.hide {
+    display: none;
+}
+
+.valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+}
+
+.invalid {
+    color: red;
+    margin-left: 0.25rem;
+}
+
+.errmsg {
+    background-color: lightpink;
+    color: firebrick;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.line {
+    display: inline-block;
+}

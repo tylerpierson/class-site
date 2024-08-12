@@ -625,7 +625,8 @@ function NewsLetter() {
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
-const REGISTER_URL = '/api/users/';
+const TEACHER_REGISTER_URL = '/api/users/';
+const PARENT_REGISTER_URL = '/api/parents/';
 const Register = _ref => {
   let {
     toggleLoginForm,
@@ -638,29 +639,67 @@ const Register = _ref => {
   const emailRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
   const passwordRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
   const confirmPasswordRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
-  const roleRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(); // Ref for role input
+  const roleRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
+  const studentIdRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
+  const studentIdsRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(); // Ref for student IDs input
   const errRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
   const [firstName, setFirstName] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
   const [lastName, setLastName] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
   const [email, setEmail] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
   const [password, setPassword] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
   const [confirmPassword, setConfirmPassword] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
-  const [role, setRole] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('parent'); // State for role
+  const [role, setRole] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('parent');
+  const [studentId, setStudentId] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
+  const [studentIds, setStudentIds] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''); // State for student IDs
 
+  // New state fields
+  const [studentFirstName, setStudentFirstName] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
+  const [studentLastName, setStudentLastName] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
+  const [guardOneFirstName, setGuardOneFirstName] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
+  const [guardOneLastName, setGuardOneLastName] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
+  const [guardOneEmail, setGuardOneEmail] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
+  const [guardOnePhone, setGuardOnePhone] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
+  const [guardTwoFirstName, setGuardTwoFirstName] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
+  const [guardTwoLastName, setGuardTwoLastName] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
+  const [guardTwoEmail, setGuardTwoEmail] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
+  const [guardTwoPhone, setGuardTwoPhone] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
+  const [roomParent, setRoomParent] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [transportation, setTransportation] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('Car');
   const [validFirstName, setValidFirstName] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   const [validLastName, setValidLastName] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   const [validEmail, setValidEmail] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   const [validPassword, setValidPassword] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   const [validConfirmPassword, setValidConfirmPassword] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
-  const [validRole, setValidRole] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true); // Always valid for hard-coded role
-
+  const [validStudentId, setValidStudentId] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [validStudentFirstName, setValidStudentFirstName] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [validStudentLastName, setValidStudentLastName] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [validGuardOneFirstName, setValidGuardOneFirstName] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [validGuardOneLastName, setValidGuardOneLastName] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [validGuardOneEmail, setValidGuardOneEmail] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [validGuardOnePhone, setValidGuardOnePhone] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [validGuardTwoFirstName, setValidGuardTwoFirstName] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
+  const [validGuardTwoLastName, setValidGuardTwoLastName] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
+  const [validGuardTwoEmail, setValidGuardTwoEmail] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
+  const [validGuardTwoPhone, setValidGuardTwoPhone] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
   const [firstNameFocus, setFirstNameFocus] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   const [lastNameFocus, setLastNameFocus] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   const [emailFocus, setEmailFocus] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   const [passwordFocus, setPasswordFocus] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   const [confirmPasswordFocus, setConfirmPasswordFocus] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
-  const [roleFocus, setRoleFocus] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false); // State for role focus
+  const [roleFocus, setRoleFocus] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [studentIdFocus, setStudentIdFocus] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [studentIdsFocus, setStudentIdsFocus] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false); // Focus state for student IDs
 
+  const [studentFirstNameFocus, setStudentFirstNameFocus] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [studentLastNameFocus, setStudentLastNameFocus] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [guardOneFirstNameFocus, setGuardOneFirstNameFocus] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [guardOneLastNameFocus, setGuardOneLastNameFocus] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [guardOneEmailFocus, setGuardOneEmailFocus] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [guardOnePhoneFocus, setGuardOnePhoneFocus] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [guardTwoFirstNameFocus, setGuardTwoFirstNameFocus] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [guardTwoLastNameFocus, setGuardTwoLastNameFocus] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [guardTwoEmailFocus, setGuardTwoEmailFocus] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [guardTwoPhoneFocus, setGuardTwoPhoneFocus] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   const [errMsg, setErrMsg] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
   const [success, setSuccess] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
@@ -676,58 +715,115 @@ const Register = _ref => {
     setValidEmail(EMAIL_REGEX.test(email));
   }, [email]);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    setValidStudentId(studentId.trim() !== '');
+  }, [studentId]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     setValidPassword(PWD_REGEX.test(password));
   }, [password]);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     setValidConfirmPassword(confirmPassword === password);
   }, [confirmPassword, password]);
+
+  // Add validation for new inputs
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    setValidStudentFirstName(studentFirstName.trim() !== '');
+  }, [studentFirstName]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    setValidStudentLastName(studentLastName.trim() !== '');
+  }, [studentLastName]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    setValidGuardOneFirstName(guardOneFirstName.trim() !== '');
+  }, [guardOneFirstName]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    setValidGuardOneLastName(guardOneLastName.trim() !== '');
+  }, [guardOneLastName]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    setValidGuardOneEmail(EMAIL_REGEX.test(guardOneEmail));
+  }, [guardOneEmail]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    setValidGuardOnePhone(guardOnePhone.trim() !== '');
+  }, [guardOnePhone]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    setValidGuardTwoFirstName(guardTwoFirstName.trim() !== '');
+  }, [guardTwoFirstName]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    setValidGuardTwoLastName(guardTwoLastName.trim() !== '');
+  }, [guardTwoLastName]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    setValidGuardTwoEmail(EMAIL_REGEX.test(guardTwoEmail));
+  }, [guardTwoEmail]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    setValidGuardTwoPhone(guardTwoPhone.trim() !== '');
+  }, [guardTwoPhone]);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     setErrMsg('');
-  }, [firstName, lastName, email, password, confirmPassword]);
+  }, [firstName, lastName, email, password, confirmPassword, role, studentIds, studentFirstName, studentLastName, guardOneFirstName, guardOneLastName, guardOneEmail, guardOnePhone, guardTwoFirstName, guardTwoLastName, guardTwoEmail, guardTwoPhone]);
   const handleSubmit = async e => {
     e.preventDefault();
-    if (!validFirstName || !validLastName || !validEmail || !validPassword || !validConfirmPassword) {
+
+    // Adjust validation based on the role
+    const isValid = role === 'teacher' ? validFirstName && validLastName && validEmail && validPassword && validConfirmPassword : validStudentId && validPassword && validConfirmPassword;
+    if (!isValid) {
       setErrMsg("Invalid Entry");
       return;
     }
+
+    // Determine the correct URL based on the selected role
+    const url = role === 'teacher' ? TEACHER_REGISTER_URL : PARENT_REGISTER_URL;
+    const body = role === 'teacher' ? {
+      firstName,
+      lastName,
+      email,
+      password,
+      role,
+      studentIds: studentIds.split(',').map(id => id.trim()) // Process student IDs
+    } : {
+      studentId,
+      password,
+      role,
+      studentFirstName,
+      studentLastName,
+      guardOneFirstName,
+      guardOneLastName,
+      guardOneEmail,
+      guardOnePhone,
+      guardTwoFirstName,
+      guardTwoLastName,
+      guardTwoEmail,
+      guardTwoPhone,
+      roomParent,
+      transportation
+    };
     try {
-      const response = await fetch(REGISTER_URL, {
+      const response = await fetch(url, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({
-          firstName,
-          lastName,
-          email,
-          password,
-          role // Include role in the request body
-        })
+        body: JSON.stringify(body)
       });
       if (!response.ok) {
         throw new Error('Registration Failed');
       }
       const responseData = await response.json();
-
-      // Save the token in localStorage
       localStorage.setItem('token', responseData.token);
-
-      // Set user data
       const userData = {
-        firstName: firstName,
-        lastName: lastName,
-        email: email,
-        role: role
+        firstName: role === 'teacher' ? firstName : '',
+        lastName: role === 'teacher' ? lastName : '',
+        email: role === 'teacher' ? email : '',
+        role
       };
       setUser(userData);
 
-      // Clear form fields
+      // Reset the form fields
       setFirstName('');
       setLastName('');
       setEmail('');
       setPassword('');
       setConfirmPassword('');
-      // Role is hard-coded, no need to reset
+      setRole('parent');
+      setStudentIds('');
+      setStudentId('');
       setSuccessMsg('Registration Successful');
       toggleLoginForm();
     } catch (err) {
@@ -751,6 +847,51 @@ const Register = _ref => {
     className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].form,
     onSubmit: handleSubmit
   }, /*#__PURE__*/React.createElement("div", {
+    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].roleContainer
+  }, /*#__PURE__*/React.createElement("label", {
+    htmlFor: "role",
+    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].label
+  }, "Role:", /*#__PURE__*/React.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__.faCheck,
+    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].valid
+  })), /*#__PURE__*/React.createElement("select", {
+    id: "role",
+    ref: roleRef,
+    value: role,
+    className: "".concat(_Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].select, " ").concat(_Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].input),
+    onFocus: () => setRoleFocus(true),
+    onBlur: () => setRoleFocus(false),
+    onChange: e => setRole(e.target.value)
+  }, /*#__PURE__*/React.createElement("option", {
+    value: "parent"
+  }, "Parent"), /*#__PURE__*/React.createElement("option", {
+    value: "teacher"
+  }, "Teacher")), /*#__PURE__*/React.createElement("p", {
+    id: "roleNote",
+    className: roleFocus ? _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].instructions : _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].offscreen
+  }, /*#__PURE__*/React.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__.faInfoCircle
+  }), "Select your role.")), role === 'parent' && /*#__PURE__*/React.createElement("div", {
+    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].studentIdsContainer
+  }, /*#__PURE__*/React.createElement("label", {
+    htmlFor: "studentId",
+    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].label
+  }, "Student ID:"), /*#__PURE__*/React.createElement("input", {
+    type: "text",
+    id: "studentId",
+    ref: studentIdRef,
+    onChange: e => setStudentId(e.target.value),
+    value: studentId,
+    "aria-invalid": validStudentId ? "false" : "true",
+    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].input,
+    onFocus: () => setStudentIdFocus(true),
+    onBlur: () => setStudentIdFocus(false)
+  }), /*#__PURE__*/React.createElement("p", {
+    id: "studentIdNote",
+    className: studentIdFocus && !validStudentId ? _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].instructions : _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].offscreen
+  }, /*#__PURE__*/React.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__.faInfoCircle
+  }), "Enter student ID.")), /*#__PURE__*/React.createElement("div", {
     className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].nameContainer
   }, /*#__PURE__*/React.createElement("div", {
     className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].fName
@@ -774,7 +915,8 @@ const Register = _ref => {
     "aria-invalid": validFirstName ? "false" : "true",
     className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].input,
     onFocus: () => setFirstNameFocus(true),
-    onBlur: () => setFirstNameFocus(false)
+    onBlur: () => setFirstNameFocus(false),
+    disabled: role === 'parent' // Disable if role is 'parent'
   })), /*#__PURE__*/React.createElement("div", {
     className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].lName
   }, /*#__PURE__*/React.createElement("label", {
@@ -797,7 +939,8 @@ const Register = _ref => {
     "aria-invalid": validLastName ? "false" : "true",
     className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].input,
     onFocus: () => setLastNameFocus(true),
-    onBlur: () => setLastNameFocus(false)
+    onBlur: () => setLastNameFocus(false),
+    disabled: role === 'parent' // Disable if role is 'parent'
   }))), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("p", {
     id: "firstNameNote",
     className: firstNameFocus && !validFirstName ? _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].instructions : _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].offscreen
@@ -809,9 +952,7 @@ const Register = _ref => {
   }, /*#__PURE__*/React.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
     icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__.faInfoCircle
   }), "Please enter your last name.")), /*#__PURE__*/React.createElement("div", {
-    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].emailAndCampusContainer
-  }, /*#__PURE__*/React.createElement("div", {
-    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].email
+    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].emailContainer
   }, /*#__PURE__*/React.createElement("label", {
     htmlFor: "email",
     className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].label
@@ -832,16 +973,168 @@ const Register = _ref => {
     "aria-invalid": validEmail ? "false" : "true",
     className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].input,
     onFocus: () => setEmailFocus(true),
-    onBlur: () => setEmailFocus(false)
-  }))), /*#__PURE__*/React.createElement("p", {
+    onBlur: () => setEmailFocus(false),
+    disabled: role === 'parent' // Disable if role is 'parent'
+  }), /*#__PURE__*/React.createElement("p", {
     id: "emailNote",
     className: emailFocus && !validEmail ? _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].instructions : _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].offscreen
   }, /*#__PURE__*/React.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
     icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__.faInfoCircle
-  }), "Please enter a valid email address."), /*#__PURE__*/React.createElement("div", {
+  }), "Please enter a valid email address.")), role === 'teacher' && /*#__PURE__*/React.createElement("div", {
+    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].studentIdsContainer
+  }, /*#__PURE__*/React.createElement("label", {
+    htmlFor: "studentIds",
+    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].label
+  }, "Student IDs:"), /*#__PURE__*/React.createElement("input", {
+    type: "text",
+    id: "studentIds",
+    ref: studentIdsRef,
+    onChange: e => setStudentIds(e.target.value),
+    value: studentIds,
+    "aria-invalid": validStudentId ? "false" : "true",
+    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].input,
+    onFocus: () => setStudentIdsFocus(true),
+    onBlur: () => setStudentIdsFocus(false)
+  }), /*#__PURE__*/React.createElement("p", {
+    id: "studentIdsNote",
+    className: studentIdsFocus && !validStudentId ? _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].instructions : _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].offscreen
+  }, /*#__PURE__*/React.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__.faInfoCircle
+  }), "Enter comma-separated student IDs.")), role === 'parent' && /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("label", {
+    htmlFor: "studentFirstName"
+  }, "Student First Name:", /*#__PURE__*/React.createElement("input", {
+    type: "text",
+    id: "studentFirstName",
+    onChange: e => setStudentFirstName(e.target.value),
+    onFocus: () => setStudentFirstNameFocus(true),
+    onBlur: () => setStudentFirstNameFocus(false),
+    value: studentFirstName
+  }), studentFirstNameFocus && !validStudentFirstName && /*#__PURE__*/React.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__.faInfoCircle
+  })), /*#__PURE__*/React.createElement("label", {
+    htmlFor: "studentLastName"
+  }, "Student Last Name:", /*#__PURE__*/React.createElement("input", {
+    type: "text",
+    id: "studentLastName",
+    onChange: e => setStudentLastName(e.target.value),
+    onFocus: () => setStudentLastNameFocus(true),
+    onBlur: () => setStudentLastNameFocus(false),
+    value: studentLastName
+  }), studentLastNameFocus && !validStudentLastName && /*#__PURE__*/React.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__.faInfoCircle
+  })), /*#__PURE__*/React.createElement("label", {
+    htmlFor: "guardOneFirstName"
+  }, "Guardian One First Name:", /*#__PURE__*/React.createElement("input", {
+    type: "text",
+    id: "guardOneFirstName",
+    onChange: e => setGuardOneFirstName(e.target.value),
+    onFocus: () => setGuardOneFirstNameFocus(true),
+    onBlur: () => setGuardOneFirstNameFocus(false),
+    value: guardOneFirstName
+  }), guardOneFirstNameFocus && !validGuardOneFirstName && /*#__PURE__*/React.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__.faInfoCircle
+  })), /*#__PURE__*/React.createElement("label", {
+    htmlFor: "guardOneLastName"
+  }, "Guardian One Last Name:", /*#__PURE__*/React.createElement("input", {
+    type: "text",
+    id: "guardOneLastName",
+    onChange: e => setGuardOneLastName(e.target.value),
+    onFocus: () => setGuardOneLastNameFocus(true),
+    onBlur: () => setGuardOneLastNameFocus(false),
+    value: guardOneLastName
+  }), guardOneLastNameFocus && !validGuardOneLastName && /*#__PURE__*/React.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__.faInfoCircle
+  })), /*#__PURE__*/React.createElement("label", {
+    htmlFor: "guardOneEmail"
+  }, "Guardian One Email:", /*#__PURE__*/React.createElement("input", {
+    type: "email",
+    id: "guardOneEmail",
+    onChange: e => setGuardOneEmail(e.target.value),
+    onFocus: () => setGuardOneEmailFocus(true),
+    onBlur: () => setGuardOneEmailFocus(false),
+    value: guardOneEmail
+  }), guardOneEmailFocus && !validGuardOneEmail && /*#__PURE__*/React.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__.faInfoCircle
+  })), /*#__PURE__*/React.createElement("label", {
+    htmlFor: "guardOnePhone"
+  }, "Guardian One Phone:", /*#__PURE__*/React.createElement("input", {
+    type: "text",
+    id: "guardOnePhone",
+    onChange: e => setGuardOnePhone(e.target.value),
+    onFocus: () => setGuardOnePhoneFocus(true),
+    onBlur: () => setGuardOnePhoneFocus(false),
+    value: guardOnePhone
+  }), guardOnePhoneFocus && !validGuardOnePhone && /*#__PURE__*/React.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__.faInfoCircle
+  })), /*#__PURE__*/React.createElement("label", {
+    htmlFor: "guardTwoFirstName"
+  }, "Guardian Two First Name (optional):", /*#__PURE__*/React.createElement("input", {
+    type: "text",
+    id: "guardTwoFirstName",
+    onChange: e => setGuardTwoFirstName(e.target.value),
+    onFocus: () => setGuardTwoFirstNameFocus(true),
+    onBlur: () => setGuardTwoFirstNameFocus(false),
+    value: guardTwoFirstName
+  }), guardTwoFirstNameFocus && !validGuardTwoFirstName && /*#__PURE__*/React.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__.faInfoCircle
+  })), /*#__PURE__*/React.createElement("label", {
+    htmlFor: "guardTwoLastName"
+  }, "Guardian Two Last Name (optional):", /*#__PURE__*/React.createElement("input", {
+    type: "text",
+    id: "guardTwoLastName",
+    onChange: e => setGuardTwoLastName(e.target.value),
+    onFocus: () => setGuardTwoLastNameFocus(true),
+    onBlur: () => setGuardTwoLastNameFocus(false),
+    value: guardTwoLastName
+  }), guardTwoLastNameFocus && !validGuardTwoLastName && /*#__PURE__*/React.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__.faInfoCircle
+  })), /*#__PURE__*/React.createElement("label", {
+    htmlFor: "guardTwoEmail"
+  }, "Guardian Two Email (optional):", /*#__PURE__*/React.createElement("input", {
+    type: "email",
+    id: "guardTwoEmail",
+    onChange: e => setGuardTwoEmail(e.target.value),
+    onFocus: () => setGuardTwoEmailFocus(true),
+    onBlur: () => setGuardTwoEmailFocus(false),
+    value: guardTwoEmail
+  }), guardTwoEmailFocus && !validGuardTwoEmail && /*#__PURE__*/React.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__.faInfoCircle
+  })), /*#__PURE__*/React.createElement("label", {
+    htmlFor: "guardTwoPhone"
+  }, "Guardian Two Phone (optional):", /*#__PURE__*/React.createElement("input", {
+    type: "text",
+    id: "guardTwoPhone",
+    onChange: e => setGuardTwoPhone(e.target.value),
+    onFocus: () => setGuardTwoPhoneFocus(true),
+    onBlur: () => setGuardTwoPhoneFocus(false),
+    value: guardTwoPhone
+  }), guardTwoPhoneFocus && !validGuardTwoPhone && /*#__PURE__*/React.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__.faInfoCircle
+  })), /*#__PURE__*/React.createElement("label", {
+    htmlFor: "transportation"
+  }, "Transportation:", /*#__PURE__*/React.createElement("select", {
+    id: "transportation",
+    onChange: e => setTransportation(e.target.value),
+    value: transportation
+  }, /*#__PURE__*/React.createElement("option", {
+    value: "car"
+  }, "Car"), /*#__PURE__*/React.createElement("option", {
+    value: "bus"
+  }, "Bus"), /*#__PURE__*/React.createElement("option", {
+    value: "walker home"
+  }, "Walker Home"), /*#__PURE__*/React.createElement("option", {
+    value: "walker go"
+  }, "Walker Go"), /*#__PURE__*/React.createElement("option", {
+    value: "right at school"
+  }, "Right At School"))), /*#__PURE__*/React.createElement("label", {
+    htmlFor: "roomParent"
+  }, "Room Parent:", /*#__PURE__*/React.createElement("input", {
+    type: "checkbox",
+    id: "roomParent",
+    onChange: () => setRoomParent(!roomParent),
+    checked: roomParent
+  }))), /*#__PURE__*/React.createElement("div", {
     className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].passwordContainer
-  }, /*#__PURE__*/React.createElement("div", {
-    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].pwd
   }, /*#__PURE__*/React.createElement("label", {
     htmlFor: "password",
     className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].label
@@ -855,7 +1148,6 @@ const Register = _ref => {
     type: "password",
     id: "password",
     ref: passwordRef,
-    autoComplete: "off",
     onChange: e => setPassword(e.target.value),
     value: password,
     required: true,
@@ -863,14 +1155,19 @@ const Register = _ref => {
     className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].input,
     onFocus: () => setPasswordFocus(true),
     onBlur: () => setPasswordFocus(false)
-  })), /*#__PURE__*/React.createElement("div", {
-    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].confirmPwd
+  }), /*#__PURE__*/React.createElement("p", {
+    id: "passwordNote",
+    className: passwordFocus && !validPassword ? _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].instructions : _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].offscreen
+  }, /*#__PURE__*/React.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__.faInfoCircle
+  }), "Password must be 8-24 characters long and include uppercase, lowercase, a number, and a special character.")), /*#__PURE__*/React.createElement("div", {
+    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].confirmPasswordContainer
   }, /*#__PURE__*/React.createElement("label", {
     htmlFor: "confirmPassword",
     className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].label
   }, "Confirm Password:", /*#__PURE__*/React.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
     icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__.faCheck,
-    className: confirmPassword && validConfirmPassword ? _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].valid : _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].hide
+    className: validConfirmPassword ? _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].valid : _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].hide
   }), /*#__PURE__*/React.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
     icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__.faTimes,
     className: validConfirmPassword || !confirmPassword ? _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].hide : _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].invalid
@@ -878,7 +1175,6 @@ const Register = _ref => {
     type: "password",
     id: "confirmPassword",
     ref: confirmPasswordRef,
-    autoComplete: "off",
     onChange: e => setConfirmPassword(e.target.value),
     value: confirmPassword,
     required: true,
@@ -886,50 +1182,20 @@ const Register = _ref => {
     className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].input,
     onFocus: () => setConfirmPasswordFocus(true),
     onBlur: () => setConfirmPasswordFocus(false)
-  }))), /*#__PURE__*/React.createElement("p", {
-    id: "passwordNote",
-    className: passwordFocus && !validPassword ? _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].instructions : _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].offscreen
-  }, /*#__PURE__*/React.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
-    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__.faInfoCircle
-  }), "Password must be 8 to 24 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character."), /*#__PURE__*/React.createElement("p", {
+  }), /*#__PURE__*/React.createElement("p", {
     id: "confirmPasswordNote",
     className: confirmPasswordFocus && !validConfirmPassword ? _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].instructions : _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].offscreen
   }, /*#__PURE__*/React.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
     icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__.faInfoCircle
-  }), "Please confirm your password."), /*#__PURE__*/React.createElement("div", {
-    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].roleContainer
-  }, /*#__PURE__*/React.createElement("label", {
-    htmlFor: "role",
-    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].label
-  }, "Role:", /*#__PURE__*/React.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
-    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__.faCheck,
-    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].valid
-  }), " ", /*#__PURE__*/React.createElement("input", {
-    type: "text",
-    id: "role",
-    ref: roleRef,
-    autoComplete: "off",
-    value: role,
-    readOnly: true,
-    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].input,
-    onFocus: () => setRoleFocus(true),
-    onBlur: () => setRoleFocus(false)
-  })), /*#__PURE__*/React.createElement("p", {
-    id: "roleNote",
-    className: roleFocus ? _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].instructions : _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].offscreen
-  }, /*#__PURE__*/React.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
-    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__.faInfoCircle
-  }), "Role is set to 'admin'.")), /*#__PURE__*/React.createElement("button", {
-    disabled: !validFirstName || !validLastName || !validEmail || !validPassword || !validConfirmPassword,
-    className: !validFirstName || !validLastName || !validEmail || !validPassword || !validConfirmPassword ? _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].disabledButton : _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].button
-  }, "Sign Up")), /*#__PURE__*/React.createElement("p", {
-    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].togglePara
-  }, "Already registered?", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("span", {
-    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].line,
-    onClick: toggleLoginForm
+  }), "Passwords must match.")), /*#__PURE__*/React.createElement("button", {
+    type: "submit",
+    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].submitButton,
+    disabled: role === 'parent' ? !validStudentId || !validPassword || !validConfirmPassword : !validFirstName || !validLastName || !validEmail || !validPassword || !validConfirmPassword
+  }, "Register")), /*#__PURE__*/React.createElement("p", null, "Already registered?", /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("span", {
+    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].line
   }, /*#__PURE__*/React.createElement("a", {
-    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].a,
-    href: "#"
+    href: "#",
+    onClick: toggleLoginForm
   }, "Sign In")))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Register);
@@ -1918,9 +2184,119 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, `.ezzqWhyjafzLobjTxKvN {
+  width: 100%;
+  max-width: 420px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 3rem;
+  border: 0.3rem solid var(--text-dark);
+  background-color: var(--text-light);
+}
+
+.Q7lalbpQ0P96QaVlILom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  padding-bottom: 1rem;
+}
+
+.aINFe_lpRHBUc8CvPw5B, .aINFe_lpRHBUc8CvPw5B:visited {
+  color: navy;
+}
+
+.NPmqIZEoOZvOJwwkCWoP,
+.UT8Z2N1fiZTOLkSvByyt {
+  font-size: 22px;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+}
+
+.ReMmHGnawzd9hmr1fwVA,
+.UT8Z2N1fiZTOLkSvByyt {
+  margin-top: 1rem;
+}
+
+.UT8Z2N1fiZTOLkSvByyt {
+  padding: 0.5rem;
+  border: none;
+  background-color: var(--btn-color);
+  color: white;
+}
+.UT8Z2N1fiZTOLkSvByyt:hover {
+  cursor: pointer;
+}
+
+.qw2ThsCNur9t1Nr4VQFB {
+  text-align: center;
+}
+
+.VhPfie1lquL3ClqLcdBf {
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  background: #000;
+  color: #fff;
+  padding: 0.25rem;
+  position: relative;
+  bottom: -10px;
+}
+
+.VhPfie1lquL3ClqLcdBf > svg {
+  margin-right: 0.25rem;
+}
+
+.TtMUi1H2qf1QXivbUlCO {
+  position: absolute;
+  left: -9999px;
+}
+
+.bzmmQobqr_mvKKGmdTub {
+  display: none;
+}
+
+.VYkdqm295yp3kMQAt608 {
+  color: limegreen;
+  margin-left: 0.25rem;
+}
+
+.zs9EUPz_kutjYPnjcr0Q {
+  color: red;
+  margin-left: 0.25rem;
+}
+
+.Iis1HDlhi8z1QEliSCTH {
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.M_68A33V2MtFkAHRM_td {
+  display: inline-block;
+}`, "",{"version":3,"sources":["webpack://./src/components/Login/Login.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,gBAAA;EACA,iBAAA;EACA,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,aAAA;EACA,mBAAA;EACA,qCAAA;EACA,mCAAA;AACJ;;AAEA;EACI,aAAA;EACA,sBAAA;EACA,6BAAA;EACA,YAAA;EACA,oBAAA;AACJ;;AAEA;EACI,WAAA;AACJ;;AAEA;;EAEE,eAAA;EACA,gBAAA;EACA,qBAAA;AACF;;AAGA;;EAEE,gBAAA;AAAF;;AAGA;EACE,eAAA;EACA,YAAA;EACA,kCAAA;EACA,YAAA;AAAF;AACE;EACE,eAAA;AACJ;;AAGA;EACI,kBAAA;AAAJ;;AAGA;EACI,kBAAA;EACA,qBAAA;EACA,gBAAA;EACA,WAAA;EACA,gBAAA;EACA,kBAAA;EACA,aAAA;AAAJ;;AAGA;EACI,qBAAA;AAAJ;;AAGA;EACI,kBAAA;EACA,aAAA;AAAJ;;AAGA;EACI,aAAA;AAAJ;;AAGA;EACI,gBAAA;EACA,oBAAA;AAAJ;;AAGA;EACI,UAAA;EACA,oBAAA;AAAJ;;AAGA;EACI,2BAAA;EACA,gBAAA;EACA,iBAAA;EACA,eAAA;EACA,qBAAA;AAAJ;;AAGA;EACI,qBAAA;AAAJ","sourcesContent":[".section {\n    width: 100%;\n    max-width: 420px;\n    min-height: 400px;\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    padding: 1rem;\n    border-radius: 3rem;\n    border: .3rem solid var(--text-dark);\n    background-color: var(--text-light);\n}\n\n.form {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n    flex-grow: 1;\n    padding-bottom: 1rem;\n}\n\n.a, .a:visited {\n    color: navy;\n}\n\n.input,\n.button {\n  font-size: 22px;\n  padding: 0.25rem;\n  border-radius: 0.5rem;\n}\n  \n\n.label,\n.button {\n  margin-top: 1rem;\n}\n\n.button {\n  padding: 0.5rem;\n  border: none;\n  background-color: var(--btn-color);\n  color: white;\n  &:hover {\n    cursor: pointer;\n  }\n}\n\n.togglePara {\n    text-align: center;\n}\n\n.instructions {\n    font-size: 0.75rem;\n    border-radius: 0.5rem;\n    background: #000;\n    color: #fff;\n    padding: 0.25rem;\n    position: relative;\n    bottom: -10px;\n}\n\n.instructions > svg {\n    margin-right: 0.25rem;\n}\n\n.offscreen {\n    position: absolute;\n    left: -9999px;\n}\n\n.hide {\n    display: none;\n}\n\n.valid {\n    color: limegreen;\n    margin-left: 0.25rem;\n}\n\n.invalid {\n    color: red;\n    margin-left: 0.25rem;\n}\n\n.errmsg {\n    background-color: lightpink;\n    color: firebrick;\n    font-weight: bold;\n    padding: 0.5rem;\n    margin-bottom: 0.5rem;\n}\n\n.line {\n    display: inline-block;\n}"],"sourceRoot":""}]);
 // Exports
-___CSS_LOADER_EXPORT___.locals = {};
+___CSS_LOADER_EXPORT___.locals = {
+	"section": `ezzqWhyjafzLobjTxKvN`,
+	"form": `Q7lalbpQ0P96QaVlILom`,
+	"a": `aINFe_lpRHBUc8CvPw5B`,
+	"input": `NPmqIZEoOZvOJwwkCWoP`,
+	"button": `UT8Z2N1fiZTOLkSvByyt`,
+	"label": `ReMmHGnawzd9hmr1fwVA`,
+	"togglePara": `qw2ThsCNur9t1Nr4VQFB`,
+	"instructions": `VhPfie1lquL3ClqLcdBf`,
+	"offscreen": `TtMUi1H2qf1QXivbUlCO`,
+	"hide": `bzmmQobqr_mvKKGmdTub`,
+	"valid": `VYkdqm295yp3kMQAt608`,
+	"invalid": `zs9EUPz_kutjYPnjcr0Q`,
+	"errmsg": `Iis1HDlhi8z1QEliSCTH`,
+	"line": `M_68A33V2MtFkAHRM_td`
+};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
@@ -2825,9 +3201,173 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, `.Idu7boV5emT3tpI63EsN {
+  width: 100%;
+  min-height: 400px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 3rem;
+  border: 0.3rem solid var(--text-dark);
+  background-color: var(--text-light);
+}
+
+.XokUkjbAB13UudNelspL, ._VTjxJAcByR5MCln33Zs, .XgxRt1_ViXHNSccWAUFj {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.XokUkjbAB13UudNelspL .RetK5OOXX270zhvIW6V2, .XokUkjbAB13UudNelspL .bAEoNFIygNlfquMD7N_K, .XokUkjbAB13UudNelspL .UH9TUnzqPKVSuaK3Z9AR, .XokUkjbAB13UudNelspL .Fmnt2VkAZ46eJwNyGadb, .XokUkjbAB13UudNelspL .pCXj_WHoS1qTAOSyNREA, .XokUkjbAB13UudNelspL .jK4wqtyVvRQBVsWELqp4, .XokUkjbAB13UudNelspL .zeNiNFBnVfIzNtv8rRvX, ._VTjxJAcByR5MCln33Zs .RetK5OOXX270zhvIW6V2, ._VTjxJAcByR5MCln33Zs .bAEoNFIygNlfquMD7N_K, ._VTjxJAcByR5MCln33Zs .UH9TUnzqPKVSuaK3Z9AR, ._VTjxJAcByR5MCln33Zs .Fmnt2VkAZ46eJwNyGadb, ._VTjxJAcByR5MCln33Zs .pCXj_WHoS1qTAOSyNREA, ._VTjxJAcByR5MCln33Zs .jK4wqtyVvRQBVsWELqp4, ._VTjxJAcByR5MCln33Zs .zeNiNFBnVfIzNtv8rRvX, .XgxRt1_ViXHNSccWAUFj .RetK5OOXX270zhvIW6V2, .XgxRt1_ViXHNSccWAUFj .bAEoNFIygNlfquMD7N_K, .XgxRt1_ViXHNSccWAUFj .UH9TUnzqPKVSuaK3Z9AR, .XgxRt1_ViXHNSccWAUFj .Fmnt2VkAZ46eJwNyGadb, .XgxRt1_ViXHNSccWAUFj .pCXj_WHoS1qTAOSyNREA, .XgxRt1_ViXHNSccWAUFj .jK4wqtyVvRQBVsWELqp4, .XgxRt1_ViXHNSccWAUFj .zeNiNFBnVfIzNtv8rRvX {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 0.5rem;
+}
+
+.AnppXxQ0e4kYTK9oHecP {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  padding-bottom: 1rem;
+}
+
+.eVorpnz1Bkyc_o2MqVzs, .eVorpnz1Bkyc_o2MqVzs:visited {
+  color: navy;
+}
+
+.rMo8qUvx6E5jcjWTHxQm,
+.K9R5yzZjO1mUAvrEywog, .Lb_3qXz_D_RV0UGUhFI0, .oCrs0O5iLZO8gTh_7L0p {
+  font-size: 22px;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+}
+
+.xHCDL1OAZQMxJs0mIYBj,
+.K9R5yzZjO1mUAvrEywog, .Lb_3qXz_D_RV0UGUhFI0 {
+  margin-top: 1rem;
+  margin: 0;
+}
+
+.K9R5yzZjO1mUAvrEywog,
+.Lb_3qXz_D_RV0UGUhFI0 {
+  font-size: 22px;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  margin: 0;
+}
+
+.K9R5yzZjO1mUAvrEywog {
+  border: none;
+  background-color: var(--btn-color);
+  color: white;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.K9R5yzZjO1mUAvrEywog:hover {
+  padding: 0.7rem;
+  font-size: 20px;
+  transition: 0.3s ease;
+}
+
+.Lb_3qXz_D_RV0UGUhFI0 {
+  background-color: grey;
+  color: darkgrey;
+  cursor: not-allowed;
+}
+.Lb_3qXz_D_RV0UGUhFI0:hover {
+  background-color: grey;
+  color: darkgrey;
+  cursor: not-allowed;
+}
+
+.uAohF3j0eT3FN8a_dzcI {
+  text-align: center;
+}
+
+.oCrs0O5iLZO8gTh_7L0p:focus {
+  outline: none;
+  box-shadow: 0 0 1rem var(--btn-color);
+}
+
+.SIGWuEXn8kcv7IJ_0fUU {
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  background: #000;
+  color: #fff;
+  padding: 0.25rem;
+  position: relative;
+  bottom: -10px;
+}
+
+.SIGWuEXn8kcv7IJ_0fUU > svg {
+  margin-right: 0.25rem;
+}
+
+.X107B9JCKaXeJJSBfgO4 {
+  position: absolute;
+  left: -9999px;
+}
+
+.A88SY1Hdz_nrnYJa4fh1 {
+  display: none;
+}
+
+.X7aN1ereRnEeP7e8IUn_ {
+  color: limegreen;
+  margin-left: 0.25rem;
+}
+
+.y_SivBDR7ZEi57d2CZYF {
+  color: red;
+  margin-left: 0.25rem;
+}
+
+.gdSVM8yEV8IG4ZAbo_NT {
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.PwGfkZn5LtYOVvDEODfW {
+  display: inline-block;
+}`, "",{"version":3,"sources":["webpack://./src/components/Register/Register.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,iBAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,aAAA;EACA,mBAAA;EACA,qCAAA;EACA,mCAAA;AACJ;;AAEA;EACI,aAAA;EACA,8BAAA;EACA,cAAA;AACJ;AAAI;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,gBAAA;AAER;;AAEA;EACI,aAAA;EACA,sBAAA;EACA,6BAAA;EACA,YAAA;EACA,oBAAA;AACJ;;AAEA;EACI,WAAA;AACJ;;AAEA;;EAEE,eAAA;EACA,gBAAA;EACA,qBAAA;AACF;;AAEA;;EAEE,gBAAA;EACA,SAAA;AACF;;AAEA;;EAEE,eAAA;EACA,eAAA;EACA,qBAAA;EACA,gBAAA;EACA,SAAA;AACF;;AAEA;EACE,YAAA;EACA,kCAAA;EACA,YAAA;EACA,qBAAA;EACA,eAAA;AACF;;AAEA;EACE,eAAA;EACA,eAAA;EACA,qBAAA;AACF;;AAEA;EACE,sBAAA;EACA,eAAA;EACA,mBAAA;AACF;AAAE;EACE,sBAAA;EACA,eAAA;EACA,mBAAA;AAEJ;;AAGA;EACI,kBAAA;AAAJ;;AAGA;EACI,aAAA;EACA,qCAAA;AAAJ;;AAGA;EACI,kBAAA;EACA,qBAAA;EACA,gBAAA;EACA,WAAA;EACA,gBAAA;EACA,kBAAA;EACA,aAAA;AAAJ;;AAGA;EACI,qBAAA;AAAJ;;AAGA;EACI,kBAAA;EACA,aAAA;AAAJ;;AAGA;EACI,aAAA;AAAJ;;AAGA;EACI,gBAAA;EACA,oBAAA;AAAJ;;AAGA;EACI,UAAA;EACA,oBAAA;AAAJ;;AAGA;EACI,2BAAA;EACA,gBAAA;EACA,iBAAA;EACA,eAAA;EACA,qBAAA;AAAJ;;AAGA;EACI,qBAAA;AAAJ","sourcesContent":[".section {\n    width: 100%;\n    min-height: 400px;\n    max-width: 600px;\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    padding: 1rem;\n    border-radius: 3rem;\n    border: .3rem solid var(--text-dark);\n    background-color: var(--text-light);\n}\n\n.nameContainer, .emailAndCampusContainer, .passwordContainer {\n    display: flex;\n    justify-content: space-between;\n    margin: 1rem 0;\n    .fName, .lName, .email, .campusNum, .pwd, .confirm, .studentIds {\n        display: flex;\n        flex-direction: column;\n        align-items: flex-start;\n        margin: 0 .5rem;\n    }\n}\n\n.form {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n    flex-grow: 1;\n    padding-bottom: 1rem;\n}\n\n.a, .a:visited {\n    color: navy;\n}\n\n.input,\n.button, .disabledButton, .select {\n  font-size: 22px;\n  padding: 0.25rem;\n  border-radius: 0.5rem;\n}\n\n.label,\n.button, .disabledButton {\n  margin-top: 1rem;\n  margin: 0;\n}\n\n.button,\n.disabledButton {\n  font-size: 22px;\n  padding: 0.5rem;\n  border-radius: 0.5rem;\n  margin-top: 1rem;\n  margin: 0;\n}\n\n.button {\n  border: none;\n  background-color: var(--btn-color);\n  color: white;\n  transition: 0.3s ease;\n  cursor: pointer;\n}\n\n.button:hover {\n  padding: 0.7rem;\n  font-size: 20px;\n  transition: 0.3s ease;\n}\n\n.disabledButton {\n  background-color: grey;\n  color: darkgrey;\n  cursor: not-allowed;\n  &:hover {\n    background-color: grey;\n    color: darkgrey;\n    cursor: not-allowed;\n  }\n}\n\n\n.togglePara {\n    text-align: center;\n}\n\n.select:focus {\n    outline: none;\n    box-shadow: 0 0 1rem var(--btn-color);\n}\n\n.instructions {\n    font-size: 0.75rem;\n    border-radius: 0.5rem;\n    background: #000;\n    color: #fff;\n    padding: 0.25rem;\n    position: relative;\n    bottom: -10px;\n}\n\n.instructions > svg {\n    margin-right: 0.25rem;\n}\n\n.offscreen {\n    position: absolute;\n    left: -9999px;\n}\n\n.hide {\n    display: none;\n}\n\n.valid {\n    color: limegreen;\n    margin-left: 0.25rem;\n}\n\n.invalid {\n    color: red;\n    margin-left: 0.25rem;\n}\n\n.errmsg {\n    background-color: lightpink;\n    color: firebrick;\n    font-weight: bold;\n    padding: 0.5rem;\n    margin-bottom: 0.5rem;\n}\n\n.line {\n    display: inline-block;\n}\n"],"sourceRoot":""}]);
 // Exports
-___CSS_LOADER_EXPORT___.locals = {};
+___CSS_LOADER_EXPORT___.locals = {
+	"section": `Idu7boV5emT3tpI63EsN`,
+	"nameContainer": `XokUkjbAB13UudNelspL`,
+	"emailAndCampusContainer": `_VTjxJAcByR5MCln33Zs`,
+	"passwordContainer": `XgxRt1_ViXHNSccWAUFj`,
+	"fName": `RetK5OOXX270zhvIW6V2`,
+	"lName": `bAEoNFIygNlfquMD7N_K`,
+	"email": `UH9TUnzqPKVSuaK3Z9AR`,
+	"campusNum": `Fmnt2VkAZ46eJwNyGadb`,
+	"pwd": `pCXj_WHoS1qTAOSyNREA`,
+	"confirm": `jK4wqtyVvRQBVsWELqp4`,
+	"studentIds": `zeNiNFBnVfIzNtv8rRvX`,
+	"form": `AnppXxQ0e4kYTK9oHecP`,
+	"a": `eVorpnz1Bkyc_o2MqVzs`,
+	"input": `rMo8qUvx6E5jcjWTHxQm`,
+	"button": `K9R5yzZjO1mUAvrEywog`,
+	"disabledButton": `Lb_3qXz_D_RV0UGUhFI0`,
+	"select": `oCrs0O5iLZO8gTh_7L0p`,
+	"label": `xHCDL1OAZQMxJs0mIYBj`,
+	"togglePara": `uAohF3j0eT3FN8a_dzcI`,
+	"instructions": `SIGWuEXn8kcv7IJ_0fUU`,
+	"offscreen": `X107B9JCKaXeJJSBfgO4`,
+	"hide": `A88SY1Hdz_nrnYJa4fh1`,
+	"valid": `X7aN1ereRnEeP7e8IUn_`,
+	"invalid": `y_SivBDR7ZEi57d2CZYF`,
+	"errmsg": `gdSVM8yEV8IG4ZAbo_NT`,
+	"line": `PwGfkZn5LtYOVvDEODfW`
+};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
@@ -6018,4 +6558,4 @@ module.exports = __webpack_require__.p + "4031c99fef0abdcd87ad.png";
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.9be3c76c74fbc2e11d81d9ce2c171f6b.js.map
+//# sourceMappingURL=App.5a7570eff252a3f0a08039947bc80776.js.map

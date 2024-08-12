@@ -5,9 +5,10 @@ const jwt = require('jsonwebtoken')
 const userSchema = new Schema ({
     firstName: { required: true, type: String },
     lastName: { required: true, type: String },
-    email: { required: true, type: String, unique: true },
+    studentIds: [{ type: String}],
+    email: { type: String, unique: true },
     password: { required: true, type: String },
-    role: { enum: ['teacher', 'parent'], default: 'parent', type: String }
+    role: { required: true, type: String },
 }, {
     timestamps: true
 })

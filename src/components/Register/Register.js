@@ -6,7 +6,8 @@ import { useNavigate } from "react-router-dom";
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
-const REGISTER_URL = '/api/users/';
+const TEACHER_REGISTER_URL = '/api/users/';
+const PARENT_REGISTER_URL = '/api/parents/';
 
 const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
     const navigate = useNavigate();
@@ -16,7 +17,9 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
     const emailRef = useRef();
     const passwordRef = useRef();
     const confirmPasswordRef = useRef();
-    const roleRef = useRef(); // Ref for role input
+    const roleRef = useRef();
+    const studentIdRef = useRef();
+    const studentIdsRef = useRef(); // Ref for student IDs input
     const errRef = useRef();
 
     const [firstName, setFirstName] = useState('');
@@ -24,21 +27,61 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
-    const [role, setRole] = useState('parent'); // State for role
+    const [role, setRole] = useState('parent');
+    const [studentId, setStudentId] = useState('');
+    const [studentIds, setStudentIds] = useState(''); // State for student IDs
+
+    // New state fields
+    const [studentFirstName, setStudentFirstName] = useState('');
+    const [studentLastName, setStudentLastName] = useState('');
+    const [guardOneFirstName, setGuardOneFirstName] = useState('');
+    const [guardOneLastName, setGuardOneLastName] = useState('');
+    const [guardOneEmail, setGuardOneEmail] = useState('');
+    const [guardOnePhone, setGuardOnePhone] = useState('');
+    const [guardTwoFirstName, setGuardTwoFirstName] = useState('');
+    const [guardTwoLastName, setGuardTwoLastName] = useState('');
+    const [guardTwoEmail, setGuardTwoEmail] = useState('');
+    const [guardTwoPhone, setGuardTwoPhone] = useState('');
+    const [roomParent, setRoomParent] = useState(false);
+    const [transportation, setTransportation] = useState('Car');
 
     const [validFirstName, setValidFirstName] = useState(false);
     const [validLastName, setValidLastName] = useState(false);
     const [validEmail, setValidEmail] = useState(false);
     const [validPassword, setValidPassword] = useState(false);
     const [validConfirmPassword, setValidConfirmPassword] = useState(false);
-    const [validRole, setValidRole] = useState(true); // Always valid for hard-coded role
+
+    const [validStudentId, setValidStudentId] = useState(false);
+    const [validStudentFirstName, setValidStudentFirstName] = useState(false);
+    const [validStudentLastName, setValidStudentLastName] = useState(false);
+    const [validGuardOneFirstName, setValidGuardOneFirstName] = useState(false);
+    const [validGuardOneLastName, setValidGuardOneLastName] = useState(false);
+    const [validGuardOneEmail, setValidGuardOneEmail] = useState(false);
+    const [validGuardOnePhone, setValidGuardOnePhone] = useState(false);
+    const [validGuardTwoFirstName, setValidGuardTwoFirstName] = useState(true);
+    const [validGuardTwoLastName, setValidGuardTwoLastName] = useState(true);
+    const [validGuardTwoEmail, setValidGuardTwoEmail] = useState(true);
+    const [validGuardTwoPhone, setValidGuardTwoPhone] = useState(true);
 
     const [firstNameFocus, setFirstNameFocus] = useState(false);
     const [lastNameFocus, setLastNameFocus] = useState(false);
     const [emailFocus, setEmailFocus] = useState(false);
     const [passwordFocus, setPasswordFocus] = useState(false);
     const [confirmPasswordFocus, setConfirmPasswordFocus] = useState(false);
-    const [roleFocus, setRoleFocus] = useState(false); // State for role focus
+    const [roleFocus, setRoleFocus] = useState(false);
+    const [studentIdFocus, setStudentIdFocus] = useState(false);
+    const [studentIdsFocus, setStudentIdsFocus] = useState(false); // Focus state for student IDs
+
+    const [studentFirstNameFocus, setStudentFirstNameFocus] = useState(false);
+    const [studentLastNameFocus, setStudentLastNameFocus] = useState(false);
+    const [guardOneFirstNameFocus, setGuardOneFirstNameFocus] = useState(false);
+    const [guardOneLastNameFocus, setGuardOneLastNameFocus] = useState(false);
+    const [guardOneEmailFocus, setGuardOneEmailFocus] = useState(false);
+    const [guardOnePhoneFocus, setGuardOnePhoneFocus] = useState(false);
+    const [guardTwoFirstNameFocus, setGuardTwoFirstNameFocus] = useState(false);
+    const [guardTwoLastNameFocus, setGuardTwoLastNameFocus] = useState(false);
+    const [guardTwoEmailFocus, setGuardTwoEmailFocus] = useState(false);
+    const [guardTwoPhoneFocus, setGuardTwoPhoneFocus] = useState(false);
 
     const [errMsg, setErrMsg] = useState('');
     const [success, setSuccess] = useState(false);
@@ -60,6 +103,10 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
     }, [email]);
 
     useEffect(() => {
+        setValidStudentId(studentId.trim() !== '');
+    }, [studentId]);
+
+    useEffect(() => {
         setValidPassword(PWD_REGEX.test(password));
     }, [password]);
 
@@ -67,31 +114,102 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
         setValidConfirmPassword(confirmPassword === password);
     }, [confirmPassword, password]);
 
+    // Add validation for new inputs
+    useEffect(() => {
+        setValidStudentFirstName(studentFirstName.trim() !== '');
+    }, [studentFirstName]);
+
+    useEffect(() => {
+        setValidStudentLastName(studentLastName.trim() !== '');
+    }, [studentLastName]);
+
+    useEffect(() => {
+        setValidGuardOneFirstName(guardOneFirstName.trim() !== '');
+    }, [guardOneFirstName]);
+
+    useEffect(() => {
+        setValidGuardOneLastName(guardOneLastName.trim() !== '');
+    }, [guardOneLastName]);
+
+    useEffect(() => {
+        setValidGuardOneEmail(EMAIL_REGEX.test(guardOneEmail));
+    }, [guardOneEmail]);
+
+    useEffect(() => {
+        setValidGuardOnePhone(guardOnePhone.trim() !== '');
+    }, [guardOnePhone]);
+
+    useEffect(() => {
+        setValidGuardTwoFirstName(guardTwoFirstName.trim() !== '');
+    }, [guardTwoFirstName]);
+
+    useEffect(() => {
+        setValidGuardTwoLastName(guardTwoLastName.trim() !== '');
+    }, [guardTwoLastName]);
+
+    useEffect(() => {
+        setValidGuardTwoEmail(EMAIL_REGEX.test(guardTwoEmail));
+    }, [guardTwoEmail]);
+
+    useEffect(() => {
+        setValidGuardTwoPhone(guardTwoPhone.trim() !== '');
+    }, [guardTwoPhone]);
+
     useEffect(() => {
         setErrMsg('');
-    }, [firstName, lastName, email, password, confirmPassword]);
+    }, [firstName, lastName, email, password, confirmPassword, role, studentIds, studentFirstName, studentLastName, guardOneFirstName, guardOneLastName, guardOneEmail, guardOnePhone, guardTwoFirstName, guardTwoLastName, guardTwoEmail, guardTwoPhone]);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
     
-        if (!validFirstName || !validLastName || !validEmail || !validPassword || !validConfirmPassword ) {
+        // Adjust validation based on the role
+        const isValid =
+            role === 'teacher'
+                ? validFirstName && validLastName && validEmail && validPassword && validConfirmPassword
+                : validStudentId && validPassword && validConfirmPassword;
+    
+        if (!isValid) {
             setErrMsg("Invalid Entry");
             return;
         }
     
+        // Determine the correct URL based on the selected role
+        const url = role === 'teacher' ? TEACHER_REGISTER_URL : PARENT_REGISTER_URL;
+    
+        const body = role === 'teacher'
+            ? {
+                  firstName,
+                  lastName,
+                  email,
+                  password,
+                  role,
+                  studentIds: studentIds.split(',').map(id => id.trim()) // Process student IDs
+              }
+            : {
+                studentId,
+                password,
+                role,
+                studentFirstName,
+                studentLastName,
+                guardOneFirstName,
+                guardOneLastName,
+                guardOneEmail,
+                guardOnePhone,
+                guardTwoFirstName,
+                guardTwoLastName,
+                guardTwoEmail,
+                guardTwoPhone,
+                roomParent,
+                transportation,
+              };
+    
         try {
-            const response = await fetch(REGISTER_URL, {
+            const response = await fetch(url, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({
-                    firstName,
-                    lastName,
-                    email,
-                    password,
-                    role // Include role in the request body
-                })
+                body: JSON.stringify(body)
             });
     
             if (!response.ok) {
@@ -100,33 +218,34 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
     
             const responseData = await response.json();
     
-            // Save the token in localStorage
             localStorage.setItem('token', responseData.token);
     
-            // Set user data
             const userData = {
-                firstName: firstName,
-                lastName: lastName,
-                email: email,
-                role: role
+                firstName: role === 'teacher' ? firstName : '',
+                lastName: role === 'teacher' ? lastName : '',
+                email: role === 'teacher' ? email : '',
+                role
             };
             setUser(userData);
     
-            // Clear form fields
+            // Reset the form fields
             setFirstName('');
             setLastName('');
             setEmail('');
             setPassword('');
             setConfirmPassword('');
-            // Role is hard-coded, no need to reset
+            setRole('parent');
+            setStudentIds('');
+            setStudentId('');
+    
             setSuccessMsg('Registration Successful');
-
+    
             toggleLoginForm();
         } catch (err) {
             setErrMsg(err.message || 'Registration Failed');
             errRef.current.focus();
         }
-    };     
+    };    
 
     return (
         <>
@@ -142,6 +261,54 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
                     <p ref={errRef} className={errMsg ? styles.errmsg : styles.offscreen} aria-live="assertive">{errMsg}</p>
                     <h1>Register</h1>
                     <form className={styles.form} onSubmit={handleSubmit}>
+                        {/* Role */}
+                        <div className={styles.roleContainer}>
+                            <label htmlFor="role" className={styles.label}>
+                                Role:
+                                <FontAwesomeIcon icon={faCheck} className={styles.valid} />
+                            </label>
+                            <select
+                                id="role"
+                                ref={roleRef}
+                                value={role}
+                                className={`${styles.select} ${styles.input}`}
+                                onFocus={() => setRoleFocus(true)}
+                                onBlur={() => setRoleFocus(false)}
+                                onChange={(e) => setRole(e.target.value)}
+                            >
+                                <option value="parent">Parent</option>
+                                <option value="teacher">Teacher</option>
+                            </select>
+                            <p id="roleNote" className={roleFocus ? styles.instructions : styles.offscreen}>
+                                <FontAwesomeIcon icon={faInfoCircle} />
+                                Select your role.
+                            </p>
+                        </div>
+
+                        {/* Student ID */}
+                        {role === 'parent' && (
+                            <div className={styles.studentIdsContainer}>
+                                <label htmlFor="studentId" className={styles.label}>
+                                    Student ID:
+                                </label>
+                                <input
+                                    type="text"
+                                    id="studentId"
+                                    ref={studentIdRef}
+                                    onChange={(e) => setStudentId(e.target.value)}
+                                    value={studentId}
+                                    aria-invalid={validStudentId ? "false" : "true"}
+                                    className={styles.input}
+                                    onFocus={() => setStudentIdFocus(true)}
+                                    onBlur={() => setStudentIdFocus(false)}
+                                />
+                                <p id="studentIdNote" className={studentIdFocus && !validStudentId ? styles.instructions : styles.offscreen}>
+                                    <FontAwesomeIcon icon={faInfoCircle} />
+                                    Enter student ID.
+                                </p>
+                            </div>
+                        )}
+
                         {/* First Name */}
                         <div className={styles.nameContainer}>
                             <div className={styles.fName}>
@@ -162,6 +329,7 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
                                     className={styles.input}
                                     onFocus={() => setFirstNameFocus(true)}
                                     onBlur={() => setFirstNameFocus(false)}
+                                    disabled={role === 'parent'} // Disable if role is 'parent'
                                 />
                             </div>
                             <div className={styles.lName}>
@@ -183,6 +351,7 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
                                     className={styles.input}
                                     onFocus={() => setLastNameFocus(true)}
                                     onBlur={() => setLastNameFocus(false)}
+                                    disabled={role === 'parent'} // Disable if role is 'parent'
                                 />
                             </div>
                         </div>
@@ -196,129 +365,289 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
                                 Please enter your last name.
                             </p>
                         </div>
-    
-                        <div className={styles.emailAndCampusContainer}>
-                            <div className={styles.email}>
-                                {/* Email */}
-                                <label htmlFor="email" className={styles.label}>
-                                    Email:
-                                    <FontAwesomeIcon icon={faCheck} className={validEmail ? styles.valid : styles.hide} />
-                                    <FontAwesomeIcon icon={faTimes} className={validEmail || !email ? styles.hide : styles.invalid} />
-                                </label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    ref={emailRef}
-                                    autoComplete="off"
-                                    onChange={(e) => setEmail(e.target.value)}
-                                    value={email}
-                                    required
-                                    aria-invalid={validEmail ? "false" : "true"}
-                                    className={styles.input}
-                                    onFocus={() => setEmailFocus(true)}
-                                    onBlur={() => setEmailFocus(false)}
-                                />
-                            </div>
-                        </div>
-                        <p id="emailNote" className={emailFocus && !validEmail ? styles.instructions : styles.offscreen}>
-                            <FontAwesomeIcon icon={faInfoCircle} />
-                            Please enter a valid email address.
-                        </p>
-    
-                        <div className={styles.passwordContainer}>
-                            <div className={styles.pwd}>
-                                {/* Password */}
-                                <label htmlFor="password" className={styles.label}>
-                                    Password:
-                                    <FontAwesomeIcon icon={faCheck} className={validPassword ? styles.valid : styles.hide} />
-                                    <FontAwesomeIcon icon={faTimes} className={validPassword || !password ? styles.hide : styles.invalid} />
-                                </label>
-                                <input
-                                    type="password"
-                                    id="password"
-                                    ref={passwordRef}
-                                    autoComplete="off"
-                                    onChange={(e) => setPassword(e.target.value)}
-                                    value={password}
-                                    required
-                                    aria-invalid={validPassword ? "false" : "true"}
-                                    className={styles.input}
-                                    onFocus={() => setPasswordFocus(true)}
-                                    onBlur={() => setPasswordFocus(false)}
-                                />
-                            </div>
-                            <div className={styles.confirmPwd}>
-                                {/* Confirm Password */}
-                                <label htmlFor="confirmPassword" className={styles.label}>
-                                    Confirm Password:
-                                    <FontAwesomeIcon icon={faCheck} className={confirmPassword && validConfirmPassword ? styles.valid : styles.hide} />
-                                    <FontAwesomeIcon icon={faTimes} className={validConfirmPassword || !confirmPassword ? styles.hide : styles.invalid} />
-                                </label>
-                                <input
-                                    type="password"
-                                    id="confirmPassword"
-                                    ref={confirmPasswordRef}
-                                    autoComplete="off"
-                                    onChange={(e) => setConfirmPassword(e.target.value)}
-                                    value={confirmPassword}
-                                    required
-                                    aria-invalid={validConfirmPassword ? "false" : "true"}
-                                    className={styles.input}
-                                    onFocus={() => setConfirmPasswordFocus(true)}
-                                    onBlur={() => setConfirmPasswordFocus(false)}
-                                />
-                            </div>
-                        </div>
-                        <p id="passwordNote" className={passwordFocus && !validPassword ? styles.instructions : styles.offscreen}>
-                            <FontAwesomeIcon icon={faInfoCircle} />
-                            Password must be 8 to 24 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character.
-                        </p>
-                        <p id="confirmPasswordNote" className={confirmPasswordFocus && !validConfirmPassword ? styles.instructions : styles.offscreen}>
-                            <FontAwesomeIcon icon={faInfoCircle} />
-                            Please confirm your password.
-                        </p>
-    
-                        {/* Role */}
-                        <div className={styles.roleContainer}>
-                            <label htmlFor="role" className={styles.label}>
-                                Role:
-                                <FontAwesomeIcon icon={faCheck} className={styles.valid} /> {/* Always valid */}
-                                <input
-                                    type="text"
-                                    id="role"
-                                    ref={roleRef}
-                                    autoComplete="off"
-                                    value={role}
-                                    readOnly
-                                    className={styles.input}
-                                    onFocus={() => setRoleFocus(true)}
-                                    onBlur={() => setRoleFocus(false)}
-                                />
+
+                        <div className={styles.emailContainer}>
+                            {/* Email */}
+                            <label htmlFor="email" className={styles.label}>
+                                Email:
+                                <FontAwesomeIcon icon={faCheck} className={validEmail ? styles.valid : styles.hide} />
+                                <FontAwesomeIcon icon={faTimes} className={validEmail || !email ? styles.hide : styles.invalid} />
                             </label>
-                            <p id="roleNote" className={roleFocus ? styles.instructions : styles.offscreen}>
+                            <input
+                                type="email"
+                                id="email"
+                                ref={emailRef}
+                                autoComplete="off"
+                                onChange={(e) => setEmail(e.target.value)}
+                                value={email}
+                                required
+                                aria-invalid={validEmail ? "false" : "true"}
+                                className={styles.input}
+                                onFocus={() => setEmailFocus(true)}
+                                onBlur={() => setEmailFocus(false)}
+                                disabled={role === 'parent'} // Disable if role is 'parent'
+                            />
+                            <p id="emailNote" className={emailFocus && !validEmail ? styles.instructions : styles.offscreen}>
                                 <FontAwesomeIcon icon={faInfoCircle} />
-                                Role is set to 'admin'.
+                                Please enter a valid email address.
                             </p>
                         </div>
-    
+
+                        {/* Student IDs */}
+                        {role === 'teacher' && (
+                            <div className={styles.studentIdsContainer}>
+                                <label htmlFor="studentIds" className={styles.label}>
+                                    Student IDs:
+                                </label>
+                                <input
+                                    type="text"
+                                    id="studentIds"
+                                    ref={studentIdsRef}
+                                    onChange={(e) => setStudentIds(e.target.value)}
+                                    value={studentIds}
+                                    aria-invalid={validStudentId ? "false" : "true"}
+                                    className={styles.input}
+                                    onFocus={() => setStudentIdsFocus(true)}
+                                    onBlur={() => setStudentIdsFocus(false)}
+                                />
+                                <p id="studentIdsNote" className={studentIdsFocus && !validStudentId ? styles.instructions : styles.offscreen}>
+                                    <FontAwesomeIcon icon={faInfoCircle} />
+                                    Enter comma-separated student IDs.
+                                </p>
+                            </div>
+                        )}
+
+                        {role === 'parent' && (    
+                            <>
+
+                            <label htmlFor="studentFirstName">
+                                Student First Name:
+                                <input
+                                    type="text"
+                                    id="studentFirstName"
+                                    onChange={(e) => setStudentFirstName(e.target.value)}
+                                    onFocus={() => setStudentFirstNameFocus(true)}
+                                    onBlur={() => setStudentFirstNameFocus(false)}
+                                    value={studentFirstName}
+                                />
+                                {studentFirstNameFocus && !validStudentFirstName && <FontAwesomeIcon icon={faInfoCircle} />}
+                            </label>
+
+                            <label htmlFor="studentLastName">
+                                Student Last Name:
+                                <input
+                                    type="text"
+                                    id="studentLastName"
+                                    onChange={(e) => setStudentLastName(e.target.value)}
+                                    onFocus={() => setStudentLastNameFocus(true)}
+                                    onBlur={() => setStudentLastNameFocus(false)}
+                                    value={studentLastName}
+                                />
+                                {studentLastNameFocus && !validStudentLastName && <FontAwesomeIcon icon={faInfoCircle} />}
+                            </label>
+
+                            <label htmlFor="guardOneFirstName">
+                                Guardian One First Name:
+                                <input
+                                    type="text"
+                                    id="guardOneFirstName"
+                                    onChange={(e) => setGuardOneFirstName(e.target.value)}
+                                    onFocus={() => setGuardOneFirstNameFocus(true)}
+                                    onBlur={() => setGuardOneFirstNameFocus(false)}
+                                    value={guardOneFirstName}
+                                />
+                                {guardOneFirstNameFocus && !validGuardOneFirstName && <FontAwesomeIcon icon={faInfoCircle} />}
+                            </label>
+
+                        <label htmlFor="guardOneLastName">
+                            Guardian One Last Name:
+                            <input
+                                type="text"
+                                id="guardOneLastName"
+                                onChange={(e) => setGuardOneLastName(e.target.value)}
+                                onFocus={() => setGuardOneLastNameFocus(true)}
+                                onBlur={() => setGuardOneLastNameFocus(false)}
+                                value={guardOneLastName}
+                            />
+                            {guardOneLastNameFocus && !validGuardOneLastName && <FontAwesomeIcon icon={faInfoCircle} />}
+                        </label>
+
+                        <label htmlFor="guardOneEmail">
+                            Guardian One Email:
+                            <input
+                                type="email"
+                                id="guardOneEmail"
+                                onChange={(e) => setGuardOneEmail(e.target.value)}
+                                onFocus={() => setGuardOneEmailFocus(true)}
+                                onBlur={() => setGuardOneEmailFocus(false)}
+                                value={guardOneEmail}
+                            />
+                            {guardOneEmailFocus && !validGuardOneEmail && <FontAwesomeIcon icon={faInfoCircle} />}
+                        </label>
+
+                        <label htmlFor="guardOnePhone">
+                            Guardian One Phone:
+                            <input
+                                type="text"
+                                id="guardOnePhone"
+                                onChange={(e) => setGuardOnePhone(e.target.value)}
+                                onFocus={() => setGuardOnePhoneFocus(true)}
+                                onBlur={() => setGuardOnePhoneFocus(false)}
+                                value={guardOnePhone}
+                            />
+                            {guardOnePhoneFocus && !validGuardOnePhone && <FontAwesomeIcon icon={faInfoCircle} />}
+                        </label>
+
+                        <label htmlFor="guardTwoFirstName">
+                            Guardian Two First Name (optional):
+                            <input
+                                type="text"
+                                id="guardTwoFirstName"
+                                onChange={(e) => setGuardTwoFirstName(e.target.value)}
+                                onFocus={() => setGuardTwoFirstNameFocus(true)}
+                                onBlur={() => setGuardTwoFirstNameFocus(false)}
+                                value={guardTwoFirstName}
+                            />
+                            {guardTwoFirstNameFocus && !validGuardTwoFirstName && <FontAwesomeIcon icon={faInfoCircle} />}
+                        </label>
+
+                        <label htmlFor="guardTwoLastName">
+                            Guardian Two Last Name (optional):
+                            <input
+                                type="text"
+                                id="guardTwoLastName"
+                                onChange={(e) => setGuardTwoLastName(e.target.value)}
+                                onFocus={() => setGuardTwoLastNameFocus(true)}
+                                onBlur={() => setGuardTwoLastNameFocus(false)}
+                                value={guardTwoLastName}
+                            />
+                            {guardTwoLastNameFocus && !validGuardTwoLastName && <FontAwesomeIcon icon={faInfoCircle} />}
+                        </label>
+
+                        <label htmlFor="guardTwoEmail">
+                            Guardian Two Email (optional):
+                            <input
+                                type="email"
+                                id="guardTwoEmail"
+                                onChange={(e) => setGuardTwoEmail(e.target.value)}
+                                onFocus={() => setGuardTwoEmailFocus(true)}
+                                onBlur={() => setGuardTwoEmailFocus(false)}
+                                value={guardTwoEmail}
+                            />
+                            {guardTwoEmailFocus && !validGuardTwoEmail && <FontAwesomeIcon icon={faInfoCircle} />}
+                        </label>
+
+                        <label htmlFor="guardTwoPhone">
+                            Guardian Two Phone (optional):
+                            <input
+                                type="text"
+                                id="guardTwoPhone"
+                                onChange={(e) => setGuardTwoPhone(e.target.value)}
+                                onFocus={() => setGuardTwoPhoneFocus(true)}
+                                onBlur={() => setGuardTwoPhoneFocus(false)}
+                                value={guardTwoPhone}
+                            />
+                            {guardTwoPhoneFocus && !validGuardTwoPhone && <FontAwesomeIcon icon={faInfoCircle} />}
+                        </label>
+
+                        <label htmlFor="transportation">
+                            Transportation:
+                            <select
+                                id="transportation"
+                                onChange={(e) => setTransportation(e.target.value)}
+                                value={transportation}
+                            >
+                                <option value="car">Car</option>
+                                <option value="bus">Bus</option>
+                                <option value="walker home">Walker Home</option>
+                                <option value="walker go">Walker Go</option>
+                                <option value="right at school">Right At School</option>
+                            </select>
+                        </label>
+
+                        <label htmlFor="roomParent">
+                            Room Parent:
+                            <input
+                                type="checkbox"
+                                id="roomParent"
+                                onChange={() => setRoomParent(!roomParent)}
+                                checked={roomParent}
+                            />
+                        </label>
+                        </>
+                        )}
+                        <div className={styles.passwordContainer}>
+                            {/* Password */}
+                            <label htmlFor="password" className={styles.label}>
+                                Password:
+                                <FontAwesomeIcon icon={faCheck} className={validPassword ? styles.valid : styles.hide} />
+                                <FontAwesomeIcon icon={faTimes} className={validPassword || !password ? styles.hide : styles.invalid} />
+                            </label>
+                            <input
+                                type="password"
+                                id="password"
+                                ref={passwordRef}
+                                onChange={(e) => setPassword(e.target.value)}
+                                value={password}
+                                required
+                                aria-invalid={validPassword ? "false" : "true"}
+                                className={styles.input}
+                                onFocus={() => setPasswordFocus(true)}
+                                onBlur={() => setPasswordFocus(false)}
+                            />
+                            <p id="passwordNote" className={passwordFocus && !validPassword ? styles.instructions : styles.offscreen}>
+                                <FontAwesomeIcon icon={faInfoCircle} />
+                                Password must be 8-24 characters long and include uppercase, lowercase, a number, and a special character.
+                            </p>
+                        </div>
+
+                        <div className={styles.confirmPasswordContainer}>
+                            {/* Confirm Password */}
+                            <label htmlFor="confirmPassword" className={styles.label}>
+                                Confirm Password:
+                                <FontAwesomeIcon icon={faCheck} className={validConfirmPassword ? styles.valid : styles.hide} />
+                                <FontAwesomeIcon icon={faTimes} className={validConfirmPassword || !confirmPassword ? styles.hide : styles.invalid} />
+                            </label>
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                ref={confirmPasswordRef}
+                                onChange={(e) => setConfirmPassword(e.target.value)}
+                                value={confirmPassword}
+                                required
+                                aria-invalid={validConfirmPassword ? "false" : "true"}
+                                className={styles.input}
+                                onFocus={() => setConfirmPasswordFocus(true)}
+                                onBlur={() => setConfirmPasswordFocus(false)}
+                            />
+                            <p id="confirmPasswordNote" className={confirmPasswordFocus && !validConfirmPassword ? styles.instructions : styles.offscreen}>
+                                <FontAwesomeIcon icon={faInfoCircle} />
+                                Passwords must match.
+                            </p>
+                        </div>
+
+                        {/* Submit Button */}
                         <button
-                            disabled={!validFirstName || !validLastName || !validEmail || !validPassword || !validConfirmPassword }
-                            className={(!validFirstName || !validLastName || !validEmail || !validPassword || !validConfirmPassword ) ? styles.disabledButton : styles.button}
+                            type="submit"
+                            className={styles.submitButton}
+                            disabled={role === 'parent' 
+                                ? !validStudentId || !validPassword || !validConfirmPassword 
+                                : !validFirstName || !validLastName || !validEmail || !validPassword || !validConfirmPassword}
                         >
-                            Sign Up
+                            Register
                         </button>
-    
                     </form>
-                    <p className={styles.togglePara}>
-                        Already registered?<br />
-                        <span className={styles.line} onClick={toggleLoginForm}>
-                            <a className={styles.a} href="#">Sign In</a>
+                    <p>
+                        Already registered?
+                        <br />
+                        <span className={styles.line}>
+                            <a href="#" onClick={toggleLoginForm}>Sign In</a>
                         </span>
                     </p>
                 </section>
             )}
         </>
-    );    
-}
+    );
+};
 
 export default Register;
