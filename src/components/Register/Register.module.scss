@@ -4,20 +4,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(240, 248, 255, 0.44);
 }
 
 .section {
-    width: 100%;
-    min-height: 400px;
-    max-width: 600px;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     padding: 3rem;
     border-radius: 3rem;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    background-color: var(--text-light);
+    background-color: aliceblue;
 }
 
 .nameContainer, .emailAndCampusContainer, .passwordContainer, .confirmPasswordContainer {
@@ -46,6 +45,7 @@
 
 .input,
 .button, .disabledButton, .select {
+    width: 100%;
   font-size: 1rem;
   padding: 0.25rem;
   border-radius: 0.5rem;
@@ -150,4 +150,10 @@
 
 .line {
     display: inline-block;
+}
+
+@media (max-width: 500px) {
+    .section {
+        width: 100%;
+    }
 }

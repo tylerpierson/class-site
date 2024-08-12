@@ -19,6 +19,10 @@ const parentSchema = new Schema ({
     roomParent: { type: Boolean, default: false },
     transportation: {type: String},
     carTagNumber: {type: String},
+    likes: {type: String},
+    dislikes: {type: String},
+    allergies: {type: String},
+    notes: {type: String},
 }, {
     timestamps: true
 })

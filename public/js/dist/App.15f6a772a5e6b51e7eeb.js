@@ -706,6 +706,10 @@ const Register = _ref => {
   const [roomParent, setRoomParent] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   const [transportation, setTransportation] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('Car');
   const [carTagNumber, setCarTagNumber] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
+  const [likes, setLikes] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
+  const [dislikes, setDislikes] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
+  const [allergies, setAllergies] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
+  const [notes, setNotes] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
   const [validFirstName, setValidFirstName] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   const [validLastName, setValidLastName] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   const [validEmail, setValidEmail] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
@@ -723,6 +727,10 @@ const Register = _ref => {
   const [validGuardTwoEmail, setValidGuardTwoEmail] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
   const [validGuardTwoPhone, setValidGuardTwoPhone] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
   const [validCarTagNumber, setValidCarTagNumber] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
+  const [validLikes, setValidLikes] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
+  const [validDislikes, setValidDislikes] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
+  const [validAllergies, setValidAllergies] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
+  const [validNotes, setValidNotes] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
   const [firstNameFocus, setFirstNameFocus] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   const [lastNameFocus, setLastNameFocus] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   const [emailFocus, setEmailFocus] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
@@ -743,6 +751,10 @@ const Register = _ref => {
   const [guardTwoEmailFocus, setGuardTwoEmailFocus] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   const [guardTwoPhoneFocus, setGuardTwoPhoneFocus] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   const [carTagNumberFocus, setCarTagNumberFocus] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [likesFocus, setLikesFocus] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [dislikesFocus, setDislikesFocus] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [allergiesFocus, setAllergiesFocus] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [notesFocus, setNotesFocus] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   const [errMsg, setErrMsg] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)('');
   const [success, setSuccess] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
@@ -802,8 +814,20 @@ const Register = _ref => {
     setValidCarTagNumber(carTagNumber.trim() !== '');
   }, [carTagNumber]);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    setValidLikes(likes.trim() !== '');
+  }, [likes]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    setValidDislikes(dislikes.trim() !== '');
+  }, [dislikes]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    setValidAllergies(allergies.trim() !== '');
+  }, [allergies]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    setValidNotes(notes.trim() !== '');
+  }, [notes]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     setErrMsg('');
-  }, [firstName, lastName, email, password, confirmPassword, role, studentIds, studentFirstName, studentLastName, guardOneFirstName, guardOneLastName, guardOneEmail, guardOnePhone, guardTwoFirstName, guardTwoLastName, guardTwoEmail, guardTwoPhone, carTagNumber]);
+  }, [firstName, lastName, email, password, confirmPassword, role, studentIds, studentFirstName, studentLastName, guardOneFirstName, guardOneLastName, guardOneEmail, guardOnePhone, guardTwoFirstName, guardTwoLastName, guardTwoEmail, guardTwoPhone, carTagNumber, likes, dislikes, allergies, notes]);
   const handleSubmit = async e => {
     e.preventDefault();
 
@@ -839,7 +863,11 @@ const Register = _ref => {
       guardTwoPhone,
       roomParent,
       transportation,
-      carTagNumber
+      carTagNumber,
+      likes,
+      dislikes,
+      allergies,
+      notes
     };
     try {
       const response = await fetch(url, {
@@ -1230,7 +1258,63 @@ const Register = _ref => {
     id: "roomParent",
     onChange: () => setRoomParent(!roomParent),
     checked: roomParent
+  })), /*#__PURE__*/React.createElement("div", {
+    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].nameContainer
+  }, /*#__PURE__*/React.createElement("label", {
+    htmlFor: "likes",
+    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].label
+  }, "Student Likes (Optional):", /*#__PURE__*/React.createElement("input", {
+    type: "text",
+    id: "likes",
+    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].input,
+    onChange: e => setLikes(e.target.value),
+    onFocus: () => setLikesFocus(true),
+    onBlur: () => setLikesFocus(false),
+    value: likes
+  }), likesFocus && !validLikes && /*#__PURE__*/React.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__.faInfoCircle
+  })), /*#__PURE__*/React.createElement("label", {
+    htmlFor: "dislikes",
+    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].label
+  }, "Student Dislikes (Optional):", /*#__PURE__*/React.createElement("input", {
+    type: "text",
+    id: "dislikes",
+    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].input,
+    onChange: e => setDislikes(e.target.value),
+    onFocus: () => setDislikesFocus(true),
+    onBlur: () => setDislikesFocus(false),
+    value: dislikes
+  }), dislikesFocus && !validDislikes && /*#__PURE__*/React.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__.faInfoCircle
   }))), /*#__PURE__*/React.createElement("div", {
+    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].nameContainer
+  }, /*#__PURE__*/React.createElement("label", {
+    htmlFor: "allergies",
+    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].label
+  }, "Student Allergies (Optional):", /*#__PURE__*/React.createElement("input", {
+    type: "text",
+    id: "allergies",
+    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].input,
+    onChange: e => setAllergies(e.target.value),
+    onFocus: () => setAllergiesFocus(true),
+    onBlur: () => setAllergiesFocus(false),
+    value: allergies
+  }), allergiesFocus && !validAllergies && /*#__PURE__*/React.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__.faInfoCircle
+  })), /*#__PURE__*/React.createElement("label", {
+    htmlFor: "notes",
+    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].label
+  }, "Anything else you'd like me to know (Optional):", /*#__PURE__*/React.createElement("input", {
+    type: "text",
+    id: "notes",
+    className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].input,
+    onChange: e => setNotes(e.target.value),
+    onFocus: () => setNotesFocus(true),
+    onBlur: () => setNotesFocus(false),
+    value: notes
+  }), notesFocus && !validNotes && /*#__PURE__*/React.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__.faInfoCircle
+  })))), /*#__PURE__*/React.createElement("div", {
     className: _Register_module_scss__WEBPACK_IMPORTED_MODULE_2__["default"].passwordContainer
   }, /*#__PURE__*/React.createElement("label", {
     htmlFor: "password",
@@ -3346,20 +3430,19 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.uqfv59jh0aLmknMWXxqu {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(240, 248, 255, 0.44);
 }
 
 .Idu7boV5emT3tpI63EsN {
-  width: 100%;
-  min-height: 400px;
-  max-width: 600px;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   padding: 3rem;
   border-radius: 3rem;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  background-color: var(--text-light);
+  background-color: aliceblue;
 }
 
 .XokUkjbAB13UudNelspL, ._VTjxJAcByR5MCln33Zs, .XgxRt1_ViXHNSccWAUFj, .JXDEaLlvnxZWsWN6uAsv {
@@ -3388,6 +3471,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.uqfv59jh0aLmknMWXxqu {
 
 .rMo8qUvx6E5jcjWTHxQm,
 .K9R5yzZjO1mUAvrEywog, .Lb_3qXz_D_RV0UGUhFI0, .oCrs0O5iLZO8gTh_7L0p {
+  width: 100%;
   font-size: 1rem;
   padding: 0.25rem;
   border-radius: 0.5rem;
@@ -3491,7 +3575,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.uqfv59jh0aLmknMWXxqu {
 
 .PwGfkZn5LtYOVvDEODfW {
   display: inline-block;
-}`, "",{"version":3,"sources":["webpack://./src/components/Register/Register.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,YAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AACJ;;AAEA;EACI,WAAA;EACA,iBAAA;EACA,gBAAA;EACA,aAAA;EACA,sBAAA;EACA,2BAAA;EACA,mBAAA;EACA,aAAA;EACA,mBAAA;EACA,uCAAA;EACA,mCAAA;AACJ;;AAEA;EACI,aAAA;EACA,8BAAA;EACA,cAAA;AACJ;AAAI;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,gBAAA;AAER;;AAEA;EACI,aAAA;EACA,sBAAA;EACA,6BAAA;EACA,YAAA;EACA,oBAAA;AACJ;;AAEA;EACI,WAAA;AACJ;;AAEA;;EAEE,eAAA;EACA,gBAAA;EACA,qBAAA;EACA,qCAAA;AACF;;AAEA;;EAEI,eAAA;EACF,gBAAA;EACA,SAAA;AACF;;AAEA;;EAEE,eAAA;EACA,eAAA;EACA,qBAAA;EACA,gBAAA;EACA,SAAA;AACF;;AAEA;EACE,YAAA;EACA,kCAAA;EACA,YAAA;EACA,qBAAA;EACA,eAAA;AACF;;AAEA;EACE,eAAA;EACA,eAAA;EACA,qBAAA;AACF;;AAEA;EACE,sBAAA;EACA,eAAA;EACA,mBAAA;AACF;AAAE;EACE,sBAAA;EACA,eAAA;EACA,mBAAA;AAEJ;;AAGA;EACI,kBAAA;AAAJ;;AAGA;EACI,mBAAA;AAAJ;;AAGA;EACI,aAAA;EACA,qCAAA;AAAJ;;AAGA;EACI,kBAAA;EACA,qBAAA;EACA,gBAAA;EACA,WAAA;EACA,gBAAA;EACA,kBAAA;EACA,aAAA;AAAJ;;AAGA;EACI,qBAAA;AAAJ;;AAGA;EACI,kBAAA;EACA,aAAA;AAAJ;;AAGA;EACI,aAAA;AAAJ;;AAGA;EACI,gBAAA;EACA,oBAAA;AAAJ;;AAGA;EACI,UAAA;EACA,oBAAA;AAAJ;;AAGA;EACI,2BAAA;EACA,gBAAA;EACA,iBAAA;EACA,eAAA;EACA,qBAAA;AAAJ;;AAGA;EACI,qBAAA;AAAJ","sourcesContent":[".Register {\n    width: 100%;\n    height: 100%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\n.section {\n    width: 100%;\n    min-height: 400px;\n    max-width: 600px;\n    display: flex;\n    flex-direction: column;\n    justify-content: flex-start;\n    align-items: center;\n    padding: 3rem;\n    border-radius: 3rem;\n    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);\n    background-color: var(--text-light);\n}\n\n.nameContainer, .emailAndCampusContainer, .passwordContainer, .confirmPasswordContainer {\n    display: flex;\n    justify-content: space-between;\n    margin: 1rem 0;\n    .fName, .lName, .email, .campusNum, .pwd, .confirm, .studentIds {\n        display: flex;\n        flex-direction: column;\n        align-items: flex-start;\n        margin: 0 .5rem;\n    }\n}\n\n.form {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n    flex-grow: 1;\n    padding-bottom: 1rem;\n}\n\n.a, .a:visited {\n    color: navy;\n}\n\n.input,\n.button, .disabledButton, .select {\n  font-size: 1rem;\n  padding: 0.25rem;\n  border-radius: 0.5rem;\n  border: 0.1rem solid var(--text-dark);\n}\n\n.label,\n.button, .disabledButton {\n    font-size: 1rem;\n  margin-top: 1rem;\n  margin: 0;\n}\n\n.button,\n.disabledButton {\n  font-size: 1rem;\n  padding: 0.5rem;\n  border-radius: 0.5rem;\n  margin-top: 1rem;\n  margin: 0;\n}\n\n.button {\n  border: none;\n  background-color: var(--btn-color);\n  color: white;\n  transition: 0.3s ease;\n  cursor: pointer;\n}\n\n.button:hover {\n  padding: 0.7rem;\n  font-size: 1rem;\n  transition: 0.3s ease;\n}\n\n.disabledButton {\n  background-color: grey;\n  color: darkgrey;\n  cursor: not-allowed;\n  &:hover {\n    background-color: grey;\n    color: darkgrey;\n    cursor: not-allowed;\n  }\n}\n\n\n.togglePara {\n    text-align: center;\n}\n\n.select {\n    margin-bottom: 2rem;\n}\n\n.select:focus {\n    outline: none;\n    box-shadow: 0 0 1rem var(--btn-color);\n}\n\n.instructions {\n    font-size: 0.75rem;\n    border-radius: 0.5rem;\n    background: #000;\n    color: #fff;\n    padding: 0.25rem;\n    position: relative;\n    bottom: -10px;\n}\n\n.instructions > svg {\n    margin-right: 0.25rem;\n}\n\n.offscreen {\n    position: absolute;\n    left: -9999px;\n}\n\n.hide {\n    display: none;\n}\n\n.valid {\n    color: limegreen;\n    margin-left: 0.25rem;\n}\n\n.invalid {\n    color: red;\n    margin-left: 0.25rem;\n}\n\n.errmsg {\n    background-color: lightpink;\n    color: firebrick;\n    font-weight: bold;\n    padding: 0.5rem;\n    margin-bottom: 0.5rem;\n}\n\n.line {\n    display: inline-block;\n}\n"],"sourceRoot":""}]);
+}
+
+@media (max-width: 500px) {
+  .Idu7boV5emT3tpI63EsN {
+    width: 100%;
+  }
+}`, "",{"version":3,"sources":["webpack://./src/components/Register/Register.module.scss"],"names":[],"mappings":"AAAA;EACI,WAAA;EACA,YAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,2CAAA;AACJ;;AAEA;EACI,UAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;EACA,aAAA;EACA,mBAAA;EACA,uCAAA;EACA,2BAAA;AACJ;;AAEA;EACI,aAAA;EACA,8BAAA;EACA,cAAA;AACJ;AAAI;EACI,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,gBAAA;AAER;;AAEA;EACI,aAAA;EACA,sBAAA;EACA,6BAAA;EACA,YAAA;EACA,oBAAA;AACJ;;AAEA;EACI,WAAA;AACJ;;AAEA;;EAEI,WAAA;EACF,eAAA;EACA,gBAAA;EACA,qBAAA;EACA,qCAAA;AACF;;AAEA;;EAEI,eAAA;EACF,gBAAA;EACA,SAAA;AACF;;AAEA;;EAEE,eAAA;EACA,eAAA;EACA,qBAAA;EACA,gBAAA;EACA,SAAA;AACF;;AAEA;EACE,YAAA;EACA,kCAAA;EACA,YAAA;EACA,qBAAA;EACA,eAAA;AACF;;AAEA;EACE,eAAA;EACA,eAAA;EACA,qBAAA;AACF;;AAEA;EACE,sBAAA;EACA,eAAA;EACA,mBAAA;AACF;AAAE;EACE,sBAAA;EACA,eAAA;EACA,mBAAA;AAEJ;;AAGA;EACI,kBAAA;AAAJ;;AAGA;EACI,mBAAA;AAAJ;;AAGA;EACI,aAAA;EACA,qCAAA;AAAJ;;AAGA;EACI,kBAAA;EACA,qBAAA;EACA,gBAAA;EACA,WAAA;EACA,gBAAA;EACA,kBAAA;EACA,aAAA;AAAJ;;AAGA;EACI,qBAAA;AAAJ;;AAGA;EACI,kBAAA;EACA,aAAA;AAAJ;;AAGA;EACI,aAAA;AAAJ;;AAGA;EACI,gBAAA;EACA,oBAAA;AAAJ;;AAGA;EACI,UAAA;EACA,oBAAA;AAAJ;;AAGA;EACI,2BAAA;EACA,gBAAA;EACA,iBAAA;EACA,eAAA;EACA,qBAAA;AAAJ;;AAGA;EACI,qBAAA;AAAJ;;AAGA;EACI;IACI,WAAA;EAAN;AACF","sourcesContent":[".Register {\n    width: 100%;\n    height: 100%;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    background-color: rgba(240, 248, 255, 0.44);\n}\n\n.section {\n    width: 50%;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    padding: 3rem;\n    border-radius: 3rem;\n    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);\n    background-color: aliceblue;\n}\n\n.nameContainer, .emailAndCampusContainer, .passwordContainer, .confirmPasswordContainer {\n    display: flex;\n    justify-content: space-between;\n    margin: 1rem 0;\n    .fName, .lName, .email, .campusNum, .pwd, .confirm, .studentIds {\n        display: flex;\n        flex-direction: column;\n        align-items: flex-start;\n        margin: 0 .5rem;\n    }\n}\n\n.form {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n    flex-grow: 1;\n    padding-bottom: 1rem;\n}\n\n.a, .a:visited {\n    color: navy;\n}\n\n.input,\n.button, .disabledButton, .select {\n    width: 100%;\n  font-size: 1rem;\n  padding: 0.25rem;\n  border-radius: 0.5rem;\n  border: 0.1rem solid var(--text-dark);\n}\n\n.label,\n.button, .disabledButton {\n    font-size: 1rem;\n  margin-top: 1rem;\n  margin: 0;\n}\n\n.button,\n.disabledButton {\n  font-size: 1rem;\n  padding: 0.5rem;\n  border-radius: 0.5rem;\n  margin-top: 1rem;\n  margin: 0;\n}\n\n.button {\n  border: none;\n  background-color: var(--btn-color);\n  color: white;\n  transition: 0.3s ease;\n  cursor: pointer;\n}\n\n.button:hover {\n  padding: 0.7rem;\n  font-size: 1rem;\n  transition: 0.3s ease;\n}\n\n.disabledButton {\n  background-color: grey;\n  color: darkgrey;\n  cursor: not-allowed;\n  &:hover {\n    background-color: grey;\n    color: darkgrey;\n    cursor: not-allowed;\n  }\n}\n\n\n.togglePara {\n    text-align: center;\n}\n\n.select {\n    margin-bottom: 2rem;\n}\n\n.select:focus {\n    outline: none;\n    box-shadow: 0 0 1rem var(--btn-color);\n}\n\n.instructions {\n    font-size: 0.75rem;\n    border-radius: 0.5rem;\n    background: #000;\n    color: #fff;\n    padding: 0.25rem;\n    position: relative;\n    bottom: -10px;\n}\n\n.instructions > svg {\n    margin-right: 0.25rem;\n}\n\n.offscreen {\n    position: absolute;\n    left: -9999px;\n}\n\n.hide {\n    display: none;\n}\n\n.valid {\n    color: limegreen;\n    margin-left: 0.25rem;\n}\n\n.invalid {\n    color: red;\n    margin-left: 0.25rem;\n}\n\n.errmsg {\n    background-color: lightpink;\n    color: firebrick;\n    font-weight: bold;\n    padding: 0.5rem;\n    margin-bottom: 0.5rem;\n}\n\n.line {\n    display: inline-block;\n}\n\n@media (max-width: 500px) {\n    .section {\n        width: 100%;\n    }\n}"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"Register": `uqfv59jh0aLmknMWXxqu`,
@@ -6713,4 +6803,4 @@ module.exports = __webpack_require__.p + "4031c99fef0abdcd87ad.png";
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.fe7968fafd8864ed0567400622f39d54.js.map
+//# sourceMappingURL=App.5648b503be2fa813860cdfdec1084029.js.map

@@ -45,6 +45,10 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
     const [roomParent, setRoomParent] = useState(false);
     const [transportation, setTransportation] = useState('Car');
     const [carTagNumber, setCarTagNumber] = useState('');
+    const [likes, setLikes] = useState('');
+    const [dislikes, setDislikes] = useState('');
+    const [allergies, setAllergies] = useState('');
+    const [notes, setNotes] = useState('');
 
     const [validFirstName, setValidFirstName] = useState(false);
     const [validLastName, setValidLastName] = useState(false);
@@ -64,6 +68,10 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
     const [validGuardTwoEmail, setValidGuardTwoEmail] = useState(true);
     const [validGuardTwoPhone, setValidGuardTwoPhone] = useState(true);
     const [validCarTagNumber, setValidCarTagNumber] = useState(true);
+    const [validLikes, setValidLikes] = useState(true);
+    const [validDislikes, setValidDislikes] = useState(true);
+    const [validAllergies, setValidAllergies] = useState(true);
+    const [validNotes, setValidNotes] = useState(true);
 
     const [firstNameFocus, setFirstNameFocus] = useState(false);
     const [lastNameFocus, setLastNameFocus] = useState(false);
@@ -85,6 +93,10 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
     const [guardTwoEmailFocus, setGuardTwoEmailFocus] = useState(false);
     const [guardTwoPhoneFocus, setGuardTwoPhoneFocus] = useState(false);
     const [carTagNumberFocus, setCarTagNumberFocus] = useState(false);
+    const [likesFocus, setLikesFocus] = useState(false);
+    const [dislikesFocus, setDislikesFocus] = useState(false);
+    const [allergiesFocus, setAllergiesFocus] = useState(false);
+    const [notesFocus, setNotesFocus] = useState(false);
 
     const [errMsg, setErrMsg] = useState('');
     const [success, setSuccess] = useState(false);
@@ -163,8 +175,24 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
     }, [carTagNumber]);
 
     useEffect(() => {
+        setValidLikes(likes.trim() !== '');
+    }, [likes]);
+
+    useEffect(() => {
+        setValidDislikes(dislikes.trim() !== '');
+    }, [dislikes]);
+
+    useEffect(() => {
+        setValidAllergies(allergies.trim() !== '');
+    }, [allergies]);
+
+    useEffect(() => {
+        setValidNotes(notes.trim() !== '');
+    }, [notes]);
+
+    useEffect(() => {
         setErrMsg('');
-    }, [firstName, lastName, email, password, confirmPassword, role, studentIds, studentFirstName, studentLastName, guardOneFirstName, guardOneLastName, guardOneEmail, guardOnePhone, guardTwoFirstName, guardTwoLastName, guardTwoEmail, guardTwoPhone, carTagNumber]);
+    }, [firstName, lastName, email, password, confirmPassword, role, studentIds, studentFirstName, studentLastName, guardOneFirstName, guardOneLastName, guardOneEmail, guardOnePhone, guardTwoFirstName, guardTwoLastName, guardTwoEmail, guardTwoPhone, carTagNumber, likes, dislikes, allergies, notes]);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -208,7 +236,11 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
                 guardTwoPhone,
                 roomParent,
                 transportation,
-                carTagNumber
+                carTagNumber,
+                likes,
+                dislikes,
+                allergies,
+                notes
               };
     
         try {
@@ -621,6 +653,66 @@ const Register = ({ toggleLoginForm, setUser, setSuccessMsg }) => {
                                 checked={roomParent}
                             />
                         </label>
+
+                        <div className={styles.nameContainer}>
+                                <label htmlFor="likes" className={styles.label}>
+                                    Student Likes (Optional):
+                                    <input
+                                        type="text"
+                                        id="likes"
+                                        className={styles.input}
+                                        onChange={(e) => setLikes(e.target.value)}
+                                        onFocus={() => setLikesFocus(true)}
+                                        onBlur={() => setLikesFocus(false)}
+                                        value={likes}
+                                    />
+                                    {likesFocus && !validLikes && <FontAwesomeIcon icon={faInfoCircle} />}
+                                </label>
+
+                                <label htmlFor="dislikes" className={styles.label}>
+                                    Student Dislikes (Optional):
+                                    <input
+                                        type="text"
+                                        id="dislikes"
+                                        className={styles.input}
+                                        onChange={(e) => setDislikes(e.target.value)}
+                                        onFocus={() => setDislikesFocus(true)}
+                                        onBlur={() => setDislikesFocus(false)}
+                                        value={dislikes}
+                                    />
+                                    {dislikesFocus && !validDislikes && <FontAwesomeIcon icon={faInfoCircle} />}
+                                </label>
+                            </div>
+
+                            <div className={styles.nameContainer}>
+                                <label htmlFor="allergies" className={styles.label}>
+                                    Student Allergies (Optional):
+                                    <input
+                                        type="text"
+                                        id="allergies"
+                                        className={styles.input}
+                                        onChange={(e) => setAllergies(e.target.value)}
+                                        onFocus={() => setAllergiesFocus(true)}
+                                        onBlur={() => setAllergiesFocus(false)}
+                                        value={allergies}
+                                    />
+                                    {allergiesFocus && !validAllergies && <FontAwesomeIcon icon={faInfoCircle} />}
+                                </label>
+
+                                <label htmlFor="notes" className={styles.label}>
+                                    Anything else you'd like me to know (Optional):
+                                    <input
+                                        type="text"
+                                        id="notes"
+                                        className={styles.input}
+                                        onChange={(e) => setNotes(e.target.value)}
+                                        onFocus={() => setNotesFocus(true)}
+                                        onBlur={() => setNotesFocus(false)}
+                                        value={notes}
+                                    />
+                                    {notesFocus && !validNotes && <FontAwesomeIcon icon={faInfoCircle} />}
+                                </label>
+                            </div>
                         </>
                         )}
                         <div className={styles.passwordContainer}>
