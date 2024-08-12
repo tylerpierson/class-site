@@ -70,7 +70,7 @@ const Login = ({ toggleLoginForm, setUser, user }) => {
             setUser(user);
     
             // Handle authentication logic here
-            navigateTo('/');
+            navigateTo('/home');
         } catch (err) {
             setErrMsg(err.message || 'Login Failed');
             errRef.current.focus();

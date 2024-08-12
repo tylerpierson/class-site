@@ -17,8 +17,13 @@ export default function App(){
         <>
             <div className={styles.App}>
                 <Routes>
+                    <Route
+                    path='/'
+                    element= {<AuthPage user={user} setUser={setUser} />}>
+                    </Route>
+
                     <Route 
-                    path='/' 
+                    path='/home' 
                     element= {<HomePage />}>
                     </Route>
 
@@ -31,11 +36,7 @@ export default function App(){
                     path='/contact'
                     element= {<ContactPage />}>
                     </Route>
-
-                    <Route
-                    path='/login'
-                    element= {<AuthPage user={user} setUser={setUser} />}>
-                    </Route>
+:
                 </Routes>
             </div>
         </>

@@ -37,6 +37,12 @@ function App() {
     className: _App_module_scss__WEBPACK_IMPORTED_MODULE_5__["default"].App
   }, /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Routes, null, /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
     path: "/",
+    element: /*#__PURE__*/React.createElement(_pages_AuthPage_AuthPage__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      user: user,
+      setUser: setUser
+    })
+  }), /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
+    path: "/home",
     element: /*#__PURE__*/React.createElement(_pages_HomePage_HomePage__WEBPACK_IMPORTED_MODULE_1__["default"], null)
   }), /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
     path: "/about",
@@ -44,13 +50,7 @@ function App() {
   }), /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
     path: "/contact",
     element: /*#__PURE__*/React.createElement(_pages_ContactPage_ContactPage__WEBPACK_IMPORTED_MODULE_3__["default"], null)
-  }), /*#__PURE__*/React.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Route, {
-    path: "/login",
-    element: /*#__PURE__*/React.createElement(_pages_AuthPage_AuthPage__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      user: user,
-      setUser: setUser
-    })
-  }))));
+  }), ":")));
 }
 
 /***/ }),
@@ -209,7 +209,7 @@ const Login = _ref => {
       setUser(user);
 
       // Handle authentication logic here
-      navigateTo('/');
+      navigateTo('/home');
     } catch (err) {
       setErrMsg(err.message || 'Login Failed');
       errRef.current.focus();
@@ -6674,4 +6674,4 @@ module.exports = __webpack_require__.p + "4031c99fef0abdcd87ad.png";
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.bbb661789d41d6cc223cb682bd62974e.js.map
+//# sourceMappingURL=App.d569bc4e8471471f20942546bae1b1cb.js.map
