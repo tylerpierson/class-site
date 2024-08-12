@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import styles from './NavBar.module.scss';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { getUser, logOut } from '../../utilities/users-service'; // Adjust the import path if necessary
 
 export default function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [user, setUser] = useState(getUser());
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,6 +23,12 @@ export default function NavBar() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const handleLogout = () => {
+    logOut();
+    setUser(null); // Clear the user state
+    navigate('/'); // Redirect to the home page or login page
+  };
 
   return (
     <nav className={`${styles.Nav} ${isScrolled ? styles.hidden : ''}`}>
@@ -41,6 +50,12 @@ export default function NavBar() {
           <div className={styles.navItemTop}><li className={styles.listItem}>Newsletter</li></div>
           <div className={styles.navItemBottom}><li className={styles.listItem}>Newsletter</li></div>
         </a>
+        {user && (
+          <a className={styles.listItemContainer} onClick={handleLogout}>
+            <div className={styles.navItemTop}><li className={styles.listItem}>Logout</li></div>
+            <div className={styles.navItemBottom}><li className={styles.listItem}>Logout</li></div>
+          </a>
+        )}
       </ul>
     </nav>
   );
