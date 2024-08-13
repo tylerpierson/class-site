@@ -1,12 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import styles from './NavBar.module.scss';
 import { Link, useNavigate } from 'react-router-dom';
-import { getUser, logOut } from '../../utilities/users-service'; // Adjust the import path if necessary
+import { getUser, logOut } from '../../utilities/users-service';
 
 export default function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [user, setUser] = useState(getUser());
+  const [user, setUser] = useState(null);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    async function fetchUser() {
+      const fetchedUser = await getUser();
+      setUser(fetchedUser);
+    }
+    fetchUser();
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,6 +46,12 @@ export default function NavBar() {
           <div className={styles.navItemTop}><li className={styles.listItem}>Home</li></div>
           <div className={styles.navItemBottom}><li className={styles.listItem}>Home</li></div>
         </Link>
+        {user && (
+          <Link className={styles.listItemContainer} to={`/${user._id}`}>
+            <div className={styles.navItemTop}><li className={styles.listItem}>Profile</li></div>
+            <div className={styles.navItemBottom}><li className={styles.listItem}>Profile</li></div>
+          </Link>
+        )}
         <Link className={styles.listItemContainer} to='/about'>
           <div className={styles.navItemTop}><li className={styles.listItem}>About Me</li></div>
           <div className={styles.navItemBottom}><li className={styles.listItem}>About Me</li></div>
@@ -50,12 +64,10 @@ export default function NavBar() {
           <div className={styles.navItemTop}><li className={styles.listItem}>Newsletter</li></div>
           <div className={styles.navItemBottom}><li className={styles.listItem}>Newsletter</li></div>
         </a>
-        {user && (
           <a className={styles.listItemContainer} onClick={handleLogout}>
             <div className={styles.navItemTop}><li className={styles.listItem}>Logout</li></div>
             <div className={styles.navItemBottom}><li className={styles.listItem}>Logout</li></div>
           </a>
-        )}
       </ul>
     </nav>
   );

@@ -120,15 +120,15 @@ function jsonParents (req, res) {
 
 async function login(req, res) {
     try {
-        const { email, password } = req.body;
-        console.log('Login request received for email:', email);
+        const { studentId, password } = req.body;
+        console.log('Login request received for studentId:', studentId);
 
-        const parent = await Parent.findOne({ email });
+        const parent = await Parent.findOne({ studentId });
         console.log('Parent found:', parent);
 
         if (!parent) {
             console.log('Parent not found');
-            return res.status(400).json({ error: 'Invalid email or password' });
+            return res.status(400).json({ error: 'Invalid studentId or password' });
         }
 
         const match = await bcrypt.compare(password, parent.password);
@@ -136,7 +136,7 @@ async function login(req, res) {
 
         if (!match) {
             console.log('Password does not match');
-            return res.status(400).json({ error: 'Invalid email or password' });
+            return res.status(400).json({ error: 'Invalid studentId or password' });
         }
 
         const token = await parent.generateAuthToken()

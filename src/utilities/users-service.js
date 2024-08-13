@@ -26,28 +26,29 @@ export async function login(credentials, rememberMe, navigate) {
 }
 
 export function getToken() {
-  const token = localStorage.getItem('token');
-  if (!token) return null;
-  const payload = JSON.parse(atob(token.split('.')[1]));
-  if (payload.exp < Date.now() / 1000) {
-    localStorage.removeItem('token');
-    return null;
+    const token = localStorage.getItem('token');
+    if (!token) return null;
+    const payload = JSON.parse(atob(token.split('.')[1]));
+    if (payload.exp < Date.now() / 1000) {
+      localStorage.removeItem('token');
+      return null;
+    }
+    return token;
   }
-  return token;
-}
-
-export async function getUser() {
+  
+  export function getUser() {
     const token = getToken();
     if (!token) return null; // Return null if token is missing
     try {
       const payload = JSON.parse(atob(token.split('.')[1]));
-      const user = await usersAPI.findUser(payload.user._id); // Await the API call
-      return user;
+      const user =  usersAPI.findUser(payload._id)// Return user object from token payload
+      return user
     } catch (error) {
       console.error("Error parsing user from token:", error);
       return null; // Return null if there's an error parsing the token
     }
   }
+
   
 
 export async function getProfileUser(userId) {
