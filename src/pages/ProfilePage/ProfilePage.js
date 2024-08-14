@@ -81,7 +81,7 @@ function ProfilePage({ user }) {
                     <td>{parent.transportation || 'N/A'}</td>
                     <td>{parent.carTagNumber || 'N/A'}</td>
                     <td>{parent.allergies || 'N/A'}</td>
-                    <td>{parent.notes || 'N/A'}</td>
+                    <td className={styles.notes}>{parent.notes || 'N/A'}</td>
                   </tr>
                 ))}
               </tbody>
