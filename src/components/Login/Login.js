@@ -177,7 +177,7 @@ const Login = ({ toggleLoginForm, setUser }) => {
                     </p>
                     <h1>Sign In</h1>
                     <form className={styles.form} onSubmit={handleSubmit}>
-                        <label className={styles.label} htmlFor="email">Email:</label>
+                        <label className={styles.label} htmlFor="email">(For Teachers) Email:</label>
                         <input
                             type="email"
                             id="email"
@@ -188,7 +188,7 @@ const Login = ({ toggleLoginForm, setUser }) => {
                             className={styles.input}
                             disabled={studentId.length > 0} // Disable email if studentId has text
                         />
-                        <label className={styles.label} htmlFor="studentId">Student ID:</label>
+                        <label className={styles.label} htmlFor="studentId">(For Parents) Student ID:</label>
                         <input
                             type="text"
                             id="studentId"
