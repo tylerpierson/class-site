@@ -1922,11 +1922,28 @@ function ProfilePage(_ref) {
   let {
     user
   } = _ref;
+  const [parents, setParents] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([]);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     // Store user data in localStorage
     if (user) {
       localStorage.setItem('user', JSON.stringify(user));
     }
+
+    // Fetch parents if the user is a teacher
+    const fetchParents = async () => {
+      const storedUser = JSON.parse(localStorage.getItem('user'));
+      const currentUser = user || storedUser;
+      if (currentUser.role === "teacher") {
+        try {
+          const response = await fetch('/api/parents');
+          const data = await response.json();
+          setParents(data);
+        } catch (error) {
+          console.error('Failed to fetch parents:', error);
+        }
+      }
+    };
+    fetchParents();
   }, [user]);
 
   // Retrieve user data from localStorage if it was cleared (e.g., on page refresh)
@@ -1937,7 +1954,31 @@ function ProfilePage(_ref) {
   const currentUser = user || storedUser;
   return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/React.createElement(_components_NavMobile_NavMobile__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/React.createElement("div", {
     className: _ProfilePage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].profile
-  }, currentUser.role === "teacher" ? /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", null, "Welcome, ", currentUser.firstName, " ", currentUser.lastName), /*#__PURE__*/React.createElement("p", null, "Email: ", currentUser.email)) : /*#__PURE__*/React.createElement("p", null, currentUser.studentFirstName)));
+  }, currentUser.role === "teacher" ? /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", null, "Welcome, ", currentUser.firstName, " ", currentUser.lastName), /*#__PURE__*/React.createElement("p", null, "Email: ", currentUser.email), /*#__PURE__*/React.createElement("h2", null, "Parents Information"), /*#__PURE__*/React.createElement("table", null, /*#__PURE__*/React.createElement("thead", null, /*#__PURE__*/React.createElement("tr", null, /*#__PURE__*/React.createElement("th", {
+    className: _ProfilePage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].header
+  }, "Student Name"), /*#__PURE__*/React.createElement("th", {
+    className: _ProfilePage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].header
+  }, "Guardian 1 Name"), /*#__PURE__*/React.createElement("th", {
+    className: _ProfilePage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].header
+  }, "Guardian 1 Email"), /*#__PURE__*/React.createElement("th", {
+    className: _ProfilePage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].header
+  }, "Guardian 1 Phone"), /*#__PURE__*/React.createElement("th", {
+    className: _ProfilePage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].header
+  }, "Guardian 2 Name"), /*#__PURE__*/React.createElement("th", {
+    className: _ProfilePage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].header
+  }, "Guardian 2 Email"), /*#__PURE__*/React.createElement("th", {
+    className: _ProfilePage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].header
+  }, "Guardian 2 Phone"), /*#__PURE__*/React.createElement("th", {
+    className: _ProfilePage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].header
+  }, "Transportation"), /*#__PURE__*/React.createElement("th", {
+    className: _ProfilePage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].header
+  }, "Car Tag Number"), /*#__PURE__*/React.createElement("th", {
+    className: _ProfilePage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].header
+  }, "Allergies"), /*#__PURE__*/React.createElement("th", {
+    className: _ProfilePage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].header
+  }, "Notes"))), /*#__PURE__*/React.createElement("tbody", null, parents.map(parent => /*#__PURE__*/React.createElement("tr", {
+    key: parent._id
+  }, /*#__PURE__*/React.createElement("td", null, parent.studentFirstName, " ", parent.studentLastName), /*#__PURE__*/React.createElement("td", null, parent.guardOneFirstName, " ", parent.guardOneLastName), /*#__PURE__*/React.createElement("td", null, parent.guardOneEmail), /*#__PURE__*/React.createElement("td", null, parent.guardOnePhone), /*#__PURE__*/React.createElement("td", null, parent.guardTwoFirstName, " ", parent.guardTwoLastName), /*#__PURE__*/React.createElement("td", null, parent.guardTwoEmail || 'N/A'), /*#__PURE__*/React.createElement("td", null, parent.guardTwoPhone || 'N/A'), /*#__PURE__*/React.createElement("td", null, parent.transportation || 'N/A'), /*#__PURE__*/React.createElement("td", null, parent.carTagNumber || 'N/A'), /*#__PURE__*/React.createElement("td", null, parent.allergies || 'N/A'), /*#__PURE__*/React.createElement("td", null, parent.notes || 'N/A')))))) : /*#__PURE__*/React.createElement("p", null, currentUser.studentFirstName)));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ProfilePage);
 
@@ -5651,9 +5692,88 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, `.nN4bYVhltefB38H0Frbd {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.nN4bYVhltefB38H0Frbd h1, .nN4bYVhltefB38H0Frbd h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.nN4bYVhltefB38H0Frbd table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+}
+.nN4bYVhltefB38H0Frbd table thead {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: var(--btn-color);
+}
+.nN4bYVhltefB38H0Frbd table th, .nN4bYVhltefB38H0Frbd table td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+.nN4bYVhltefB38H0Frbd table th {
+  font-weight: bold;
+}
+.nN4bYVhltefB38H0Frbd table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.nN4bYVhltefB38H0Frbd table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+@media (max-width: 768px) {
+  .nN4bYVhltefB38H0Frbd table thead {
+    display: none;
+  }
+  .nN4bYVhltefB38H0Frbd table tbody, .nN4bYVhltefB38H0Frbd table tr, .nN4bYVhltefB38H0Frbd table td {
+    display: block;
+    width: 100%;
+  }
+  .nN4bYVhltefB38H0Frbd table tr {
+    margin-bottom: 1rem;
+  }
+  .nN4bYVhltefB38H0Frbd table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+    background-color: inherit;
+  }
+  .nN4bYVhltefB38H0Frbd table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 0.75rem;
+    font-weight: bold;
+    text-align: left;
+    background-color: #f2f2f2;
+  }
+}
+@media (max-width: 480px) {
+  .nN4bYVhltefB38H0Frbd table td {
+    padding: 0.5rem;
+  }
+  .nN4bYVhltefB38H0Frbd table td::before {
+    padding-left: 0.5rem;
+  }
+}
+.nN4bYVhltefB38H0Frbd .Q_za23vFGAGU5FpDCMOo {
+  font-size: 1.2rem;
+}
+.nN4bYVhltefB38H0Frbd p {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 2rem;
+}`, "",{"version":3,"sources":["webpack://./src/pages/ProfilePage/ProfilePage.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,iBAAA;EACA,cAAA;AACJ;AACI;EACE,kBAAA;EACA,mBAAA;AACN;AAEI;EACE,WAAA;EACA,yBAAA;EACA,kBAAA;EACA,eAAA;AAAN;AAEM;EACE,oCAAA;EACA,uBAAA;AAAR;AAGM;EACE,gBAAA;EACA,gBAAA;EACA,sBAAA;AADR;AAIM;EACE,iBAAA;AAFR;AAKM;EACE,yBAAA;AAHR;AAMM;EACE,yBAAA;AAJR;AAOM;EACE;IACE,aAAA;EALR;EAQM;IACE,cAAA;IACA,WAAA;EANR;EASM;IACE,mBAAA;EAPR;EAUM;IACE,iBAAA;IACA,iBAAA;IACA,kBAAA;IACA,yBAAA;EARR;EAUQ;IACE,yBAAA;IACA,kBAAA;IACA,OAAA;IACA,UAAA;IACA,qBAAA;IACA,iBAAA;IACA,gBAAA;IACA,yBAAA;EARV;AACF;AAYM;EACE;IACE,eAAA;EAVR;EAYQ;IACE,oBAAA;EAVV;AACF;AAeI;EACE,iBAAA;AAbN;AAgBI;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;AAdN","sourcesContent":[".profile {\n    padding: 2rem;\n    max-width: 1200px;\n    margin: 0 auto;\n  \n    h1, h2 {\n      text-align: center;\n      margin-bottom: 1rem;\n    }\n  \n    table {\n      width: 100%;\n      border-collapse: collapse;\n      margin-top: 1.5rem;\n      font-size: 1rem;\n  \n      thead {\n        background-color: rgba(0, 0, 0, .6);\n        color: var(--btn-color);\n      }\n  \n      th, td {\n        padding: 0.75rem;\n        text-align: left;\n        border: 1px solid #ddd;\n      }\n  \n      th {\n        font-weight: bold;\n      }\n  \n      tbody tr:nth-child(even) {\n        background-color: #f2f2f2;\n      }\n  \n      tbody tr:nth-child(odd) {\n        background-color: #ffffff;\n      }\n  \n      @media (max-width: 768px) {\n        thead {\n          display: none;\n        }\n  \n        tbody, tr, td {\n          display: block;\n          width: 100%;\n        }\n  \n        tr {\n          margin-bottom: 1rem;\n        }\n  \n        td {\n          text-align: right;\n          padding-left: 50%;\n          position: relative;\n          background-color: inherit;\n  \n          &::before {\n            content: attr(data-label);\n            position: absolute;\n            left: 0;\n            width: 50%;\n            padding-left: 0.75rem;\n            font-weight: bold;\n            text-align: left;\n            background-color: #f2f2f2;\n          }\n        }\n      }\n  \n      @media (max-width: 480px) {\n        td {\n          padding: 0.5rem;\n  \n          &::before {\n            padding-left: 0.5rem;\n          }\n        }\n      }\n    }\n  \n    .header {\n      font-size: 1.2rem;\n    }\n  \n    p {\n      font-size: 1.1rem;\n      text-align: center;\n      margin-top: 2rem;\n    }\n  }\n  "],"sourceRoot":""}]);
 // Exports
-___CSS_LOADER_EXPORT___.locals = {};
+___CSS_LOADER_EXPORT___.locals = {
+	"profile": `nN4bYVhltefB38H0Frbd`,
+	"header": `Q_za23vFGAGU5FpDCMOo`
+};
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
@@ -7066,4 +7186,4 @@ module.exports = __webpack_require__.p + "4031c99fef0abdcd87ad.png";
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.8aaf8eb7defd97f6adcc5d16f816e1a1.js.map
+//# sourceMappingURL=App.cfe8ba778eec24f685a3fc8e39da02c1.js.map
