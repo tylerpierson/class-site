@@ -326,7 +326,7 @@ const Login = _ref => {
   }, /*#__PURE__*/React.createElement("label", {
     className: _Login_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label,
     htmlFor: "email"
-  }, "Email:"), /*#__PURE__*/React.createElement("input", {
+  }, "(For Teachers) Email:"), /*#__PURE__*/React.createElement("input", {
     type: "email",
     id: "email",
     ref: emailRef,
@@ -338,7 +338,7 @@ const Login = _ref => {
   }), /*#__PURE__*/React.createElement("label", {
     className: _Login_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label,
     htmlFor: "studentId"
-  }, "Student ID:"), /*#__PURE__*/React.createElement("input", {
+  }, "(For Parents) Student ID:"), /*#__PURE__*/React.createElement("input", {
     type: "text",
     id: "studentId",
     ref: studentIdRef,
@@ -7192,4 +7192,4 @@ module.exports = __webpack_require__.p + "4031c99fef0abdcd87ad.png";
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.edfb7704c1d88cb508e42bf981f2658e.js.map
+//# sourceMappingURL=App.a0b9d9ac1dec553ce19933765526e645.js.map

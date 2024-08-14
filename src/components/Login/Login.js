@@ -188,7 +188,7 @@ const Login = ({ toggleLoginForm, setUser }) => {
                             className={styles.input}
                             disabled={studentId.length > 0} // Disable email if studentId has text
                         />
-                        <label className={styles.label} htmlFor="studentId">(For Parents) Student ID:</label>
+                        <label className={styles.label} htmlFor="studentId">(For Parents)Student ID:</label>
                         <input
                             type="text"
                             id="studentId"
