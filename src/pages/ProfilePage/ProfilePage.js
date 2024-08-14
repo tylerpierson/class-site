@@ -71,7 +71,7 @@ function ProfilePage({ user }) {
               <tbody>
                 {parents.map((parent) => (
                   <tr key={parent._id}>
-                    <td>{parent.studentFirstName} {parent.studentLastName}</td>
+                    <td className={styles.student}>{parent.studentFirstName} {parent.studentLastName}</td>
                     <td>{parent.guardOneFirstName} {parent.guardOneLastName}</td>
                     <td>{parent.guardOneEmail}</td>
                     <td>{parent.guardOnePhone}</td>
