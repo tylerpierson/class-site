@@ -338,7 +338,7 @@ const Login = _ref => {
   }), /*#__PURE__*/React.createElement("label", {
     className: _Login_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].label,
     htmlFor: "studentId"
-  }, "(For Parents)Student ID:"), /*#__PURE__*/React.createElement("input", {
+  }, "(For Parents) Student ID:"), /*#__PURE__*/React.createElement("input", {
     type: "text",
     id: "studentId",
     ref: studentIdRef,
@@ -1970,6 +1970,8 @@ function ProfilePage(_ref) {
     className: _ProfilePage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].header
   }, "Guardian 2 Phone"), /*#__PURE__*/React.createElement("th", {
     className: _ProfilePage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].header
+  }, "Room Parent"), /*#__PURE__*/React.createElement("th", {
+    className: _ProfilePage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].header
   }, "Transportation"), /*#__PURE__*/React.createElement("th", {
     className: _ProfilePage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].header
   }, "Car Tag Number"), /*#__PURE__*/React.createElement("th", {
@@ -1980,7 +1982,9 @@ function ProfilePage(_ref) {
     key: parent._id
   }, /*#__PURE__*/React.createElement("td", {
     className: _ProfilePage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].student
-  }, parent.studentFirstName, " ", parent.studentLastName), /*#__PURE__*/React.createElement("td", null, parent.guardOneFirstName, " ", parent.guardOneLastName), /*#__PURE__*/React.createElement("td", null, parent.guardOneEmail), /*#__PURE__*/React.createElement("td", null, parent.guardOnePhone), /*#__PURE__*/React.createElement("td", null, parent.guardTwoFirstName, " ", parent.guardTwoLastName), /*#__PURE__*/React.createElement("td", null, parent.guardTwoEmail || 'N/A'), /*#__PURE__*/React.createElement("td", null, parent.guardTwoPhone || 'N/A'), /*#__PURE__*/React.createElement("td", null, parent.transportation || 'N/A'), /*#__PURE__*/React.createElement("td", null, parent.carTagNumber || 'N/A'), /*#__PURE__*/React.createElement("td", null, parent.allergies || 'N/A'), /*#__PURE__*/React.createElement("td", {
+  }, parent.studentFirstName, " ", parent.studentLastName), /*#__PURE__*/React.createElement("td", null, parent.guardOneFirstName, " ", parent.guardOneLastName), /*#__PURE__*/React.createElement("td", null, parent.guardOneEmail), /*#__PURE__*/React.createElement("td", null, parent.guardOnePhone), /*#__PURE__*/React.createElement("td", null, parent.guardTwoFirstName, " ", parent.guardTwoLastName), /*#__PURE__*/React.createElement("td", null, parent.guardTwoEmail || 'N/A'), /*#__PURE__*/React.createElement("td", null, parent.guardTwoPhone || 'N/A'), /*#__PURE__*/React.createElement("td", {
+    className: parent.roomParent === true ? _ProfilePage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].roomParent : ''
+  }, parent.roomParent === true ? "Yes" : "No"), /*#__PURE__*/React.createElement("td", null, parent.transportation || 'N/A'), /*#__PURE__*/React.createElement("td", null, parent.carTagNumber || 'N/A'), /*#__PURE__*/React.createElement("td", null, parent.allergies || 'N/A'), /*#__PURE__*/React.createElement("td", {
     className: _ProfilePage_module_scss__WEBPACK_IMPORTED_MODULE_3__["default"].notes
   }, parent.notes || 'N/A')))))) : /*#__PURE__*/React.createElement("p", null, currentUser.studentFirstName)));
 }
@@ -5771,16 +5775,22 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.nN4bYVhltefB38H0Frbd {
 .nN4bYVhltefB38H0Frbd .pXIaGzwWcLCv5GXQpZdI {
   font-weight: bold;
 }
+.nN4bYVhltefB38H0Frbd .Uon8taN0miDTrBN9Zk8C {
+  color: var(--btn-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
 .nN4bYVhltefB38H0Frbd p {
   font-size: 1.1rem;
   text-align: center;
   margin-top: 2rem;
-}`, "",{"version":3,"sources":["webpack://./src/pages/ProfilePage/ProfilePage.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,cAAA;EACA,WAAA;AACJ;AACI;EACE,kBAAA;EACA,mBAAA;AACN;AAEI;EACE,WAAA;EACA,yBAAA;EACA,kBAAA;EACA,eAAA;AAAN;AAEM;EACE,oCAAA;EACA,uBAAA;AAAR;AAGM;EACE,gBAAA;EACA,gBAAA;EACA,sBAAA;AADR;AAIM;EACE,iBAAA;AAFR;AAKM;EACE,yBAAA;AAHR;AAMM;EACE,yBAAA;AAJR;AAOM;EACE;IACE,aAAA;EALR;EAQM;IACE,cAAA;IACA,WAAA;EANR;EASM;IACE,mBAAA;EAPR;EAUM;IACE,iBAAA;IACA,iBAAA;IACA,kBAAA;IACA,yBAAA;EARR;EAUQ;IACE,yBAAA;IACA,kBAAA;IACA,OAAA;IACA,UAAA;IACA,qBAAA;IACA,iBAAA;IACA,gBAAA;IACA,yBAAA;EARV;AACF;AAYM;EACE;IACE,eAAA;EAVR;EAYQ;IACE,oBAAA;EAVV;AACF;AAeI;EACE,iBAAA;AAbN;AAgBI;EACE,iBAAA;AAdN;AAiBI;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;AAfN","sourcesContent":[".profile {\n    padding: 2rem;\n    margin: 0 auto;\n    width: 100%;\n  \n    h1, h2 {\n      text-align: center;\n      margin-bottom: 1rem;\n    }\n  \n    table {\n      width: 100%;\n      border-collapse: collapse;\n      margin-top: 1.5rem;\n      font-size: 1rem;\n  \n      thead {\n        background-color: rgba(0, 0, 0, 0.6);\n        color: var(--btn-color);\n      }\n  \n      th, td {\n        padding: 0.75rem;\n        text-align: left;\n        border: 1px solid #ddd;\n      }\n  \n      th {\n        font-weight: bold;\n      }\n  \n      tbody tr:nth-child(even) {\n        background-color: #f2f2f2;\n      }\n  \n      tbody tr:nth-child(odd) {\n        background-color: #ffffff;\n      }\n  \n      @media (max-width: 768px) {\n        thead {\n          display: none;\n        }\n  \n        tbody, tr, td {\n          display: block;\n          width: 100%;\n        }\n  \n        tr {\n          margin-bottom: 1rem;\n        }\n  \n        td {\n          text-align: right;\n          padding-left: 50%;\n          position: relative;\n          background-color: inherit;\n  \n          &::before {\n            content: attr(data-label);\n            position: absolute;\n            left: 0;\n            width: 50%;\n            padding-left: 0.75rem;\n            font-weight: bold;\n            text-align: left;\n            background-color: #f2f2f2;\n          }\n        }\n      }\n  \n      @media (max-width: 480px) {\n        td {\n          padding: 0.5rem;\n  \n          &::before {\n            padding-left: 0.5rem;\n          }\n        }\n      }\n    }\n  \n    .header {\n      font-size: 1.2rem;\n    }\n  \n    .student {\n      font-weight: bold;\n    }\n  \n    p {\n      font-size: 1.1rem;\n      text-align: center;\n      margin-top: 2rem;\n    }\n  }\n  "],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/ProfilePage/ProfilePage.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,cAAA;EACA,WAAA;AACJ;AACI;EACE,kBAAA;EACA,mBAAA;AACN;AAEI;EACE,WAAA;EACA,yBAAA;EACA,kBAAA;EACA,eAAA;AAAN;AAEM;EACE,oCAAA;EACA,uBAAA;AAAR;AAGM;EACE,gBAAA;EACA,gBAAA;EACA,sBAAA;AADR;AAIM;EACE,iBAAA;AAFR;AAKM;EACE,yBAAA;AAHR;AAMM;EACE,yBAAA;AAJR;AAOM;EACE;IACE,aAAA;EALR;EAQM;IACE,cAAA;IACA,WAAA;EANR;EASM;IACE,mBAAA;EAPR;EAUM;IACE,iBAAA;IACA,iBAAA;IACA,kBAAA;IACA,yBAAA;EARR;EAUQ;IACE,yBAAA;IACA,kBAAA;IACA,OAAA;IACA,UAAA;IACA,qBAAA;IACA,iBAAA;IACA,gBAAA;IACA,yBAAA;EARV;AACF;AAYM;EACE;IACE,eAAA;EAVR;EAYQ;IACE,oBAAA;EAVV;AACF;AAeI;EACE,iBAAA;AAbN;AAgBI;EACE,iBAAA;AAdN;AAiBI;EACI,uBAAA;EACA,iBAAA;EACA,iBAAA;AAfR;AAkBI;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;AAhBN","sourcesContent":[".profile {\n    padding: 2rem;\n    margin: 0 auto;\n    width: 100%;\n  \n    h1, h2 {\n      text-align: center;\n      margin-bottom: 1rem;\n    }\n  \n    table {\n      width: 100%;\n      border-collapse: collapse;\n      margin-top: 1.5rem;\n      font-size: 1rem;\n  \n      thead {\n        background-color: rgba(0, 0, 0, 0.6);\n        color: var(--btn-color);\n      }\n  \n      th, td {\n        padding: 0.75rem;\n        text-align: left;\n        border: 1px solid #ddd;\n      }\n  \n      th {\n        font-weight: bold;\n      }\n  \n      tbody tr:nth-child(even) {\n        background-color: #f2f2f2;\n      }\n  \n      tbody tr:nth-child(odd) {\n        background-color: #ffffff;\n      }\n  \n      @media (max-width: 768px) {\n        thead {\n          display: none;\n        }\n  \n        tbody, tr, td {\n          display: block;\n          width: 100%;\n        }\n  \n        tr {\n          margin-bottom: 1rem;\n        }\n  \n        td {\n          text-align: right;\n          padding-left: 50%;\n          position: relative;\n          background-color: inherit;\n  \n          &::before {\n            content: attr(data-label);\n            position: absolute;\n            left: 0;\n            width: 50%;\n            padding-left: 0.75rem;\n            font-weight: bold;\n            text-align: left;\n            background-color: #f2f2f2;\n          }\n        }\n      }\n  \n      @media (max-width: 480px) {\n        td {\n          padding: 0.5rem;\n  \n          &::before {\n            padding-left: 0.5rem;\n          }\n        }\n      }\n    }\n  \n    .header {\n      font-size: 1.2rem;\n    }\n  \n    .student {\n      font-weight: bold;\n    }\n\n    .roomParent {\n        color: var(--btn-color);\n        font-weight: bold;\n        font-size: 1.2rem;\n    }\n  \n    p {\n      font-size: 1.1rem;\n      text-align: center;\n      margin-top: 2rem;\n    }\n  }\n  "],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"profile": `nN4bYVhltefB38H0Frbd`,
 	"header": `Q_za23vFGAGU5FpDCMOo`,
-	"student": `pXIaGzwWcLCv5GXQpZdI`
+	"student": `pXIaGzwWcLCv5GXQpZdI`,
+	"roomParent": `Uon8taN0miDTrBN9Zk8C`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -7194,4 +7204,4 @@ module.exports = __webpack_require__.p + "4031c99fef0abdcd87ad.png";
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.5d23aeb61b41485d9811394f9b0a6c19.js.map
+//# sourceMappingURL=App.496e2241ade1888e626273bad07d6ec0.js.map

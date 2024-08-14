@@ -62,6 +62,7 @@ function ProfilePage({ user }) {
                   <th className={styles.header}>Guardian 2 Name</th>
                   <th className={styles.header}>Guardian 2 Email</th>
                   <th className={styles.header}>Guardian 2 Phone</th>
+                  <th className={styles.header}>Room Parent</th>
                   <th className={styles.header}>Transportation</th>
                   <th className={styles.header}>Car Tag Number</th>
                   <th className={styles.header}>Allergies</th>
@@ -78,6 +79,7 @@ function ProfilePage({ user }) {
                     <td>{parent.guardTwoFirstName} {parent.guardTwoLastName}</td>
                     <td>{parent.guardTwoEmail || 'N/A'}</td>
                     <td>{parent.guardTwoPhone || 'N/A'}</td>
+                    <td className={parent.roomParent === true ? styles.roomParent : ''}>{parent.roomParent === true ? "Yes" : "No"}</td>
                     <td>{parent.transportation || 'N/A'}</td>
                     <td>{parent.carTagNumber || 'N/A'}</td>
                     <td>{parent.allergies || 'N/A'}</td>
