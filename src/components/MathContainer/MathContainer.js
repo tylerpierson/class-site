@@ -14,7 +14,7 @@ function MathContainer() {
             <div className={styles.mathCard}>
                 <h4 className={styles.mathTitle}>Anchor Charts</h4>
                 <ul className={styles.mathList}>
-                    <li className={styles.mathListItem}><a href="https://classful.com/wp-content/uploads/2023/01/63cd4636454c2_6.jpg"><img className={styles.img} src="img/place-value.jpeg" /></a></li>
+                    <li className={styles.mathListItem}><a target="_blank" href="https://classful.com/wp-content/uploads/2023/01/63cd4636454c2_6.jpg"><img className={styles.img} src="img/place-value.jpeg" /></a></li>
                 </ul>
             </div>
         </div>

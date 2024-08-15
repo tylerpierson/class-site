@@ -15,7 +15,7 @@ function ScienceContainer() {
                 <div className={styles.scienceCard}>
                     <h4 className={styles.scienceTitle}>Anchor Charts</h4>
                     <ul className={styles.scienceList}>
-                        <li className={styles.scienceListItem}><a href="https://i.pinimg.com/474x/a4/11/2a/a4112a9d78d823f810345a3ea09bff1b.jpg"><img className={styles.img} src="https://i.pinimg.com/474x/a4/11/2a/a4112a9d78d823f810345a3ea09bff1b.jpg" /></a></li>
+                        <li className={styles.scienceListItem}><a target="_blank" href="https://i.pinimg.com/474x/a4/11/2a/a4112a9d78d823f810345a3ea09bff1b.jpg"><img className={styles.img} src="https://i.pinimg.com/474x/a4/11/2a/a4112a9d78d823f810345a3ea09bff1b.jpg" /></a></li>
                     </ul>
                 </div>
             </div>
