@@ -28,8 +28,8 @@ function NewsLetter() {
                     supplies</p>
                     <p className={styles.reminder}>4. Ensure you are receiving Mr. Pierson’s
                     emails (tpierson@dentonisd.org)</p>
-                    <p className={styles.header}>Stable Spirit</p>
-                    <p className={styles.reminder}>Every student at SRE belongs to a stable. Stables are very important at SRE because they provide students with a community outside of their classroom and grade level. Every Friday we dress up in our stable colors and celebrate the spirit of The Ranch! Every Friday we will attend either stable buddies, stable huddles, or Celebrate Sandbrock which provides students time to be with their spirit group!</p>
+                    <p className={styles.headerPara}>Stable Spirit</p>
+                    <p className={styles.reminderPara}>Every student at SRE belongs to a stable. Stables are very important at SRE because they provide students with a community outside of their classroom and grade level. Every Friday we dress up in our stable colors and celebrate the spirit of The Ranch! Every Friday we will attend either stable buddies, stable huddles, or Celebrate Sandbrock which provides students time to be with their spirit group!</p>
                 </div>
             </div>
           </div>
