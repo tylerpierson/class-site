@@ -485,7 +485,7 @@ function MathContainer() {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
   }, /*#__PURE__*/React.createElement("a", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].link,
-    href: "https://www.education.com/worksheets/comparing-large-numbers/"
+    href: "https://www.splashlearn.com/number-games-for-4th-graders"
   }, "SplashLearn - Compare and Order Numbers"))))));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MathContainer);
@@ -751,7 +751,15 @@ function NewsLetter() {
     className: _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].event
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].date
-  }, "August 30th:"), " First Half Day, dismissal at 12 pm")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "August 30th:"), " First Half Day, dismissal at 12 pm"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].event
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].date
+  }, "September 2nd:"), " Labor Day (No School)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].event
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].date
+  }, "September 20th:"), " Student Half Day (Released at Noon)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].reminders
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].title
@@ -767,7 +775,11 @@ function NewsLetter() {
     className: _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].reminder
   }, "3. Purchase and organize student school supplies"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].reminder
-  }, "4. Ensure you are receiving Mr. Pierson\u2019s emails (tpierson@dentonisd.org)"))))));
+  }, "4. Ensure you are receiving Mr. Pierson\u2019s emails (tpierson@dentonisd.org)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].header
+  }, "Stable Spirit"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: _NewsLetter_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].reminder
+  }, "Every student at SRE belongs to a stable. Stables are very important at SRE because they provide students with a community outside of their classroom and grade level. Every Friday we dress up in our stable colors and celebrate the spirit of The Ranch! Every Friday we will attend either stable buddies, stable huddles, or Celebrate Sandbrock which provides students time to be with their spirit group!"))))));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (NewsLetter);
 
@@ -7203,4 +7215,4 @@ module.exports = __webpack_require__.p + "4031c99fef0abdcd87ad.png";
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.7de3884977c616a448640f8bd3b9dc50.js.map
+//# sourceMappingURL=App.da5c12e4d611b022ab2b0c13921694ac.js.map

@@ -15,6 +15,8 @@ function NewsLetter() {
                     <p className={styles.event}><span className={styles.date}>August 7th:</span> First Day of School</p>
                     <p className={styles.event}><span className={styles.date}>August 30th:</span> First Half
                     Day, dismissal at 12 pm</p>
+                    <p className={styles.event}><span className={styles.date}>September 2nd:</span> Labor Day (No School)</p>
+                    <p className={styles.event}><span className={styles.date}>September 20th:</span> Student Half Day (Released at Noon)</p>
                 </div>
                 <div className={styles.reminders}>
                     <h2 className={styles.title}>Reminders</h2>
@@ -26,6 +28,8 @@ function NewsLetter() {
                     supplies</p>
                     <p className={styles.reminder}>4. Ensure you are receiving Mr. Pierson’s
                     emails (tpierson@dentonisd.org)</p>
+                    <p className={styles.header}>Stable Spirit</p>
+                    <p className={styles.reminder}>Every student at SRE belongs to a stable. Stables are very important at SRE because they provide students with a community outside of their classroom and grade level. Every Friday we dress up in our stable colors and celebrate the spirit of The Ranch! Every Friday we will attend either stable buddies, stable huddles, or Celebrate Sandbrock which provides students time to be with their spirit group!</p>
                 </div>
             </div>
           </div>
