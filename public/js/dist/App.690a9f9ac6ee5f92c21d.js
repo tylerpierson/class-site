@@ -429,11 +429,7 @@ function MathContainer() {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
   }, /*#__PURE__*/React.createElement("span", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].span
-  }, "4.2A"), " Interpret the value of each place-value position as 10 times the position to the right and as one-tenth of the value of the place to its left."), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("li", {
-    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  }, /*#__PURE__*/React.createElement("span", {
-    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].span
-  }, "4.2B"), " Represent the value of the digit in whole numbers through 1,000,000,000 and decimals to the hundredths using expanded notation and numerals."))), /*#__PURE__*/React.createElement("div", {
+  }, "4.2C"), " Compare and order whole numbers to 1,000,000,000 and represent comparisons using the symbols >, <, or =."))), /*#__PURE__*/React.createElement("div", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathCard
   }, /*#__PURE__*/React.createElement("h4", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathTitle
@@ -442,10 +438,11 @@ function MathContainer() {
   }, /*#__PURE__*/React.createElement("li", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
   }, /*#__PURE__*/React.createElement("a", {
-    href: "https://classful.com/wp-content/uploads/2023/01/63cd4636454c2_6.jpg"
+    target: "_blank",
+    href: "https://i.ebayimg.com/images/g/UsMAAOSwlTpj8imL/s-l1200.jpg"
   }, /*#__PURE__*/React.createElement("img", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].img,
-    src: "img/place-value.jpeg"
+    src: "https://i.ebayimg.com/images/g/UsMAAOSwlTpj8imL/s-l1200.jpg"
   })))))), /*#__PURE__*/React.createElement("div", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathContainerRight
   }, /*#__PURE__*/React.createElement("div", {
@@ -458,11 +455,7 @@ function MathContainer() {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
   }, /*#__PURE__*/React.createElement("span", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].span
-  }, "I can "), "understand that each digit in a number is 10 times bigger than the digit to its right and one-tenth of the value of the digit to its left."), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("li", {
-    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
-  }, /*#__PURE__*/React.createElement("span", {
-    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].span
-  }, "I can "), "show the value of each digit in numbers up to 1,000,000,000 and decimals to the hundredths by using expanded notation and regular numbers."))), /*#__PURE__*/React.createElement("div", {
+  }, "I can "), "compare and order numbers up to 1,000,000,000 and use the symbols >, < or = to show which numbers are greater, less than, or equal to each other."))), /*#__PURE__*/React.createElement("div", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathCard
   }, /*#__PURE__*/React.createElement("h4", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathTitle
@@ -472,23 +465,28 @@ function MathContainer() {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
   }, /*#__PURE__*/React.createElement("a", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].link,
-    href: "https://www.khanacademy.org/math/arithmetic/arith-place-value/arith-review-place-value-intro/v/place-value-1"
-  }, "Khan Academy - Place Value and Decimal System")), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("li", {
+    href: "https://www.khanacademy.org/math/cc-fourth-grade-math/imp-place-value-and-rounding-3/imp-comparing-multi-digit-numbers/v/comparing-whole-numbers"
+  }, "Khan Academy - Comparing Multi-Digit Numbers")), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("li", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
   }, /*#__PURE__*/React.createElement("a", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].link,
-    href: "https://www.mathsisfun.com/place-value.html"
-  }, "Math is Fun - Place Value")), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("li", {
+    href: "https://www.ixl.com/math/grade-4/compare-numbers-up-to-one-billion"
+  }, "IXL - Compare Numbers Up to 1 Billion")), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("li", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
   }, /*#__PURE__*/React.createElement("a", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].link,
-    href: "https://www.khanacademy.org/math/cc-third-grade-math/imp-place-value-and-rounding-3/expanded-form/v/expanded-form"
-  }, "Khan Academy - Expanded Form")), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("li", {
+    href: "https://www.mathplayground.com/place_value_pirates.html"
+  }, "Math Playground - Comparing Numbers (Place Value Pirates)")), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("li", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
   }, /*#__PURE__*/React.createElement("a", {
     className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].link,
-    href: "https://learnzillion.com/lesson_plans/8215-use-expanded-notation-to-represent-decimals"
-  }, "LearnZillion - Expanded Notation"))))));
+    href: "https://www.education.com/worksheets/comparing-large-numbers/"
+  }, "Education.com - Comparing Large Numbers Worksheets")), /*#__PURE__*/React.createElement("br", null), /*#__PURE__*/React.createElement("li", {
+    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].mathListItem
+  }, /*#__PURE__*/React.createElement("a", {
+    className: _MathContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].link,
+    href: "https://www.education.com/worksheets/comparing-large-numbers/"
+  }, "SplashLearn - Compare and Order Numbers"))))));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MathContainer);
 
@@ -1579,6 +1577,7 @@ function ScienceContainer() {
   }, /*#__PURE__*/React.createElement("li", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].scienceListItem
   }, /*#__PURE__*/React.createElement("a", {
+    target: "_blank",
     href: "https://i.pinimg.com/474x/a4/11/2a/a4112a9d78d823f810345a3ea09bff1b.jpg"
   }, /*#__PURE__*/React.createElement("img", {
     className: _ScienceContainer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].img,
@@ -7204,4 +7203,4 @@ module.exports = __webpack_require__.p + "4031c99fef0abdcd87ad.png";
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.496e2241ade1888e626273bad07d6ec0.js.map
+//# sourceMappingURL=App.7de3884977c616a448640f8bd3b9dc50.js.map
