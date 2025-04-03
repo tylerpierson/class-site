@@ -23,16 +23,16 @@ export default function App() {
     return (
         <div className={styles.App}>
             <Routes>
-                <Route
+                {/* <Route
                     path="/"
                     element={<AuthPage user={user} setUser={setUser} />}
                 />
                 <Route
                     path="/:id"
                     element={<ProfilePage user={user} setUser={setUser} />}
-                />
+                /> */}
                 <Route
-                    path="/home"
+                    path="/"
                     element={<HomePage />}
                 />
                 <Route

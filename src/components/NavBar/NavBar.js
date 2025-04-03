@@ -42,7 +42,7 @@ export default function NavBar() {
     <nav className={`${styles.Nav} ${isScrolled ? styles.hidden : ''}`}>
       <img className={styles.image} src="/img/mr_pierson_logo.png" alt="Logo"/>
       <ul className={styles.ul}>
-        <Link className={styles.listItemContainer} to='/home'>
+        <Link className={styles.listItemContainer} to='/'>
           <div className={styles.navItemTop}><li className={styles.listItem}>Home</li></div>
           <div className={styles.navItemBottom}><li className={styles.listItem}>Home</li></div>
         </Link>
@@ -64,10 +64,6 @@ export default function NavBar() {
           <div className={styles.navItemTop}><li className={styles.listItem}>Newsletter</li></div>
           <div className={styles.navItemBottom}><li className={styles.listItem}>Newsletter</li></div>
         </a>
-          <a className={styles.listItemContainer} onClick={handleLogout}>
-            <div className={styles.navItemTop}><li className={styles.listItem}>Logout</li></div>
-            <div className={styles.navItemBottom}><li className={styles.listItem}>Logout</li></div>
-          </a>
       </ul>
     </nav>
   );
