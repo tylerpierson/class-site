@@ -635,6 +635,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.T1RvM3uP_IiBgTSuQnJd {
 .m7Zl6y2YMPPV8oh39bP3 {
   max-width: 900px;
   width: 100%;
+  margin: 0 auto;
 }
 
 .hhgLZzAH452_LMQ_QVLF {
@@ -675,17 +676,19 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.T1RvM3uP_IiBgTSuQnJd {
 .ZIVneHmDREkbHCh2AUwZ:hover {
   transform: translateY(-4px);
 }
-.ZIVneHmDREkbHCh2AUwZ .eLhwMeJhi3kY5w8bHCZU {
+
+.eLhwMeJhi3kY5w8bHCZU {
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 1rem;
   color: #324057;
 }
-.ZIVneHmDREkbHCh2AUwZ .S3ONi6nAk_XITRN2gq2_ {
+
+.S3ONi6nAk_XITRN2gq2_ {
   font-size: 1rem;
   color: #4b5563;
   line-height: 1.5;
-}`, "",{"version":3,"sources":["webpack://./src/pages/AboutPage/AboutPage.module.scss"],"names":[],"mappings":"AAAA;EACI,iBAAA;EACA,yBAAA;EACA,kBAAA;EACA,cAAA;EACA,aAAA;EACA,uBAAA;AACJ;;AAEE;EACE,gBAAA;EACA,WAAA;AACJ;;AAEE;EACE,iBAAA;EACA,gBAAA;EACA,kBAAA;EACA,mBAAA;AACJ;;AAEE;EACE,mBAAA;EACA,kBAAA;EACA,cAAA;EACA,gBAAA;EACA,wBAAA;EACA,gBAAA;AACJ;;AAEE;EACE,aAAA;EACA,0BAAA;EACA,SAAA;AACJ;AACI;EALF;IAMI,qCAAA;EAEJ;AACF;;AACE;EACE,yBAAA;EACA,aAAA;EACA,mBAAA;EACA,2CAAA;EACA,gBAAA;EACA,+BAAA;AAEJ;AAAI;EACE,2BAAA;AAEN;AACI;EACE,kBAAA;EACA,gBAAA;EACA,mBAAA;EACA,cAAA;AACN;AAEI;EACE,eAAA;EACA,cAAA;EACA,gBAAA;AAAN","sourcesContent":[".aboutPage {\n    min-height: 100vh;\n    background-color: #f9f7f3;\n    padding: 4rem 2rem;\n    color: #324057;\n    display: flex;\n    justify-content: center;\n  }\n  \n  .container {\n    max-width: 900px;\n    width: 100%;\n  }\n  \n  .header {\n    font-size: 2.5rem;\n    font-weight: 700;\n    text-align: center;\n    margin-bottom: 2rem;\n  }\n  \n  .intro {\n    font-size: 1.125rem;\n    text-align: center;\n    color: #4b5563;\n    max-width: 700px;\n    margin: 0 auto 3rem auto;\n    line-height: 1.6;\n  }\n  \n  .values {\n    display: grid;\n    grid-template-columns: 1fr;\n    gap: 2rem;\n  \n    @media (min-width: 768px) {\n      grid-template-columns: repeat(3, 1fr);\n    }\n  }\n  \n  .card {\n    background-color: #ffffff;\n    padding: 2rem;\n    border-radius: 12px;\n    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);\n    text-align: left;\n    transition: transform 0.2s ease;\n  \n    &:hover {\n      transform: translateY(-4px);\n    }\n  \n    .subheader {\n      font-size: 1.25rem;\n      font-weight: 600;\n      margin-bottom: 1rem;\n      color: #324057;\n    }\n  \n    .para {\n      font-size: 1rem;\n      color: #4b5563;\n      line-height: 1.5;\n    }\n  }\n  "],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/AboutPage/AboutPage.module.scss"],"names":[],"mappings":"AAAA;EACI,iBAAA;EACA,yBAAA;EACA,kBAAA;EACA,cAAA;EACA,aAAA;EACA,uBAAA;AACJ;;AAEE;EACE,gBAAA;EACA,WAAA;EACA,cAAA;AACJ;;AAEE;EACE,iBAAA;EACA,gBAAA;EACA,kBAAA;EACA,mBAAA;AACJ;;AAEE;EACE,mBAAA;EACA,kBAAA;EACA,cAAA;EACA,gBAAA;EACA,wBAAA;EACA,gBAAA;AACJ;;AAEE;EACE,aAAA;EACA,0BAAA;EACA,SAAA;AACJ;AACI;EALF;IAMI,qCAAA;EAEJ;AACF;;AACE;EACE,yBAAA;EACA,aAAA;EACA,mBAAA;EACA,2CAAA;EACA,gBAAA;EACA,+BAAA;AAEJ;AAAI;EACE,2BAAA;AAEN;;AAEE;EACE,kBAAA;EACA,gBAAA;EACA,mBAAA;EACA,cAAA;AACJ;;AAEE;EACE,eAAA;EACA,cAAA;EACA,gBAAA;AACJ","sourcesContent":[".aboutPage {\n    min-height: 100vh;\n    background-color: #f9f7f3;\n    padding: 4rem 2rem;\n    color: #324057;\n    display: flex;\n    justify-content: center;\n  }\n  \n  .container {\n    max-width: 900px;\n    width: 100%;\n    margin: 0 auto;\n  }\n  \n  .header {\n    font-size: 2.5rem;\n    font-weight: 700;\n    text-align: center;\n    margin-bottom: 2rem;\n  }\n  \n  .intro {\n    font-size: 1.125rem;\n    text-align: center;\n    color: #4b5563;\n    max-width: 700px;\n    margin: 0 auto 3rem auto;\n    line-height: 1.6;\n  }\n  \n  .values {\n    display: grid;\n    grid-template-columns: 1fr;\n    gap: 2rem;\n  \n    @media (min-width: 768px) {\n      grid-template-columns: repeat(3, 1fr);\n    }\n  }\n  \n  .card {\n    background-color: #ffffff;\n    padding: 2rem;\n    border-radius: 12px;\n    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);\n    text-align: left;\n    transition: transform 0.2s ease;\n  \n    &:hover {\n      transform: translateY(-4px);\n    }\n  }\n  \n  .subheader {\n    font-size: 1.25rem;\n    font-weight: 600;\n    margin-bottom: 1rem;\n    color: #324057;\n  }\n  \n  .para {\n    font-size: 1rem;\n    color: #4b5563;\n    line-height: 1.5;\n  }\n  "],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"aboutPage": `T1RvM3uP_IiBgTSuQnJd`,
@@ -1765,64 +1768,30 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 const AboutPage = () => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].aboutPage
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].heroSection
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textBlock
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].container
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
     className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].header
   }, "Innova Is More Than Just Coding"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].para
-  }, "We believe coding is the launchpad for young minds. At Innova, students don't just learn code\u2014they build confidence, problem-solving skills, and real-world creativity. Our space-themed learning approach makes tech fun, engaging, and memorable.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].imageBlock
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].img,
-    src: "/img/about-hero.jpg",
-    alt: "Student learning with laptop"
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].calloutSection
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].subheader
-  }, "Empowering the Next Generation of Digital Creators"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].para
-  }, "Whether it\u2019s building their first website, styling it with CSS, or programming interactive behavior with JavaScript, students at Innova are gaining real tech skills. These aren't just lessons\u2014they're missions.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].founderSection
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].intro
+  }, "We believe coding is the launchpad for young minds. At Innova, students don't just learn code\u2014they build confidence, problem-solving skills, and real-world creativity. Our space-themed learning approach makes tech fun, engaging, and memorable."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].values
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].founderImage
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].img,
-    src: "/img/founder.jpg",
-    alt: "Innova founder"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].founderQuote
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].quoteMark
-  }, "\u201C"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].para
-  }, "Kids are naturally curious. Our job is to give them tools that let them explore the digital universe in ways that are safe, exciting, and rewarding. We don\u2019t just teach code\u2014we unlock potential."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].founderName
-  }, "FOUNDER, INNOVA"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].valuesGrid
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].centerTitle
-  }, "Our Focus"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].grid
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].circleCard
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].card
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].gridHeader
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].subheader
   }, "Hands-On Web Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].para
   }, "Students learn by doing, building actual websites and apps using HTML, CSS, and JavaScript.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].circleCard
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].card
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].gridHeader
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].subheader
   }, "Exploration with Scratch"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].para
   }, "Young coders get introduced to logic and animation through playful Scratch-based problem solving.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].circleCard
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].card
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", {
-    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].gridHeader
+    className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].subheader
   }, "AI-Aware Learning"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: _AboutPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].para
   }, "We introduce the basics of generative AI and automation to prepare students for the future.")))));
@@ -2376,4 +2345,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.f7b6ce25ed8c9d2d6cb496821246f6f9.js.map
+//# sourceMappingURL=App.a585782006ca1e8788da1e4bdae30031.js.map

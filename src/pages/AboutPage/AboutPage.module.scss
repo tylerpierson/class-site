@@ -10,6 +10,7 @@
   .container {
     max-width: 900px;
     width: 100%;
+    margin: 0 auto;
   }
   
   .header {
@@ -49,18 +50,18 @@
     &:hover {
       transform: translateY(-4px);
     }
+  }
   
-    .subheader {
-      font-size: 1.25rem;
-      font-weight: 600;
-      margin-bottom: 1rem;
-      color: #324057;
-    }
+  .subheader {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #324057;
+  }
   
-    .para {
-      font-size: 1rem;
-      color: #4b5563;
-      line-height: 1.5;
-    }
+  .para {
+    font-size: 1rem;
+    color: #4b5563;
+    line-height: 1.5;
   }
   
