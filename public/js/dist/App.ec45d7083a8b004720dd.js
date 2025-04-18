@@ -38,7 +38,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.Lwx9YOi0QXWjQ1WweIf4 {
 .Kirist9qe2NTkKpwQYrn {
   max-width: 500px;
 }
-.Kirist9qe2NTkKpwQYrn img {
+.Kirist9qe2NTkKpwQYrn .DeRGsdsdYy8S1JrYTxA8 {
   width: 100%;
   height: auto;
 }
@@ -46,16 +46,16 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.Lwx9YOi0QXWjQ1WweIf4 {
 .w1OPHtPCfBi5DUoN0by5 {
   max-width: 500px;
 }
-.w1OPHtPCfBi5DUoN0by5 h2 {
+.w1OPHtPCfBi5DUoN0by5 .hs7osOB92ulTULd79NVm {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
-.w1OPHtPCfBi5DUoN0by5 h2 span {
+.w1OPHtPCfBi5DUoN0by5 .hs7osOB92ulTULd79NVm span {
   color: #d1ba8e;
   font-size: 2rem;
 }
-.w1OPHtPCfBi5DUoN0by5 p {
+.w1OPHtPCfBi5DUoN0by5 .JBEHOYkP4LI5Q3e_Yfdo {
   font-size: 1.125rem;
   color: #4b5563;
   margin-bottom: 2rem;
@@ -72,12 +72,15 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.Lwx9YOi0QXWjQ1WweIf4 {
 }
 .w1OPHtPCfBi5DUoN0by5 .fPI6GCPW0STfrNrLZ5rq:hover {
   background-color: #2a3549;
-}`, "",{"version":3,"sources":["webpack://./src/components/ClassroomSection/ClassroomSection.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,mBAAA;EACA,8BAAA;EACA,kBAAA;EACA,yBAAA;EACA,cAAA;AACJ;AACI;EARJ;IASM,sBAAA;IACA,kBAAA;EAEJ;AACF;;AACE;EACE,gBAAA;AAEJ;AAAI;EACE,WAAA;EACA,YAAA;AAEN;;AAEE;EACE,gBAAA;AACJ;AACI;EACE,eAAA;EACA,gBAAA;EACA,mBAAA;AACN;AACM;EACE,cAAA;EACA,eAAA;AACR;AAGI;EACE,mBAAA;EACA,cAAA;EACA,mBAAA;AADN;AAII;EACE,uBAAA;EACA,yBAAA;EACA,cAAA;EACA,YAAA;EACA,kBAAA;EACA,gBAAA;EACA,eAAA;EACA,iCAAA;AAFN;AAIM;EACE,yBAAA;AAFR","sourcesContent":[".classroom {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    padding: 4rem 2rem;\n    background-color: #f9f7f3;\n    color: #324057;\n  \n    @media (max-width: 768px) {\n      flex-direction: column;\n      text-align: center;\n    }\n  }\n  \n  .image {\n    max-width: 500px;\n  \n    img {\n      width: 100%;\n      height: auto;\n    }\n  }\n  \n  .content {\n    max-width: 500px;\n  \n    h2 {\n      font-size: 2rem;\n      font-weight: 700;\n      margin-bottom: 1rem;\n  \n      span {\n        color: #d1ba8e;\n        font-size: 2rem;\n      }\n    }\n  \n    p {\n      font-size: 1.125rem;\n      color: #4b5563;\n      margin-bottom: 2rem;\n    }\n  \n    .learnMoreBtn {\n      padding: 0.75rem 1.5rem;\n      background-color: #324057;\n      color: #d1ba8e;\n      border: none;\n      border-radius: 8px;\n      font-weight: 600;\n      cursor: pointer;\n      transition: background-color 0.3s;\n  \n      &:hover {\n        background-color: #2a3549;\n      }\n    }\n  }\n  "],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/ClassroomSection/ClassroomSection.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,mBAAA;EACA,8BAAA;EACA,kBAAA;EACA,yBAAA;EACA,cAAA;AACJ;AACI;EARJ;IASM,sBAAA;IACA,kBAAA;EAEJ;AACF;;AACE;EACE,gBAAA;AAEJ;AAAI;EACE,WAAA;EACA,YAAA;AAEN;;AAEE;EACE,gBAAA;AACJ;AACI;EACE,eAAA;EACA,gBAAA;EACA,mBAAA;AACN;AACM;EACE,cAAA;EACA,eAAA;AACR;AAGI;EACE,mBAAA;EACA,cAAA;EACA,mBAAA;AADN;AAII;EACE,uBAAA;EACA,yBAAA;EACA,cAAA;EACA,YAAA;EACA,kBAAA;EACA,gBAAA;EACA,eAAA;EACA,iCAAA;AAFN;AAIM;EACE,yBAAA;AAFR","sourcesContent":[".classroom {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    padding: 4rem 2rem;\n    background-color: #f9f7f3;\n    color: #324057;\n  \n    @media (max-width: 768px) {\n      flex-direction: column;\n      text-align: center;\n    }\n  }\n  \n  .image {\n    max-width: 500px;\n  \n    .img {\n      width: 100%;\n      height: auto;\n    }\n  }\n  \n  .content {\n    max-width: 500px;\n  \n    .subheader {\n      font-size: 2rem;\n      font-weight: 700;\n      margin-bottom: 1rem;\n  \n      span {\n        color: #d1ba8e;\n        font-size: 2rem;\n      }\n    }\n  \n    .para {\n      font-size: 1.125rem;\n      color: #4b5563;\n      margin-bottom: 2rem;\n    }\n  \n    .learnMoreBtn {\n      padding: 0.75rem 1.5rem;\n      background-color: #324057;\n      color: #d1ba8e;\n      border: none;\n      border-radius: 8px;\n      font-weight: 600;\n      cursor: pointer;\n      transition: background-color 0.3s;\n  \n      &:hover {\n        background-color: #2a3549;\n      }\n    }\n  }\n  "],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"classroom": `Lwx9YOi0QXWjQ1WweIf4`,
 	"image": `Kirist9qe2NTkKpwQYrn`,
+	"img": `DeRGsdsdYy8S1JrYTxA8`,
 	"content": `w1OPHtPCfBi5DUoN0by5`,
+	"subheader": `hs7osOB92ulTULd79NVm`,
+	"para": `JBEHOYkP4LI5Q3e_Yfdo`,
 	"learnMoreBtn": `fPI6GCPW0STfrNrLZ5rq`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
@@ -1042,11 +1045,18 @@ const ClassroomSection = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: _ClassroomSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].image
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    className: _ClassroomSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].img,
     src: "/img/planet_tran_graphic.png",
     alt: "Kids coding together"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: _ClassroomSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].content
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "Everything a Classroom Offers \u2014 ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Online")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Innova\u2019s virtual classroom combines structure with freedom. Teachers guide students through challenges, projects, and live help \u2014 all in one friendly platform."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: _ClassroomSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].subheader
+  }, "Everything a Classroom Offers \u2014 ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: _ClassroomSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].span
+  }, "Online")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: _ClassroomSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].para
+  }, "Innova\u2019s virtual classroom combines structure with freedom. Teachers guide students through challenges, projects, and live help \u2014 all in one friendly platform."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     className: _ClassroomSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].learnMoreBtn
   }, "Explore the Learning Experience")));
 };
@@ -2366,4 +2376,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.b7afac2440e1a8e8d2e4b221211eb726.js.map
+//# sourceMappingURL=App.f7b6ce25ed8c9d2d6cb496821246f6f9.js.map

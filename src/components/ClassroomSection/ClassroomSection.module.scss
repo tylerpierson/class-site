@@ -15,7 +15,7 @@
   .image {
     max-width: 500px;
   
-    img {
+    .img {
       width: 100%;
       height: auto;
     }
@@ -24,7 +24,7 @@
   .content {
     max-width: 500px;
   
-    h2 {
+    .subheader {
       font-size: 2rem;
       font-weight: 700;
       margin-bottom: 1rem;
@@ -35,7 +35,7 @@
       }
     }
   
-    p {
+    .para {
       font-size: 1.125rem;
       color: #4b5563;
       margin-bottom: 2rem;
