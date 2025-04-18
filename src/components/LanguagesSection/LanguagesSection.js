@@ -1,6 +1,5 @@
-// File: components/CompaniesSection.jsx
 import React from "react";
-import styles from "./CompaniesSection.module.scss";
+import styles from "./LanguagesSection.module.scss";
 
 const languages = [
     {
@@ -18,9 +17,9 @@ const languages = [
   ];
   
 
-const CompaniesSection = () => {
+const LanguagesSection = () => {
   return (
-    <section className={styles.companies}>
+    <section className={styles.languages}>
       <p className={styles.title}>Languages We Teach</p>
       <div className={styles.logos}>
       {languages.map((lang, index) => (
@@ -34,4 +33,4 @@ const CompaniesSection = () => {
   );
 };
 
-export default CompaniesSection;
+export default LanguagesSection;

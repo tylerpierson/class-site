@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import NavBar from "./components/NavBar/NavBar";
 import HeroSection from "./components/HeroSection/HeroSection";
-import CompaniesSection from "./components/CompaniesSection/CompaniesSection";
+import LanguagesSection from "./components/LanguagesSection/LanguagesSection";
 import FeaturesSection from "./components/FeaturesSection/FeaturesSection";
 import ClassroomSection from "./components/ClassroomSection/ClassroomSection";
 import Footer from "./components/Footer/Footer";
@@ -23,7 +23,7 @@ export default function App() {
               <>
                 <ScrollToTop />
                 <HeroSection />
-                <CompaniesSection />
+                <LanguagesSection />
                 <ClassroomSection />
                 <FeaturesSection />
                 <Footer />
