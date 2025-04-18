@@ -9,6 +9,7 @@ import ClassroomSection from "./components/ClassroomSection/ClassroomSection";
 import Footer from "./components/Footer/Footer";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import AuthPage from "./pages/AuthPage/AuthPage";
+import EducatorAuthPage from "./pages/EducatorAuthPage/EducatorAuthPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
@@ -33,6 +34,7 @@ export default function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/auth" element={<AuthPage />} />
+          <Route path="/educator-auth" element={<EducatorAuthPage />} />
         </Routes>
       </div>
   );

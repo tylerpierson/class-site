@@ -853,7 +853,21 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.WI29TvQcwd9BG8AGtQm4 {
 }
 .hFyDmw1IBwd7BxyS9hI6 .gp9K_opwAlqsBiqTYQMM:hover {
   text-decoration: underline;
-}`, "",{"version":3,"sources":["webpack://./src/pages/AuthPage/AuthPage.module.scss"],"names":[],"mappings":"AAAA;EACI,iBAAA;EACA,yBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,aAAA;AACJ;;AAEE;EACE,yBAAA;EACA,aAAA;EACA,WAAA;EACA,gBAAA;EACA,mBAAA;EACA,0CAAA;EACA,kBAAA;AACJ;;AAEE;EACE,aAAA;EACA,mBAAA;AACJ;;AAEE;EACE,iBAAA;EACA,gBAAA;EACA,qBAAA;EACA,cAAA;AACJ;;AAEE;EACE,aAAA;EACA,sBAAA;EACA,SAAA;AACJ;AACI;;;EAGE,qBAAA;EACA,sBAAA;EACA,kBAAA;EACA,eAAA;EACA,WAAA;EACA,kCAAA;AACN;AACM;;;EACE,qBAAA;EACA,aAAA;AAGR;;AAEE;EACE,aAAA;EACA,SAAA;AACJ;AACI;EACE,OAAA;AACN;;AAGE;EACE,aAAA;EACA,8BAAA;EACA,mBAAA;AAAJ;AAEI;EACE,cAAA;EACA,qBAAA;AAAN;AAEM;EACE,0BAAA;AAAR;AAII;EACE,aAAA;EACA,mBAAA;EACA,WAAA;AAFN;;AAME;EACE,mBAAA;EACA,gBAAA;EACA,mBAAA;AAHJ;;AAME;EACE,gBAAA;EACA,yBAAA;EACA,cAAA;EACA,YAAA;EACA,wBAAA;EACA,kBAAA;EACA,gBAAA;EACA,eAAA;EACA,eAAA;EACA,sCAAA;AAHJ;AAKI;EACE,yBAAA;AAHN;;AAOE;EACE,kBAAA;EACA,iBAAA;AAJJ;AAMI;EACE,cAAA;EACA,eAAA;EACA,0BAAA;EACA,oBAAA;AAJN;;AAQE;EACE,gBAAA;EACA,iBAAA;EACA,WAAA;AALJ;AAOI;EACE,cAAA;EACA,qBAAA;AALN;AAOM;EACE,0BAAA;AALR","sourcesContent":[".authPage {\n    min-height: 100vh;\n    background-color: #f2f4f8;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 2rem;\n  }\n  \n  .card {\n    background-color: #ffffff;\n    padding: 3rem;\n    width: 100%;\n    max-width: 450px;\n    border-radius: 10px;\n    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);\n    text-align: center;\n  }\n  \n  .logo {\n    height: 15rem;\n    margin-bottom: 1rem;\n  }\n  \n  .authBtn {\n    font-size: 1.5rem;\n    font-weight: 600;\n    margin-bottom: 1.5rem;\n    color: #324057;\n  }\n  \n  .form {\n    display: flex;\n    flex-direction: column;\n    gap: 1rem;\n  \n    input[type=\"text\"],\n    input[type=\"email\"],\n    input[type=\"password\"] {\n      padding: 0.75rem 1rem;\n      border: 1px solid #ccc;\n      border-radius: 6px;\n      font-size: 1rem;\n      width: 100%;\n      transition: border-color 0.2s ease;\n  \n      &:focus {\n        border-color: #324057;\n        outline: none;\n      }\n    }\n  }\n  \n  .row {\n    display: flex;\n    gap: 1rem;\n  \n    .textField {\n      flex: 1;\n    }\n  }\n  \n  .extraRow {\n    display: flex;\n    justify-content: space-between;\n    font-size: 0.875rem;\n  \n    .link {\n      color: #0072ce;\n      text-decoration: none;\n  \n      &:hover {\n        text-decoration: underline;\n      }\n    }\n  \n    label {\n      display: flex;\n      align-items: center;\n      gap: 0.5rem;\n    }\n  }\n  \n  .terms {\n    font-size: 0.875rem;\n    text-align: left;\n    margin-top: -0.5rem;\n  }\n  \n  .submitBtn {\n    margin-top: 1rem;\n    background-color: #d1ba8e;\n    color: #324057;\n    border: none;\n    padding: 0.75rem 1.25rem;\n    border-radius: 6px;\n    font-weight: 600;\n    font-size: 1rem;\n    cursor: pointer;\n    transition: background-color 0.2s ease;\n  \n    &:hover {\n      background-color: #e4cc9b;\n    }\n  }\n  \n  .toggle {\n    margin-top: 1.5rem;\n    font-size: 0.9rem;\n  \n    span {\n      color: #0072ce;\n      cursor: pointer;\n      text-decoration: underline;\n      margin-left: 0.25rem;\n    }\n  }\n  \n  .help {\n    margin-top: 2rem;\n    font-size: 0.8rem;\n    color: #666;\n  \n    .link {\n      color: #0072ce;\n      text-decoration: none;\n  \n      &:hover {\n        text-decoration: underline;\n      }\n    }\n  }\n  "],"sourceRoot":""}]);
+}
+
+.Grk68BtmMacy5JXn0ZAo {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  text-align: center;
+  color: #4b5563;
+}
+.Grk68BtmMacy5JXn0ZAo a {
+  color: #0072ce;
+  text-decoration: none;
+}
+.Grk68BtmMacy5JXn0ZAo a:hover {
+  text-decoration: underline;
+}`, "",{"version":3,"sources":["webpack://./src/pages/AuthPage/AuthPage.module.scss"],"names":[],"mappings":"AAAA;EACI,iBAAA;EACA,yBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,aAAA;AACJ;;AAEE;EACE,yBAAA;EACA,aAAA;EACA,WAAA;EACA,gBAAA;EACA,mBAAA;EACA,0CAAA;EACA,kBAAA;AACJ;;AAEE;EACE,aAAA;EACA,mBAAA;AACJ;;AAEE;EACE,iBAAA;EACA,gBAAA;EACA,qBAAA;EACA,cAAA;AACJ;;AAEE;EACE,aAAA;EACA,sBAAA;EACA,SAAA;AACJ;AACI;;;EAGE,qBAAA;EACA,sBAAA;EACA,kBAAA;EACA,eAAA;EACA,WAAA;EACA,kCAAA;AACN;AACM;;;EACE,qBAAA;EACA,aAAA;AAGR;;AAEE;EACE,aAAA;EACA,SAAA;AACJ;AACI;EACE,OAAA;AACN;;AAGE;EACE,aAAA;EACA,8BAAA;EACA,mBAAA;AAAJ;AAEI;EACE,cAAA;EACA,qBAAA;AAAN;AAEM;EACE,0BAAA;AAAR;AAII;EACE,aAAA;EACA,mBAAA;EACA,WAAA;AAFN;;AAME;EACE,mBAAA;EACA,gBAAA;EACA,mBAAA;AAHJ;;AAME;EACE,gBAAA;EACA,yBAAA;EACA,cAAA;EACA,YAAA;EACA,wBAAA;EACA,kBAAA;EACA,gBAAA;EACA,eAAA;EACA,eAAA;EACA,sCAAA;AAHJ;AAKI;EACE,yBAAA;AAHN;;AAOE;EACE,kBAAA;EACA,iBAAA;AAJJ;AAMI;EACE,cAAA;EACA,eAAA;EACA,0BAAA;EACA,oBAAA;AAJN;;AAQE;EACE,gBAAA;EACA,iBAAA;EACA,WAAA;AALJ;AAOI;EACE,cAAA;EACA,qBAAA;AALN;AAOM;EACE,0BAAA;AALR;;AAUE;EACE,gBAAA;EACA,kBAAA;EACA,kBAAA;EACA,cAAA;AAPJ;AASI;EACE,cAAA;EACA,qBAAA;AAPN;AASM;EACE,0BAAA;AAPR","sourcesContent":[".authPage {\n    min-height: 100vh;\n    background-color: #f2f4f8;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 2rem;\n  }\n  \n  .card {\n    background-color: #ffffff;\n    padding: 3rem;\n    width: 100%;\n    max-width: 450px;\n    border-radius: 10px;\n    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);\n    text-align: center;\n  }\n  \n  .logo {\n    height: 15rem;\n    margin-bottom: 1rem;\n  }\n  \n  .authBtn {\n    font-size: 1.5rem;\n    font-weight: 600;\n    margin-bottom: 1.5rem;\n    color: #324057;\n  }\n  \n  .form {\n    display: flex;\n    flex-direction: column;\n    gap: 1rem;\n  \n    input[type=\"text\"],\n    input[type=\"email\"],\n    input[type=\"password\"] {\n      padding: 0.75rem 1rem;\n      border: 1px solid #ccc;\n      border-radius: 6px;\n      font-size: 1rem;\n      width: 100%;\n      transition: border-color 0.2s ease;\n  \n      &:focus {\n        border-color: #324057;\n        outline: none;\n      }\n    }\n  }\n  \n  .row {\n    display: flex;\n    gap: 1rem;\n  \n    .textField {\n      flex: 1;\n    }\n  }\n  \n  .extraRow {\n    display: flex;\n    justify-content: space-between;\n    font-size: 0.875rem;\n  \n    .link {\n      color: #0072ce;\n      text-decoration: none;\n  \n      &:hover {\n        text-decoration: underline;\n      }\n    }\n  \n    label {\n      display: flex;\n      align-items: center;\n      gap: 0.5rem;\n    }\n  }\n  \n  .terms {\n    font-size: 0.875rem;\n    text-align: left;\n    margin-top: -0.5rem;\n  }\n  \n  .submitBtn {\n    margin-top: 1rem;\n    background-color: #d1ba8e;\n    color: #324057;\n    border: none;\n    padding: 0.75rem 1.25rem;\n    border-radius: 6px;\n    font-weight: 600;\n    font-size: 1rem;\n    cursor: pointer;\n    transition: background-color 0.2s ease;\n  \n    &:hover {\n      background-color: #e4cc9b;\n    }\n  }\n  \n  .toggle {\n    margin-top: 1.5rem;\n    font-size: 0.9rem;\n  \n    span {\n      color: #0072ce;\n      cursor: pointer;\n      text-decoration: underline;\n      margin-left: 0.25rem;\n    }\n  }\n  \n  .help {\n    margin-top: 2rem;\n    font-size: 0.8rem;\n    color: #666;\n  \n    .link {\n      color: #0072ce;\n      text-decoration: none;\n  \n      &:hover {\n        text-decoration: underline;\n      }\n    }\n  }\n\n  .educatorLink {\n    margin-top: 1rem;\n    font-size: 0.85rem;\n    text-align: center;\n    color: #4b5563;\n  \n    a {\n      color: #0072ce;\n      text-decoration: none;\n  \n      &:hover {\n        text-decoration: underline;\n      }\n    }\n  }\n  \n  "],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"authPage": `WI29TvQcwd9BG8AGtQm4`,
@@ -868,7 +882,8 @@ ___CSS_LOADER_EXPORT___.locals = {
 	"terms": `_9siMrz3ETA4ni7J8Ay0`,
 	"submitBtn": `z6S11CQanS1zp4r1P8g6`,
 	"toggle": `wNjM3vLMM025zBTHZF61`,
-	"help": `hFyDmw1IBwd7BxyS9hI6`
+	"help": `hFyDmw1IBwd7BxyS9hI6`,
+	"educatorLink": `Grk68BtmMacy5JXn0ZAo`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -980,6 +995,152 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/pages/EducatorAuthPage/EducatorAuthPage.module.scss":
+/*!********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/pages/EducatorAuthPage/EducatorAuthPage.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.xRlldvuIeMwFryDVrE1_ {
+  min-height: 100vh;
+  background-color: #f2f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.iVFLTWDKUNocrBrtwLE8 {
+  background-color: #ffffff;
+  padding: 3rem;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.hhpuH0FW2b6SyMi9cVWy {
+  height: 15rem;
+  margin-bottom: 1rem;
+}
+
+.WxDx22WYta02p7CzSlKB {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #324057;
+}
+
+.eZR58aVxm7OC2cfD51JI {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.eZR58aVxm7OC2cfD51JI input[type=email],
+.eZR58aVxm7OC2cfD51JI input[type=password] {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  transition: border-color 0.2s ease;
+}
+.eZR58aVxm7OC2cfD51JI input[type=email]:focus,
+.eZR58aVxm7OC2cfD51JI input[type=password]:focus {
+  border-color: #324057;
+  outline: none;
+}
+
+.lLwo3yX2IaANFrpR8Jxu {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+}
+.lLwo3yX2IaANFrpR8Jxu a {
+  color: #0072ce;
+  text-decoration: none;
+}
+.lLwo3yX2IaANFrpR8Jxu a:hover {
+  text-decoration: underline;
+}
+.lLwo3yX2IaANFrpR8Jxu label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.v6W3T2hvyCrCELrhRA7b {
+  margin-top: 1rem;
+  background-color: #d1ba8e;
+  color: #324057;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.v6W3T2hvyCrCELrhRA7b:hover {
+  background-color: #e4cc9b;
+}
+
+.j3m_RDBYoj2UZWKFzMJd {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: #666;
+}
+.j3m_RDBYoj2UZWKFzMJd a {
+  color: #0072ce;
+  text-decoration: none;
+}
+.j3m_RDBYoj2UZWKFzMJd a:hover {
+  text-decoration: underline;
+}
+
+.j17lXNrHq1cLZmzKLV1Q {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  text-align: center;
+  color: #4b5563;
+}
+.j17lXNrHq1cLZmzKLV1Q a {
+  color: #0072ce;
+  text-decoration: none;
+}
+.j17lXNrHq1cLZmzKLV1Q a:hover {
+  text-decoration: underline;
+}`, "",{"version":3,"sources":["webpack://./src/pages/EducatorAuthPage/EducatorAuthPage.module.scss"],"names":[],"mappings":"AAAA;EACI,iBAAA;EACA,yBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,aAAA;AACJ;;AAEE;EACE,yBAAA;EACA,aAAA;EACA,WAAA;EACA,gBAAA;EACA,mBAAA;EACA,0CAAA;EACA,kBAAA;AACJ;;AAEE;EACE,aAAA;EACA,mBAAA;AACJ;;AAEE;EACE,iBAAA;EACA,gBAAA;EACA,qBAAA;EACA,cAAA;AACJ;;AAEE;EACE,aAAA;EACA,sBAAA;EACA,SAAA;AACJ;AACI;;EAEE,qBAAA;EACA,sBAAA;EACA,kBAAA;EACA,eAAA;EACA,WAAA;EACA,kCAAA;AACN;AACM;;EACE,qBAAA;EACA,aAAA;AAER;;AAGE;EACE,aAAA;EACA,8BAAA;EACA,mBAAA;AAAJ;AAEI;EACE,cAAA;EACA,qBAAA;AAAN;AAEM;EACE,0BAAA;AAAR;AAII;EACE,aAAA;EACA,mBAAA;EACA,WAAA;AAFN;;AAME;EACE,gBAAA;EACA,yBAAA;EACA,cAAA;EACA,YAAA;EACA,wBAAA;EACA,kBAAA;EACA,gBAAA;EACA,eAAA;EACA,eAAA;EACA,sCAAA;AAHJ;AAKI;EACE,yBAAA;AAHN;;AAOE;EACE,gBAAA;EACA,iBAAA;EACA,WAAA;AAJJ;AAMI;EACE,cAAA;EACA,qBAAA;AAJN;AAMM;EACE,0BAAA;AAJR;;AASE;EACE,gBAAA;EACA,kBAAA;EACA,kBAAA;EACA,cAAA;AANJ;AAQI;EACE,cAAA;EACA,qBAAA;AANN;AAQM;EACE,0BAAA;AANR","sourcesContent":[".authPage {\n    min-height: 100vh;\n    background-color: #f2f4f8;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 2rem;\n  }\n  \n  .card {\n    background-color: #ffffff;\n    padding: 3rem;\n    width: 100%;\n    max-width: 450px;\n    border-radius: 10px;\n    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);\n    text-align: center;\n  }\n  \n  .logo {\n    height: 15rem;\n    margin-bottom: 1rem;\n  }\n  \n  .authTitle {\n    font-size: 1.5rem;\n    font-weight: 600;\n    margin-bottom: 1.5rem;\n    color: #324057;\n  }\n  \n  .form {\n    display: flex;\n    flex-direction: column;\n    gap: 1rem;\n  \n    input[type=\"email\"],\n    input[type=\"password\"] {\n      padding: 0.75rem 1rem;\n      border: 1px solid #ccc;\n      border-radius: 6px;\n      font-size: 1rem;\n      width: 100%;\n      transition: border-color 0.2s ease;\n  \n      &:focus {\n        border-color: #324057;\n        outline: none;\n      }\n    }\n  }\n  \n  .extraRow {\n    display: flex;\n    justify-content: space-between;\n    font-size: 0.875rem;\n  \n    a {\n      color: #0072ce;\n      text-decoration: none;\n  \n      &:hover {\n        text-decoration: underline;\n      }\n    }\n  \n    label {\n      display: flex;\n      align-items: center;\n      gap: 0.5rem;\n    }\n  }\n  \n  .submitBtn {\n    margin-top: 1rem;\n    background-color: #d1ba8e;\n    color: #324057;\n    border: none;\n    padding: 0.75rem 1.25rem;\n    border-radius: 6px;\n    font-weight: 600;\n    font-size: 1rem;\n    cursor: pointer;\n    transition: background-color 0.2s ease;\n  \n    &:hover {\n      background-color: #e4cc9b;\n    }\n  }\n  \n  .help {\n    margin-top: 2rem;\n    font-size: 0.8rem;\n    color: #666;\n  \n    a {\n      color: #0072ce;\n      text-decoration: none;\n  \n      &:hover {\n        text-decoration: underline;\n      }\n    }\n  }\n\n  .toggleBack {\n    margin-top: 1rem;\n    font-size: 0.85rem;\n    text-align: center;\n    color: #4b5563;\n  \n    a {\n      color: #0072ce;\n      text-decoration: none;\n  \n      &:hover {\n        text-decoration: underline;\n      }\n    }\n  }\n  "],"sourceRoot":""}]);
+// Exports
+___CSS_LOADER_EXPORT___.locals = {
+	"authPage": `xRlldvuIeMwFryDVrE1_`,
+	"card": `iVFLTWDKUNocrBrtwLE8`,
+	"logo": `hhpuH0FW2b6SyMi9cVWy`,
+	"authTitle": `WxDx22WYta02p7CzSlKB`,
+	"form": `eZR58aVxm7OC2cfD51JI`,
+	"extraRow": `lLwo3yX2IaANFrpR8Jxu`,
+	"submitBtn": `v6W3T2hvyCrCELrhRA7b`,
+	"help": `j3m_RDBYoj2UZWKFzMJd`,
+	"toggleBack": `j17lXNrHq1cLZmzKLV1Q`
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./src/App.js":
 /*!********************!*\
   !*** ./src/App.js ***!
@@ -991,7 +1152,7 @@ ___CSS_LOADER_EXPORT___.locals = {
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
 /* harmony import */ var _components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/NavBar/NavBar */ "./src/components/NavBar/NavBar.js");
 /* harmony import */ var _components_HeroSection_HeroSection__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/HeroSection/HeroSection */ "./src/components/HeroSection/HeroSection.js");
 /* harmony import */ var _components_LanguagesSection_LanguagesSection__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/LanguagesSection/LanguagesSection */ "./src/components/LanguagesSection/LanguagesSection.js");
@@ -1000,8 +1161,10 @@ ___CSS_LOADER_EXPORT___.locals = {
 /* harmony import */ var _components_Footer_Footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Footer/Footer */ "./src/components/Footer/Footer.js");
 /* harmony import */ var _pages_ContactPage_ContactPage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/ContactPage/ContactPage */ "./src/pages/ContactPage/ContactPage.js");
 /* harmony import */ var _pages_AuthPage_AuthPage__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/AuthPage/AuthPage */ "./src/pages/AuthPage/AuthPage.js");
-/* harmony import */ var _pages_AboutPage_AboutPage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/AboutPage/AboutPage */ "./src/pages/AboutPage/AboutPage.js");
-/* harmony import */ var _components_ScrollToTop_ScrollToTop__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/ScrollToTop/ScrollToTop */ "./src/components/ScrollToTop/ScrollToTop.js");
+/* harmony import */ var _pages_EducatorAuthPage_EducatorAuthPage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/EducatorAuthPage/EducatorAuthPage */ "./src/pages/EducatorAuthPage/EducatorAuthPage.js");
+/* harmony import */ var _pages_AboutPage_AboutPage__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/AboutPage/AboutPage */ "./src/pages/AboutPage/AboutPage.js");
+/* harmony import */ var _components_ScrollToTop_ScrollToTop__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/ScrollToTop/ScrollToTop */ "./src/components/ScrollToTop/ScrollToTop.js");
+
 
 
 
@@ -1017,18 +1180,21 @@ ___CSS_LOADER_EXPORT___.locals = {
 function App() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "font-sans"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Route, {
     path: "/",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ScrollToTop_ScrollToTop__WEBPACK_IMPORTED_MODULE_10__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_HeroSection_HeroSection__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_LanguagesSection_LanguagesSection__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ClassroomSection_ClassroomSection__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_FeaturesSection_FeaturesSection__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Footer_Footer__WEBPACK_IMPORTED_MODULE_6__["default"], null))
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ScrollToTop_ScrollToTop__WEBPACK_IMPORTED_MODULE_11__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_HeroSection_HeroSection__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_LanguagesSection_LanguagesSection__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ClassroomSection_ClassroomSection__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_FeaturesSection_FeaturesSection__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Footer_Footer__WEBPACK_IMPORTED_MODULE_6__["default"], null))
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Route, {
     path: "/about",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_AboutPage_AboutPage__WEBPACK_IMPORTED_MODULE_9__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_AboutPage_AboutPage__WEBPACK_IMPORTED_MODULE_10__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Route, {
     path: "/contact",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_ContactPage_ContactPage__WEBPACK_IMPORTED_MODULE_7__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_11__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Route, {
     path: "/auth",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_AuthPage_AuthPage__WEBPACK_IMPORTED_MODULE_8__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Route, {
+    path: "/educator-auth",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_EducatorAuthPage_EducatorAuthPage__WEBPACK_IMPORTED_MODULE_9__["default"], null)
   })));
 }
 
@@ -1876,6 +2042,8 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AuthPage.module.scss */ "./src/pages/AuthPage/AuthPage.module.scss");
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+
 
 
 
@@ -1973,7 +2141,11 @@ const AuthPage = () => {
     className: _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].help
   }, "Need help? Contact us at ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     href: "mailto:help@innova.com"
-  }, "help@innova.com"))));
+  }, "help@innova.com")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].educatorLink
+  }, "Are you an educator? ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+    to: "/educator-auth"
+  }, "Log in here"))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AuthPage);
 
@@ -2147,6 +2319,129 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
        /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ContactPage_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ContactPage_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_ContactPage_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
+/***/ "./src/pages/EducatorAuthPage/EducatorAuthPage.js":
+/*!********************************************************!*\
+  !*** ./src/pages/EducatorAuthPage/EducatorAuthPage.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./EducatorAuthPage.module.scss */ "./src/pages/EducatorAuthPage/EducatorAuthPage.module.scss");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+
+
+
+const EducatorAuthPage = () => {
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = originalOverflow;
+    };
+  }, []);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: _EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].authPage
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: _EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].card
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: "/img/logo_tran_2.png",
+    alt: "Innova Logo",
+    className: _EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].logo
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: _EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].authTitle
+  }, "Educator Login"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
+    className: _EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].form
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    type: "email",
+    placeholder: "Educator Email",
+    required: true,
+    className: _EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textField
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    type: "password",
+    placeholder: "Password",
+    required: true,
+    className: _EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textField
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: _EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].extraRow
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    type: "checkbox"
+  }), " Remember me"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: _EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].link,
+    href: "#"
+  }, "Forgot password?")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    type: "submit",
+    className: _EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].submitBtn
+  }, "Log In")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: _EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].help
+  }, "Need help? Contact the admin at ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "mailto:admin@innova.com"
+  }, "admin@innova.com")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: _EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].toggleBack
+  }, "Not an educator? ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+    to: "/auth?mode=login"
+  }, "Go back to student login"))));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (EducatorAuthPage);
+
+/***/ }),
+
+/***/ "./src/pages/EducatorAuthPage/EducatorAuthPage.module.scss":
+/*!*****************************************************************!*\
+  !*** ./src/pages/EducatorAuthPage/EducatorAuthPage.module.scss ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../../node_modules/sass-loader/dist/cjs.js!../../../node_modules/postcss-loader/dist/cjs.js!./EducatorAuthPage.module.scss */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/pages/EducatorAuthPage/EducatorAuthPage.module.scss");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ })
@@ -2363,4 +2658,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.7dfb53f07bf692b38e31017fb96b06dc.js.map
+//# sourceMappingURL=App.8464f83c5b0c620d9f0107082fdbd534.js.map

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./AuthPage.module.scss";
 import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const AuthPage = () => {
     const location = useLocation();
@@ -76,6 +77,9 @@ const AuthPage = () => {
         </p>
 
         <p className={styles.help}>Need help? Contact us at <a href="mailto:help@innova.com">help@innova.com</a></p>
+        <p className={styles.educatorLink}>
+          Are you an educator? <Link to="/educator-auth">Log in here</Link>
+        </p>
       </div>
     </div>
   );

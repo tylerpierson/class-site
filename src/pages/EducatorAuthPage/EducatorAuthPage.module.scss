@@ -22,7 +22,7 @@
     margin-bottom: 1rem;
   }
   
-  .authBtn {
+  .authTitle {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
@@ -34,7 +34,6 @@
     flex-direction: column;
     gap: 1rem;
   
-    input[type="text"],
     input[type="email"],
     input[type="password"] {
       padding: 0.75rem 1rem;
@@ -51,21 +50,12 @@
     }
   }
   
-  .row {
-    display: flex;
-    gap: 1rem;
-  
-    .textField {
-      flex: 1;
-    }
-  }
-  
   .extraRow {
     display: flex;
     justify-content: space-between;
     font-size: 0.875rem;
   
-    .link {
+    a {
       color: #0072ce;
       text-decoration: none;
   
@@ -79,12 +69,6 @@
       align-items: center;
       gap: 0.5rem;
     }
-  }
-  
-  .terms {
-    font-size: 0.875rem;
-    text-align: left;
-    margin-top: -0.5rem;
   }
   
   .submitBtn {
@@ -104,24 +88,12 @@
     }
   }
   
-  .toggle {
-    margin-top: 1.5rem;
-    font-size: 0.9rem;
-  
-    span {
-      color: #0072ce;
-      cursor: pointer;
-      text-decoration: underline;
-      margin-left: 0.25rem;
-    }
-  }
-  
   .help {
     margin-top: 2rem;
     font-size: 0.8rem;
     color: #666;
   
-    .link {
+    a {
       color: #0072ce;
       text-decoration: none;
   
@@ -131,7 +103,7 @@
     }
   }
 
-  .educatorLink {
+  .toggleBack {
     margin-top: 1rem;
     font-size: 0.85rem;
     text-align: center;
@@ -146,5 +118,4 @@
       }
     }
   }
-  
   
