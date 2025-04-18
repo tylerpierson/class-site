@@ -12,7 +12,7 @@
     width: 100%;
   }
   
-  h1 {
+  .header {
     font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
@@ -50,14 +50,14 @@
       transform: translateY(-4px);
     }
   
-    h2 {
+    .subheader {
       font-size: 1.25rem;
       font-weight: 600;
       margin-bottom: 1rem;
       color: #324057;
     }
   
-    p {
+    .para {
       font-size: 1rem;
       color: #4b5563;
       line-height: 1.5;
