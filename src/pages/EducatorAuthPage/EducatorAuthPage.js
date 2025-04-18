@@ -20,18 +20,29 @@ const EducatorAuthPage = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
+
+    const sanitizedEmail = email.trim().toLowerCase();
+    const metadataRef = doc(db, "userMetadata", sanitizedEmail);
+
     try {
-      const userCredential = await signInWithEmailAndPassword(auth, email, password);
-      const user = userCredential.user;
+      // 🔍 Check user role first
+      const metadataSnap = await getDoc(metadataRef);
 
-      const docRef = doc(db, "users", user.uid);
-      const docSnap = await getDoc(docRef);
-
-      if (docSnap.exists() && docSnap.data().role === "educator") {
-        navigate("/educator-dashboard");
-      } else {
-        alert("You are not authorized to access this dashboard.");
+      if (!metadataSnap.exists()) {
+        alert("No account found for this email.");
+        return;
       }
+
+      const role = metadataSnap.data().role;
+      if (role !== "educator") {
+        alert("This login portal is for educators only.");
+        return;
+      }
+
+      // ✅ Proceed with login
+      const userCred = await signInWithEmailAndPassword(auth, email, password);
+      navigate("/educator-dashboard");
+
     } catch (error) {
       console.error("Educator login error:", error);
       alert("Login failed. Please check your credentials.");

@@ -2,9 +2,8 @@ import React, { useState, useEffect } from "react";
 import styles from "./AuthPage.module.scss";
 import { useLocation, Link, useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
-import { doc, getDoc } from "firebase/firestore";
+import { doc, getDoc, setDoc } from "firebase/firestore";
 import { auth, db } from "../../firebase";
-import { signUpUserWithRole } from "../../utilities/authHelpers";
 
 const AuthPage = () => {
   const location = useLocation();
@@ -30,31 +29,49 @@ const AuthPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const sanitizedEmail = email.trim().toLowerCase();
+    const roleDocRef = doc(db, "userMetadata", sanitizedEmail);
+
     try {
-      let user;
-
       if (isSignUp) {
-        user = await signUpUserWithRole(email, password, "student");
-      } else {
-        const userCredential = await signInWithEmailAndPassword(auth, email, password);
-        user = userCredential.user;
+        // 🔒 Create the user first
+        const userCred = await auth.createUserWithEmailAndPassword(email, password);
+        const user = userCred.user;
+
+        // 📝 Create a userMetadata record
+        await setDoc(roleDocRef, { role: "student" });
+
+        // Also create the full user document for post-login logic if needed
+        await setDoc(doc(db, "users", user.uid), {
+          email: user.email,
+          role: "student",
+        });
+
+        navigate("/dashboard");
+        return;
       }
 
-      const docRef = doc(db, "users", user.uid);
-      const docSnap = await getDoc(docRef);
+      // 🔍 Lookup role BEFORE logging in
+      const roleSnap = await getDoc(roleDocRef);
 
-      if (docSnap.exists()) {
-        const role = docSnap.data().role;
-      
-        if (role === "educator") {
-          alert("Educators must log in through the Educator Login Portal.");
-          return;
-        }
-      
-        navigate("/dashboard"); // students continue normally
+      if (!roleSnap.exists()) {
+        alert("This email is not registered. Please contact support.");
+        return;
       }
+
+      const role = roleSnap.data().role;
+      if (role === "educator") {
+        alert("Educators must log in through the Educator Login Portal.");
+        return;
+      }
+
+      // ✅ If student, proceed to log in
+      const userCred = await signInWithEmailAndPassword(auth, email, password);
+      navigate("/dashboard");
     } catch (err) {
       console.error(`${isSignUp ? "Signup" : "Login"} error:`, err);
+      alert(err.message);
     }
   };
 

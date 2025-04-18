@@ -524,6 +524,20 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.BkOougMidTcaU_Bl6HLq {
   display: flex;
   gap: 0.75rem;
 }
+.jXF4tiO91bygAtBclM4F .Qpxxe_ZBQ6jpGmtBWGUg {
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  color: #d1ba8e;
+  border: 1px solid #d1ba8e;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.jXF4tiO91bygAtBclM4F .Qpxxe_ZBQ6jpGmtBWGUg:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 .jXF4tiO91bygAtBclM4F .uKRiB1S6RJCr7jD7aEDU {
   font-size: 1.5rem;
   text-decoration: none;
@@ -550,7 +564,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.BkOougMidTcaU_Bl6HLq {
 }
 .jXF4tiO91bygAtBclM4F .aHaTcg01MqJ1OE8U1DRm:hover {
   background-color: #e4cc9b;
-}`, "",{"version":3,"sources":["webpack://./src/components/NavBar/NavBar.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,YAAA;EACA,uBAAA;EACA,mBAAA;EACA,kBAAA;EACA,yBAAA;EACA,cAAA;EACA,gBAAA;EACA,MAAA;EACA,YAAA;EACA,yBAAA;AACJ;;AAEE;EACE,oBAAA;AACJ;;AAEE;EACE,aAAA;EACA,kBAAA;EACA,mBAAA;EACA,iBAAA;EACA,gBAAA;EACA,cAAA;AACJ;;AAEE;EACE,kBAAA;EACA,UAAA;EACA,SAAA;EACA,2BAAA;EACA,aAAA;EACA,yBAAA;AACJ;;AAEE;EACE,cAAA;EACA,+CAAA;AACJ;;AAGE;EACE,aAAA;EACA,SAAA;AAAJ;AAEI;EACE,cAAA;EACA,qBAAA;EACA,gBAAA;EACA,iBAAA;EACA,sBAAA;AAAN;AAEM;EACE,YAAA;AAAR;;AAKE;EACM,kBAAA;EACA,WAAA;EACA,aAAA;EACA,YAAA;AAFR;AAIQ;EACI,iBAAA;EACA,qBAAA;EACA,oBAAA;EACA,yBAAA;EACA,uBAAA;EACA,cAAA;EACA,kBAAA;EACA,eAAA;AAFZ;AAIU;EACE,0CAAA;AAFZ;AAMQ;EACI,iBAAA;EACA,qBAAA;EACA,oBAAA;EACA,yBAAA;EACA,cAAA;EACA,YAAA;EACA,kBAAA;EACA,gBAAA;EACA,eAAA;AAJZ;AAMU;EACE,yBAAA;AAJZ","sourcesContent":[".navbar {\n    display: flex;\n    height: 6rem;\n    justify-content: center;\n    align-items: center;\n    padding: 1rem 2rem;\n    background-color: #324057;\n    color: #d1ba8e;\n    position: sticky;\n    top: 0;\n    z-index: 100;\n    transition: all 0.3s ease;\n  }\n  \n  .shrink {\n    padding: 0.5rem 2rem;\n  }\n  \n  .logo {\n    display: flex;\n    position: absolute;\n    align-items: center;\n    font-size: 1.5rem;\n    font-weight: 700;\n    color: #d1ba8e;\n  }\n  \n  .logoImg {\n    position: absolute;\n    left: 2rem;\n    top: 140%;\n    transform: translateY(-50%);\n    height: 25rem;\n    transition: all 0.3s ease;\n  }\n  \n  .logoShrink {\n    height: 9.5rem;\n    transform: translateY(-50%) translateY(-5.5rem);\n  }\n  \n  \n  .navLinks {\n    display: flex;\n    gap: 8rem;\n  \n    .link {\n      color: #d1ba8e;\n      text-decoration: none;\n      font-weight: 500;\n      font-size: 1.5rem;\n      transition: color 0.3s;\n  \n      &:hover {\n        color: white;\n      }\n    }\n  }\n  \n  .authButtons {\n        position: absolute;\n        right: 2rem;\n        display: flex;\n        gap: 0.75rem;\n      \n        .loginBtn {\n            font-size: 1.5rem;\n            text-decoration: none;\n            padding: 0.5rem 1rem;\n            border: 1px solid #d1ba8e;\n            background: transparent;\n            color: #d1ba8e;\n            border-radius: 6px;\n            cursor: pointer;\n      \n          &:hover {\n            background-color: rgba(255, 255, 255, 0.1);\n          }\n        }\n      \n        .signupBtn {\n            font-size: 1.5rem;\n            text-decoration: none;\n            padding: 0.5rem 1rem;\n            background-color: #d1ba8e;\n            color: #324057;\n            border: none;\n            border-radius: 6px;\n            font-weight: 600;\n            cursor: pointer;\n      \n          &:hover {\n            background-color: #e4cc9b;\n          }\n        }\n  }\n      "],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/NavBar/NavBar.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,YAAA;EACA,uBAAA;EACA,mBAAA;EACA,kBAAA;EACA,yBAAA;EACA,cAAA;EACA,gBAAA;EACA,MAAA;EACA,YAAA;EACA,yBAAA;AACJ;;AAEE;EACE,oBAAA;AACJ;;AAEE;EACE,aAAA;EACA,kBAAA;EACA,mBAAA;EACA,iBAAA;EACA,gBAAA;EACA,cAAA;AACJ;;AAEE;EACE,kBAAA;EACA,UAAA;EACA,SAAA;EACA,2BAAA;EACA,aAAA;EACA,yBAAA;AACJ;;AAEE;EACE,cAAA;EACA,+CAAA;AACJ;;AAGE;EACE,aAAA;EACA,SAAA;AAAJ;AAEI;EACE,cAAA;EACA,qBAAA;EACA,gBAAA;EACA,iBAAA;EACA,sBAAA;AAAN;AAEM;EACE,YAAA;AAAR;;AAKE;EACM,kBAAA;EACA,WAAA;EACA,aAAA;EACA,YAAA;AAFR;AAIQ;EACE,iBAAA;EACA,qBAAA;EACA,oBAAA;EACA,uBAAA;EACA,cAAA;EACA,yBAAA;EACA,kBAAA;EACA,gBAAA;EACA,eAAA;AAFV;AAIU;EACE,0CAAA;AAFZ;AAMQ;EACI,iBAAA;EACA,qBAAA;EACA,oBAAA;EACA,yBAAA;EACA,uBAAA;EACA,cAAA;EACA,kBAAA;EACA,eAAA;AAJZ;AAMU;EACE,0CAAA;AAJZ;AAQQ;EACI,iBAAA;EACA,qBAAA;EACA,oBAAA;EACA,yBAAA;EACA,cAAA;EACA,YAAA;EACA,kBAAA;EACA,gBAAA;EACA,eAAA;AANZ;AAQU;EACE,yBAAA;AANZ","sourcesContent":[".navbar {\n    display: flex;\n    height: 6rem;\n    justify-content: center;\n    align-items: center;\n    padding: 1rem 2rem;\n    background-color: #324057;\n    color: #d1ba8e;\n    position: sticky;\n    top: 0;\n    z-index: 100;\n    transition: all 0.3s ease;\n  }\n  \n  .shrink {\n    padding: 0.5rem 2rem;\n  }\n  \n  .logo {\n    display: flex;\n    position: absolute;\n    align-items: center;\n    font-size: 1.5rem;\n    font-weight: 700;\n    color: #d1ba8e;\n  }\n  \n  .logoImg {\n    position: absolute;\n    left: 2rem;\n    top: 140%;\n    transform: translateY(-50%);\n    height: 25rem;\n    transition: all 0.3s ease;\n  }\n  \n  .logoShrink {\n    height: 9.5rem;\n    transform: translateY(-50%) translateY(-5.5rem);\n  }\n  \n  \n  .navLinks {\n    display: flex;\n    gap: 8rem;\n  \n    .link {\n      color: #d1ba8e;\n      text-decoration: none;\n      font-weight: 500;\n      font-size: 1.5rem;\n      transition: color 0.3s;\n  \n      &:hover {\n        color: white;\n      }\n    }\n  }\n  \n  .authButtons {\n        position: absolute;\n        right: 2rem;\n        display: flex;\n        gap: 0.75rem;\n\n        .logoutBtn {\n          font-size: 1.5rem;\n          text-decoration: none;\n          padding: 0.5rem 1rem;\n          background: transparent;\n          color: #d1ba8e;\n          border: 1px solid #d1ba8e;\n          border-radius: 6px;\n          font-weight: 600;\n          cursor: pointer;\n        \n          &:hover {\n            background-color: rgba(255, 255, 255, 0.1);\n          }\n        }\n        \n        .loginBtn {\n            font-size: 1.5rem;\n            text-decoration: none;\n            padding: 0.5rem 1rem;\n            border: 1px solid #d1ba8e;\n            background: transparent;\n            color: #d1ba8e;\n            border-radius: 6px;\n            cursor: pointer;\n      \n          &:hover {\n            background-color: rgba(255, 255, 255, 0.1);\n          }\n        }\n      \n        .signupBtn {\n            font-size: 1.5rem;\n            text-decoration: none;\n            padding: 0.5rem 1rem;\n            background-color: #d1ba8e;\n            color: #324057;\n            border: none;\n            border-radius: 6px;\n            font-weight: 600;\n            cursor: pointer;\n      \n          &:hover {\n            background-color: #e4cc9b;\n          }\n        }\n  }\n      "],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"navbar": `BkOougMidTcaU_Bl6HLq`,
@@ -561,6 +575,7 @@ ___CSS_LOADER_EXPORT___.locals = {
 	"navLinks": `rE3oyvgW5wROdFsISvuN`,
 	"link": `islSTJv9ZsXJlRAfJUO8`,
 	"authButtons": `jXF4tiO91bygAtBclM4F`,
+	"logoutBtn": `Qpxxe_ZBQ6jpGmtBWGUg`,
 	"loginBtn": `uKRiB1S6RJCr7jD7aEDU`,
 	"signupBtn": `aHaTcg01MqJ1OE8U1DRm`
 };
@@ -1931,24 +1946,59 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./NavBar.module.scss */ "./src/components/NavBar/NavBar.module.scss");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var _firebase__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../firebase */ "./src/firebase.js");
+/* harmony import */ var firebase_auth__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! firebase/auth */ "./node_modules/firebase/auth/dist/esm/index.esm.js");
+/* harmony import */ var firebase_firestore__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! firebase/firestore */ "./node_modules/firebase/firestore/dist/esm/index.esm.js");
+
+
+
+
 
 
 
 const NavBar = () => {
   const [scrolled, setScrolled] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
-  const location = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_2__.useLocation)();
+  const [currentUser, setCurrentUser] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+  const [userRole, setUserRole] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+  const location = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_5__.useLocation)();
+  const navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_5__.useNavigate)();
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     const handleScroll = () => {
       const notHome = location.pathname !== "/";
       setScrolled(window.scrollY > 60 || notHome);
     };
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // trigger once on load and route change
-
+    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, [location]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    const unsubscribe = (0,firebase_auth__WEBPACK_IMPORTED_MODULE_3__.onAuthStateChanged)(_firebase__WEBPACK_IMPORTED_MODULE_2__.auth, async user => {
+      setCurrentUser(user);
+      if (user) {
+        const docRef = (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_4__.doc)(_firebase__WEBPACK_IMPORTED_MODULE_2__.db, "users", user.uid);
+        const docSnap = await (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_4__.getDoc)(docRef);
+        if (docSnap.exists()) {
+          setUserRole(docSnap.data().role); // 'student' or 'educator'
+        }
+      } else {
+        setUserRole(null);
+      }
+    });
+    return () => unsubscribe();
+  }, []);
+  const handleLogout = async () => {
+    try {
+      await (0,firebase_auth__WEBPACK_IMPORTED_MODULE_3__.signOut)(_firebase__WEBPACK_IMPORTED_MODULE_2__.auth);
+      navigate("/");
+    } catch (error) {
+      console.error("Logout error:", error);
+    }
+  };
+  const getDashboardLink = () => {
+    return userRole === "educator" ? "/educator-dashboard" : "/dashboard";
+  };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", {
     className: "".concat(_NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].navbar, " ").concat(scrolled ? _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].shrink : "")
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
@@ -1957,27 +2007,36 @@ const NavBar = () => {
     className: "".concat(_NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].logoImg, " ").concat(scrolled ? _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].logoShrink : "")
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].navLinks
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+  }, currentUser ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
+    to: getDashboardLink(),
+    className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].link
+  }, "Dashboard"), userRole === "student" && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
+    to: "/calendar",
+    className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].link
+  }, "Calendar")) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
     to: "/",
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].link
-  }, "Home"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
-    to: "/courses",
+  }, "Home"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
+    to: "/pricing",
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].link
-  }, "Courses"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+  }, "Pricing"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
     to: "/about",
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].link
-  }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+  }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
     to: "/contact",
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].link
-  }, "Contact")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, "Contact"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].authButtons
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+  }, currentUser ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    onClick: handleLogout,
+    className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].logoutBtn
+  }, "Logout") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
     to: "/auth?mode=login",
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].loginBtn
-  }, "Login"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+  }, "Login"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
     to: "/auth?mode=signup",
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].signupBtn
-  }, "Sign Up")));
+  }, "Sign Up"))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (NavBar);
 
@@ -2382,13 +2441,11 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AuthPage.module.scss */ "./src/pages/AuthPage/AuthPage.module.scss");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var firebase_auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! firebase/auth */ "./node_modules/firebase/auth/dist/esm/index.esm.js");
 /* harmony import */ var firebase_firestore__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! firebase/firestore */ "./node_modules/firebase/firestore/dist/esm/index.esm.js");
 /* harmony import */ var _firebase__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../firebase */ "./src/firebase.js");
-/* harmony import */ var _utilities_authHelpers__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../utilities/authHelpers */ "./src/utilities/authHelpers.js");
-
 
 
 
@@ -2396,8 +2453,8 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
 const AuthPage = () => {
-  const location = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_6__.useLocation)();
-  const navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_6__.useNavigate)();
+  const location = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_5__.useLocation)();
+  const navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_5__.useNavigate)();
   const queryParams = new URLSearchParams(location.search);
   const mode = queryParams.get("mode");
   const [isSignUp, setIsSignUp] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(mode === "signup");
@@ -2415,26 +2472,46 @@ const AuthPage = () => {
   }, []);
   const handleSubmit = async e => {
     e.preventDefault();
+    const sanitizedEmail = email.trim().toLowerCase();
+    const roleDocRef = (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_3__.doc)(_firebase__WEBPACK_IMPORTED_MODULE_4__.db, "userMetadata", sanitizedEmail);
     try {
-      let user;
       if (isSignUp) {
-        user = await (0,_utilities_authHelpers__WEBPACK_IMPORTED_MODULE_5__.signUpUserWithRole)(email, password, "student");
-      } else {
-        const userCredential = await (0,firebase_auth__WEBPACK_IMPORTED_MODULE_2__.signInWithEmailAndPassword)(_firebase__WEBPACK_IMPORTED_MODULE_4__.auth, email, password);
-        user = userCredential.user;
+        // 🔒 Create the user first
+        const userCred = await _firebase__WEBPACK_IMPORTED_MODULE_4__.auth.createUserWithEmailAndPassword(email, password);
+        const user = userCred.user;
+
+        // 📝 Create a userMetadata record
+        await (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_3__.setDoc)(roleDocRef, {
+          role: "student"
+        });
+
+        // Also create the full user document for post-login logic if needed
+        await (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_3__.setDoc)((0,firebase_firestore__WEBPACK_IMPORTED_MODULE_3__.doc)(_firebase__WEBPACK_IMPORTED_MODULE_4__.db, "users", user.uid), {
+          email: user.email,
+          role: "student"
+        });
+        navigate("/dashboard");
+        return;
       }
-      const docRef = (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_3__.doc)(_firebase__WEBPACK_IMPORTED_MODULE_4__.db, "users", user.uid);
-      const docSnap = await (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_3__.getDoc)(docRef);
-      if (docSnap.exists()) {
-        const role = docSnap.data().role;
-        if (role === "educator") {
-          alert("Educators must log in through the Educator Login Portal.");
-          return;
-        }
-        navigate("/dashboard"); // students continue normally
+
+      // 🔍 Lookup role BEFORE logging in
+      const roleSnap = await (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_3__.getDoc)(roleDocRef);
+      if (!roleSnap.exists()) {
+        alert("This email is not registered. Please contact support.");
+        return;
       }
+      const role = roleSnap.data().role;
+      if (role === "educator") {
+        alert("Educators must log in through the Educator Login Portal.");
+        return;
+      }
+
+      // ✅ If student, proceed to log in
+      const userCred = await (0,firebase_auth__WEBPACK_IMPORTED_MODULE_2__.signInWithEmailAndPassword)(_firebase__WEBPACK_IMPORTED_MODULE_4__.auth, email, password);
+      navigate("/dashboard");
     } catch (err) {
       console.error("".concat(isSignUp ? "Signup" : "Login", " error:"), err);
+      alert(err.message);
     }
   };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -2522,7 +2599,7 @@ const AuthPage = () => {
     href: "mailto:help@innova.com"
   }, "help@innova.com")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].educatorLink
-  }, "Are you an educator? ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Link, {
+  }, "Are you an educator? ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
     to: "/educator-auth"
   }, "Log in here"))));
 };
@@ -2738,16 +2815,24 @@ const EducatorAuthPage = () => {
   }, []);
   const handleLogin = async e => {
     e.preventDefault();
+    const sanitizedEmail = email.trim().toLowerCase();
+    const metadataRef = (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_3__.doc)(_firebase__WEBPACK_IMPORTED_MODULE_4__.db, "userMetadata", sanitizedEmail);
     try {
-      const userCredential = await (0,firebase_auth__WEBPACK_IMPORTED_MODULE_2__.signInWithEmailAndPassword)(_firebase__WEBPACK_IMPORTED_MODULE_4__.auth, email, password);
-      const user = userCredential.user;
-      const docRef = (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_3__.doc)(_firebase__WEBPACK_IMPORTED_MODULE_4__.db, "users", user.uid);
-      const docSnap = await (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_3__.getDoc)(docRef);
-      if (docSnap.exists() && docSnap.data().role === "educator") {
-        navigate("/educator-dashboard");
-      } else {
-        alert("You are not authorized to access this dashboard.");
+      // 🔍 Check user role first
+      const metadataSnap = await (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_3__.getDoc)(metadataRef);
+      if (!metadataSnap.exists()) {
+        alert("No account found for this email.");
+        return;
       }
+      const role = metadataSnap.data().role;
+      if (role !== "educator") {
+        alert("This login portal is for educators only.");
+        return;
+      }
+
+      // ✅ Proceed with login
+      const userCred = await (0,firebase_auth__WEBPACK_IMPORTED_MODULE_2__.signInWithEmailAndPassword)(_firebase__WEBPACK_IMPORTED_MODULE_4__.auth, email, password);
+      navigate("/educator-dashboard");
     } catch (error) {
       console.error("Educator login error:", error);
       alert("Login failed. Please check your credentials.");
@@ -3042,35 +3127,6 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
        /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_StudentDashboard_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_StudentDashboard_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_StudentDashboard_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
-/***/ }),
-
-/***/ "./src/utilities/authHelpers.js":
-/*!**************************************!*\
-  !*** ./src/utilities/authHelpers.js ***!
-  \**************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   signUpUserWithRole: () => (/* binding */ signUpUserWithRole)
-/* harmony export */ });
-/* harmony import */ var firebase_auth__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! firebase/auth */ "./node_modules/firebase/auth/dist/esm/index.esm.js");
-/* harmony import */ var firebase_firestore__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! firebase/firestore */ "./node_modules/firebase/firestore/dist/esm/index.esm.js");
-/* harmony import */ var _firebase__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../firebase */ "./src/firebase.js");
-// src/utils/authHelpers.js
-
-
-
-const signUpUserWithRole = async function signUpUserWithRole(email, password) {
-  let role = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "student";
-  const userCredential = await (0,firebase_auth__WEBPACK_IMPORTED_MODULE_0__.createUserWithEmailAndPassword)(_firebase__WEBPACK_IMPORTED_MODULE_2__.auth, email, password);
-  const uid = userCredential.user.uid;
-  await (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_1__.setDoc)((0,firebase_firestore__WEBPACK_IMPORTED_MODULE_1__.doc)(_firebase__WEBPACK_IMPORTED_MODULE_2__.db, "users", uid), {
-    role,
-    createdAt: new Date()
-  });
-  return userCredential.user;
-};
-
 /***/ })
 
 /******/ 	});
@@ -3297,4 +3353,4 @@ const signUpUserWithRole = async function signUpUserWithRole(email, password) {
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.59b1f5e15afa8aa07796c40dfda32c8c.js.map
+//# sourceMappingURL=App.25243f88f563d4c1e1268ed49a8f1cb2.js.map
