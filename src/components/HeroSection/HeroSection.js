@@ -1,6 +1,7 @@
 // File: components/HeroSection.jsx
 import React from "react";
 import styles from "./HeroSection.module.scss";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -14,8 +15,8 @@ const HeroSection = () => {
           and real-world projects. Built for young minds. Powered by creativity.
         </p>
         <div className={styles.buttons}>
-          <button className={styles.primaryBtn}>Get Started Free</button>
-          <button className={styles.secondaryBtn}>View Curriculum</button>
+          <Link to="/auth?mode=signup" className={styles.primaryBtn}>Get Started Free</Link>
+          <Link to="/courses" className={styles.secondaryBtn}>View Curriculum</Link>
         </div>
       </div>
       <div className={styles.imageWrapper}>
