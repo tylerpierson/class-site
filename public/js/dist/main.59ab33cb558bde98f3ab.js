@@ -8,7 +8,7 @@ function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = 
 class Test {
   constructor() {
     _defineProperty(this, "main", () => {
-      console.log('Welcome to Mr. Pierson\'s Class Page!');
+      console.log('Welcome to INNOVA!');
     });
   }
 }
@@ -17,4 +17,4 @@ const test = new Test();
 test.main();
 /******/ })()
 ;
-//# sourceMappingURL=main.840fe1c4baae5876b83b21bc23cc98e5.js.map
+//# sourceMappingURL=main.a43d74b5cf353728e79517a9f37c9853.js.map

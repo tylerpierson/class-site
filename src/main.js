@@ -1,6 +1,6 @@
 class Test {
 	main = () => {
-		console.log('Welcome to Mr. Pierson\'s Class Page!');
+		console.log('Welcome to INNOVA!');
 	};
 }
 // test

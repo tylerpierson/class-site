@@ -1141,6 +1141,202 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/pages/EducatorDashboard/EducatorDashboard.module.scss":
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/pages/EducatorDashboard/EducatorDashboard.module.scss ***!
+  \**********************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.C0CzGJPldLOlPsjQ94wL {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  background-color: #f9f7f3;
+  color: #324057;
+}
+
+.zYiQuE1m8r4pSFUj9OQg {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.zYiQuE1m8r4pSFUj9OQg h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.zYiQuE1m8r4pSFUj9OQg p {
+  font-size: 1.125rem;
+  color: #4b5563;
+}
+
+.rEPuJ8iLUXqvBWI2FBlO {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .rEPuJ8iLUXqvBWI2FBlO {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.vAe6F_KiF73qh2EMB6Wr {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+.vAe6F_KiF73qh2EMB6Wr:hover {
+  transform: translateY(-4px);
+}
+.vAe6F_KiF73qh2EMB6Wr h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+.vAe6F_KiF73qh2EMB6Wr p {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.eVBtMePp0crr4gHOXdQY {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #d1ba8e;
+  color: #324057;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.eVBtMePp0crr4gHOXdQY:hover {
+  background-color: #e4cc9b;
+}`, "",{"version":3,"sources":["webpack://./src/pages/EducatorDashboard/EducatorDashboard.module.scss"],"names":[],"mappings":"AAAA;EACI,iBAAA;EACA,kBAAA;EACA,yBAAA;EACA,cAAA;AACJ;;AAEE;EACE,kBAAA;EACA,mBAAA;AACJ;AACI;EACE,kBAAA;EACA,gBAAA;EACA,qBAAA;AACN;AAEI;EACE,mBAAA;EACA,cAAA;AAAN;;AAIE;EACE,aAAA;EACA,0BAAA;EACA,SAAA;AADJ;AAGI;EALF;IAMI,qCAAA;EAAJ;AACF;;AAGE;EACE,yBAAA;EACA,aAAA;EACA,mBAAA;EACA,2CAAA;EACA,gBAAA;EACA,+BAAA;AAAJ;AAEI;EACE,2BAAA;AAAN;AAGI;EACE,kBAAA;EACA,gBAAA;EACA,sBAAA;AADN;AAII;EACE,eAAA;EACA,cAAA;EACA,mBAAA;AAFN;;AAME;EACE,qBAAA;EACA,oBAAA;EACA,yBAAA;EACA,cAAA;EACA,kBAAA;EACA,gBAAA;EACA,qBAAA;EACA,sCAAA;AAHJ;AAKI;EACE,yBAAA;AAHN","sourcesContent":[".dashboard {\n    min-height: 100vh;\n    padding: 4rem 2rem;\n    background-color: #f9f7f3;\n    color: #324057;\n  }\n  \n  .header {\n    text-align: center;\n    margin-bottom: 3rem;\n  \n    h1 {\n      font-size: 2.25rem;\n      font-weight: 700;\n      margin-bottom: 0.5rem;\n    }\n  \n    p {\n      font-size: 1.125rem;\n      color: #4b5563;\n    }\n  }\n  \n  .sections {\n    display: grid;\n    grid-template-columns: 1fr;\n    gap: 2rem;\n  \n    @media (min-width: 768px) {\n      grid-template-columns: repeat(3, 1fr);\n    }\n  }\n  \n  .card {\n    background-color: #ffffff;\n    padding: 2rem;\n    border-radius: 12px;\n    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);\n    text-align: left;\n    transition: transform 0.2s ease;\n  \n    &:hover {\n      transform: translateY(-4px);\n    }\n  \n    h2 {\n      font-size: 1.25rem;\n      font-weight: 600;\n      margin-bottom: 0.75rem;\n    }\n  \n    p {\n      font-size: 1rem;\n      color: #4b5563;\n      margin-bottom: 1rem;\n    }\n  }\n  \n  .button {\n    display: inline-block;\n    padding: 0.5rem 1rem;\n    background-color: #d1ba8e;\n    color: #324057;\n    border-radius: 6px;\n    font-weight: 600;\n    text-decoration: none;\n    transition: background-color 0.3s ease;\n  \n    &:hover {\n      background-color: #e4cc9b;\n    }\n  }\n  "],"sourceRoot":""}]);
+// Exports
+___CSS_LOADER_EXPORT___.locals = {
+	"dashboard": `C0CzGJPldLOlPsjQ94wL`,
+	"header": `zYiQuE1m8r4pSFUj9OQg`,
+	"sections": `rEPuJ8iLUXqvBWI2FBlO`,
+	"card": `vAe6F_KiF73qh2EMB6Wr`,
+	"button": `eVBtMePp0crr4gHOXdQY`
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/pages/StudentDashboard/StudentDashboard.module.scss":
+/*!********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/pages/StudentDashboard/StudentDashboard.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.B9QrLsXQrIE4zdmtvwIk {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  background-color: #f9f7f3;
+  color: #324057;
+}
+
+.fyrW_1JSSBIOp0a7s7zj {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.fyrW_1JSSBIOp0a7s7zj h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.fyrW_1JSSBIOp0a7s7zj p {
+  font-size: 1.125rem;
+  color: #4b5563;
+}
+
+.X3cEaWnEocEk6JwnMxFh {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .X3cEaWnEocEk6JwnMxFh {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.KoYQGbWGddVOcFGalCig {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+.KoYQGbWGddVOcFGalCig:hover {
+  transform: translateY(-4px);
+}
+.KoYQGbWGddVOcFGalCig h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+.KoYQGbWGddVOcFGalCig p {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.TLw7vIYwNihx6s8n13KQ {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #d1ba8e;
+  color: #324057;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.TLw7vIYwNihx6s8n13KQ:hover {
+  background-color: #e4cc9b;
+}`, "",{"version":3,"sources":["webpack://./src/pages/StudentDashboard/StudentDashboard.module.scss"],"names":[],"mappings":"AAAA;EACI,iBAAA;EACA,kBAAA;EACA,yBAAA;EACA,cAAA;AACJ;;AAEE;EACE,kBAAA;EACA,mBAAA;AACJ;AACI;EACE,kBAAA;EACA,gBAAA;EACA,qBAAA;AACN;AAEI;EACE,mBAAA;EACA,cAAA;AAAN;;AAIE;EACE,aAAA;EACA,0BAAA;EACA,SAAA;AADJ;AAGI;EALF;IAMI,qCAAA;EAAJ;AACF;;AAGE;EACE,yBAAA;EACA,aAAA;EACA,mBAAA;EACA,2CAAA;EACA,gBAAA;EACA,+BAAA;AAAJ;AAEI;EACE,2BAAA;AAAN;AAGI;EACE,kBAAA;EACA,gBAAA;EACA,sBAAA;AADN;AAII;EACE,eAAA;EACA,cAAA;EACA,mBAAA;AAFN;;AAME;EACE,qBAAA;EACA,oBAAA;EACA,yBAAA;EACA,cAAA;EACA,kBAAA;EACA,gBAAA;EACA,qBAAA;EACA,sCAAA;AAHJ;AAKI;EACE,yBAAA;AAHN","sourcesContent":[".dashboard {\n    min-height: 100vh;\n    padding: 4rem 2rem;\n    background-color: #f9f7f3;\n    color: #324057;\n  }\n  \n  .header {\n    text-align: center;\n    margin-bottom: 3rem;\n  \n    h1 {\n      font-size: 2.25rem;\n      font-weight: 700;\n      margin-bottom: 0.5rem;\n    }\n  \n    p {\n      font-size: 1.125rem;\n      color: #4b5563;\n    }\n  }\n  \n  .sections {\n    display: grid;\n    grid-template-columns: 1fr;\n    gap: 2rem;\n  \n    @media (min-width: 768px) {\n      grid-template-columns: repeat(3, 1fr);\n    }\n  }\n  \n  .card {\n    background-color: #ffffff;\n    padding: 2rem;\n    border-radius: 12px;\n    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);\n    text-align: left;\n    transition: transform 0.2s ease;\n  \n    &:hover {\n      transform: translateY(-4px);\n    }\n  \n    h2 {\n      font-size: 1.25rem;\n      font-weight: 600;\n      margin-bottom: 0.75rem;\n    }\n  \n    p {\n      font-size: 1rem;\n      color: #4b5563;\n      margin-bottom: 1rem;\n    }\n  }\n  \n  .button {\n    display: inline-block;\n    padding: 0.5rem 1rem;\n    background-color: #d1ba8e;\n    color: #324057;\n    border-radius: 6px;\n    font-weight: 600;\n    text-decoration: none;\n    transition: background-color 0.3s ease;\n  \n    &:hover {\n      background-color: #e4cc9b;\n    }\n  }"],"sourceRoot":""}]);
+// Exports
+___CSS_LOADER_EXPORT___.locals = {
+	"dashboard": `B9QrLsXQrIE4zdmtvwIk`,
+	"header": `fyrW_1JSSBIOp0a7s7zj`,
+	"sections": `X3cEaWnEocEk6JwnMxFh`,
+	"card": `KoYQGbWGddVOcFGalCig`,
+	"button": `TLw7vIYwNihx6s8n13KQ`
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./src/App.js":
 /*!********************!*\
   !*** ./src/App.js ***!
@@ -1152,18 +1348,24 @@ ___CSS_LOADER_EXPORT___.locals = {
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
 /* harmony import */ var _components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/NavBar/NavBar */ "./src/components/NavBar/NavBar.js");
-/* harmony import */ var _components_HeroSection_HeroSection__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/HeroSection/HeroSection */ "./src/components/HeroSection/HeroSection.js");
-/* harmony import */ var _components_LanguagesSection_LanguagesSection__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/LanguagesSection/LanguagesSection */ "./src/components/LanguagesSection/LanguagesSection.js");
-/* harmony import */ var _components_FeaturesSection_FeaturesSection__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/FeaturesSection/FeaturesSection */ "./src/components/FeaturesSection/FeaturesSection.js");
-/* harmony import */ var _components_ClassroomSection_ClassroomSection__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/ClassroomSection/ClassroomSection */ "./src/components/ClassroomSection/ClassroomSection.js");
-/* harmony import */ var _components_Footer_Footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Footer/Footer */ "./src/components/Footer/Footer.js");
-/* harmony import */ var _pages_ContactPage_ContactPage__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pages/ContactPage/ContactPage */ "./src/pages/ContactPage/ContactPage.js");
-/* harmony import */ var _pages_AuthPage_AuthPage__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/AuthPage/AuthPage */ "./src/pages/AuthPage/AuthPage.js");
-/* harmony import */ var _pages_EducatorAuthPage_EducatorAuthPage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/EducatorAuthPage/EducatorAuthPage */ "./src/pages/EducatorAuthPage/EducatorAuthPage.js");
-/* harmony import */ var _pages_AboutPage_AboutPage__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/AboutPage/AboutPage */ "./src/pages/AboutPage/AboutPage.js");
-/* harmony import */ var _components_ScrollToTop_ScrollToTop__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/ScrollToTop/ScrollToTop */ "./src/components/ScrollToTop/ScrollToTop.js");
+/* harmony import */ var _components_ProtectedRoute_ProtectedRoute__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/ProtectedRoute/ProtectedRoute */ "./src/components/ProtectedRoute/ProtectedRoute.js");
+/* harmony import */ var _components_HeroSection_HeroSection__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/HeroSection/HeroSection */ "./src/components/HeroSection/HeroSection.js");
+/* harmony import */ var _components_LanguagesSection_LanguagesSection__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/LanguagesSection/LanguagesSection */ "./src/components/LanguagesSection/LanguagesSection.js");
+/* harmony import */ var _components_FeaturesSection_FeaturesSection__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/FeaturesSection/FeaturesSection */ "./src/components/FeaturesSection/FeaturesSection.js");
+/* harmony import */ var _components_ClassroomSection_ClassroomSection__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/ClassroomSection/ClassroomSection */ "./src/components/ClassroomSection/ClassroomSection.js");
+/* harmony import */ var _components_Footer_Footer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Footer/Footer */ "./src/components/Footer/Footer.js");
+/* harmony import */ var _pages_ContactPage_ContactPage__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pages/ContactPage/ContactPage */ "./src/pages/ContactPage/ContactPage.js");
+/* harmony import */ var _pages_AuthPage_AuthPage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pages/AuthPage/AuthPage */ "./src/pages/AuthPage/AuthPage.js");
+/* harmony import */ var _pages_EducatorAuthPage_EducatorAuthPage__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pages/EducatorAuthPage/EducatorAuthPage */ "./src/pages/EducatorAuthPage/EducatorAuthPage.js");
+/* harmony import */ var _pages_AboutPage_AboutPage__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/AboutPage/AboutPage */ "./src/pages/AboutPage/AboutPage.js");
+/* harmony import */ var _pages_StudentDashboard_StudentDashboard__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/StudentDashboard/StudentDashboard */ "./src/pages/StudentDashboard/StudentDashboard.js");
+/* harmony import */ var _pages_EducatorDashboard_EducatorDashboard__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/EducatorDashboard/EducatorDashboard */ "./src/pages/EducatorDashboard/EducatorDashboard.js");
+/* harmony import */ var _components_ScrollToTop_ScrollToTop__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/ScrollToTop/ScrollToTop */ "./src/components/ScrollToTop/ScrollToTop.js");
+
+
+
 
 
 
@@ -1180,21 +1382,31 @@ ___CSS_LOADER_EXPORT___.locals = {
 function App() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "font-sans"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Route, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Route, {
     path: "/",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ScrollToTop_ScrollToTop__WEBPACK_IMPORTED_MODULE_11__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_HeroSection_HeroSection__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_LanguagesSection_LanguagesSection__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ClassroomSection_ClassroomSection__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_FeaturesSection_FeaturesSection__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Footer_Footer__WEBPACK_IMPORTED_MODULE_6__["default"], null))
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Route, {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ScrollToTop_ScrollToTop__WEBPACK_IMPORTED_MODULE_14__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_HeroSection_HeroSection__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_LanguagesSection_LanguagesSection__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ClassroomSection_ClassroomSection__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_FeaturesSection_FeaturesSection__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Footer_Footer__WEBPACK_IMPORTED_MODULE_7__["default"], null))
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Route, {
     path: "/about",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_AboutPage_AboutPage__WEBPACK_IMPORTED_MODULE_10__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Route, {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_AboutPage_AboutPage__WEBPACK_IMPORTED_MODULE_11__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Route, {
     path: "/contact",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_ContactPage_ContactPage__WEBPACK_IMPORTED_MODULE_7__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Route, {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_ContactPage_ContactPage__WEBPACK_IMPORTED_MODULE_8__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Route, {
     path: "/auth",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_AuthPage_AuthPage__WEBPACK_IMPORTED_MODULE_8__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_12__.Route, {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_AuthPage_AuthPage__WEBPACK_IMPORTED_MODULE_9__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Route, {
     path: "/educator-auth",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_EducatorAuthPage_EducatorAuthPage__WEBPACK_IMPORTED_MODULE_9__["default"], null)
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_EducatorAuthPage_EducatorAuthPage__WEBPACK_IMPORTED_MODULE_10__["default"], null)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Route, {
+    path: "/dashboard",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ProtectedRoute_ProtectedRoute__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      requiredRole: "student"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_StudentDashboard_StudentDashboard__WEBPACK_IMPORTED_MODULE_12__["default"], null))
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Route, {
+    path: "/educator-dashboard",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ProtectedRoute_ProtectedRoute__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      requiredRole: "educator"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_EducatorDashboard_EducatorDashboard__WEBPACK_IMPORTED_MODULE_13__["default"], null))
   })));
 }
 
@@ -1824,6 +2036,45 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
+/***/ "./src/components/ProtectedRoute/ProtectedRoute.js":
+/*!*********************************************************!*\
+  !*** ./src/components/ProtectedRoute/ProtectedRoute.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var _hooks_useAuth__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../hooks/useAuth */ "./src/hooks/useAuth.js");
+
+
+
+const ProtectedRoute = _ref => {
+  let {
+    children,
+    requiredRole
+  } = _ref;
+  const {
+    user,
+    role,
+    loading
+  } = (0,_hooks_useAuth__WEBPACK_IMPORTED_MODULE_1__["default"])();
+  if (loading) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Loading...");
+  if (!user) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Navigate, {
+    to: "/auth?mode=login"
+  });
+  if (requiredRole && role !== requiredRole) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Navigate, {
+    to: "/dashboard"
+  });
+  return children;
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ProtectedRoute);
+
+/***/ }),
+
 /***/ "./src/components/ScrollToTop/ScrollToTop.js":
 /*!***************************************************!*\
   !*** ./src/components/ScrollToTop/ScrollToTop.js ***!
@@ -1851,6 +2102,96 @@ const ScrollToTop = () => {
   return null;
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ScrollToTop);
+
+/***/ }),
+
+/***/ "./src/firebase.js":
+/*!*************************!*\
+  !*** ./src/firebase.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   auth: () => (/* binding */ auth),
+/* harmony export */   db: () => (/* binding */ db)
+/* harmony export */ });
+/* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! firebase/app */ "./node_modules/firebase/app/dist/esm/index.esm.js");
+/* harmony import */ var firebase_auth__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! firebase/auth */ "./node_modules/firebase/auth/dist/esm/index.esm.js");
+/* harmony import */ var firebase_firestore__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! firebase/firestore */ "./node_modules/firebase/firestore/dist/esm/index.esm.js");
+// src/firebase.js
+
+
+
+
+// ✅ Your actual config from Firebase Console
+const firebaseConfig = {
+  apiKey: "AIzaSyDZllWoTta79-Mk3h3744byIItp26w_ciY",
+  authDomain: "innova-classroom.firebaseapp.com",
+  projectId: "innova-classroom",
+  storageBucket: "innova-classroom.appspot.com",
+  // 🔁 fixed `.app` to `.appspot.com`
+  messagingSenderId: "547854708669",
+  appId: "1:547854708669:web:9605bfaba07a8c3a746cd4",
+  measurementId: "G-BYKB0NE63X"
+};
+
+// ✅ Initialize Firebase
+const app = (0,firebase_app__WEBPACK_IMPORTED_MODULE_0__.initializeApp)(firebaseConfig);
+
+// ✅ Export the services you'll use
+const auth = (0,firebase_auth__WEBPACK_IMPORTED_MODULE_1__.getAuth)(app);
+const db = (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_2__.getFirestore)(app);
+
+/***/ }),
+
+/***/ "./src/hooks/useAuth.js":
+/*!******************************!*\
+  !*** ./src/hooks/useAuth.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _firebase__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../firebase */ "./src/firebase.js");
+/* harmony import */ var firebase_auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! firebase/auth */ "./node_modules/firebase/auth/dist/esm/index.esm.js");
+/* harmony import */ var firebase_firestore__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! firebase/firestore */ "./node_modules/firebase/firestore/dist/esm/index.esm.js");
+
+
+
+
+const useAuth = () => {
+  const [user, setUser] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+  const [role, setRole] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null);
+  const [loading, setLoading] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    const unsub = (0,firebase_auth__WEBPACK_IMPORTED_MODULE_2__.onAuthStateChanged)(_firebase__WEBPACK_IMPORTED_MODULE_1__.auth, async firebaseUser => {
+      setLoading(true);
+      setUser(firebaseUser);
+      if (firebaseUser) {
+        const docRef = (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_3__.doc)(_firebase__WEBPACK_IMPORTED_MODULE_1__.db, "users", firebaseUser.uid);
+        const docSnap = await (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_3__.getDoc)(docRef);
+        if (docSnap.exists()) {
+          setRole(docSnap.data().role); // 'student' or 'educator'
+        } else {
+          setRole(null);
+        }
+      } else {
+        setRole(null);
+      }
+      setLoading(false);
+    });
+    return () => unsub();
+  }, []);
+  return {
+    user,
+    role,
+    loading
+  };
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useAuth);
 
 /***/ }),
 
@@ -2041,30 +2382,61 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AuthPage.module.scss */ "./src/pages/AuthPage/AuthPage.module.scss");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var firebase_auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! firebase/auth */ "./node_modules/firebase/auth/dist/esm/index.esm.js");
+/* harmony import */ var firebase_firestore__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! firebase/firestore */ "./node_modules/firebase/firestore/dist/esm/index.esm.js");
+/* harmony import */ var _firebase__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../firebase */ "./src/firebase.js");
+/* harmony import */ var _utilities_authHelpers__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../utilities/authHelpers */ "./src/utilities/authHelpers.js");
+
+
+
 
 
 
 
 const AuthPage = () => {
-  const location = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_2__.useLocation)();
+  const location = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_6__.useLocation)();
+  const navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_6__.useNavigate)();
   const queryParams = new URLSearchParams(location.search);
   const mode = queryParams.get("mode");
   const [isSignUp, setIsSignUp] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(mode === "signup");
+  const [email, setEmail] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("");
+  const [password, setPassword] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("");
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     setIsSignUp(mode === "signup");
   }, [mode]);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
-    // Disable scrolling only while AuthPage is mounted
     const originalOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
-
-    // Restore original style on unmount
     return () => {
       document.body.style.overflow = originalOverflow;
     };
   }, []);
+  const handleSubmit = async e => {
+    e.preventDefault();
+    try {
+      let user;
+      if (isSignUp) {
+        user = await (0,_utilities_authHelpers__WEBPACK_IMPORTED_MODULE_5__.signUpUserWithRole)(email, password, "student");
+      } else {
+        const userCredential = await (0,firebase_auth__WEBPACK_IMPORTED_MODULE_2__.signInWithEmailAndPassword)(_firebase__WEBPACK_IMPORTED_MODULE_4__.auth, email, password);
+        user = userCredential.user;
+      }
+      const docRef = (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_3__.doc)(_firebase__WEBPACK_IMPORTED_MODULE_4__.db, "users", user.uid);
+      const docSnap = await (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_3__.getDoc)(docRef);
+      if (docSnap.exists()) {
+        const role = docSnap.data().role;
+        if (role === "educator") {
+          alert("Educators must log in through the Educator Login Portal.");
+          return;
+        }
+        navigate("/dashboard"); // students continue normally
+      }
+    } catch (err) {
+      console.error("".concat(isSignUp ? "Signup" : "Login", " error:"), err);
+    }
+  };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].authPage
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -2076,7 +2448,8 @@ const AuthPage = () => {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].authBtn
   }, isSignUp ? "Create an Account" : "Sign In"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
-    className: _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].form
+    className: _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].form,
+    onSubmit: handleSubmit
   }, isSignUp && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].row
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
@@ -2090,6 +2463,8 @@ const AuthPage = () => {
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "email",
     placeholder: "Your Email",
+    value: email,
+    onChange: e => setEmail(e.target.value),
     required: true
   }), isSignUp ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].row
@@ -2097,6 +2472,8 @@ const AuthPage = () => {
     className: _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textField,
     type: "password",
     placeholder: "Password",
+    value: password,
+    onChange: e => setPassword(e.target.value),
     required: true
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     className: _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textField,
@@ -2120,6 +2497,8 @@ const AuthPage = () => {
     className: _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textField,
     type: "password",
     placeholder: "Your Password",
+    value: password,
+    onChange: e => setPassword(e.target.value),
     required: true
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].extraRow
@@ -2143,7 +2522,7 @@ const AuthPage = () => {
     href: "mailto:help@innova.com"
   }, "help@innova.com")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].educatorLink
-  }, "Are you an educator? ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
+  }, "Are you an educator? ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_7__.Link, {
     to: "/educator-auth"
   }, "Log in here"))));
 };
@@ -2335,11 +2714,21 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./EducatorAuthPage.module.scss */ "./src/pages/EducatorAuthPage/EducatorAuthPage.module.scss");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var firebase_auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! firebase/auth */ "./node_modules/firebase/auth/dist/esm/index.esm.js");
+/* harmony import */ var firebase_firestore__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! firebase/firestore */ "./node_modules/firebase/firestore/dist/esm/index.esm.js");
+/* harmony import */ var _firebase__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../firebase */ "./src/firebase.js");
+
+
+
 
 
 
 const EducatorAuthPage = () => {
+  const [email, setEmail] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("");
+  const [password, setPassword] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("");
+  const navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_5__.useNavigate)();
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     const originalOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
@@ -2347,6 +2736,23 @@ const EducatorAuthPage = () => {
       document.body.style.overflow = originalOverflow;
     };
   }, []);
+  const handleLogin = async e => {
+    e.preventDefault();
+    try {
+      const userCredential = await (0,firebase_auth__WEBPACK_IMPORTED_MODULE_2__.signInWithEmailAndPassword)(_firebase__WEBPACK_IMPORTED_MODULE_4__.auth, email, password);
+      const user = userCredential.user;
+      const docRef = (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_3__.doc)(_firebase__WEBPACK_IMPORTED_MODULE_4__.db, "users", user.uid);
+      const docSnap = await (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_3__.getDoc)(docRef);
+      if (docSnap.exists() && docSnap.data().role === "educator") {
+        navigate("/educator-dashboard");
+      } else {
+        alert("You are not authorized to access this dashboard.");
+      }
+    } catch (error) {
+      console.error("Educator login error:", error);
+      alert("Login failed. Please check your credentials.");
+    }
+  };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: _EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].authPage
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -2358,17 +2764,22 @@ const EducatorAuthPage = () => {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
     className: _EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].authTitle
   }, "Educator Login"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
-    className: _EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].form
+    className: _EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].form,
+    onSubmit: handleLogin
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "email",
     placeholder: "Educator Email",
     required: true,
-    className: _EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textField
+    className: _EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textField,
+    value: email,
+    onChange: e => setEmail(e.target.value)
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "password",
     placeholder: "Password",
     required: true,
-    className: _EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textField
+    className: _EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textField,
+    value: password,
+    onChange: e => setPassword(e.target.value)
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: _EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].extraRow
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
@@ -2385,7 +2796,7 @@ const EducatorAuthPage = () => {
     href: "mailto:admin@innova.com"
   }, "admin@innova.com")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
     className: _EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].toggleBack
-  }, "Not an educator? ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Link, {
+  }, "Not an educator? ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
     to: "/auth?mode=login"
   }, "Go back to student login"))));
 };
@@ -2443,6 +2854,222 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
        /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_EducatorAuthPage_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
+
+/***/ }),
+
+/***/ "./src/pages/EducatorDashboard/EducatorDashboard.js":
+/*!**********************************************************!*\
+  !*** ./src/pages/EducatorDashboard/EducatorDashboard.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _EducatorDashboard_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./EducatorDashboard.module.scss */ "./src/pages/EducatorDashboard/EducatorDashboard.module.scss");
+
+
+const EducatorDashboard = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: _EducatorDashboard_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dashboard
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: _EducatorDashboard_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].header
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Welcome, Educator"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Manage your students, lessons, and track class performance.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: _EducatorDashboard_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].sections
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: _EducatorDashboard_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].card
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "Student Progress"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "View and filter progress by student, quiz, or unit."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "/educator/students",
+    className: _EducatorDashboard_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].button
+  }, "View Students")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: _EducatorDashboard_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].card
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "Lesson Planner"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Adjust pacing, unlock lessons, or preview upcoming content."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "/educator/lessons",
+    className: _EducatorDashboard_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].button
+  }, "Manage Lessons")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: _EducatorDashboard_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].card
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "Certificates & Quizzes"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Review quiz results and issue certificates of completion."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "/educator/certificates",
+    className: _EducatorDashboard_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].button
+  }, "Certificates Panel"))));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (EducatorDashboard);
+
+/***/ }),
+
+/***/ "./src/pages/EducatorDashboard/EducatorDashboard.module.scss":
+/*!*******************************************************************!*\
+  !*** ./src/pages/EducatorDashboard/EducatorDashboard.module.scss ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_EducatorDashboard_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../../node_modules/sass-loader/dist/cjs.js!../../../node_modules/postcss-loader/dist/cjs.js!./EducatorDashboard.module.scss */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/pages/EducatorDashboard/EducatorDashboard.module.scss");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_EducatorDashboard_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_EducatorDashboard_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_EducatorDashboard_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_EducatorDashboard_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
+/***/ "./src/pages/StudentDashboard/StudentDashboard.js":
+/*!********************************************************!*\
+  !*** ./src/pages/StudentDashboard/StudentDashboard.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _StudentDashboard_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./StudentDashboard.module.scss */ "./src/pages/StudentDashboard/StudentDashboard.module.scss");
+
+
+const StudentDashboard = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: _StudentDashboard_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].dashboard
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: _StudentDashboard_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].header
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Welcome to Your Dashboard"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Explore your lessons, check progress, and track upcoming assignments.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: _StudentDashboard_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].sections
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: _StudentDashboard_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].card
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "Current Lesson"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "You're on ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "Week 3, Day 2"), ": JavaScript Variables & Logic"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "/courses/week-3/day-2",
+    className: _StudentDashboard_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].button
+  }, "Continue Lesson")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: _StudentDashboard_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].card
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "Upcoming Quiz"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Next quiz: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "Week 3 Quiz")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Due: ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "Friday"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: _StudentDashboard_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].card
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, "Certificates"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "You\u2019ve earned ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, "1 certificate"), " so far. Keep going!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    href: "/certificates",
+    className: _StudentDashboard_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].button
+  }, "View Certificates"))));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (StudentDashboard);
+
+/***/ }),
+
+/***/ "./src/pages/StudentDashboard/StudentDashboard.module.scss":
+/*!*****************************************************************!*\
+  !*** ./src/pages/StudentDashboard/StudentDashboard.module.scss ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_StudentDashboard_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../../node_modules/sass-loader/dist/cjs.js!../../../node_modules/postcss-loader/dist/cjs.js!./StudentDashboard.module.scss */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/pages/StudentDashboard/StudentDashboard.module.scss");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_StudentDashboard_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_StudentDashboard_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_StudentDashboard_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_StudentDashboard_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
+/***/ "./src/utilities/authHelpers.js":
+/*!**************************************!*\
+  !*** ./src/utilities/authHelpers.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   signUpUserWithRole: () => (/* binding */ signUpUserWithRole)
+/* harmony export */ });
+/* harmony import */ var firebase_auth__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! firebase/auth */ "./node_modules/firebase/auth/dist/esm/index.esm.js");
+/* harmony import */ var firebase_firestore__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! firebase/firestore */ "./node_modules/firebase/firestore/dist/esm/index.esm.js");
+/* harmony import */ var _firebase__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../firebase */ "./src/firebase.js");
+// src/utils/authHelpers.js
+
+
+
+const signUpUserWithRole = async function signUpUserWithRole(email, password) {
+  let role = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "student";
+  const userCredential = await (0,firebase_auth__WEBPACK_IMPORTED_MODULE_0__.createUserWithEmailAndPassword)(_firebase__WEBPACK_IMPORTED_MODULE_2__.auth, email, password);
+  const uid = userCredential.user.uid;
+  await (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_1__.setDoc)((0,firebase_firestore__WEBPACK_IMPORTED_MODULE_1__.doc)(_firebase__WEBPACK_IMPORTED_MODULE_2__.db, "users", uid), {
+    role,
+    createdAt: new Date()
+  });
+  return userCredential.user;
+};
 
 /***/ })
 
@@ -2565,6 +3192,18 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -2653,9 +3292,9 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_css-loader_dist_runtime_api_js-node_modules_css-loader_dist_runtime_sour-354ecd"], () => (__webpack_require__("./src/index.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_css-loader_dist_runtime_api_js-node_modules_css-loader_dist_runtime_sour-09e987"], () => (__webpack_require__("./src/index.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.8464f83c5b0c620d9f0107082fdbd534.js.map
+//# sourceMappingURL=App.59b1f5e15afa8aa07796c40dfda32c8c.js.map

@@ -1,0 +1,72 @@
+.dashboard {
+    min-height: 100vh;
+    padding: 4rem 2rem;
+    background-color: #f9f7f3;
+    color: #324057;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 3rem;
+  
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+  
+    p {
+      font-size: 1.125rem;
+      color: #4b5563;
+    }
+  }
+  
+  .sections {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    transition: transform 0.2s ease;
+  
+    &:hover {
+      transform: translateY(-4px);
+    }
+  
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+  
+    p {
+      font-size: 1rem;
+      color: #4b5563;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #d1ba8e;
+    color: #324057;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #e4cc9b;
+    }
+  }
