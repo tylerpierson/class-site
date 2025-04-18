@@ -1,8 +1,18 @@
 import React, { useState, useEffect } from "react";
 import styles from "./AuthPage.module.scss";
+import { useLocation } from "react-router-dom";
 
 const AuthPage = () => {
-  const [isSignUp, setIsSignUp] = useState(false);
+    const location = useLocation();
+    const queryParams = new URLSearchParams(location.search);
+    const mode = queryParams.get("mode");
+
+    const [isSignUp, setIsSignUp] = useState(mode === "signup");
+
+    useEffect(() => {
+    setIsSignUp(mode === "signup");
+    }, [mode]);
+
 
   useEffect(() => {
     // Disable scrolling only while AuthPage is mounted

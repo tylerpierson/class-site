@@ -1584,10 +1584,10 @@ const NavBar = () => {
   }, "Contact")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].authButtons
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
-    to: "/auth",
+    to: "/auth?mode=login",
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].loginBtn
   }, "Login"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
-    to: "/auth",
+    to: "/auth?mode=signup",
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].signupBtn
   }, "Sign Up")));
 };
@@ -1865,10 +1865,18 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./AuthPage.module.scss */ "./src/pages/AuthPage/AuthPage.module.scss");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+
 
 
 const AuthPage = () => {
-  const [isSignUp, setIsSignUp] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const location = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_2__.useLocation)();
+  const queryParams = new URLSearchParams(location.search);
+  const mode = queryParams.get("mode");
+  const [isSignUp, setIsSignUp] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(mode === "signup");
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    setIsSignUp(mode === "signup");
+  }, [mode]);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     // Disable scrolling only while AuthPage is mounted
     const originalOverflow = document.body.style.overflow;
@@ -2345,4 +2353,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.a585782006ca1e8788da1e4bdae30031.js.map
+//# sourceMappingURL=App.bec96e2069e360ace7d2cf1f895e746a.js.map

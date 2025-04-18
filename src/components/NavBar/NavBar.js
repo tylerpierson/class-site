@@ -34,8 +34,8 @@ const NavBar = () => {
       </nav>
 
       <div className={styles.authButtons}>
-        <Link to="/auth" className={styles.loginBtn}>Login</Link>
-        <Link to="/auth" className={styles.signupBtn}>Sign Up</Link>
+        <Link to="/auth?mode=login" className={styles.loginBtn}>Login</Link>
+        <Link to="/auth?mode=signup" className={styles.signupBtn}>Sign Up</Link>
       </div>
     </header>
   );
