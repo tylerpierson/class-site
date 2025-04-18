@@ -10,6 +10,7 @@ import Footer from "./components/Footer/Footer";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import AuthPage from "./pages/AuthPage/AuthPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
             path="/"
             element={
               <>
+                <ScrollToTop />
                 <HeroSection />
                 <CompaniesSection />
                 <ClassroomSection />
