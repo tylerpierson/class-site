@@ -486,14 +486,14 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.BkOougMidTcaU_Bl6HLq {
   display: flex;
   gap: 8rem;
 }
-.rE3oyvgW5wROdFsISvuN a {
+.rE3oyvgW5wROdFsISvuN .islSTJv9ZsXJlRAfJUO8 {
   color: #d1ba8e;
   text-decoration: none;
   font-weight: 500;
   font-size: 1.5rem;
   transition: color 0.3s;
 }
-.rE3oyvgW5wROdFsISvuN a:hover {
+.rE3oyvgW5wROdFsISvuN .islSTJv9ZsXJlRAfJUO8:hover {
   color: white;
 }
 
@@ -529,7 +529,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.BkOougMidTcaU_Bl6HLq {
 }
 .jXF4tiO91bygAtBclM4F .aHaTcg01MqJ1OE8U1DRm:hover {
   background-color: #e4cc9b;
-}`, "",{"version":3,"sources":["webpack://./src/components/NavBar/NavBar.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,YAAA;EACA,uBAAA;EACA,mBAAA;EACA,kBAAA;EACA,yBAAA;EACA,cAAA;EACA,gBAAA;EACA,MAAA;EACA,YAAA;EACA,yBAAA;AACJ;;AAEE;EACE,oBAAA;AACJ;;AAEE;EACE,aAAA;EACA,kBAAA;EACA,mBAAA;EACA,iBAAA;EACA,gBAAA;EACA,cAAA;AACJ;;AAEE;EACE,kBAAA;EACA,UAAA;EACA,SAAA;EACA,2BAAA;EACA,aAAA;EACA,yBAAA;AACJ;;AAEE;EACE,cAAA;EACA,+CAAA;AACJ;;AAGE;EACE,aAAA;EACA,SAAA;AAAJ;AAEI;EACE,cAAA;EACA,qBAAA;EACA,gBAAA;EACA,iBAAA;EACA,sBAAA;AAAN;AAEM;EACE,YAAA;AAAR;;AAKE;EACM,kBAAA;EACA,WAAA;EACA,aAAA;EACA,YAAA;AAFR;AAIQ;EACI,iBAAA;EACA,qBAAA;EACA,oBAAA;EACA,yBAAA;EACA,uBAAA;EACA,cAAA;EACA,kBAAA;EACA,eAAA;AAFZ;AAIU;EACE,0CAAA;AAFZ;AAMQ;EACI,iBAAA;EACA,qBAAA;EACA,oBAAA;EACA,yBAAA;EACA,cAAA;EACA,YAAA;EACA,kBAAA;EACA,gBAAA;EACA,eAAA;AAJZ;AAMU;EACE,yBAAA;AAJZ","sourcesContent":[".navbar {\n    display: flex;\n    height: 6rem;\n    justify-content: center;\n    align-items: center;\n    padding: 1rem 2rem;\n    background-color: #324057;\n    color: #d1ba8e;\n    position: sticky;\n    top: 0;\n    z-index: 100;\n    transition: all 0.3s ease;\n  }\n  \n  .shrink {\n    padding: 0.5rem 2rem;\n  }\n  \n  .logo {\n    display: flex;\n    position: absolute;\n    align-items: center;\n    font-size: 1.5rem;\n    font-weight: 700;\n    color: #d1ba8e;\n  }\n  \n  .logoImg {\n    position: absolute;\n    left: 2rem;\n    top: 140%;\n    transform: translateY(-50%);\n    height: 25rem;\n    transition: all 0.3s ease;\n  }\n  \n  .logoShrink {\n    height: 9.5rem;\n    transform: translateY(-50%) translateY(-5.5rem);\n  }\n  \n  \n  .navLinks {\n    display: flex;\n    gap: 8rem;\n  \n    a {\n      color: #d1ba8e;\n      text-decoration: none;\n      font-weight: 500;\n      font-size: 1.5rem;\n      transition: color 0.3s;\n  \n      &:hover {\n        color: white;\n      }\n    }\n  }\n  \n  .authButtons {\n        position: absolute;\n        right: 2rem;\n        display: flex;\n        gap: 0.75rem;\n      \n        .loginBtn {\n            font-size: 1.5rem;\n            text-decoration: none;\n            padding: 0.5rem 1rem;\n            border: 1px solid #d1ba8e;\n            background: transparent;\n            color: #d1ba8e;\n            border-radius: 6px;\n            cursor: pointer;\n      \n          &:hover {\n            background-color: rgba(255, 255, 255, 0.1);\n          }\n        }\n      \n        .signupBtn {\n            font-size: 1.5rem;\n            text-decoration: none;\n            padding: 0.5rem 1rem;\n            background-color: #d1ba8e;\n            color: #324057;\n            border: none;\n            border-radius: 6px;\n            font-weight: 600;\n            cursor: pointer;\n      \n          &:hover {\n            background-color: #e4cc9b;\n          }\n        }\n  }\n      "],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/NavBar/NavBar.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,YAAA;EACA,uBAAA;EACA,mBAAA;EACA,kBAAA;EACA,yBAAA;EACA,cAAA;EACA,gBAAA;EACA,MAAA;EACA,YAAA;EACA,yBAAA;AACJ;;AAEE;EACE,oBAAA;AACJ;;AAEE;EACE,aAAA;EACA,kBAAA;EACA,mBAAA;EACA,iBAAA;EACA,gBAAA;EACA,cAAA;AACJ;;AAEE;EACE,kBAAA;EACA,UAAA;EACA,SAAA;EACA,2BAAA;EACA,aAAA;EACA,yBAAA;AACJ;;AAEE;EACE,cAAA;EACA,+CAAA;AACJ;;AAGE;EACE,aAAA;EACA,SAAA;AAAJ;AAEI;EACE,cAAA;EACA,qBAAA;EACA,gBAAA;EACA,iBAAA;EACA,sBAAA;AAAN;AAEM;EACE,YAAA;AAAR;;AAKE;EACM,kBAAA;EACA,WAAA;EACA,aAAA;EACA,YAAA;AAFR;AAIQ;EACI,iBAAA;EACA,qBAAA;EACA,oBAAA;EACA,yBAAA;EACA,uBAAA;EACA,cAAA;EACA,kBAAA;EACA,eAAA;AAFZ;AAIU;EACE,0CAAA;AAFZ;AAMQ;EACI,iBAAA;EACA,qBAAA;EACA,oBAAA;EACA,yBAAA;EACA,cAAA;EACA,YAAA;EACA,kBAAA;EACA,gBAAA;EACA,eAAA;AAJZ;AAMU;EACE,yBAAA;AAJZ","sourcesContent":[".navbar {\n    display: flex;\n    height: 6rem;\n    justify-content: center;\n    align-items: center;\n    padding: 1rem 2rem;\n    background-color: #324057;\n    color: #d1ba8e;\n    position: sticky;\n    top: 0;\n    z-index: 100;\n    transition: all 0.3s ease;\n  }\n  \n  .shrink {\n    padding: 0.5rem 2rem;\n  }\n  \n  .logo {\n    display: flex;\n    position: absolute;\n    align-items: center;\n    font-size: 1.5rem;\n    font-weight: 700;\n    color: #d1ba8e;\n  }\n  \n  .logoImg {\n    position: absolute;\n    left: 2rem;\n    top: 140%;\n    transform: translateY(-50%);\n    height: 25rem;\n    transition: all 0.3s ease;\n  }\n  \n  .logoShrink {\n    height: 9.5rem;\n    transform: translateY(-50%) translateY(-5.5rem);\n  }\n  \n  \n  .navLinks {\n    display: flex;\n    gap: 8rem;\n  \n    .link {\n      color: #d1ba8e;\n      text-decoration: none;\n      font-weight: 500;\n      font-size: 1.5rem;\n      transition: color 0.3s;\n  \n      &:hover {\n        color: white;\n      }\n    }\n  }\n  \n  .authButtons {\n        position: absolute;\n        right: 2rem;\n        display: flex;\n        gap: 0.75rem;\n      \n        .loginBtn {\n            font-size: 1.5rem;\n            text-decoration: none;\n            padding: 0.5rem 1rem;\n            border: 1px solid #d1ba8e;\n            background: transparent;\n            color: #d1ba8e;\n            border-radius: 6px;\n            cursor: pointer;\n      \n          &:hover {\n            background-color: rgba(255, 255, 255, 0.1);\n          }\n        }\n      \n        .signupBtn {\n            font-size: 1.5rem;\n            text-decoration: none;\n            padding: 0.5rem 1rem;\n            background-color: #d1ba8e;\n            color: #324057;\n            border: none;\n            border-radius: 6px;\n            font-weight: 600;\n            cursor: pointer;\n      \n          &:hover {\n            background-color: #e4cc9b;\n          }\n        }\n  }\n      "],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"navbar": `BkOougMidTcaU_Bl6HLq`,
@@ -538,6 +538,7 @@ ___CSS_LOADER_EXPORT___.locals = {
 	"logoImg": `MdqSDfsZB3lF0E2Wo7KH`,
 	"logoShrink": `Ly0DN6bbPKzbPXwSkjX_`,
 	"navLinks": `rE3oyvgW5wROdFsISvuN`,
+	"link": `islSTJv9ZsXJlRAfJUO8`,
 	"authButtons": `jXF4tiO91bygAtBclM4F`,
 	"loginBtn": `uKRiB1S6RJCr7jD7aEDU`,
 	"signupBtn": `aHaTcg01MqJ1OE8U1DRm`
@@ -1517,13 +1518,17 @@ const NavBar = () => {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("nav", {
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].navLinks
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
-    to: "/"
+    to: "/",
+    className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].link
   }, "Home"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
-    to: "/courses"
+    to: "/courses",
+    className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].link
   }, "Courses"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
-    to: "/about"
+    to: "/about",
+    className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].link
   }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
-    to: "/contact"
+    to: "/contact",
+    className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].link
   }, "Contact")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].authButtons
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__.Link, {
@@ -2292,4 +2297,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.1e72055e87be7cda9d202170ff19440a.js.map
+//# sourceMappingURL=App.a9cd120a5ffdd411a3b45f2e29857a63.js.map

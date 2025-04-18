@@ -27,10 +27,10 @@ const NavBar = () => {
       />
 
       <nav className={styles.navLinks}>
-        <Link to="/">Home</Link>
-        <Link to="/courses">Courses</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/" className={styles.link}>Home</Link>
+        <Link to="/courses" className={styles.link}>Courses</Link>
+        <Link to="/about" className={styles.link}>About</Link>
+        <Link to="/contact" className={styles.link}>Contact</Link>
       </nav>
 
       <div className={styles.authButtons}>
