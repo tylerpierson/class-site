@@ -1,0 +1,37 @@
+// File: components/CompaniesSection.jsx
+import React from "react";
+import styles from "./CompaniesSection.module.scss";
+
+const languages = [
+    {
+      logo: "/img/scratch.png",
+      description: "A block-based coding language perfect for beginners to create games and animations."
+    },
+    {
+      logo: "/img/javascript.png",
+      description: "Learn how websites work using real code for logic, interactions, and more."
+    },
+    {
+      logo: "/img/html_css.png",
+      description: "Design colorful web pages with custom layouts and styles using HTML and CSS."
+    }
+  ];
+  
+
+const CompaniesSection = () => {
+  return (
+    <section className={styles.companies}>
+      <p className={styles.title}>Languages We Teach</p>
+      <div className={styles.logos}>
+      {languages.map((lang, index) => (
+        <div key={index} className={styles.logoItem}>
+            <img src={lang.logo} alt={lang.name} />
+            <p>{lang.description}</p>
+        </div>
+    ))}
+      </div>
+    </section>
+  );
+};
+
+export default CompaniesSection;

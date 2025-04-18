@@ -1,0 +1,59 @@
+.classroom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    background-color: #f9f7f3;
+    color: #324057;
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  .image {
+    max-width: 500px;
+  
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  .content {
+    max-width: 500px;
+  
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+  
+      span {
+        color: #d1ba8e;
+        font-size: 2rem;
+      }
+    }
+  
+    p {
+      font-size: 1.125rem;
+      color: #4b5563;
+      margin-bottom: 2rem;
+    }
+  
+    .learnMoreBtn {
+      padding: 0.75rem 1.5rem;
+      background-color: #324057;
+      color: #d1ba8e;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: #2a3549;
+      }
+    }
+  }
+  

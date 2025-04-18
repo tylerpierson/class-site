@@ -1,0 +1,113 @@
+.UnitPage {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 12vh 2rem 0;
+    height: 88vh;
+    width: 100%;
+
+    .backButton {
+        display: inline-block;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        color: rgb(53, 215, 180);
+        text-decoration: none;
+        transition: color 0.3s ease;
+        
+        &:hover {
+            color: rgb(6, 107, 85);
+            text-decoration: underline;
+        }
+    }
+
+    .textContainer {
+        width: 50%;
+        
+        .bio {
+            color: rgb(75, 75, 75);
+            background-color: rgba(100, 237, 207, 0.075);
+            padding: 5rem;
+            border-radius: 1rem;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: var(--heading-color);
+            text-shadow: .5px .5px 1px black;
+        }
+
+        .bio, .highlight {
+            width: 90%;
+            line-height: 3rem;
+            font-size: 1.3rem;
+            margin: 3rem 0;
+        }
+    }
+
+    .unitContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .unitWidget {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+        background: rgba(100, 237, 207, 0.2);
+        border: 2px solid rgba(100, 237, 207, 0.5);
+        border-radius: 1rem;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);
+            background: rgba(100, 237, 207, 0.3);
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 2rem;
+            color: var(--heading-color);
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: rgb(75, 75, 75);
+            margin-top: 0.5rem;
+        }
+    }      
+}
+
+/* Responsive Styling */
+@media only screen and (max-width: 1000px) {
+    .UnitOnePage {
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        overflow: visible;
+        padding-bottom: 3rem;
+        margin-top: 5vh;
+
+        .textContainer {
+            width: 100%;
+            z-index: 1;
+        }
+
+        .unitContainer {
+            width: 90%;
+        }
+
+        .unitWidget {
+            width: 100%;
+        }
+    }
+}

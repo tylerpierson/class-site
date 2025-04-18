@@ -1,0 +1,115 @@
+.WeekPage {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 12vh 2rem 0;
+    width: 100%;
+    height: 100%;
+
+    .backButton {
+        text-align: left;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        color: rgb(53, 215, 180);
+        text-decoration: none;
+        transition: color 0.3s ease;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        width: 80%;
+        max-width: 1000px;
+        &:hover {
+            color: rgb(6, 107, 85);
+            text-decoration: underline;
+        }
+    }    
+  
+    h1 {
+      color: var(--heading-color);
+      font-size: 2.5rem;
+      text-shadow: 1px 1px 2px black;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+  
+    .dayContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      width: 80%;
+      max-width: 1000px;
+      margin-bottom: 4rem;
+    }
+  
+    .dayBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+        background: rgba(100, 237, 207, 0.2);
+        border: 2px solid rgba(100, 237, 207, 0.5);
+        border-radius: 1rem;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+        text-decoration: none;
+        color: black;
+        font-size: 1.5rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);
+            background: rgba(100, 237, 207, 0.3);
+        }
+  
+      h2 {
+        margin: 0;
+        font-size: 2rem;
+        color: var(--heading-color);
+      }
+  
+      p {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        color: rgb(75, 75, 75);
+  
+        code {
+          background-color: rgba(0, 0, 0, 0.05);
+          padding: 0.2rem 0.4rem;
+          border-radius: 4px;
+          font-family: monospace;
+        }
+      }
+    }
+  }
+  
+  /* Responsive */
+  @media only screen and (max-width: 900px) {
+    .WeekPage {
+      margin-top: 8vh;
+      padding: 0 1rem;
+  
+      .dayContainer {
+        width: 100%;
+      }
+  
+      .dayBox {
+        padding: 1.5rem;
+      }
+  
+      h1 {
+        font-size: 2rem;
+      }
+  
+      .dayBox h2 {
+        font-size: 1.6rem;
+      }
+  
+      .dayBox p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+  

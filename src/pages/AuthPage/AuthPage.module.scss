@@ -1,0 +1,133 @@
+.authPage {
+    min-height: 100vh;
+    background-color: #f2f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    padding: 3rem;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 10px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+    text-align: center;
+  }
+  
+  .logo {
+    height: 15rem;
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #324057;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      padding: 0.75rem 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      width: 100%;
+      transition: border-color 0.2s ease;
+  
+      &:focus {
+        border-color: #324057;
+        outline: none;
+      }
+    }
+  }
+  
+  .row {
+    display: flex;
+    gap: 1rem;
+  
+    input {
+      flex: 1;
+    }
+  }
+  
+  .extraRow {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+  
+    a {
+      color: #0072ce;
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  
+    label {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
+  
+  .terms {
+    font-size: 0.875rem;
+    text-align: left;
+    margin-top: -0.5rem;
+  }
+  
+  .submitBtn {
+    margin-top: 1rem;
+    background-color: #d1ba8e;
+    color: #324057;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  
+    &:hover {
+      background-color: #e4cc9b;
+    }
+  }
+  
+  .toggle {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+  
+    span {
+      color: #0072ce;
+      cursor: pointer;
+      text-decoration: underline;
+      margin-left: 0.25rem;
+    }
+  }
+  
+  .help {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: #666;
+  
+    a {
+      color: #0072ce;
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  

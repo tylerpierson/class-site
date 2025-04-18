@@ -1,0 +1,129 @@
+.LessonPage {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 12vh 2rem 0;
+    width: 100%;
+    height: 100%;
+  
+    .backButton {
+      text-align: left;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      color: rgb(53, 215, 180);
+      text-decoration: none;
+      transition: color 0.3s ease;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      width: 80%;
+      max-width: 1000px;
+  
+      &:hover {
+        color: rgb(6, 107, 85);
+        text-decoration: underline;
+      }
+    }
+  
+    h1 {
+      color: var(--heading-color);
+      font-size: 2.5rem;
+      text-shadow: 1px 1px 2px black;
+      margin-bottom: 2.5rem;
+      text-align: center;
+      width: 80%;
+      max-width: 1000px;
+    }
+  
+    .lessonSection {
+      width: 80%;
+      max-width: 1000px;
+      margin-bottom: 2rem;
+  
+      h2 {
+        font-size: 1.8rem;
+        color: var(--heading-color);
+        margin-bottom: 1rem;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        color: rgb(75, 75, 75);
+        margin-bottom: 1rem;
+  
+        strong {
+          color: rgb(6, 107, 85);
+        }
+  
+        a {
+          color: rgb(53, 215, 180);
+          text-decoration: underline;
+          transition: color 0.3s ease;
+  
+          &:hover {
+            color: rgb(6, 107, 85);
+          }
+        }
+      }
+  
+      ul {
+        margin: 1rem 0 1.5rem 1.5rem;
+        font-size: 1.2rem;
+        color: rgb(75, 75, 75);
+  
+        li {
+          margin-bottom: 0.75rem;
+        }
+  
+        code {
+          background-color: rgba(0, 0, 0, 0.05);
+          padding: 0.2rem 0.4rem;
+          border-radius: 4px;
+          font-family: monospace;
+          color: rgb(44, 44, 44);
+        }
+      }
+  
+      pre {
+        background-color: #f4f4f4;
+        padding: 1rem;
+        border-radius: 8px;
+        overflow-x: auto;
+        font-size: 1rem;
+        line-height: 1.6;
+        font-family: 'Courier New', monospace;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        margin: 1rem 0;
+      }
+    }
+  }
+  
+  /* Responsive */
+  @media only screen and (max-width: 900px) {
+    .LessonPage {
+      margin-top: 8vh;
+      padding: 0 1rem;
+  
+      h1 {
+        font-size: 2rem;
+      }
+  
+      .lessonSection {
+        h2 {
+          font-size: 1.5rem;
+        }
+  
+        p,
+        ul {
+          font-size: 1.1rem;
+        }
+  
+        pre {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+  

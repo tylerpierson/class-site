@@ -1,31 +1,44 @@
-import styles from './ContactPage.module.scss';
-import NavBar from '../../components/NavBar/NavBar';
-import NavMobile from '../../components/NavMobile/NavMobile';
+import React, { useEffect } from "react";
+import styles from "./ContactPage.module.scss";
 
-export default function ContactPage() {
-    return (
-        <>
-            <NavBar />
-            <NavMobile />
-            <div className={styles.ContactPage}>
-                <div className={styles.InfoContainer}>
-                    <h1 className={styles.header}>Contact Me Today!</h1>
-                    <p className={styles.contactInfo}>
-                        If you have any questions or would like to get in touch, please send me an email at 
-                        <a className={styles.link} href="mailto:tpierson@g.dentonisd.org"> tpierson@g.dentonisd.org</a>.
-                    </p>
-                    <div className={styles.emailInstructions}>
-                        <p className={styles.contactInfo}>
-                            Please include the following information in your email:
-                        </p>
-                        <ul className={styles.contactInfo}>
-                            <li className={styles.li}>Your first and last name</li>
-                            <li className={styles.li}>Your child's first and last name</li>
-                        </ul>
-                    </div>
-                    <p className={styles.contactInfo}>If you're feeling wild and would like to contribute to the class to make it a more welcoming environment, please visit my <a className={styles.link} href="https://www.amazon.com/hz/wishlist/ls/1SEOMBBTU8MM9?ref_=wl_share">Amazon Wishlist</a></p>
-                </div>
-            </div>
-        </>
-    );
-}
+const ContactPage = () => {
+  useEffect(() => {
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = originalOverflow;
+    };
+  }, []);
+
+  return (
+    <div className={styles.contactPage}>
+      <h1>Contact Us</h1>
+      <p>
+        Have a question about our courses or curriculum? Want to learn how Innova can
+        spark your child’s interest in coding? We’d love to hear from you.
+      </p>
+
+      <form className={styles.contactForm}>
+        <div className={styles.formGroup}>
+          <label htmlFor="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div className={styles.formGroup}>
+          <label htmlFor="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div className={styles.formGroup}>
+          <label htmlFor="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" className={styles.submitBtn}>Send Message</button>
+      </form>
+    </div>
+  );
+};
+
+export default ContactPage;

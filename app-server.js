@@ -11,7 +11,7 @@ app.use((req, res, next) => {
     next()
 })
 app.use(logger('dev'))
-app.use(favicon(path.join(__dirname, 'public', 'img','logo.png')))
+app.use(favicon(path.join(__dirname, 'public', 'img','favicon_graphic.png')))
 app.use(express.static(path.join(__dirname, 'public')))
 // app.use('/api/users', require('./routes/api/users'))
 // app.use('/api/parents', require('./routes/api/parents'))

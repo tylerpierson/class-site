@@ -1,0 +1,81 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    background-color: #324057;
+    color: #d1ba8e;
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  .content {
+    margin-left: 6rem;
+    max-width: 600px;
+  
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+  
+      span {
+        color: #fff;
+        font-size: 2.5rem;
+      }
+    }
+  
+    p {
+      font-size: 1.125rem;
+      color: #e6d8b8;
+      margin-bottom: 2rem;
+    }
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 1rem;
+  
+    @media (max-width: 768px) {
+      justify-content: center;
+    }
+  
+    .primaryBtn {
+      background-color: #d1ba8e;
+      color: #324057;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+  
+      &:hover {
+        background-color: #e4cc9b;
+      }
+    }
+  
+    .secondaryBtn {
+      background-color: transparent;
+      border: 2px solid #d1ba8e;
+      color: #d1ba8e;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 500;
+  
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+  
+  .imageWrapper {
+    img {
+      width: 60rem;
+      height: auto;
+    }
+  }
+  

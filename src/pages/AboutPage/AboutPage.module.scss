@@ -1,65 +1,66 @@
-.AboutPage {
-    position: relative;
+.aboutPage {
+    min-height: 100vh;
+    background-color: #f9f7f3;
+    padding: 4rem 2rem;
+    color: #324057;
     display: flex;
     justify-content: center;
-    margin: 12vh 2rem 0;
-    height: 88vh;
+  }
+  
+  .container {
+    max-width: 900px;
     width: 100%;
-    .textContainer {
-        width: 50%;
-        .bio {
-            color: rgb(75, 75, 75);
-            background-color: rgba(100, 237, 207, 0.075);
-            padding: 5rem;
-            border-radius: 1rem;
-        }
-        .highlight {
-            font-weight: bold;
-            color: var(--heading-color);
-            text-shadow: .5px .5px 1px black;
-        }
-        .bio, .highlight {
-            width: 90%;
-            line-height: 3rem;
-            font-size: 1.3rem;
-            margin: 3rem 0;
-        }
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .intro {
+    font-size: 1.125rem;
+    text-align: center;
+    color: #4b5563;
+    max-width: 700px;
+    margin: 0 auto 3rem auto;
+    line-height: 1.6;
+  }
+  
+  .values {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
     }
-    .image {
-        transform: rotate(10deg);
+  }
+  
+  .card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    text-align: left;
+    transition: transform 0.2s ease;
+  
+    &:hover {
+      transform: translateY(-4px);
     }
-    .qr {
-        position: absolute;
-        width: 15rem;
+  
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #324057;
     }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 1000px) {
-    .AboutPage {
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-        overflow: visible;
-        padding-bottom: 3rem;
-        margin-top: 5vh;
-        .textContainer {
-            width: 100%;
-            z-index: 1;
-        }
-        .image {
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 80%;
-            opacity: .4;
-            transform: rotate(0);
-            border-bottom-left-radius: 50%;
-        }
-        .qr {
-            margin-top: 3rem;
-            bottom: 0;
-            right: 3rem;
-        }
+  
+    p {
+      font-size: 1rem;
+      color: #4b5563;
+      line-height: 1.5;
     }
-}
+  }
+  

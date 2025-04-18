@@ -1,49 +1,37 @@
-import { useState, useEffect } from 'react';
-import { Route, Routes } from 'react-router-dom';
-import HomePage from './pages/HomePage/HomePage';
-import AboutPage from './pages/AboutPage/AboutPage';
-import ContactPage from './pages/ContactPage/ContactPage';
-import AuthPage from './pages/AuthPage/AuthPage';
-import ProfilePage from './pages/ProfilePage/ProfilePage';
-import styles from './App.module.scss';
-import { getUser, getToken } from './utilities/users-service';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import NavBar from "./components/NavBar/NavBar";
+import HeroSection from "./components/HeroSection/HeroSection";
+import CompaniesSection from "./components/CompaniesSection/CompaniesSection";
+import FeaturesSection from "./components/FeaturesSection/FeaturesSection";
+import ClassroomSection from "./components/ClassroomSection/ClassroomSection";
+import Footer from "./components/Footer/Footer";
+import ContactPage from "./pages/ContactPage/ContactPage";
+import AuthPage from "./pages/AuthPage/AuthPage";
+import AboutPage from "./pages/AboutPage/AboutPage";
 
 export default function App() {
-    const [user, setUser] = useState(null); // Initial user state is null
-    const [token, setToken] = useState(getToken());
-
-    useEffect(() => {
-        async function fetchUser() {
-            const fetchedUser = await getUser();
-            setUser(fetchedUser);
-        }
-        fetchUser();
-    }, []);
-
-    return (
-        <div className={styles.App}>
-            <Routes>
-                {/* <Route
-                    path="/"
-                    element={<AuthPage user={user} setUser={setUser} />}
-                />
-                <Route
-                    path="/:id"
-                    element={<ProfilePage user={user} setUser={setUser} />}
-                /> */}
-                <Route
-                    path="/"
-                    element={<HomePage />}
-                />
-                <Route
-                    path="/about"
-                    element={<AboutPage />}
-                />
-                <Route
-                    path="/contact"
-                    element={<ContactPage />}
-                />
-            </Routes>
-        </div>
-    );
+  return (
+      <div className="font-sans">
+        <NavBar />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <HeroSection />
+                <CompaniesSection />
+                <ClassroomSection />
+                <FeaturesSection />
+                <Footer />
+              </>
+            }
+          />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/auth" element={<AuthPage />} />
+        </Routes>
+      </div>
+  );
 }

@@ -1,84 +1,97 @@
-.Nav {
-    width: 100%;
-    height: 10vh;
+.navbar {
     display: flex;
-    position: relative;
+    height: 6rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #324057;
+    color: #d1ba8e;
+    position: sticky;
     top: 0;
-    z-index: 1000;
-    background-color: rgba(0, 0, 0, .6);
-    overflow: hidden;
-    transition: top 0.3s ease;
-
-    &.hidden {
-        top: -10vh;
-        transition: top 0.3s ease;
+    z-index: 100;
+    transition: all 0.3s ease;
+  }
+  
+  .shrink {
+    padding: 0.5rem 2rem;
+  }
+  
+  .logo {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #d1ba8e;
+  }
+  
+  .logoImg {
+    position: absolute;
+    left: 2rem;
+    top: 140%;
+    transform: translateY(-50%);
+    height: 25rem;
+    transition: all 0.3s ease;
+  }
+  
+  .logoShrink {
+    height: 9.5rem;
+    transform: translateY(-50%) translateY(-5.5rem);
+  }
+  
+  
+  .navLinks {
+    display: flex;
+    gap: 8rem;
+  
+    a {
+      color: #d1ba8e;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+  
+      &:hover {
+        color: white;
+      }
     }
-
-    .image {
+  }
+  
+  .authButtons {
         position: absolute;
-        top: -11rem;
-        width: 30rem;
-    }
-
-    .ul {
-        width: 100%;
-        height: 100%;
+        right: 2rem;
         display: flex;
-        justify-content: flex-end;
-        align-items: center;
-
-        .listItemContainer {
-            height: 100%;
-            width: 7vw;
-            margin-left: 1rem;
-            position: relative;
-
-            .navItemTop, .navItemBottom {
-                list-style-type: none;
-                text-decoration: none;
-                color: white;
-                position: absolute;
-                width: 100%;
-                text-align: center;
-                transition: transform 0.3s ease;
-            }
-
-            .navItemTop {
-                top: 50%;
-                transform: translateY(-50%);
-                transition: .5s ease;
-            }
-
-            .navItemBottom {
-                top: 50%;
-                transform: translateY(50%);
-                opacity: 0;
-                transition: .5s ease;
-            }
-
-            &:hover {
-                cursor: pointer;
-
-                .navItemTop {
-                    transform: translateY(-150%);
-                    opacity: 0;
-                    transition: .5s ease;
-                }
-
-                .navItemBottom {
-                    transform: translateY(-50%);
-                    opacity: 1;
-                    transition: .5s ease;
-                    color: var(--btn-color);
-                }
-            }
+        gap: 0.75rem;
+      
+        .loginBtn {
+            font-size: 1.5rem;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: 1px solid #d1ba8e;
+            background: transparent;
+            color: #d1ba8e;
+            border-radius: 6px;
+            cursor: pointer;
+      
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+          }
         }
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 1000px) {
-    .Nav {
-        display: none;
-    }
-}
+      
+        .signupBtn {
+            font-size: 1.5rem;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background-color: #d1ba8e;
+            color: #324057;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+      
+          &:hover {
+            background-color: #e4cc9b;
+          }
+        }
+  }
+      
