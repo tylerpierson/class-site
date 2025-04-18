@@ -30,9 +30,9 @@ const FeaturesSection = () => {
       <div className={styles.cards}>
         {features.map((feature, index) => (
           <div key={index} className={styles.card}>
-            <img src={feature.icon} alt={feature.title} />
-            <h3>{feature.title}</h3>
-            <p>{feature.description}</p>
+            <img className={styles.img} src={feature.icon} alt={feature.title} />
+            <h3 className={styles.featureTitle}>{feature.title}</h3>
+            <p className={styles.para}>{feature.description}</p>
           </div>
         ))}
       </div>
