@@ -52,7 +52,8 @@ const NavBar = () => {
   };
 
   const getDashboardLink = () => {
-    return userRole === "educator" ? "/educator-dashboard" : "/dashboard";
+    if (userRole === "admin" || userRole === "educator") return "/educator-dashboard";
+    return "/dashboard";
   };
 
   return (
@@ -62,11 +63,18 @@ const NavBar = () => {
         alt="Innova Logo"
         className={`${styles.logoImg} ${scrolled ? styles.logoShrink : ""}`}
       />
-
       <nav className={styles.navLinks}>
         {currentUser ? (
           <>
             <Link to={getDashboardLink()} className={styles.link}>Dashboard</Link>
+
+            {(userRole === "educator" || userRole === "admin") && (
+              <Link to="/students" className={styles.link}>Students</Link>
+            )}
+
+            {userRole === "admin" && (
+              <Link to="/admin/educators" className={styles.link}>Educators</Link>
+            )}
 
             {userRole === "student" && (
               <Link to="/calendar" className={styles.link}>Calendar</Link>
@@ -81,7 +89,6 @@ const NavBar = () => {
           </>
         )}
       </nav>
-
       <div className={styles.authButtons}>
         {currentUser ? (
           <button onClick={handleLogout} className={styles.logoutBtn}>Logout</button>

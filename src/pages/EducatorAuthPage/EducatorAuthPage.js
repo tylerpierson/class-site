@@ -34,7 +34,7 @@ const EducatorAuthPage = () => {
       }
 
       const role = metadataSnap.data().role;
-      if (role !== "educator") {
+      if (role !== "educator" && role !== "admin") {
         alert("This login portal is for educators only.");
         return;
       }

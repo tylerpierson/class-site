@@ -14,6 +14,7 @@ import EducatorAuthPage from "./pages/EducatorAuthPage/EducatorAuthPage";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import StudentDashboard from "./pages/StudentDashboard/StudentDashboard";
 import EducatorDashboard from "./pages/EducatorDashboard/EducatorDashboard";
+import EducatorsPage from "./pages/EducatorsPage/EducatorsPage";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 export default function App() {
@@ -49,8 +50,16 @@ export default function App() {
           <Route
             path="/educator-dashboard"
             element={
-              <ProtectedRoute requiredRole="educator">
+              <ProtectedRoute requiredRoles={["educator", "admin"]}>
                 <EducatorDashboard />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/admin/educators"
+            element={
+              <ProtectedRoute requiredRoles={["admin"]}>
+                <EducatorsPage />
               </ProtectedRoute>
             }
           />

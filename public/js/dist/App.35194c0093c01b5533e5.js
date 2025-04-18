@@ -1254,6 +1254,96 @@ ___CSS_LOADER_EXPORT___.locals = {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/pages/EducatorsPage/EducatorsPage.module.scss":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/pages/EducatorsPage/EducatorsPage.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, `.yVvrMPJUMkZrdhLhA1cq {
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #324057;
+}
+
+.YOD0fu1fM3wx2AKTZgUr {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.rO0EhzXlDIXcNJ42d4e0 {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.rO0EhzXlDIXcNJ42d4e0 .gi9ceBpSyqiKdwiR8ZJe {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.rO0EhzXlDIXcNJ42d4e0 .hXXtrinYG3AHJZPWXbdQ {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.rO0EhzXlDIXcNJ42d4e0 .hXXtrinYG3AHJZPWXbdQ .vloQ1wTrkP3X883qm9av {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+.rO0EhzXlDIXcNJ42d4e0 .hXXtrinYG3AHJZPWXbdQ .vloQ1wTrkP3X883qm9av:focus {
+  border-color: #324057;
+  outline: none;
+}
+
+.FNHmgoHC0MycJ2S9tGrP {
+  background-color: #d1ba8e;
+  color: #324057;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.FNHmgoHC0MycJ2S9tGrP:hover {
+  background-color: #e4cc9b;
+}`, "",{"version":3,"sources":["webpack://./src/pages/EducatorsPage/EducatorsPage.module.scss"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,gBAAA;EACA,cAAA;EACA,cAAA;AACJ;;AAEE;EACE,iBAAA;EACA,mBAAA;EACA,kBAAA;AACJ;;AAEE;EACE,mBAAA;EACA,aAAA;EACA,mBAAA;EACA,0CAAA;EACA,aAAA;EACA,sBAAA;EACA,WAAA;AACJ;AACI;EACE,iBAAA;EACA,mBAAA;AACN;AAEI;EACE,aAAA;EACA,sBAAA;EACA,SAAA;AAAN;AAEM;EACE,qBAAA;EACA,sBAAA;EACA,kBAAA;EACA,eAAA;EACA,6BAAA;AAAR;AAEQ;EACE,qBAAA;EACA,aAAA;AAAV;;AAME;EACE,yBAAA;EACA,cAAA;EACA,YAAA;EACA,wBAAA;EACA,kBAAA;EACA,gBAAA;EACA,eAAA;EACA,eAAA;EACA,sCAAA;AAHJ;AAKI;EACE,yBAAA;AAHN","sourcesContent":[".page {\n    padding: 4rem 2rem;\n    max-width: 800px;\n    margin: 0 auto;\n    color: #324057;\n  }\n  \n  .header {\n    font-size: 2.5rem;\n    margin-bottom: 2rem;\n    text-align: center;\n  }\n  \n  .formCard {\n    background: #ffffff;\n    padding: 2rem;\n    border-radius: 12px;\n    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);\n    display: flex;\n    flex-direction: column;\n    gap: 1.5rem;\n  \n    .subheader {\n      font-size: 1.5rem;\n      margin-bottom: 1rem;\n    }\n  \n    .form {\n      display: flex;\n      flex-direction: column;\n      gap: 1rem;\n  \n      .textField {\n        padding: 0.75rem 1rem;\n        border: 1px solid #ccc;\n        border-radius: 6px;\n        font-size: 1rem;\n        transition: border-color 0.2s;\n  \n        &:focus {\n          border-color: #324057;\n          outline: none;\n        }\n      }\n    }\n  }\n  \n  .button {\n    background-color: #d1ba8e;\n    color: #324057;\n    border: none;\n    padding: 0.75rem 1.25rem;\n    border-radius: 6px;\n    font-weight: 600;\n    font-size: 1rem;\n    cursor: pointer;\n    transition: background-color 0.2s ease;\n  \n    &:hover {\n      background-color: #e4cc9b;\n    }\n  }\n  "],"sourceRoot":""}]);
+// Exports
+___CSS_LOADER_EXPORT___.locals = {
+	"page": `yVvrMPJUMkZrdhLhA1cq`,
+	"header": `YOD0fu1fM3wx2AKTZgUr`,
+	"formCard": `rO0EhzXlDIXcNJ42d4e0`,
+	"subheader": `gi9ceBpSyqiKdwiR8ZJe`,
+	"form": `hXXtrinYG3AHJZPWXbdQ`,
+	"textField": `vloQ1wTrkP3X883qm9av`,
+	"button": `FNHmgoHC0MycJ2S9tGrP`
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/pages/StudentDashboard/StudentDashboard.module.scss":
 /*!********************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/pages/StudentDashboard/StudentDashboard.module.scss ***!
@@ -1363,7 +1453,7 @@ ___CSS_LOADER_EXPORT___.locals = {
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/index.js");
 /* harmony import */ var _components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/NavBar/NavBar */ "./src/components/NavBar/NavBar.js");
 /* harmony import */ var _components_ProtectedRoute_ProtectedRoute__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/ProtectedRoute/ProtectedRoute */ "./src/components/ProtectedRoute/ProtectedRoute.js");
 /* harmony import */ var _components_HeroSection_HeroSection__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/HeroSection/HeroSection */ "./src/components/HeroSection/HeroSection.js");
@@ -1377,7 +1467,9 @@ ___CSS_LOADER_EXPORT___.locals = {
 /* harmony import */ var _pages_AboutPage_AboutPage__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pages/AboutPage/AboutPage */ "./src/pages/AboutPage/AboutPage.js");
 /* harmony import */ var _pages_StudentDashboard_StudentDashboard__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./pages/StudentDashboard/StudentDashboard */ "./src/pages/StudentDashboard/StudentDashboard.js");
 /* harmony import */ var _pages_EducatorDashboard_EducatorDashboard__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/EducatorDashboard/EducatorDashboard */ "./src/pages/EducatorDashboard/EducatorDashboard.js");
-/* harmony import */ var _components_ScrollToTop_ScrollToTop__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/ScrollToTop/ScrollToTop */ "./src/components/ScrollToTop/ScrollToTop.js");
+/* harmony import */ var _pages_EducatorsPage_EducatorsPage__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./pages/EducatorsPage/EducatorsPage */ "./src/pages/EducatorsPage/EducatorsPage.js");
+/* harmony import */ var _components_ScrollToTop_ScrollToTop__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/ScrollToTop/ScrollToTop */ "./src/components/ScrollToTop/ScrollToTop.js");
+
 
 
 
@@ -1397,31 +1489,36 @@ ___CSS_LOADER_EXPORT___.locals = {
 function App() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: "font-sans"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Route, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_NavBar_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Routes, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Route, {
     path: "/",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ScrollToTop_ScrollToTop__WEBPACK_IMPORTED_MODULE_14__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_HeroSection_HeroSection__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_LanguagesSection_LanguagesSection__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ClassroomSection_ClassroomSection__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_FeaturesSection_FeaturesSection__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Footer_Footer__WEBPACK_IMPORTED_MODULE_7__["default"], null))
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Route, {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ScrollToTop_ScrollToTop__WEBPACK_IMPORTED_MODULE_15__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_HeroSection_HeroSection__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_LanguagesSection_LanguagesSection__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ClassroomSection_ClassroomSection__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_FeaturesSection_FeaturesSection__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Footer_Footer__WEBPACK_IMPORTED_MODULE_7__["default"], null))
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Route, {
     path: "/about",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_AboutPage_AboutPage__WEBPACK_IMPORTED_MODULE_11__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Route, {
     path: "/contact",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_ContactPage_ContactPage__WEBPACK_IMPORTED_MODULE_8__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Route, {
     path: "/auth",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_AuthPage_AuthPage__WEBPACK_IMPORTED_MODULE_9__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Route, {
     path: "/educator-auth",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_EducatorAuthPage_EducatorAuthPage__WEBPACK_IMPORTED_MODULE_10__["default"], null)
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Route, {
     path: "/dashboard",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ProtectedRoute_ProtectedRoute__WEBPACK_IMPORTED_MODULE_2__["default"], {
       requiredRole: "student"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_StudentDashboard_StudentDashboard__WEBPACK_IMPORTED_MODULE_12__["default"], null))
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_15__.Route, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Route, {
     path: "/educator-dashboard",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ProtectedRoute_ProtectedRoute__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      requiredRole: "educator"
+      requiredRoles: ["educator", "admin"]
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_EducatorDashboard_EducatorDashboard__WEBPACK_IMPORTED_MODULE_13__["default"], null))
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_16__.Route, {
+    path: "/admin/educators",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_ProtectedRoute_ProtectedRoute__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      requiredRoles: ["admin"]
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_EducatorsPage_EducatorsPage__WEBPACK_IMPORTED_MODULE_14__["default"], null))
   })));
 }
 
@@ -1997,7 +2094,8 @@ const NavBar = () => {
     }
   };
   const getDashboardLink = () => {
-    return userRole === "educator" ? "/educator-dashboard" : "/dashboard";
+    if (userRole === "admin" || userRole === "educator") return "/educator-dashboard";
+    return "/dashboard";
   };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", {
     className: "".concat(_NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].navbar, " ").concat(scrolled ? _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].shrink : "")
@@ -2010,7 +2108,13 @@ const NavBar = () => {
   }, currentUser ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
     to: getDashboardLink(),
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].link
-  }, "Dashboard"), userRole === "student" && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
+  }, "Dashboard"), (userRole === "educator" || userRole === "admin") && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
+    to: "/students",
+    className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].link
+  }, "Students"), userRole === "admin" && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
+    to: "/admin/educators",
+    className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].link
+  }, "Educators"), userRole === "student" && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
     to: "/calendar",
     className: _NavBar_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].link
   }, "Calendar")) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__.Link, {
@@ -2114,7 +2218,7 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 const ProtectedRoute = _ref => {
   let {
     children,
-    requiredRole
+    requiredRoles = []
   } = _ref;
   const {
     user,
@@ -2125,9 +2229,11 @@ const ProtectedRoute = _ref => {
   if (!user) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Navigate, {
     to: "/auth?mode=login"
   });
-  if (requiredRole && role !== requiredRole) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Navigate, {
-    to: "/dashboard"
-  });
+  if (requiredRoles.length > 0 && !requiredRoles.includes(role)) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__.Navigate, {
+      to: "/dashboard"
+    });
+  }
   return children;
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ProtectedRoute);
@@ -2501,7 +2607,7 @@ const AuthPage = () => {
         return;
       }
       const role = roleSnap.data().role;
-      if (role === "educator") {
+      if (role === "educator" || role === "admin") {
         alert("Educators must log in through the Educator Login Portal.");
         return;
       }
@@ -2825,7 +2931,7 @@ const EducatorAuthPage = () => {
         return;
       }
       const role = metadataSnap.data().role;
-      if (role !== "educator") {
+      if (role !== "educator" && role !== "admin") {
         alert("This login portal is for educators only.");
         return;
       }
@@ -3033,6 +3139,147 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
        /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_EducatorDashboard_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_EducatorDashboard_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_EducatorDashboard_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
+/***/ "./src/pages/EducatorsPage/EducatorsPage.js":
+/*!**************************************************!*\
+  !*** ./src/pages/EducatorsPage/EducatorsPage.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _EducatorsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./EducatorsPage.module.scss */ "./src/pages/EducatorsPage/EducatorsPage.module.scss");
+/* harmony import */ var _hooks_useAuth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../hooks/useAuth */ "./src/hooks/useAuth.js");
+/* harmony import */ var firebase_functions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! firebase/functions */ "./node_modules/firebase/functions/dist/esm/index.esm.js");
+
+
+
+
+const EducatorsPage = () => {
+  const {
+    role
+  } = (0,_hooks_useAuth__WEBPACK_IMPORTED_MODULE_2__["default"])();
+  const [firstName, setFirstName] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("");
+  const [lastName, setLastName] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("");
+  const [email, setEmail] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("");
+  const handleAddEducator = async (firstName, lastName, email) => {
+    try {
+      const functions = (0,firebase_functions__WEBPACK_IMPORTED_MODULE_3__.getFunctions)();
+      const addEducator = (0,firebase_functions__WEBPACK_IMPORTED_MODULE_3__.httpsCallable)(functions, "addEducator");
+      const result = await addEducator({
+        firstName,
+        lastName,
+        email
+      });
+      alert("Educator added. Temporary password:\n\n".concat(result.data.password));
+    } catch (error) {
+      console.error("Failed to add educator:", error.message);
+      alert("Error: " + error.message);
+    }
+  };
+  if (role !== "admin") return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Unauthorized");
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: _EducatorsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].page
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+    className: _EducatorsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].header
+  }, "Manage Educators"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: _EducatorsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].formCard
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: _EducatorsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].subheader
+  }, "Add New Educator"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
+    className: _EducatorsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].form,
+    onSubmit: async e => {
+      e.preventDefault();
+      await handleAddEducator(firstName, lastName, email);
+      setFirstName("");
+      setLastName("");
+      setEmail("");
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    className: _EducatorsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textField,
+    type: "text",
+    placeholder: "First Name",
+    value: firstName,
+    onChange: e => setFirstName(e.target.value),
+    required: true
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    className: _EducatorsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textField,
+    type: "text",
+    placeholder: "Last Name",
+    value: lastName,
+    onChange: e => setLastName(e.target.value),
+    required: true
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    className: _EducatorsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textField,
+    type: "email",
+    placeholder: "Email",
+    value: email,
+    onChange: e => setEmail(e.target.value),
+    required: true
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+    type: "submit",
+    className: _EducatorsPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].button
+  }, "Add Educator"))));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (EducatorsPage);
+
+/***/ }),
+
+/***/ "./src/pages/EducatorsPage/EducatorsPage.module.scss":
+/*!***********************************************************!*\
+  !*** ./src/pages/EducatorsPage/EducatorsPage.module.scss ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_EducatorsPage_module_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!../../../node_modules/sass-loader/dist/cjs.js!../../../node_modules/postcss-loader/dist/cjs.js!./EducatorsPage.module.scss */ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/sass-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./src/pages/EducatorsPage/EducatorsPage.module.scss");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_EducatorsPage_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_EducatorsPage_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_EducatorsPage_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_2_use_1_node_modules_sass_loader_dist_cjs_js_node_modules_postcss_loader_dist_cjs_js_EducatorsPage_module_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -3348,9 +3595,9 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_css-loader_dist_runtime_api_js-node_modules_css-loader_dist_runtime_sour-09e987"], () => (__webpack_require__("./src/index.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_css-loader_dist_runtime_api_js-node_modules_css-loader_dist_runtime_sour-15d29c"], () => (__webpack_require__("./src/index.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.25243f88f563d4c1e1268ed49a8f1cb2.js.map
+//# sourceMappingURL=App.8d69b28f8c1186226d33d2160426b21d.js.map

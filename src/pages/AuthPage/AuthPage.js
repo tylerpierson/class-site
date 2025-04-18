@@ -61,7 +61,7 @@ const AuthPage = () => {
       }
 
       const role = roleSnap.data().role;
-      if (role === "educator") {
+      if (role === "educator" || role === "admin") {
         alert("Educators must log in through the Educator Login Portal.");
         return;
       }
