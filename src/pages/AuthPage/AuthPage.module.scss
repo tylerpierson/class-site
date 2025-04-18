@@ -22,7 +22,7 @@
     margin-bottom: 1rem;
   }
   
-  h2 {
+  .authBtn {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
@@ -55,7 +55,7 @@
     display: flex;
     gap: 1rem;
   
-    input {
+    .textField {
       flex: 1;
     }
   }
@@ -65,7 +65,7 @@
     justify-content: space-between;
     font-size: 0.875rem;
   
-    a {
+    .link {
       color: #0072ce;
       text-decoration: none;
   
@@ -121,7 +121,7 @@
     font-size: 0.8rem;
     color: #666;
   
-    a {
+    .link {
       color: #0072ce;
       text-decoration: none;
   

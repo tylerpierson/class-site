@@ -726,7 +726,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.WI29TvQcwd9BG8AGtQm4 {
   margin-bottom: 1rem;
 }
 
-h2 {
+.nu7QvMRKY6UP_9gIFnsY {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
@@ -759,7 +759,7 @@ h2 {
   display: flex;
   gap: 1rem;
 }
-.sV2WYEWBxHcpSKMPvAUz input {
+.sV2WYEWBxHcpSKMPvAUz .VefK26Oyty00ezuBJkDg {
   flex: 1;
 }
 
@@ -768,11 +768,11 @@ h2 {
   justify-content: space-between;
   font-size: 0.875rem;
 }
-.GXYmcpvZYIUzx05bPfgr a {
+.GXYmcpvZYIUzx05bPfgr .gp9K_opwAlqsBiqTYQMM {
   color: #0072ce;
   text-decoration: none;
 }
-.GXYmcpvZYIUzx05bPfgr a:hover {
+.GXYmcpvZYIUzx05bPfgr .gp9K_opwAlqsBiqTYQMM:hover {
   text-decoration: underline;
 }
 .GXYmcpvZYIUzx05bPfgr label {
@@ -819,21 +819,24 @@ h2 {
   font-size: 0.8rem;
   color: #666;
 }
-.hFyDmw1IBwd7BxyS9hI6 a {
+.hFyDmw1IBwd7BxyS9hI6 .gp9K_opwAlqsBiqTYQMM {
   color: #0072ce;
   text-decoration: none;
 }
-.hFyDmw1IBwd7BxyS9hI6 a:hover {
+.hFyDmw1IBwd7BxyS9hI6 .gp9K_opwAlqsBiqTYQMM:hover {
   text-decoration: underline;
-}`, "",{"version":3,"sources":["webpack://./src/pages/AuthPage/AuthPage.module.scss"],"names":[],"mappings":"AAAA;EACI,iBAAA;EACA,yBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,aAAA;AACJ;;AAEE;EACE,yBAAA;EACA,aAAA;EACA,WAAA;EACA,gBAAA;EACA,mBAAA;EACA,0CAAA;EACA,kBAAA;AACJ;;AAEE;EACE,aAAA;EACA,mBAAA;AACJ;;AAEE;EACE,iBAAA;EACA,gBAAA;EACA,qBAAA;EACA,cAAA;AACJ;;AAEE;EACE,aAAA;EACA,sBAAA;EACA,SAAA;AACJ;AACI;;;EAGE,qBAAA;EACA,sBAAA;EACA,kBAAA;EACA,eAAA;EACA,WAAA;EACA,kCAAA;AACN;AACM;;;EACE,qBAAA;EACA,aAAA;AAGR;;AAEE;EACE,aAAA;EACA,SAAA;AACJ;AACI;EACE,OAAA;AACN;;AAGE;EACE,aAAA;EACA,8BAAA;EACA,mBAAA;AAAJ;AAEI;EACE,cAAA;EACA,qBAAA;AAAN;AAEM;EACE,0BAAA;AAAR;AAII;EACE,aAAA;EACA,mBAAA;EACA,WAAA;AAFN;;AAME;EACE,mBAAA;EACA,gBAAA;EACA,mBAAA;AAHJ;;AAME;EACE,gBAAA;EACA,yBAAA;EACA,cAAA;EACA,YAAA;EACA,wBAAA;EACA,kBAAA;EACA,gBAAA;EACA,eAAA;EACA,eAAA;EACA,sCAAA;AAHJ;AAKI;EACE,yBAAA;AAHN;;AAOE;EACE,kBAAA;EACA,iBAAA;AAJJ;AAMI;EACE,cAAA;EACA,eAAA;EACA,0BAAA;EACA,oBAAA;AAJN;;AAQE;EACE,gBAAA;EACA,iBAAA;EACA,WAAA;AALJ;AAOI;EACE,cAAA;EACA,qBAAA;AALN;AAOM;EACE,0BAAA;AALR","sourcesContent":[".authPage {\n    min-height: 100vh;\n    background-color: #f2f4f8;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 2rem;\n  }\n  \n  .card {\n    background-color: #ffffff;\n    padding: 3rem;\n    width: 100%;\n    max-width: 450px;\n    border-radius: 10px;\n    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);\n    text-align: center;\n  }\n  \n  .logo {\n    height: 15rem;\n    margin-bottom: 1rem;\n  }\n  \n  h2 {\n    font-size: 1.5rem;\n    font-weight: 600;\n    margin-bottom: 1.5rem;\n    color: #324057;\n  }\n  \n  .form {\n    display: flex;\n    flex-direction: column;\n    gap: 1rem;\n  \n    input[type=\"text\"],\n    input[type=\"email\"],\n    input[type=\"password\"] {\n      padding: 0.75rem 1rem;\n      border: 1px solid #ccc;\n      border-radius: 6px;\n      font-size: 1rem;\n      width: 100%;\n      transition: border-color 0.2s ease;\n  \n      &:focus {\n        border-color: #324057;\n        outline: none;\n      }\n    }\n  }\n  \n  .row {\n    display: flex;\n    gap: 1rem;\n  \n    input {\n      flex: 1;\n    }\n  }\n  \n  .extraRow {\n    display: flex;\n    justify-content: space-between;\n    font-size: 0.875rem;\n  \n    a {\n      color: #0072ce;\n      text-decoration: none;\n  \n      &:hover {\n        text-decoration: underline;\n      }\n    }\n  \n    label {\n      display: flex;\n      align-items: center;\n      gap: 0.5rem;\n    }\n  }\n  \n  .terms {\n    font-size: 0.875rem;\n    text-align: left;\n    margin-top: -0.5rem;\n  }\n  \n  .submitBtn {\n    margin-top: 1rem;\n    background-color: #d1ba8e;\n    color: #324057;\n    border: none;\n    padding: 0.75rem 1.25rem;\n    border-radius: 6px;\n    font-weight: 600;\n    font-size: 1rem;\n    cursor: pointer;\n    transition: background-color 0.2s ease;\n  \n    &:hover {\n      background-color: #e4cc9b;\n    }\n  }\n  \n  .toggle {\n    margin-top: 1.5rem;\n    font-size: 0.9rem;\n  \n    span {\n      color: #0072ce;\n      cursor: pointer;\n      text-decoration: underline;\n      margin-left: 0.25rem;\n    }\n  }\n  \n  .help {\n    margin-top: 2rem;\n    font-size: 0.8rem;\n    color: #666;\n  \n    a {\n      color: #0072ce;\n      text-decoration: none;\n  \n      &:hover {\n        text-decoration: underline;\n      }\n    }\n  }\n  "],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/AuthPage/AuthPage.module.scss"],"names":[],"mappings":"AAAA;EACI,iBAAA;EACA,yBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,aAAA;AACJ;;AAEE;EACE,yBAAA;EACA,aAAA;EACA,WAAA;EACA,gBAAA;EACA,mBAAA;EACA,0CAAA;EACA,kBAAA;AACJ;;AAEE;EACE,aAAA;EACA,mBAAA;AACJ;;AAEE;EACE,iBAAA;EACA,gBAAA;EACA,qBAAA;EACA,cAAA;AACJ;;AAEE;EACE,aAAA;EACA,sBAAA;EACA,SAAA;AACJ;AACI;;;EAGE,qBAAA;EACA,sBAAA;EACA,kBAAA;EACA,eAAA;EACA,WAAA;EACA,kCAAA;AACN;AACM;;;EACE,qBAAA;EACA,aAAA;AAGR;;AAEE;EACE,aAAA;EACA,SAAA;AACJ;AACI;EACE,OAAA;AACN;;AAGE;EACE,aAAA;EACA,8BAAA;EACA,mBAAA;AAAJ;AAEI;EACE,cAAA;EACA,qBAAA;AAAN;AAEM;EACE,0BAAA;AAAR;AAII;EACE,aAAA;EACA,mBAAA;EACA,WAAA;AAFN;;AAME;EACE,mBAAA;EACA,gBAAA;EACA,mBAAA;AAHJ;;AAME;EACE,gBAAA;EACA,yBAAA;EACA,cAAA;EACA,YAAA;EACA,wBAAA;EACA,kBAAA;EACA,gBAAA;EACA,eAAA;EACA,eAAA;EACA,sCAAA;AAHJ;AAKI;EACE,yBAAA;AAHN;;AAOE;EACE,kBAAA;EACA,iBAAA;AAJJ;AAMI;EACE,cAAA;EACA,eAAA;EACA,0BAAA;EACA,oBAAA;AAJN;;AAQE;EACE,gBAAA;EACA,iBAAA;EACA,WAAA;AALJ;AAOI;EACE,cAAA;EACA,qBAAA;AALN;AAOM;EACE,0BAAA;AALR","sourcesContent":[".authPage {\n    min-height: 100vh;\n    background-color: #f2f4f8;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 2rem;\n  }\n  \n  .card {\n    background-color: #ffffff;\n    padding: 3rem;\n    width: 100%;\n    max-width: 450px;\n    border-radius: 10px;\n    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);\n    text-align: center;\n  }\n  \n  .logo {\n    height: 15rem;\n    margin-bottom: 1rem;\n  }\n  \n  .authBtn {\n    font-size: 1.5rem;\n    font-weight: 600;\n    margin-bottom: 1.5rem;\n    color: #324057;\n  }\n  \n  .form {\n    display: flex;\n    flex-direction: column;\n    gap: 1rem;\n  \n    input[type=\"text\"],\n    input[type=\"email\"],\n    input[type=\"password\"] {\n      padding: 0.75rem 1rem;\n      border: 1px solid #ccc;\n      border-radius: 6px;\n      font-size: 1rem;\n      width: 100%;\n      transition: border-color 0.2s ease;\n  \n      &:focus {\n        border-color: #324057;\n        outline: none;\n      }\n    }\n  }\n  \n  .row {\n    display: flex;\n    gap: 1rem;\n  \n    .textField {\n      flex: 1;\n    }\n  }\n  \n  .extraRow {\n    display: flex;\n    justify-content: space-between;\n    font-size: 0.875rem;\n  \n    .link {\n      color: #0072ce;\n      text-decoration: none;\n  \n      &:hover {\n        text-decoration: underline;\n      }\n    }\n  \n    label {\n      display: flex;\n      align-items: center;\n      gap: 0.5rem;\n    }\n  }\n  \n  .terms {\n    font-size: 0.875rem;\n    text-align: left;\n    margin-top: -0.5rem;\n  }\n  \n  .submitBtn {\n    margin-top: 1rem;\n    background-color: #d1ba8e;\n    color: #324057;\n    border: none;\n    padding: 0.75rem 1.25rem;\n    border-radius: 6px;\n    font-weight: 600;\n    font-size: 1rem;\n    cursor: pointer;\n    transition: background-color 0.2s ease;\n  \n    &:hover {\n      background-color: #e4cc9b;\n    }\n  }\n  \n  .toggle {\n    margin-top: 1.5rem;\n    font-size: 0.9rem;\n  \n    span {\n      color: #0072ce;\n      cursor: pointer;\n      text-decoration: underline;\n      margin-left: 0.25rem;\n    }\n  }\n  \n  .help {\n    margin-top: 2rem;\n    font-size: 0.8rem;\n    color: #666;\n  \n    .link {\n      color: #0072ce;\n      text-decoration: none;\n  \n      &:hover {\n        text-decoration: underline;\n      }\n    }\n  }\n  "],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"authPage": `WI29TvQcwd9BG8AGtQm4`,
 	"card": `NKDUHo4bAapdtQi9cMRw`,
 	"logo": `CK5eNrxOxrUlH8arKKKJ`,
+	"authBtn": `nu7QvMRKY6UP_9gIFnsY`,
 	"form": `ZUBSCn3NvTxwdfCibyhb`,
 	"row": `sV2WYEWBxHcpSKMPvAUz`,
+	"textField": `VefK26Oyty00ezuBJkDg`,
 	"extraRow": `GXYmcpvZYIUzx05bPfgr`,
+	"link": `gp9K_opwAlqsBiqTYQMM`,
 	"terms": `_9siMrz3ETA4ni7J8Ay0`,
 	"submitBtn": `z6S11CQanS1zp4r1P8g6`,
 	"toggle": `wNjM3vLMM025zBTHZF61`,
@@ -1804,7 +1807,9 @@ const AuthPage = () => {
     src: "/img/logo_tran_2.png",
     alt: "Innova Logo",
     className: _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].logo
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, isSignUp ? "Create an Account" : "Sign In"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+    className: _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].authBtn
+  }, isSignUp ? "Create an Account" : "Sign In"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
     className: _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].form
   }, isSignUp && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].row
@@ -1823,14 +1828,17 @@ const AuthPage = () => {
   }), isSignUp ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].row
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    className: _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textField,
     type: "password",
     placeholder: "Password",
     required: true
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    className: _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textField,
     type: "password",
     placeholder: "Confirm",
     required: true
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    className: _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textField,
     type: "text",
     placeholder: "Location",
     required: true
@@ -1843,6 +1851,7 @@ const AuthPage = () => {
     type: "submit",
     className: _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].submitBtn
   }, "Sign Up")) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
+    className: _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].textField,
     type: "password",
     placeholder: "Your Password",
     required: true
@@ -1851,6 +1860,7 @@ const AuthPage = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("label", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     type: "checkbox"
   }), " Remember me"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
+    className: _AuthPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].link,
     href: "#"
   }, "Forgot password?")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     type: "submit",
@@ -2255,4 +2265,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.82b1901d41672408028bd9d45e4c56bf.js.map
+//# sourceMappingURL=App.4d3ce389a5e68be6d363f5607921be83.js.map

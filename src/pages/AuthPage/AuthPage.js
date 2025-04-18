@@ -19,7 +19,7 @@ const AuthPage = () => {
     <div className={styles.authPage}>
       <div className={styles.card}>
         <img src="/img/logo_tran_2.png" alt="Innova Logo" className={styles.logo} />
-        <h2>{isSignUp ? "Create an Account" : "Sign In"}</h2>
+        <h2 className={styles.authBtn}>{isSignUp ? "Create an Account" : "Sign In"}</h2>
 
         <form className={styles.form}>
           {isSignUp && (
@@ -34,10 +34,10 @@ const AuthPage = () => {
           {isSignUp ? (
             <>
               <div className={styles.row}>
-                <input type="password" placeholder="Password" required />
-                <input type="password" placeholder="Confirm" required />
+                <input className={styles.textField} type="password" placeholder="Password" required />
+                <input className={styles.textField} type="password" placeholder="Confirm" required />
               </div>
-              <input type="text" placeholder="Location" required />
+              <input className={styles.textField} type="text" placeholder="Location" required />
               <label className={styles.terms}>
                 <input type="checkbox" required /> I agree to the Terms and Privacy Policy
               </label>
@@ -45,12 +45,12 @@ const AuthPage = () => {
             </>
           ) : (
             <>
-              <input type="password" placeholder="Your Password" required />
+              <input className={styles.textField} type="password" placeholder="Your Password" required />
               <div className={styles.extraRow}>
                 <label>
                   <input type="checkbox" /> Remember me
                 </label>
-                <a href="#">Forgot password?</a>
+                <a className={styles.link} href="#">Forgot password?</a>
               </div>
               <button type="submit" className={styles.submitBtn}>Continue</button>
             </>
