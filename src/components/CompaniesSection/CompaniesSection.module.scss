@@ -33,20 +33,20 @@
       color: #324057;
     }
   
-    p {
+    .para {
       font-size: 1.3rem;
       color: #4b5563;
       margin-top: 2rem;
       max-width: 200px;
     }  
   
-    img {
+    .img {
       height: 8rem;
       object-fit: contain;
       transition: transform 0.3s ease;
     }
   
-    &:hover img {
+    &:hover .img {
       transform: scale(1.05);
     }  
   }

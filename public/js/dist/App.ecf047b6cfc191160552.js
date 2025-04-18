@@ -137,27 +137,29 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.BzYOZaxoEHOZYRornbwf {
   margin-top: 0.75rem;
   color: #324057;
 }
-.bMVMBM4uyXfnJ_uZiXFP p {
+.bMVMBM4uyXfnJ_uZiXFP .Zr3WNLtEYAfXFD5LVcFf {
   font-size: 1.3rem;
   color: #4b5563;
   margin-top: 2rem;
   max-width: 200px;
 }
-.bMVMBM4uyXfnJ_uZiXFP img {
+.bMVMBM4uyXfnJ_uZiXFP .fOHGEZPlg92i4SKSG8uf {
   height: 8rem;
   -o-object-fit: contain;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
-.bMVMBM4uyXfnJ_uZiXFP:hover img {
+.bMVMBM4uyXfnJ_uZiXFP:hover .fOHGEZPlg92i4SKSG8uf {
   transform: scale(1.05);
-}`, "",{"version":3,"sources":["webpack://./src/components/CompaniesSection/CompaniesSection.module.scss"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,yBAAA;EACA,kBAAA;AACJ;;AAEE;EACE,iBAAA;EACA,gBAAA;EACA,cAAA;EACA,mBAAA;AACJ;;AAEE;EACE,aAAA;EACA,2DAAA;EACA,SAAA;EACA,qBAAA;EACA,mBAAA;EACA,eAAA;AACJ;;AAEE;EACE,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,kBAAA;EACA,aAAA;AACJ;AACI;EACE,mBAAA;EACA,mBAAA;EACA,cAAA;AACN;AAEI;EACE,iBAAA;EACA,cAAA;EACA,gBAAA;EACA,gBAAA;AAAN;AAGI;EACE,YAAA;EACA,sBAAA;EACG,mBAAA;EACH,+BAAA;AADN;AAII;EACE,sBAAA;AAFN","sourcesContent":[".companies {\n    padding: 3rem 2rem;\n    background-color: #ffffff;\n    text-align: center;\n  }\n  \n  .title {\n    font-size: 1.5rem;\n    font-weight: 600;\n    color: #324057;\n    margin-bottom: 2rem;\n  }\n  \n  .logos {\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));\n    gap: 2rem;\n    justify-items: center;\n    align-items: center;\n    padding: 1rem 0;\n  }\n  \n  .logoItem {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n    padding: 1rem;\n  \n    h3 {\n      font-size: 1.125rem;\n      margin-top: 0.75rem;\n      color: #324057;\n    }\n  \n    p {\n      font-size: 1.3rem;\n      color: #4b5563;\n      margin-top: 2rem;\n      max-width: 200px;\n    }  \n  \n    img {\n      height: 8rem;\n      -o-object-fit: contain;\n         object-fit: contain;\n      transition: transform 0.3s ease;\n    }\n  \n    &:hover img {\n      transform: scale(1.05);\n    }  \n  }\n  "],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/CompaniesSection/CompaniesSection.module.scss"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,yBAAA;EACA,kBAAA;AACJ;;AAEE;EACE,iBAAA;EACA,gBAAA;EACA,cAAA;EACA,mBAAA;AACJ;;AAEE;EACE,aAAA;EACA,2DAAA;EACA,SAAA;EACA,qBAAA;EACA,mBAAA;EACA,eAAA;AACJ;;AAEE;EACE,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,kBAAA;EACA,aAAA;AACJ;AACI;EACE,mBAAA;EACA,mBAAA;EACA,cAAA;AACN;AAEI;EACE,iBAAA;EACA,cAAA;EACA,gBAAA;EACA,gBAAA;AAAN;AAGI;EACE,YAAA;EACA,sBAAA;EACG,mBAAA;EACH,+BAAA;AADN;AAII;EACE,sBAAA;AAFN","sourcesContent":[".companies {\n    padding: 3rem 2rem;\n    background-color: #ffffff;\n    text-align: center;\n  }\n  \n  .title {\n    font-size: 1.5rem;\n    font-weight: 600;\n    color: #324057;\n    margin-bottom: 2rem;\n  }\n  \n  .logos {\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));\n    gap: 2rem;\n    justify-items: center;\n    align-items: center;\n    padding: 1rem 0;\n  }\n  \n  .logoItem {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    text-align: center;\n    padding: 1rem;\n  \n    h3 {\n      font-size: 1.125rem;\n      margin-top: 0.75rem;\n      color: #324057;\n    }\n  \n    .para {\n      font-size: 1.3rem;\n      color: #4b5563;\n      margin-top: 2rem;\n      max-width: 200px;\n    }  \n  \n    .img {\n      height: 8rem;\n      -o-object-fit: contain;\n         object-fit: contain;\n      transition: transform 0.3s ease;\n    }\n  \n    &:hover .img {\n      transform: scale(1.05);\n    }  \n  }\n  "],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"companies": `BzYOZaxoEHOZYRornbwf`,
 	"title": `PNNwuGbHbAuE1f2t6kXz`,
 	"logos": `CrUq7uIX07mYwjV1rtcz`,
-	"logoItem": `bMVMBM4uyXfnJ_uZiXFP`
+	"logoItem": `bMVMBM4uyXfnJ_uZiXFP`,
+	"para": `Zr3WNLtEYAfXFD5LVcFf`,
+	"img": `fOHGEZPlg92i4SKSG8uf`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1141,9 +1143,12 @@ const CompaniesSection = () => {
     key: index,
     className: _CompaniesSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].logoItem
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    className: _CompaniesSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].img,
     src: lang.logo,
     alt: lang.name
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, lang.description)))));
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: _CompaniesSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].para
+  }, lang.description)))));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CompaniesSection);
 
@@ -2361,4 +2366,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.598b03c96e4f088a06eba29970c82fbf.js.map
+//# sourceMappingURL=App.b7afac2440e1a8e8d2e4b221211eb726.js.map

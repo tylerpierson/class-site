@@ -25,8 +25,8 @@ const CompaniesSection = () => {
       <div className={styles.logos}>
       {languages.map((lang, index) => (
         <div key={index} className={styles.logoItem}>
-            <img src={lang.logo} alt={lang.name} />
-            <p>{lang.description}</p>
+            <img className={styles.img} src={lang.logo} alt={lang.name} />
+            <p className={styles.para}>{lang.description}</p>
         </div>
     ))}
       </div>
