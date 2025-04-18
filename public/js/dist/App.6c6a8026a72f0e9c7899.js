@@ -872,13 +872,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.FHRK5KF8Lx9k99GJMtTg {
   color: #324057;
 }
 
-h1 {
+.S9FN9aSVQRa_QrFXudan {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
-p {
+.eZdBypykhCGdH0aommtK {
   max-width: 600px;
   font-size: 1.125rem;
   color: #4b5563;
@@ -934,10 +934,12 @@ p {
 }
 .wuIHVGu0Syt8F6qndVMZ:hover {
   background-color: #e4cc9b;
-}`, "",{"version":3,"sources":["webpack://./src/pages/ContactPage/ContactPage.module.scss"],"names":[],"mappings":"AAAA;EACI,iBAAA;EACA,yBAAA;EACA,kBAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,cAAA;AACJ;;AAEE;EACE,eAAA;EACA,gBAAA;EACA,mBAAA;AACJ;;AAEE;EACE,gBAAA;EACA,mBAAA;EACA,cAAA;EACA,kBAAA;EACA,mBAAA;AACJ;;AAEE;EACE,WAAA;EACA,gBAAA;EACA,uBAAA;EACA,aAAA;EACA,mBAAA;EACA,2CAAA;EACA,aAAA;EACA,sBAAA;EACA,WAAA;AACJ;;AAEE;EACE,aAAA;EACA,sBAAA;AACJ;AACI;EACE,gBAAA;EACA,qBAAA;AACN;AAEI;;EAEE,qBAAA;EACA,eAAA;EACA,sBAAA;EACA,kBAAA;EACA,kCAAA;AAAN;AAEM;;EACE,qBAAA;EACA,aAAA;AACR;;AAIE;EACE,yBAAA;EACA,cAAA;EACA,gBAAA;EACA,wBAAA;EACA,eAAA;EACA,YAAA;EACA,kBAAA;EACA,eAAA;EACA,sBAAA;EACA,sCAAA;AADJ;AAGI;EACE,yBAAA;AADN","sourcesContent":[".contactPage {\n    min-height: 100vh;\n    background-color: #f9f7f3;\n    padding: 4rem 2rem;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    color: #324057;\n  }\n  \n  h1 {\n    font-size: 2rem;\n    font-weight: 700;\n    margin-bottom: 1rem;\n  }\n  \n  p {\n    max-width: 600px;\n    font-size: 1.125rem;\n    color: #4b5563;\n    text-align: center;\n    margin-bottom: 2rem;\n  }\n  \n  .contactForm {\n    width: 100%;\n    max-width: 600px;\n    background-color: white;\n    padding: 2rem;\n    border-radius: 12px;\n    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);\n    display: flex;\n    flex-direction: column;\n    gap: 1.5rem;\n  }\n  \n  .formGroup {\n    display: flex;\n    flex-direction: column;\n  \n    label {\n      font-weight: 600;\n      margin-bottom: 0.5rem;\n    }\n  \n    input,\n    textarea {\n      padding: 0.75rem 1rem;\n      font-size: 1rem;\n      border: 1px solid #ccc;\n      border-radius: 8px;\n      transition: border-color 0.3s ease;\n  \n      &:focus {\n        border-color: #324057;\n        outline: none;\n      }\n    }\n  }\n  \n  .submitBtn {\n    background-color: #d1ba8e;\n    color: #324057;\n    font-weight: 600;\n    padding: 0.75rem 1.25rem;\n    font-size: 1rem;\n    border: none;\n    border-radius: 8px;\n    cursor: pointer;\n    align-self: flex-start;\n    transition: background-color 0.3s ease;\n  \n    &:hover {\n      background-color: #e4cc9b;\n    }\n  }\n  "],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/pages/ContactPage/ContactPage.module.scss"],"names":[],"mappings":"AAAA;EACI,iBAAA;EACA,yBAAA;EACA,kBAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,cAAA;AACJ;;AAEE;EACE,eAAA;EACA,gBAAA;EACA,mBAAA;AACJ;;AAEE;EACE,gBAAA;EACA,mBAAA;EACA,cAAA;EACA,kBAAA;EACA,mBAAA;AACJ;;AAEE;EACE,WAAA;EACA,gBAAA;EACA,uBAAA;EACA,aAAA;EACA,mBAAA;EACA,2CAAA;EACA,aAAA;EACA,sBAAA;EACA,WAAA;AACJ;;AAEE;EACE,aAAA;EACA,sBAAA;AACJ;AACI;EACE,gBAAA;EACA,qBAAA;AACN;AAEI;;EAEE,qBAAA;EACA,eAAA;EACA,sBAAA;EACA,kBAAA;EACA,kCAAA;AAAN;AAEM;;EACE,qBAAA;EACA,aAAA;AACR;;AAIE;EACE,yBAAA;EACA,cAAA;EACA,gBAAA;EACA,wBAAA;EACA,eAAA;EACA,YAAA;EACA,kBAAA;EACA,eAAA;EACA,sBAAA;EACA,sCAAA;AADJ;AAGI;EACE,yBAAA;AADN","sourcesContent":[".contactPage {\n    min-height: 100vh;\n    background-color: #f9f7f3;\n    padding: 4rem 2rem;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    color: #324057;\n  }\n  \n  .contactHeader {\n    font-size: 2rem;\n    font-weight: 700;\n    margin-bottom: 1rem;\n  }\n  \n  .contactPara {\n    max-width: 600px;\n    font-size: 1.125rem;\n    color: #4b5563;\n    text-align: center;\n    margin-bottom: 2rem;\n  }\n  \n  .contactForm {\n    width: 100%;\n    max-width: 600px;\n    background-color: white;\n    padding: 2rem;\n    border-radius: 12px;\n    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);\n    display: flex;\n    flex-direction: column;\n    gap: 1.5rem;\n  }\n  \n  .formGroup {\n    display: flex;\n    flex-direction: column;\n  \n    label {\n      font-weight: 600;\n      margin-bottom: 0.5rem;\n    }\n  \n    input,\n    textarea {\n      padding: 0.75rem 1rem;\n      font-size: 1rem;\n      border: 1px solid #ccc;\n      border-radius: 8px;\n      transition: border-color 0.3s ease;\n  \n      &:focus {\n        border-color: #324057;\n        outline: none;\n      }\n    }\n  }\n  \n  .submitBtn {\n    background-color: #d1ba8e;\n    color: #324057;\n    font-weight: 600;\n    padding: 0.75rem 1.25rem;\n    font-size: 1rem;\n    border: none;\n    border-radius: 8px;\n    cursor: pointer;\n    align-self: flex-start;\n    transition: background-color 0.3s ease;\n  \n    &:hover {\n      background-color: #e4cc9b;\n    }\n  }\n  "],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"contactPage": `FHRK5KF8Lx9k99GJMtTg`,
+	"contactHeader": `S9FN9aSVQRa_QrFXudan`,
+	"contactPara": `eZdBypykhCGdH0aommtK`,
 	"contactForm": `kYBXbgx2vR49c4SZ9fYV`,
 	"formGroup": `yAwh1lqDaDWNXJQ983wn`,
 	"submitBtn": `wuIHVGu0Syt8F6qndVMZ`
@@ -1946,7 +1948,11 @@ const ContactPage = () => {
   }, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: _ContactPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].contactPage
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Contact Us"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Have a question about our courses or curriculum? Want to learn how Innova can spark your child\u2019s interest in coding? We\u2019d love to hear from you."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+    className: _ContactPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].contactHeader
+  }, "Contact Us"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: _ContactPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].contactPara
+  }, "Have a question about our courses or curriculum? Want to learn how Innova can spark your child\u2019s interest in coding? We\u2019d love to hear from you."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
     className: _ContactPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].contactForm
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: _ContactPage_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].formGroup
@@ -2249,4 +2255,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.c038ccdeff975d5524a29ca522e4c052.js.map
+//# sourceMappingURL=App.82b1901d41672408028bd9d45e4c56bf.js.map

@@ -13,8 +13,8 @@ const ContactPage = () => {
 
   return (
     <div className={styles.contactPage}>
-      <h1>Contact Us</h1>
-      <p>
+      <h1 className={styles.contactHeader}>Contact Us</h1>
+      <p className={styles.contactPara}>
         Have a question about our courses or curriculum? Want to learn how Innova can
         spark your child’s interest in coding? We’d love to hear from you.
       </p>
