@@ -355,17 +355,17 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.AyddIIDMapBbMHKG_ZSA {
   margin-left: 6rem;
   max-width: 600px;
 }
-.iXmOwBbMZWPJy8EPEHHg h1 {
+.iXmOwBbMZWPJy8EPEHHg .ZpBPhmzaG5W5o8O2Wkii {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
-.iXmOwBbMZWPJy8EPEHHg h1 span {
+.iXmOwBbMZWPJy8EPEHHg .ZpBPhmzaG5W5o8O2Wkii .hr50btlBEhe5Q3X8_Fmg {
   color: #fff;
   font-size: 2.5rem;
 }
-.iXmOwBbMZWPJy8EPEHHg p {
+.iXmOwBbMZWPJy8EPEHHg .VFtIDuNm3F28D3uAgCVh {
   font-size: 1.125rem;
   color: #e6d8b8;
   margin-bottom: 2rem;
@@ -405,18 +405,22 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.AyddIIDMapBbMHKG_ZSA {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.ebz6a2KF1tl__vOf9BaN img {
+.ebz6a2KF1tl__vOf9BaN .PeZgd0iRG0AbC0cBUMS0 {
   width: 60rem;
   height: auto;
-}`, "",{"version":3,"sources":["webpack://./src/components/HeroSection/HeroSection.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,mBAAA;EACA,8BAAA;EACA,kBAAA;EACA,yBAAA;EACA,cAAA;AACJ;AACI;EARJ;IASM,sBAAA;IACA,kBAAA;EAEJ;AACF;;AACE;EACE,iBAAA;EACA,gBAAA;AAEJ;AAAI;EACE,iBAAA;EACA,gBAAA;EACA,gBAAA;EACA,mBAAA;AAEN;AAAM;EACE,WAAA;EACA,iBAAA;AAER;AAEI;EACE,mBAAA;EACA,cAAA;EACA,mBAAA;AAAN;;AAIE;EACE,aAAA;EACA,SAAA;AADJ;AAGI;EAJF;IAKI,uBAAA;EAAJ;AACF;AAEI;EACE,yBAAA;EACA,cAAA;EACA,uBAAA;EACA,YAAA;EACA,kBAAA;EACA,eAAA;EACA,gBAAA;AAAN;AAEM;EACE,yBAAA;AAAR;AAII;EACE,6BAAA;EACA,yBAAA;EACA,cAAA;EACA,uBAAA;EACA,kBAAA;EACA,eAAA;EACA,gBAAA;AAFN;AAIM;EACE,0CAAA;AAFR;;AAQI;EACE,YAAA;EACA,YAAA;AALN","sourcesContent":[".hero {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    padding: 4rem 2rem;\n    background-color: #324057;\n    color: #d1ba8e;\n  \n    @media (max-width: 768px) {\n      flex-direction: column;\n      text-align: center;\n    }\n  }\n  \n  .content {\n    margin-left: 6rem;\n    max-width: 600px;\n  \n    h1 {\n      font-size: 2.5rem;\n      font-weight: 700;\n      line-height: 1.2;\n      margin-bottom: 1rem;\n  \n      span {\n        color: #fff;\n        font-size: 2.5rem;\n      }\n    }\n  \n    p {\n      font-size: 1.125rem;\n      color: #e6d8b8;\n      margin-bottom: 2rem;\n    }\n  }\n  \n  .buttons {\n    display: flex;\n    gap: 1rem;\n  \n    @media (max-width: 768px) {\n      justify-content: center;\n    }\n  \n    .primaryBtn {\n      background-color: #d1ba8e;\n      color: #324057;\n      padding: 0.75rem 1.5rem;\n      border: none;\n      border-radius: 8px;\n      cursor: pointer;\n      font-weight: 600;\n  \n      &:hover {\n        background-color: #e4cc9b;\n      }\n    }\n  \n    .secondaryBtn {\n      background-color: transparent;\n      border: 2px solid #d1ba8e;\n      color: #d1ba8e;\n      padding: 0.75rem 1.5rem;\n      border-radius: 8px;\n      cursor: pointer;\n      font-weight: 500;\n  \n      &:hover {\n        background-color: rgba(255, 255, 255, 0.1);\n      }\n    }\n  }\n  \n  .imageWrapper {\n    img {\n      width: 60rem;\n      height: auto;\n    }\n  }\n  "],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/HeroSection/HeroSection.module.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,mBAAA;EACA,8BAAA;EACA,kBAAA;EACA,yBAAA;EACA,cAAA;AACJ;AACI;EARJ;IASM,sBAAA;IACA,kBAAA;EAEJ;AACF;;AACE;EACE,iBAAA;EACA,gBAAA;AAEJ;AAAI;EACE,iBAAA;EACA,gBAAA;EACA,gBAAA;EACA,mBAAA;AAEN;AAAM;EACE,WAAA;EACA,iBAAA;AAER;AAEI;EACE,mBAAA;EACA,cAAA;EACA,mBAAA;AAAN;;AAIE;EACE,aAAA;EACA,SAAA;AADJ;AAGI;EAJF;IAKI,uBAAA;EAAJ;AACF;AAEI;EACE,yBAAA;EACA,cAAA;EACA,uBAAA;EACA,YAAA;EACA,kBAAA;EACA,eAAA;EACA,gBAAA;AAAN;AAEM;EACE,yBAAA;AAAR;AAII;EACE,6BAAA;EACA,yBAAA;EACA,cAAA;EACA,uBAAA;EACA,kBAAA;EACA,eAAA;EACA,gBAAA;AAFN;AAIM;EACE,0CAAA;AAFR;;AAQI;EACE,YAAA;EACA,YAAA;AALN","sourcesContent":[".hero {\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    padding: 4rem 2rem;\n    background-color: #324057;\n    color: #d1ba8e;\n  \n    @media (max-width: 768px) {\n      flex-direction: column;\n      text-align: center;\n    }\n  }\n  \n  .content {\n    margin-left: 6rem;\n    max-width: 600px;\n  \n    .header {\n      font-size: 2.5rem;\n      font-weight: 700;\n      line-height: 1.2;\n      margin-bottom: 1rem;\n  \n      .span {\n        color: #fff;\n        font-size: 2.5rem;\n      }\n    }\n  \n    .para {\n      font-size: 1.125rem;\n      color: #e6d8b8;\n      margin-bottom: 2rem;\n    }\n  }\n  \n  .buttons {\n    display: flex;\n    gap: 1rem;\n  \n    @media (max-width: 768px) {\n      justify-content: center;\n    }\n  \n    .primaryBtn {\n      background-color: #d1ba8e;\n      color: #324057;\n      padding: 0.75rem 1.5rem;\n      border: none;\n      border-radius: 8px;\n      cursor: pointer;\n      font-weight: 600;\n  \n      &:hover {\n        background-color: #e4cc9b;\n      }\n    }\n  \n    .secondaryBtn {\n      background-color: transparent;\n      border: 2px solid #d1ba8e;\n      color: #d1ba8e;\n      padding: 0.75rem 1.5rem;\n      border-radius: 8px;\n      cursor: pointer;\n      font-weight: 500;\n  \n      &:hover {\n        background-color: rgba(255, 255, 255, 0.1);\n      }\n    }\n  }\n  \n  .imageWrapper {\n    .img {\n      width: 60rem;\n      height: auto;\n    }\n  }\n  "],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"hero": `AyddIIDMapBbMHKG_ZSA`,
 	"content": `iXmOwBbMZWPJy8EPEHHg`,
+	"header": `ZpBPhmzaG5W5o8O2Wkii`,
+	"span": `hr50btlBEhe5Q3X8_Fmg`,
+	"para": `VFtIDuNm3F28D3uAgCVh`,
 	"buttons": `_0nPqCcxcdb7KICrLSKxR`,
 	"primaryBtn": `pzPINLCXVFdZAPJG5yXS`,
 	"secondaryBtn": `fZgQ90xpafsV0M6Z7qFT`,
-	"imageWrapper": `ebz6a2KF1tl__vOf9BaN`
+	"imageWrapper": `ebz6a2KF1tl__vOf9BaN`,
+	"img": `PeZgd0iRG0AbC0cBUMS0`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1409,7 +1413,13 @@ const HeroSection = () => {
     className: _HeroSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].hero
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: _HeroSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].content
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Inspire the Next Generation of ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Coders")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "At Innova, kids aged 7\u201314 learn coding through interactive lessons, games, and real-world projects. Built for young minds. Powered by creativity."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+    className: _HeroSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].header
+  }, "Inspire the Next Generation of ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    className: _HeroSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].span
+  }, "Coders")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+    className: _HeroSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].para
+  }, "At Innova, kids aged 7\u201314 learn coding through interactive lessons, games, and real-world projects. Built for young minds. Powered by creativity."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: _HeroSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].buttons
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
     className: _HeroSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].primaryBtn
@@ -1418,6 +1428,7 @@ const HeroSection = () => {
   }, "View Curriculum"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: _HeroSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].imageWrapper
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    className: _HeroSection_module_scss__WEBPACK_IMPORTED_MODULE_1__["default"].img,
     src: "/img/coding_tran_graphic.png",
     alt: "Kids learning to code"
   })));
@@ -2297,4 +2308,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.a9cd120a5ffdd411a3b45f2e29857a63.js.map
+//# sourceMappingURL=App.ab8dedc44be4e455b366ae269c8f0e4a.js.map
